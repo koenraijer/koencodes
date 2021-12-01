@@ -108,19 +108,29 @@
 
     input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     background: #06D6A0;
-    margin-top: -5px;
+    margin-top: -7.5px;
     border-radius: 50%;
+    @media screen and (min-width: 600px) {
+        height: 15px;
+        width: 15px;
+        margin-top: -5px;
+    }
     }
 
     input[type="range"]::-moz-range-thumb {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     background: #06D6A0;
     margin-top: -5px;
     border-radius: 50%;
+    @media screen and (min-width: 600px) {
+        height: 15px;
+        width: 15px;
+        margin-top: -5px;
+    }
     }
 
     :global(.dark) {
