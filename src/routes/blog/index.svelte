@@ -52,7 +52,7 @@
         padding-left: 0;
         li {
             h3 {
-                margin-bottom: 0;
+                margin-bottom: 0.25rem;
                 a {
                     &:hover {
                         text-decoration: underline;

@@ -60,7 +60,7 @@
       <h2><a class="menuitem" href='/blog'>Blog</a></h2>
       <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">Mail</a></h2>
       <DarkMode bind:theme />
-      <input class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
+      <input name="darkmode toggler" class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
     </SideMenu>
 
 </nav>
