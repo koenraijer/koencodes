@@ -62,6 +62,7 @@ for (let path in allPosts) {
         {/each}
         <span class="date">{new Date(date).toLocaleDateString()}</span>
     </li>
+    <hr>
     {/each}
 </ul>
 
@@ -70,6 +71,7 @@ for (let path in allPosts) {
     :global(.dark) {
         .project {
             border: white 2px solid;
+            box-shadow: 0 0 5px white;
             h3 {
                 color: #111344;
             }
@@ -99,6 +101,7 @@ for (let path in allPosts) {
     }
     .project {
         border: #111344 2px solid;
+        box-shadow: 0 0 5px #111344;
         padding: 0.5rem;
         p {
             padding: 0.5rem 0 0;

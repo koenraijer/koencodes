@@ -20,6 +20,7 @@
         background-color: rgba(17, 19, 68, 0.95);
         color: white;
         margin: auto;
+        text-align: center;
     }
     
     #menu {

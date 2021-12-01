@@ -56,9 +56,9 @@
     <BurgerButton {...burgerProps} bind:open={open}/>
 
     <SideMenu {...menuProps} bind:open={open}>
-      <h2><a href='/'>Home</a></h2>
-      <h2><a href='/blog'>Blog</a></h2>
-      <h2><a href="mailto:koenraijer@protonmail.com">Mail</a></h2>
+      <h2><a class="menuitem" href='/'>Home</a></h2>
+      <h2><a class="menuitem" href='/blog'>Blog</a></h2>
+      <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">Mail</a></h2>
       <DarkMode bind:theme />
       <input class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
     </SideMenu>
@@ -119,4 +119,11 @@
   a {
     color: inherit;
   }
+
+  .menuitem {
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+    }
 </style>
