@@ -52,7 +52,7 @@ for (let path in allPosts) {
 <h2 id="blogposts">Latest posts</h2>
 
 <ul>
-    {#each posts as { path, metadata: { title, tags, date } }}
+    {#each posts.slice(0, 4) as { path, metadata: { title, tags, date } }}
     <li>
         <h3><a href={`${path.replace(".md", "")}`}>{title}</a></h3>
         {#each tags as tag}
@@ -65,6 +65,7 @@ for (let path in allPosts) {
     <hr>
     {/each}
 </ul>
+<span style="float: right;"><a href="/blog">all posts &#10132;</a></span>
 
 
 <style lang="scss">
@@ -80,7 +81,7 @@ for (let path in allPosts) {
             }
         }
     }
-    p {
+    p, span {
         a {
         color: inherit;
         text-decoration: none;

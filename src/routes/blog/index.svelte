@@ -42,6 +42,7 @@
         {/each}
         <span class="date">{new Date(date).toLocaleDateString()}</span>
     </li>
+    <hr>
     {/each}
 </ul>
 
