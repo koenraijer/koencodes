@@ -4,6 +4,7 @@ import { page } from "$app/stores";
     import Nav from "$lib/Nav.svelte";
 
     export let location;
+
 </script>
 
 
@@ -17,17 +18,29 @@ import { page } from "$app/stores";
 <style lang="scss">        
     :root {
         max-width: 60ch;
-        padding: 2rem;
+        padding: 0.5rem;
         margin: auto;
         line-height: 1.3;
         font-size: 1.5rem;
         color: #111344;
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        @media screen and (min-width: 600px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+
+    body {
+      position: fixed;
     }
 
     .container {
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      @media screen and (min-width: 600px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
 
     a {

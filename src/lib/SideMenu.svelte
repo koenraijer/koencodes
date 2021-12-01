@@ -11,29 +11,29 @@
 
 <style lang="scss">
     .sidemenu {
-        position: absolute;
+        position: fixed;
         height: 100vh;
         width: 50vw;
         top: 0px;
         z-index: 8 !important;
-        overflow-y: auto;
+        overflow-y: hidden;
+        background-color: rgba(17, 19, 68, 0.95);
+        color: white;
+        margin: auto;
     }
     
     #menu {
-        text-align: left;
-        max-width: 60ch;
-    }
-
-    .sidemenu {
-        background-color: #111344;
-        color: white;
-        margin: auto;
-
+        position: absolute;
+        padding: 2rem;
+        margin: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 50vw;
     }
 
     :global(.dark) {
         .sidemenu {
-            background-color: white;
+            background-color: rgba(255, 255, 255,0.95);
             color: #111344
         }
         

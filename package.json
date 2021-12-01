@@ -33,6 +33,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"body-scroll-toggle": "^0.2.0",
+		"disable-scroll": "^0.6.0",
 		"node-sass": "^6.0.1",
 		"svelte-burger-menu": "^1.0.5"
 	}

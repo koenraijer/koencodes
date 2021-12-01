@@ -1,6 +1,7 @@
 <script>
     import BurgerButton from './BurgerButton.svelte'
     import SideMenu from './SideMenu.svelte'
+    import disableScroll from 'disable-scroll';
 
     export let open = false;
 
@@ -38,18 +39,30 @@
 
     $: switchTheme = theme === "dark" ? "light" : "dark";
 
-</script>
-<nav>
-  <BurgerButton {...burgerProps} bind:open={open}/>
+    let param = 2;
 
-<SideMenu {...menuProps} bind:open={open}>
-  <h2><a href='/'>Home</a></h2>
-  <h2><a href='/projects'>Projects</a></h2>
-  <h2><a href='/blog'>Blog</a></h2>
-  <h2><a href="mailto:koenraijer@protonmail.com">Mail</a></h2>
-  <DarkMode bind:theme />
-  <input class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
-</SideMenu>
+    function switchScroll(){
+      console.log(param);
+      if(param % 2 == 0){
+        disableScroll.on();
+      } else {
+        disableScroll.off();
+      }
+    }
+
+</script>
+
+<nav >
+    <BurgerButton {...burgerProps} bind:open={open}/>
+
+    <SideMenu {...menuProps} bind:open={open}>
+      <h2><a href='/'>Home</a></h2>
+      <h2><a href='/blog'>Blog</a></h2>
+      <h2><a href="mailto:koenraijer@protonmail.com">Mail</a></h2>
+      <DarkMode bind:theme />
+      <input class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
+    </SideMenu>
+
 </nav>
 
 <style lang="scss"> 
@@ -71,10 +84,10 @@
         outline: none;
         border: none;
         cursor: pointer;
-        background-color: #111344;
+        background-color: #8689E1;
         transition: background-color ease-in-out 0.3s;
         &:checked {
-          background-color: white;
+          background-color: #8689E1;
           &:before {
             left: 0.755rem;
             background-color: #111344;
