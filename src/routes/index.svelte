@@ -55,12 +55,13 @@ for (let path in allPosts) {
     {#each posts.slice(0, 4) as { path, metadata: { title, tags, date } }}
     <li>
         <h3><a href={`${path.replace(".md", "")}`}>{title}</a></h3>
+        <span class="date">{new Date(date).toLocaleDateString()}</span>
         {#each tags as tag}
         <span class="tag">
             <a href={`/tags/${tag}`}>#{tag}</a>&nbsp;
         </span>
         {/each}
-        <span class="date">{new Date(date).toLocaleDateString()}</span>
+        
     </li>
     <hr>
     {/each}
@@ -83,9 +84,8 @@ for (let path in allPosts) {
     }
     p, span {
         a {
-        color: inherit;
+        color: #06D6A0;
         text-decoration: none;
-        opacity: 0.5;
         &:hover{
             text-decoration: underline;
         }
@@ -155,8 +155,8 @@ for (let path in allPosts) {
             }
 
             .tag {
-                a:hover {
-                    opacity: 0.5;
+                a {
+                    color: #06D6A0;
                 }
             }
         }

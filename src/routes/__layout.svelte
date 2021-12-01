@@ -5,6 +5,8 @@ import { page } from "$app/stores";
 
     export let location;
 
+    import {setContext} from 'svelte'
+
 </script>
 
 
@@ -17,16 +19,19 @@ import { page } from "$app/stores";
 
 <style lang="scss">        
     :root {
+        $dark: #111344;
+        $light: white;
+        $accent: #3D42CF;
+
         max-width: 60ch;
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 1rem;
         margin: auto;
         line-height: 1.3;
         font-size: 1.2rem;
-        color: #111344;
+        color: $dark;
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         @media screen and (min-width: 600px) {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding: 0.5rem 2rem 2rem;
         font-size: 1.5rem;
       }
     }

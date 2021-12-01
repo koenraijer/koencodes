@@ -56,11 +56,11 @@
     <BurgerButton {...burgerProps} bind:open={open}/>
 
     <SideMenu {...menuProps} bind:open={open}>
-      <h2><a class="menuitem" href='/'>Home</a></h2>
-      <h2><a class="menuitem" href='/blog'>Blog</a></h2>
-      <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">Mail</a></h2>
+      <h2><a class="menuitem" href='/'>koen.wtf</a></h2>
+      <h2><a class="menuitem" href='/blog'>blog</a></h2>
+      <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">mail</a></h2>
       <DarkMode bind:theme />
-      <input name="darkmode toggler" class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
+      <input name="darkmode" class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
     </SideMenu>
 
 </nav>
@@ -84,10 +84,10 @@
         outline: none;
         border: none;
         cursor: pointer;
-        background-color: #8689E1;
+        background-color: #06D6A0;
         transition: background-color ease-in-out 0.3s;
         &:checked {
-          background-color: #8689E1;
+          background-color: #06D6A0;
           &:before {
             left: 0.755rem;
             background-color: #111344;

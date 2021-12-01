@@ -35,12 +35,12 @@
     {#each dateSortedPosts as { path, metadata: { title, tags, date } }}
     <li>
         <h3><a href={`/blog/${path.replace(".md", "")}`}>{title}</a></h3>
+        <span class="date">{new Date(date).toLocaleDateString()}</span>
         {#each tags as tag}
         <span class="tag">
             <a href={`/tags/${tag}`}>#{tag}</a>&nbsp;
         </span>
         {/each}
-        <span class="date">{new Date(date).toLocaleDateString()}</span>
     </li>
     <hr>
     {/each}
@@ -70,9 +70,13 @@
             }
 
             .tag {
-                a:hover {
-                    opacity: 0.5;
+                a {
+                    &:hover {
+                    text-decoration: underline;
+                    }
+                    color: #06D6A0;
                 }
+                
             }
         }
     }
