@@ -54,7 +54,7 @@
                 {#if volatileAssets}
                     100%
                 {/if}
-            {:else}{Math.round(actPercVolatile)}%{/if}</span> of your total portfolio value of <span>€{totalPortfValue}</span> in stocks.<br> To rebalance, 
+            {:else}{Math.round(actPercVolatile)}%{/if}</span> of your total portfolio value of <span>€{totalPortfValue}</span> in volatile assets.<br> To rebalance, 
             {#if diffActAndDesVolatile > 0}sell{:else}buy{/if}
             <span>€{Math.abs(Math.round(diffActAndDesVolatile))}</span> of volatile assets. </h3>
         </div>
