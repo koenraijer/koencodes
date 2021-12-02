@@ -4,7 +4,7 @@
     export let duration;
     export let burgerColor;
     export let menuColor;
-    
+
 </script>
 
 <style lang="scss">

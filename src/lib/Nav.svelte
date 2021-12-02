@@ -1,7 +1,6 @@
 <script>
     import BurgerButton from './BurgerButton.svelte'
     import SideMenu from './SideMenu.svelte'
-    import disableScroll from 'disable-scroll';
 
     export let open = false;
 
@@ -39,26 +38,18 @@
 
     $: switchTheme = theme === "dark" ? "light" : "dark";
 
-    let param = 2;
+    $: open = open ;
 
-    function switchScroll(){
-      console.log(param);
-      if(param % 2 == 0){
-        disableScroll.on();
-      } else {
-        disableScroll.off();
-      }
-    }
-
+    $: console.log({open});
 </script>
 
 <nav >
     <BurgerButton {...burgerProps} bind:open={open}/>
 
     <SideMenu {...menuProps} bind:open={open}>
-      <h2><a class="menuitem" href='/'>koen.wtf</a></h2>
-      <h2><a class="menuitem" href='/blog'>blog</a></h2>
-      <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">mail</a></h2>
+      <h2><a on:click={() => (open = !open)} class="menuitem" href='/'>koen.wtf</a></h2>
+      <h2><a on:click={() => (open = !open)} class="menuitem" href='/blog'>blog</a></h2>
+      <h2><a on:click={() => (open = !open)} class="menuitem" href="mailto:koenraijer@protonmail.com">mail</a></h2>
       <DarkMode bind:theme />
       <input name="darkmode" class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
     </SideMenu>

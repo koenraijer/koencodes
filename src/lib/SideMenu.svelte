@@ -1,5 +1,5 @@
 <script>
-    export let open;
+    export let open = false;
 
     export let duration;
     export let width;
@@ -7,6 +7,8 @@
     export let paddingTop;
     export let backgroundColor;
     export let menuColor;
+
+    $: open = open;
 </script>
 
 <style lang="scss">

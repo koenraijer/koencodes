@@ -1,5 +1,5 @@
 <script context="module">
-
+export let open = false;
 const allPosts = import.meta.glob("./blog/*.md");
 
 let body = [];
