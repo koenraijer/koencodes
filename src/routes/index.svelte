@@ -39,7 +39,7 @@ for (let path in allPosts) {
 <h2 id="projects">Projects</h2>
 <div class="project-parent">
     <div class="project">
-        <div><h3>vriendenvoorkika</h3></div>
+        <div><h3><a href="https://www.vriendenvoorkika.nl/">vriendenvoorkika</a></h3></div>
         <p>Climbing a mountain for charity. Made a <a href="https://www.vriendenvoorkika.nl/">website</a> for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!</p>
     </div>
     
@@ -50,7 +50,7 @@ for (let path in allPosts) {
     
     <div class="project">
         <div><h3><a href="/calculator">a portfolio rebalancing calculator</a></h3></div>
-        <p>Made <a href="/calculator">this</a> in Python earlier but realized hosting Flask websites is expensive. SvelteKit made it seem really easy.</p>
+        <p>Making <a href="/calculator">this</a> in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.</p>
     </div>
 </div>
 
