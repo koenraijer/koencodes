@@ -1,5 +1,4 @@
 <script context="module">
-export let open = false;
 const allPosts = import.meta.glob("./blog/*.md");
 
 let body = [];
@@ -24,9 +23,6 @@ for (let path in allPosts) {
 </script>
 
 <script>
-
-    import { HtmlTagHydration } from "svelte/internal";
-
     export let posts;
 
     const dateSortedPosts = posts.slice().sort((post1, post2) => {
@@ -39,7 +35,7 @@ for (let path in allPosts) {
 <h2 id="projects">Projects</h2>
 <div class="project-parent">
     <div class="project">
-        <div><h3><a href="https://www.vriendenvoorkika.nl/">vriendenvoorkika</a></h3></div>
+        <div><h3><a href="https://www.vriendenvoorkika.nl/">my charity website</a></h3></div>
         <p>Climbing a mountain for charity. Made a <a href="https://www.vriendenvoorkika.nl/">website</a> for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!</p>
     </div>
     
@@ -49,8 +45,13 @@ for (let path in allPosts) {
     </div>  
     
     <div class="project">
-        <div><h3><a href="/calculator">a portfolio rebalancing calculator</a></h3></div>
+        <div><h3><a href="/calculator">an investing calculator</a></h3></div>
         <p>Making <a href="/calculator">this</a> in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.</p>
+    </div>
+
+    <div class="project">
+        <div><h3><a href="/flowcharts/schildklier">interactive diagnostic flowchart</a></h3></div>
+        <p>Quick and dirty way to diagnose thyroid problems. Adapted from a flowchart by the NHG (Dutch GP association).</p>
     </div>
 </div>
 

@@ -4,7 +4,7 @@
 
     export let open = false;
 
-    export let duration = 0.4;
+    export let duration = 0.00001;
     export let width = '100vw';
     export let padding = '2rem';
     export let paddingTop = '4rem';
@@ -38,18 +38,15 @@
 
     $: switchTheme = theme === "dark" ? "light" : "dark";
 
-    $: open = open ;
-
-    $: console.log({open});
 </script>
 
 <nav >
     <BurgerButton {...burgerProps} bind:open={open}/>
 
     <SideMenu {...menuProps} bind:open={open}>
-      <h2><a on:click={() => (open = !open)} class="menuitem" href='/'>koen.wtf</a></h2>
+      <h2><a on:click={() => (open = !open)} class="menuitem" href='/'>home</a></h2>
       <h2><a on:click={() => (open = !open)} class="menuitem" href='/blog'>blog</a></h2>
-      <h2><a on:click={() => (open = !open)} class="menuitem" href="mailto:koenraijer@protonmail.com">mail</a></h2>
+      <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">email me</a></h2>
       <DarkMode bind:theme />
       <input name="darkmode" class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
     </SideMenu>
