@@ -61,7 +61,7 @@
     }
 </style>
 
-<button name="menu toggler" id="burger-button" class:open on:click={() => open = !open} style="transition: color {duration}s ease-in-out; color: {open ? menuColor : burgerColor};">
+<button name="Menu" aria-label="Menu" id="burger-button" class:open on:click={() => open = !open} style="transition: color {duration}s ease-in-out; color: {open ? menuColor : burgerColor};">
 	<svg class="hamburger" width=32 height=32>
         <line id="top" x1=0 y1=9    x2=32 y2=9    style="transition: transform {duration}s ease-in-out, opacity {duration}s ease-in-out;"/>
 		<line id="bot" x1=0 y1=28    x2=32 y2=28  style="transition: transform {duration}s ease-in-out, opacity {duration}s ease-in-out;"/>

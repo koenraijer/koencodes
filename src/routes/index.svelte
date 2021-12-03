@@ -23,6 +23,13 @@ for (let path in allPosts) {
 </script>
 
 <script>
+    import { seo } from "$lib/store.js"
+
+    $seo = {
+    title: "Home",
+    description: "This is the homepage, it contains a mission statement, project links and the latest blog posts."
+    }
+
     export let posts;
 
     const dateSortedPosts = posts.slice().sort((post1, post2) => {
@@ -46,7 +53,7 @@ for (let path in allPosts) {
     
     <div class="project">
         <div><h3><a href="/calculator">an investing calculator</a></h3></div>
-        <p>Making <a href="/calculator">this</a> in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.</p>
+        <p>Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.</p>
     </div>
 
     <div class="project">
@@ -55,11 +62,10 @@ for (let path in allPosts) {
     </div>
 </div>
 
-<h2 id="blogposts">Latest posts</h2>
+<div class="blog">
+    <h2 id="blogposts">Latest posts</h2>
 
-<ul>
     {#each posts.slice(0, 4) as { path, metadata: { title, tags, date } }}
-    <li>
         <h3><a href={`${path.replace(".md", "")}`}>{title}</a></h3>
         <span class="date">{new Date(date).toLocaleDateString()}</span>
         {#each tags as tag}
@@ -67,12 +73,11 @@ for (let path in allPosts) {
             <a href={`/tags/${tag}`}>#{tag}</a>&nbsp;
         </span>
         {/each}
-        
-    </li>
     <hr>
     {/each}
-</ul>
-<span style="float: right;"><a href="/blog">all posts &#10132;</a></span>
+    <span style="float: right;"><a href="/blog">all posts &#10132;</a></span>
+</div>
+
 
 
 <style lang="scss">
@@ -88,15 +93,16 @@ for (let path in allPosts) {
             }
         }
     }
-    p, span {
-        a {
-        color: #06D6A0;
-        text-decoration: none;
-        &:hover{
-            text-decoration: underline;
-        }
-    }
-}
+
+        p, span {
+            a {
+            color: #06D6A0;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+            }
+        }    
 
 h3 {
     a {
@@ -149,10 +155,7 @@ h3 {
 
     /***********************/
 
-    ul {
-        list-style: none;
-        padding-left: 0;
-        li {
+    .blog {
             h3 {
                 margin-bottom: 0.25rem;
                 a {
@@ -176,7 +179,16 @@ h3 {
                     color: #06D6A0;
                 }
             }
-        }
+
+            p, span {
+            a {
+            color: #06D6A0;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+            }
+        }   
     }
 
     .date {

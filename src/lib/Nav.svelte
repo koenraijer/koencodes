@@ -4,7 +4,7 @@
 
     export let open = false;
 
-    export let duration = 0.00001;
+    export let duration = 0.25;
     export let width = '100vw';
     export let padding = '2rem';
     export let paddingTop = '4rem';
@@ -44,11 +44,11 @@
     <BurgerButton {...burgerProps} bind:open={open}/>
 
     <SideMenu {...menuProps} bind:open={open}>
-      <h2><a on:click={() => (open = !open)} class="menuitem" href='/'>home</a></h2>
-      <h2><a on:click={() => (open = !open)} class="menuitem" href='/blog'>blog</a></h2>
-      <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">email me</a></h2>
+      <h2><a on:click={() => (open = !open)} class="menuitem" href='/'>Home</a></h2>
+      <h2><a on:click={() => (open = !open)} class="menuitem" href='/blog'>Blog</a></h2>
+      <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">Email me</a></h2>
       <DarkMode bind:theme />
-      <input name="darkmode" class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
+      <input aria-label="Darkmode" name="Darkmode" class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
     </SideMenu>
 
 </nav>

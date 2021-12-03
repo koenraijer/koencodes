@@ -23,6 +23,14 @@
 </script>
 
 <script>
+
+    import { seo } from "$lib/store.js"
+
+    $seo = {
+    title: "Blog",
+    description: "This is the blog, it contains all blog posts on the website."
+    }
+
     export let posts;
 
     const dateSortedPosts = posts.slice().sort((post1, post2) => {
@@ -31,9 +39,8 @@
 
 </script>
 
-<ul>
+<div class="blog">
     {#each dateSortedPosts as { path, metadata: { title, tags, date } }}
-    <li>
         <h3><a href={`/blog/${path.replace(".md", "")}`}>{title}</a></h3>
         <span class="date">{new Date(date).toLocaleDateString()}</span>
         {#each tags as tag}
@@ -41,16 +48,12 @@
             <a href={`/tags/${tag}`}>#{tag}</a>&nbsp;
         </span>
         {/each}
-    </li>
     <hr>
     {/each}
-</ul>
+</div>
 
 <style lang="scss">
-    ul {
-        list-style: none;
-        padding-left: 0;
-        li {
+    .blog {
             h3 {
                 margin-bottom: 0.25rem;
                 a {
@@ -78,7 +81,6 @@
                 }
                 
             }
-        }
     }
 
     .date {

@@ -39,11 +39,10 @@
         }
         
     }
-
 </style>
 
 <div class="sidemenu" style="width: {width}; left: {open ? '0px' : ('-' + width)}; transition: left {duration}s ease-in-out">
-    <div id="menu" style="padding: {padding}; padding-top: {paddingTop};">
+    <div id="menu" style="padding: {padding}; padding-top: {paddingTop}; display: {open ? 'block' : 'none'};">
         <slot></slot>
     </div>
 </div>
