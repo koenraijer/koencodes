@@ -3326,10 +3326,10 @@ var init_install_fetch = __esm({
           const readable = pair === null || pair === void 0 ? void 0 : pair.readable;
           assertRequiredField(readable, "readable", "ReadableWritablePair");
           assertReadableStream(readable, `${context} has member 'readable' that`);
-          const writable3 = pair === null || pair === void 0 ? void 0 : pair.writable;
-          assertRequiredField(writable3, "writable", "ReadableWritablePair");
-          assertWritableStream(writable3, `${context} has member 'writable' that`);
-          return { readable, writable: writable3 };
+          const writable2 = pair === null || pair === void 0 ? void 0 : pair.writable;
+          assertRequiredField(writable2, "writable", "ReadableWritablePair");
+          assertWritableStream(writable2, `${context} has member 'writable' that`);
+          return { readable, writable: writable2 };
         }
         class ReadableStream2 {
           constructor(rawUnderlyingSource = {}, rawStrategy = {}) {
@@ -3907,10 +3907,10 @@ var init_install_fetch = __esm({
           if (stream._backpressure) {
             const backpressureChangePromise = stream._backpressureChangePromise;
             return transformPromiseWith(backpressureChangePromise, () => {
-              const writable3 = stream._writable;
-              const state = writable3._state;
+              const writable2 = stream._writable;
+              const state = writable2._state;
               if (state === "erroring") {
-                throw writable3._storedError;
+                throw writable2._storedError;
               }
               return TransformStreamDefaultControllerPerformTransform(controller, chunk);
             });
@@ -4696,16 +4696,16 @@ var init_shims = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-81e4a60c.js
-var layout_81e4a60c_exports = {};
-__export(layout_81e4a60c_exports, {
+// .svelte-kit/output/server/chunks/__layout-7b8a9c00.js
+var layout_7b8a9c00_exports = {};
+__export(layout_7b8a9c00_exports, {
   default: () => _layout
 });
 var css$3, BurgerButton, css$2, SideMenu, DarkMode, css$1, Nav, css, _layout;
-var init_layout_81e4a60c = __esm({
-  ".svelte-kit/output/server/chunks/__layout-81e4a60c.js"() {
+var init_layout_7b8a9c00 = __esm({
+  ".svelte-kit/output/server/chunks/__layout-7b8a9c00.js"() {
     init_shims();
-    init_app_0f36cf3f();
+    init_app_b4c389c3();
     css$3 = {
       code: "button.svelte-1ompq2.svelte-1ompq2{display:inline-block;float:right;position:relative;margin-left:auto;right:0px;top:0px;margin:0.5rem;margin-right:0;z-index:10;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.hamburger.svelte-1ompq2 line.svelte-1ompq2{stroke:#111344;stroke-width:6}.dark .hamburger.svelte-1ompq2 line.svelte-1ompq2{stroke:white}.dark .open.svelte-1ompq2 .hamburger line.svelte-1ompq2{stroke:#111344}.open.svelte-1ompq2 .hamburger line.svelte-1ompq2{stroke:white}.open.svelte-1ompq2 #top.svelte-1ompq2{transform:translate(12px, 0) rotate(90deg)}.open.svelte-1ompq2 #bot.svelte-1ompq2{transform:translateY(32px) rotate(-90deg)}",
       map: null
@@ -4858,16 +4858,16 @@ var init_layout_81e4a60c = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__error-6f0e8d05.js
-var error_6f0e8d05_exports = {};
-__export(error_6f0e8d05_exports, {
+// .svelte-kit/output/server/chunks/__error-2b64c1d8.js
+var error_2b64c1d8_exports = {};
+__export(error_2b64c1d8_exports, {
   default: () => _error
 });
 var css2, _error;
-var init_error_6f0e8d05 = __esm({
-  ".svelte-kit/output/server/chunks/__error-6f0e8d05.js"() {
+var init_error_2b64c1d8 = __esm({
+  ".svelte-kit/output/server/chunks/__error-2b64c1d8.js"() {
     init_shims();
-    init_app_0f36cf3f();
+    init_app_b4c389c3();
     css2 = {
       code: "a.svelte-69aaan{color:inherit;text-decoration:none;opacity:0.5}a.svelte-69aaan:hover{text-decoration:underline}",
       map: null
@@ -4880,80 +4880,48 @@ var init_error_6f0e8d05 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/store-9d787b60.js
-function writable(value, start = noop) {
-  let stop;
-  const subscribers = new Set();
-  function set(new_value) {
-    if (safe_not_equal(value, new_value)) {
-      value = new_value;
-      if (stop) {
-        const run_queue = !subscriber_queue.length;
-        for (const subscriber of subscribers) {
-          subscriber[1]();
-          subscriber_queue.push(subscriber, value);
-        }
-        if (run_queue) {
-          for (let i = 0; i < subscriber_queue.length; i += 2) {
-            subscriber_queue[i][0](subscriber_queue[i + 1]);
-          }
-          subscriber_queue.length = 0;
-        }
-      }
-    }
-  }
-  function update(fn) {
-    set(fn(value));
-  }
-  function subscribe2(run2, invalidate = noop) {
-    const subscriber = [run2, invalidate];
-    subscribers.add(subscriber);
-    if (subscribers.size === 1) {
-      stop = start(set) || noop;
-    }
-    run2(value);
-    return () => {
-      subscribers.delete(subscriber);
-      if (subscribers.size === 0) {
-        stop();
-        stop = null;
-      }
-    };
-  }
-  return { set, update, subscribe: subscribe2 };
-}
-var subscriber_queue, seo;
-var init_store_9d787b60 = __esm({
-  ".svelte-kit/output/server/chunks/store-9d787b60.js"() {
+// .svelte-kit/output/server/chunks/Seo-fbd3de50.js
+var Seo;
+var init_Seo_fbd3de50 = __esm({
+  ".svelte-kit/output/server/chunks/Seo-fbd3de50.js"() {
     init_shims();
-    init_app_0f36cf3f();
-    subscriber_queue = [];
-    seo = writable({
-      title: "koen.wtf \xB7 noob tech hub",
-      description: "a personal online hub written in SvelteKit where I practice programming, write about tech and describe my projects."
+    init_app_b4c389c3();
+    Seo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { metaDescription: metaDescription5 } = $$props;
+      let { pageTitle: pageTitle5 } = $$props;
+      if ($$props.metaDescription === void 0 && $$bindings.metaDescription && metaDescription5 !== void 0)
+        $$bindings.metaDescription(metaDescription5);
+      if ($$props.pageTitle === void 0 && $$bindings.pageTitle && pageTitle5 !== void 0)
+        $$bindings.pageTitle(pageTitle5);
+      return `${$$result.head += `${$$result.title = `<title>koen.wtf \xB7 ${escape(pageTitle5)}</title>`, ""}<meta name="${"description"}" content="${"The online turf of a programming noob and medicine student. " + escape(metaDescription5)}" data-svelte="svelte-1v0jshd"><meta name="${"robots"}" content="${"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"}" data-svelte="svelte-1v0jshd"><html lang="${"en"}" data-svelte="svelte-1v0jshd"></html>`, ""}`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/firstpost-2bf0b27c.js
-var firstpost_2bf0b27c_exports = {};
-__export(firstpost_2bf0b27c_exports, {
+// .svelte-kit/output/server/chunks/firstpost-d1350ba7.js
+var firstpost_d1350ba7_exports = {};
+__export(firstpost_d1350ba7_exports, {
   default: () => Firstpost,
   metadata: () => metadata
 });
-var metadata, title, tags, date, Firstpost;
-var init_firstpost_2bf0b27c = __esm({
-  ".svelte-kit/output/server/chunks/firstpost-2bf0b27c.js"() {
+var metadata, title, tags, date, snippet, Firstpost;
+var init_firstpost_d1350ba7 = __esm({
+  ".svelte-kit/output/server/chunks/firstpost-d1350ba7.js"() {
     init_shims();
-    init_app_0f36cf3f();
+    init_app_b4c389c3();
+    init_Seo_fbd3de50();
     metadata = {
       "title": "First post",
       "tags": ["tech", "fun"],
-      "date": "2021-11-01T00:00:00.000Z"
+      "date": "2021-11-01T00:00:00.000Z",
+      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
     };
-    ({ title, tags, date } = metadata);
+    ({ title, tags, date, snippet } = metadata);
     Firstpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<h1>${escape(title)}</h1>
+      let pageTitle5 = title;
+      let metaDescription5 = snippet;
+      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle5, metaDescription: metaDescription5 }, {}, {})}
+<h1>${escape(title)}</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
 <p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
 <p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
@@ -4963,25 +4931,30 @@ var init_firstpost_2bf0b27c = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/secondpost-d5cb4853.js
-var secondpost_d5cb4853_exports = {};
-__export(secondpost_d5cb4853_exports, {
+// .svelte-kit/output/server/chunks/secondpost-81eda95b.js
+var secondpost_81eda95b_exports = {};
+__export(secondpost_81eda95b_exports, {
   default: () => Secondpost,
   metadata: () => metadata2
 });
-var metadata2, title2, tags2, date2, Secondpost;
-var init_secondpost_d5cb4853 = __esm({
-  ".svelte-kit/output/server/chunks/secondpost-d5cb4853.js"() {
+var metadata2, title2, tags2, date2, snippet2, Secondpost;
+var init_secondpost_81eda95b = __esm({
+  ".svelte-kit/output/server/chunks/secondpost-81eda95b.js"() {
     init_shims();
-    init_app_0f36cf3f();
+    init_app_b4c389c3();
+    init_Seo_fbd3de50();
     metadata2 = {
       "title": "How to get that money (for charity)",
       "tags": ["fun"],
-      "date": "2021-09-01T00:00:00.000Z"
+      "date": "2021-09-01T00:00:00.000Z",
+      "snippet": "Lorem ipsum dolor sit amet, "
     };
-    ({ title: title2, tags: tags2, date: date2 } = metadata2);
+    ({ title: title2, tags: tags2, date: date2, snippet: snippet2 } = metadata2);
     Secondpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<h1>${escape(title2)}</h1>
+      let pageTitle5 = title2;
+      let metaDescription5 = snippet2;
+      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle5, metaDescription: metaDescription5 }, {}, {})}
+<h1>${escape(title2)}</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
 <p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
 <p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
@@ -4991,25 +4964,30 @@ var init_secondpost_d5cb4853 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/thirdpost-b974971d.js
-var thirdpost_b974971d_exports = {};
-__export(thirdpost_b974971d_exports, {
+// .svelte-kit/output/server/chunks/thirdpost-e2ce54db.js
+var thirdpost_e2ce54db_exports = {};
+__export(thirdpost_e2ce54db_exports, {
   default: () => Thirdpost,
   metadata: () => metadata3
 });
-var metadata3, title3, tags3, date3, Thirdpost;
-var init_thirdpost_b974971d = __esm({
-  ".svelte-kit/output/server/chunks/thirdpost-b974971d.js"() {
+var metadata3, title3, tags3, date3, snippet3, Thirdpost;
+var init_thirdpost_e2ce54db = __esm({
+  ".svelte-kit/output/server/chunks/thirdpost-e2ce54db.js"() {
     init_shims();
-    init_app_0f36cf3f();
+    init_app_b4c389c3();
+    init_Seo_fbd3de50();
     metadata3 = {
       "title": "Third post",
       "tags": ["career"],
-      "date": "2021-12-01T00:00:00.000Z"
+      "date": "2021-12-01T00:00:00.000Z",
+      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
     };
-    ({ title: title3, tags: tags3, date: date3 } = metadata3);
+    ({ title: title3, tags: tags3, date: date3, snippet: snippet3 } = metadata3);
     Thirdpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<h1>${escape(title3)}</h1>
+      let pageTitle5 = title3;
+      let metaDescription5 = snippet3;
+      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle5, metaDescription: metaDescription5 }, {}, {})}
+<h1>${escape(title3)}</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
 <p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
 <p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
@@ -5019,23 +4997,23 @@ var init_thirdpost_b974971d = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-3ec8dfd3.js
-var index_3ec8dfd3_exports = {};
-__export(index_3ec8dfd3_exports, {
+// .svelte-kit/output/server/chunks/index-04a4c01b.js
+var index_04a4c01b_exports = {};
+__export(index_04a4c01b_exports, {
   default: () => Routes,
   load: () => load
 });
-var css3, allPosts, body, load, Routes;
-var init_index_3ec8dfd3 = __esm({
-  ".svelte-kit/output/server/chunks/index-3ec8dfd3.js"() {
+var css3, allPosts, body, load, pageTitle, metaDescription, Routes;
+var init_index_04a4c01b = __esm({
+  ".svelte-kit/output/server/chunks/index-04a4c01b.js"() {
     init_shims();
-    init_app_0f36cf3f();
-    init_store_9d787b60();
+    init_app_b4c389c3();
+    init_Seo_fbd3de50();
     css3 = {
       code: ".dark .project.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{border:white 2px solid;box-shadow:0 0 5px white}.dark .project.svelte-kgi98x h3.svelte-kgi98x.svelte-kgi98x{color:#111344}.dark .project.svelte-kgi98x div.svelte-kgi98x.svelte-kgi98x{background:white}p.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x,span.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x{color:#06D6A0;text-decoration:none}p.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x:hover,span.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x:hover{text-decoration:underline}h3.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x{color:inherit;text-decoration:none}h3.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x:hover{text-decoration:underline}.project-parent.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{display:grid;grid-gap:1rem}@media screen and (min-width: 600px){.project-parent.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{grid-template-columns:1fr 1fr}}.project.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}.project.svelte-kgi98x p.svelte-kgi98x.svelte-kgi98x{padding:0.5rem 0 0;margin:0}.project.svelte-kgi98x h3.svelte-kgi98x.svelte-kgi98x{padding:0;padding-left:0.5rem;margin:0;font-weight:normal;color:white}.project.svelte-kgi98x div.svelte-kgi98x.svelte-kgi98x{width:calc(100% + 1rem);margin:-0.5rem -0.5rem 0;padding:0.25rem 0 0.25rem;background:#111344}#projects.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x,#blogposts.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{margin-left:-0.5rem}@media screen and (min-width: 600px){#projects.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x,#blogposts.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{margin-left:-1rem}}.blog.svelte-kgi98x h3.svelte-kgi98x.svelte-kgi98x{margin-bottom:0.25rem}.blog.svelte-kgi98x h3.svelte-kgi98x a.svelte-kgi98x:hover{text-decoration:underline}.blog.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x{color:inherit;text-decoration:none}.blog.svelte-kgi98x .tag a.svelte-kgi98x.svelte-kgi98x{color:#06D6A0}.blog.svelte-kgi98x p.svelte-kgi98x a.svelte-kgi98x,.blog.svelte-kgi98x span a.svelte-kgi98x.svelte-kgi98x{color:#06D6A0;text-decoration:none}.blog.svelte-kgi98x p.svelte-kgi98x a.svelte-kgi98x:hover,.blog.svelte-kgi98x span a.svelte-kgi98x.svelte-kgi98x:hover{text-decoration:underline}.date.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{opacity:0.5;font-size:1rem}",
       map: null
     };
-    allPosts = { "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_2bf0b27c(), firstpost_2bf0b27c_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_d5cb4853(), secondpost_d5cb4853_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_b974971d(), thirdpost_b974971d_exports)) };
+    allPosts = { "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_d1350ba7(), firstpost_d1350ba7_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_81eda95b(), secondpost_81eda95b_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_e2ce54db(), thirdpost_e2ce54db_exports)) };
     body = [];
     for (let path in allPosts) {
       body.push(allPosts[path]().then(({ metadata: metadata4 }) => {
@@ -5046,13 +5024,9 @@ var init_index_3ec8dfd3 = __esm({
       const posts = await Promise.all(body);
       return { props: { posts } };
     };
+    pageTitle = "home";
+    metaDescription = "The homepage: a collection of projects and blog posts.";
     Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let $seo, $$unsubscribe_seo;
-      $$unsubscribe_seo = subscribe(seo, (value) => $seo = value);
-      set_store_value(seo, $seo = {
-        title: "Home",
-        description: "This is the homepage, it contains a mission statement, project links and the latest blog posts."
-      }, $seo);
       let { posts } = $$props;
       posts.slice().sort((post1, post2) => {
         return new Date(post2.metadata.date) - new Date(post1.metadata.date);
@@ -5060,8 +5034,9 @@ var init_index_3ec8dfd3 = __esm({
       if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0)
         $$bindings.posts(posts);
       $$result.css.add(css3);
-      $$unsubscribe_seo();
-      return `<h2 style="${"font-weight: normal;"}">hi! I might blog here about about beginner web development (I&#39;m a noob). I also study medicine. Welcome to my online hub.</h2>
+      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle, metaDescription }, {}, {})}
+
+<h2 style="${"font-weight: normal;"}">hi! I might blog here about about beginner web development (I&#39;m a noob). I also study medicine. Welcome to my online hub.</h2>
 
 <h2 id="${"projects"}" class="${"svelte-kgi98x"}">Projects</h2>
 <div class="${"project-parent svelte-kgi98x"}"><div class="${"project svelte-kgi98x"}"><div class="${"svelte-kgi98x"}"><h3 class="${"svelte-kgi98x"}"><a href="${"https://www.vriendenvoorkika.nl/"}" class="${"svelte-kgi98x"}">my charity website</a></h3></div>
@@ -5089,20 +5064,23 @@ var init_index_3ec8dfd3 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/calculator-f124169d.js
-var calculator_f124169d_exports = {};
-__export(calculator_f124169d_exports, {
+// .svelte-kit/output/server/chunks/calculator-6031fa03.js
+var calculator_6031fa03_exports = {};
+__export(calculator_6031fa03_exports, {
   default: () => Calculator
 });
-var css4, Calculator;
-var init_calculator_f124169d = __esm({
-  ".svelte-kit/output/server/chunks/calculator-f124169d.js"() {
+var css4, pageTitle2, metaDescription2, Calculator;
+var init_calculator_6031fa03 = __esm({
+  ".svelte-kit/output/server/chunks/calculator-6031fa03.js"() {
     init_shims();
-    init_app_0f36cf3f();
+    init_app_b4c389c3();
+    init_Seo_fbd3de50();
     css4 = {
       code: '.explanation.svelte-v28rry.svelte-v28rry{display:grid;padding:1rem 0 1rem;grid-template-columns:1fr}@media screen and (min-width: 600px){.explanation.svelte-v28rry.svelte-v28rry{grid-template-columns:1fr 1fr}}.explanation-pie.svelte-v28rry.svelte-v28rry{padding:1rem 0 0;justify-self:center}@media screen and (min-width: 600px){.explanation-pie.svelte-v28rry.svelte-v28rry{padding:0}}h3.svelte-v28rry.svelte-v28rry{font-weight:normal;margin:0}svg.svelte-v28rry.svelte-v28rry{width:10rem;height:10rem}svg.svelte-v28rry text.svelte-v28rry{font-weight:bold;fill:white}.dark .circle.svelte-v28rry.svelte-v28rry{fill:#6E71DB}a.svelte-v28rry.svelte-v28rry{color:#06D6A0;text-decoration:none}a.svelte-v28rry.svelte-v28rry:hover{text-decoration:underline}ol.svelte-v28rry.svelte-v28rry{list-style:none;margin:0;padding:0}ol.svelte-v28rry li.svelte-v28rry{display:grid;grid-template-columns:1fr;grid-gap:0.25rem;padding-bottom:1rem}span.svelte-v28rry.svelte-v28rry{color:#06D6A0;font-weight:bold}form.svelte-v28rry.svelte-v28rry{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}input[type="number"].svelte-v28rry.svelte-v28rry{font-size:inherit;box-shadow:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;outline:1px black solid;padding:0.25rem;margin:0 0.25rem 0;width:auto}label.svelte-v28rry.svelte-v28rry{padding-left:0.25rem}.svelte-v28rry.svelte-v28rry::-moz-focus-inner{border:0;padding:0}input[type="range"].svelte-v28rry.svelte-v28rry{-webkit-appearance:none;width:auto;margin:0.25rem 0 0.25rem;padding:0 0.25rem 0}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{-webkit-appearance:none;height:20px;width:20px;background:#06D6A0;margin-top:-7.5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{height:15px;width:15px;margin-top:-5px}}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:20px;width:20px;background:#06D6A0;margin-top:-5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:15px;width:15px;margin-top:-5px}}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:white;height:5px}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:white;height:5px}.dark form.svelte-v28rry.svelte-v28rry{box-shadow:0 0 5px white;border:white 2px solid}',
       map: null
     };
+    pageTitle2 = "Portfolio rebalancing calculator";
+    metaDescription2 = "An interactive calculator meant to rebalance an investing portfolio consisting of volatile assets such as stocks, and stable assets such as bonds.";
     Calculator = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let totalPortfValue;
       let actPercVolatile;
@@ -5114,7 +5092,10 @@ var init_calculator_f124169d = __esm({
       totalPortfValue = volatileAssets + stableAssets;
       actPercVolatile = volatileAssets / totalPortfValue * 100;
       diffActAndDesVolatile = volatileAssets - desiredPercVolatile / 100 * totalPortfValue;
-      return `<main class="${"svelte-v28rry"}"><h1 class="${"svelte-v28rry"}">Portfolio rebalancing calculator</h1>
+      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle2, metaDescription: metaDescription2 }, {}, {})} 
+
+
+<main class="${"svelte-v28rry"}"><h1 class="${"svelte-v28rry"}">Portfolio rebalancing calculator</h1>
     
     <form name="${"calculator"}" class="${"svelte-v28rry"}"><input type="${"hidden"}" name="${"form-name"}" value="${"contact"}" class="${"svelte-v28rry"}">
         <ol class="${"svelte-v28rry"}"><li class="${"svelte-v28rry"}"><label for="${"field-volatile"}" class="${"svelte-v28rry"}">Current money in volatile assets?</label>
@@ -5145,20 +5126,23 @@ var init_calculator_f124169d = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-bab63b17.js
-var index_bab63b17_exports = {};
-__export(index_bab63b17_exports, {
+// .svelte-kit/output/server/chunks/index-c0395021.js
+var index_c0395021_exports = {};
+__export(index_c0395021_exports, {
   default: () => Schildklier
 });
-var css5, Schildklier;
-var init_index_bab63b17 = __esm({
-  ".svelte-kit/output/server/chunks/index-bab63b17.js"() {
+var css5, pageTitle3, metaDescription3, Schildklier;
+var init_index_c0395021 = __esm({
+  ".svelte-kit/output/server/chunks/index-c0395021.js"() {
     init_shims();
-    init_app_0f36cf3f();
+    init_app_b4c389c3();
+    init_Seo_fbd3de50();
     css5 = {
       code: "button.svelte-1dd3gzp{font-family:inherit;font-size:inherit;padding:0.25rem;background:transparent;box-shadow:none;outline:none;border:2px solid #111344}button.svelte-1dd3gzp:hover{outline:2px solid #06D6A0;cursor:pointer}.dark button.svelte-1dd3gzp{color:white;border:2px solid white}a.svelte-1dd3gzp{color:#06D6A0;text-decoration:none}a.svelte-1dd3gzp:hover{text-decoration:underline}",
       map: null
     };
+    pageTitle3 = "Interactive flowchart for diagnosing thyroid disease";
+    metaDescription3 = "An interactive flowchart for diagnosing thyroid disease, adapted from a guideline by the Dutch Association of General Practitioners.";
     Schildklier = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let start;
       let tsh;
@@ -5189,7 +5173,8 @@ var init_index_bab63b17 = __esm({
       struma = null;
       nodus = null;
       solnodus = null;
-      return `<h1>Diagnostiek bij vermoeden van een schildklierfunctiestoornis</h1>
+      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle3, metaDescription: metaDescription3 }, {}, {})}
+<h1>Diagnostiek bij vermoeden van een schildklierfunctiestoornis</h1>
 <p><i>This interactive flowchart is adapted from the <a href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-1dd3gzp"}">NHG-Standaard Schildklieraandoeningen</a>, and specifically from <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-1dd3gzp"}">this flowchart</a>. I might have made mistakes so plz don&#39;t use it.</i></p>
 <p style="${"padding-bottom: 0.5rem;"}">Dit interactieve stroomdiagram is een aanpassing van de <a href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-1dd3gzp"}">NHG-Standaard Schildklieraandoeningen</a>, en specifiek van <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-1dd3gzp"}">dit stroomdiagram</a>. Er kunnen zeker nog fouten in zitten!</p>
 
@@ -5248,23 +5233,23 @@ ${tsh ? `${tsh === 3 ? `<p>Euthyreo\xEFdie</p>` : `${tsh === 1 ? `<p>Is het Vrij
   }
 });
 
-// .svelte-kit/output/server/chunks/index-693a0e9b.js
-var index_693a0e9b_exports = {};
-__export(index_693a0e9b_exports, {
+// .svelte-kit/output/server/chunks/index-c8287d87.js
+var index_c8287d87_exports = {};
+__export(index_c8287d87_exports, {
   default: () => Blog,
   load: () => load2
 });
-var css6, allPosts2, body2, load2, Blog;
-var init_index_693a0e9b = __esm({
-  ".svelte-kit/output/server/chunks/index-693a0e9b.js"() {
+var css6, allPosts2, body2, load2, pageTitle4, metaDescription4, Blog;
+var init_index_c8287d87 = __esm({
+  ".svelte-kit/output/server/chunks/index-c8287d87.js"() {
     init_shims();
-    init_app_0f36cf3f();
-    init_store_9d787b60();
+    init_app_b4c389c3();
+    init_Seo_fbd3de50();
     css6 = {
       code: ".blog.svelte-ot3rxw h3.svelte-ot3rxw{margin-bottom:0.25rem}.blog.svelte-ot3rxw h3 a.svelte-ot3rxw:hover{text-decoration:underline}.blog.svelte-ot3rxw a.svelte-ot3rxw{color:inherit;text-decoration:none}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw{color:#06D6A0}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw:hover{text-decoration:underline}.date.svelte-ot3rxw.svelte-ot3rxw{opacity:0.5;font-size:1rem}",
       map: null
     };
-    allPosts2 = { "./firstpost.md": () => Promise.resolve().then(() => (init_firstpost_2bf0b27c(), firstpost_2bf0b27c_exports)), "./secondpost.md": () => Promise.resolve().then(() => (init_secondpost_d5cb4853(), secondpost_d5cb4853_exports)), "./thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_b974971d(), thirdpost_b974971d_exports)) };
+    allPosts2 = { "./firstpost.md": () => Promise.resolve().then(() => (init_firstpost_d1350ba7(), firstpost_d1350ba7_exports)), "./secondpost.md": () => Promise.resolve().then(() => (init_secondpost_81eda95b(), secondpost_81eda95b_exports)), "./thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_e2ce54db(), thirdpost_e2ce54db_exports)) };
     body2 = [];
     for (let path in allPosts2) {
       body2.push(allPosts2[path]().then(({ metadata: metadata4 }) => {
@@ -5275,13 +5260,9 @@ var init_index_693a0e9b = __esm({
       const posts = await Promise.all(body2);
       return { props: { posts } };
     };
+    pageTitle4 = "Blog";
+    metaDescription4 = "Collection of all blog posts on the website.";
     Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let $seo, $$unsubscribe_seo;
-      $$unsubscribe_seo = subscribe(seo, (value) => $seo = value);
-      set_store_value(seo, $seo = {
-        title: "Blog",
-        description: "This is the blog, it contains all blog posts on the website."
-      }, $seo);
       let { posts } = $$props;
       const dateSortedPosts = posts.slice().sort((post1, post2) => {
         return new Date(post2.metadata.date) - new Date(post1.metadata.date);
@@ -5289,8 +5270,9 @@ var init_index_693a0e9b = __esm({
       if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0)
         $$bindings.posts(posts);
       $$result.css.add(css6);
-      $$unsubscribe_seo();
-      return `<div class="${"blog svelte-ot3rxw"}">${each(dateSortedPosts, ({ path, metadata: { title: title4, tags: tags4, date: date4 } }) => `<h3 class="${"svelte-ot3rxw"}"><a${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)} class="${"svelte-ot3rxw"}">${escape(title4)}</a></h3>
+      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle4, metaDescription: metaDescription4 }, {}, {})}
+
+<div class="${"blog svelte-ot3rxw"}">${each(dateSortedPosts, ({ path, metadata: { title: title4, tags: tags4, date: date4 } }) => `<h3 class="${"svelte-ot3rxw"}"><a${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)} class="${"svelte-ot3rxw"}">${escape(title4)}</a></h3>
         <span class="${"date svelte-ot3rxw"}">${escape(new Date(date4).toLocaleDateString())}</span>
         ${each(tags4, (tag) => `<span class="${"tag"}"><a${add_attribute("href", `/tags/${tag}`, 0)} class="${"svelte-ot3rxw"}">#${escape(tag)}</a>\xA0
         </span>`)}
@@ -5300,22 +5282,22 @@ var init_index_693a0e9b = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/_tag_-fbf6bbdf.js
-var tag_fbf6bbdf_exports = {};
-__export(tag_fbf6bbdf_exports, {
+// .svelte-kit/output/server/chunks/_tag_-9851f48d.js
+var tag_9851f48d_exports = {};
+__export(tag_9851f48d_exports, {
   default: () => U5Btagu5D,
   load: () => load3
 });
 var css7, allPosts3, body3, load3, U5Btagu5D;
-var init_tag_fbf6bbdf = __esm({
-  ".svelte-kit/output/server/chunks/_tag_-fbf6bbdf.js"() {
+var init_tag_9851f48d = __esm({
+  ".svelte-kit/output/server/chunks/_tag_-9851f48d.js"() {
     init_shims();
-    init_app_0f36cf3f();
+    init_app_b4c389c3();
     css7 = {
       code: "ul.svelte-i2c5dc.svelte-i2c5dc{list-style:none;padding-left:0}ul.svelte-i2c5dc li h3.svelte-i2c5dc{margin-bottom:0}ul.svelte-i2c5dc li h3 a.svelte-i2c5dc:hover{text-decoration:underline}ul.svelte-i2c5dc li a.svelte-i2c5dc{color:inherit;text-decoration:none}ul.svelte-i2c5dc li .tag a.svelte-i2c5dc:hover{opacity:0.5}.date.svelte-i2c5dc.svelte-i2c5dc{opacity:0.5;font-size:1rem}",
       map: null
     };
-    allPosts3 = { "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_2bf0b27c(), firstpost_2bf0b27c_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_d5cb4853(), secondpost_d5cb4853_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_b974971d(), thirdpost_b974971d_exports)) };
+    allPosts3 = { "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_d1350ba7(), firstpost_d1350ba7_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_81eda95b(), secondpost_81eda95b_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_e2ce54db(), thirdpost_e2ce54db_exports)) };
     body3 = [];
     for (let path in allPosts3) {
       body3.push(allPosts3[path]().then(({ metadata: metadata4 }) => {
@@ -5350,7 +5332,7 @@ var init_tag_fbf6bbdf = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/app-0f36cf3f.js
+// .svelte-kit/output/server/chunks/app-b4c389c3.js
 function get_single_valued_header(headers, key) {
   const value = headers[key];
   if (Array.isArray(value)) {
@@ -5651,28 +5633,28 @@ function stringifyString(str) {
   result += '"';
   return result;
 }
-function noop$1() {
+function noop() {
 }
-function safe_not_equal$1(a, b) {
+function safe_not_equal(a, b) {
   return a != a ? b == b : a !== b || (a && typeof a === "object" || typeof a === "function");
 }
-function writable2(value, start = noop$1) {
+function writable(value, start = noop) {
   let stop;
   const subscribers = new Set();
   function set(new_value) {
-    if (safe_not_equal$1(value, new_value)) {
+    if (safe_not_equal(value, new_value)) {
       value = new_value;
       if (stop) {
-        const run_queue = !subscriber_queue2.length;
+        const run_queue = !subscriber_queue.length;
         for (const subscriber of subscribers) {
           subscriber[1]();
-          subscriber_queue2.push(subscriber, value);
+          subscriber_queue.push(subscriber, value);
         }
         if (run_queue) {
-          for (let i = 0; i < subscriber_queue2.length; i += 2) {
-            subscriber_queue2[i][0](subscriber_queue2[i + 1]);
+          for (let i = 0; i < subscriber_queue.length; i += 2) {
+            subscriber_queue[i][0](subscriber_queue[i + 1]);
           }
-          subscriber_queue2.length = 0;
+          subscriber_queue.length = 0;
         }
       }
     }
@@ -5680,11 +5662,11 @@ function writable2(value, start = noop$1) {
   function update(fn) {
     set(fn(value));
   }
-  function subscribe2(run2, invalidate = noop$1) {
+  function subscribe(run2, invalidate = noop) {
     const subscriber = [run2, invalidate];
     subscribers.add(subscriber);
     if (subscribers.size === 1) {
-      stop = start(set) || noop$1;
+      stop = start(set) || noop;
     }
     run2(value);
     return () => {
@@ -5695,7 +5677,7 @@ function writable2(value, start = noop$1) {
       }
     };
   }
-  return { set, update, subscribe: subscribe2 };
+  return { set, update, subscribe };
 }
 function hash(value) {
   let hash2 = 5381;
@@ -5768,11 +5750,11 @@ async function render_response({
         is_private = true;
       maxage = loaded.maxage;
     });
-    const session = writable2($session);
+    const session = writable($session);
     const props = {
       stores: {
-        page: writable2(null),
-        navigating: writable2(null),
+        page: writable(null),
+        navigating: writable(null),
         session
       },
       page,
@@ -6545,8 +6527,6 @@ async function respond(incoming, options2, state = {}) {
     };
   }
 }
-function noop() {
-}
 function run(fn) {
   return fn();
 }
@@ -6555,20 +6535,6 @@ function blank_object() {
 }
 function run_all(fns) {
   fns.forEach(run);
-}
-function safe_not_equal(a, b) {
-  return a != a ? b == b : a !== b || (a && typeof a === "object" || typeof a === "function");
-}
-function subscribe(store, ...callbacks) {
-  if (store == null) {
-    return noop;
-  }
-  const unsub = store.subscribe(...callbacks);
-  return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
-}
-function set_store_value(store, ret, value) {
-  store.set(value);
-  return ret;
 }
 function custom_event(type, detail, bubbles = false) {
   const e = document.createEvent("CustomEvent");
@@ -6671,9 +6637,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-5bb010dc.js",
+      file: assets + "/_app/start-59064fc6.js",
       css: [assets + "/_app/assets/start-61d1577b.css"],
-      js: [assets + "/_app/start-5bb010dc.js", assets + "/_app/chunks/vendor-0425b063.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
+      js: [assets + "/_app/start-59064fc6.js", assets + "/_app/chunks/vendor-46806856.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
     },
     fetched: void 0,
     floc: false,
@@ -6716,9 +6682,9 @@ function render(request, {
   const host = request.headers["host"];
   return respond({ ...request, host }, options, { prerender });
 }
-var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, absolute, scheme, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue2, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css8, Root, base, assets, user_hooks, template, options, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_0f36cf3f = __esm({
-  ".svelte-kit/output/server/chunks/app-0f36cf3f.js"() {
+var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, absolute, scheme, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css8, Root, base, assets, user_hooks, template, options, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
+var init_app_b4c389c3 = __esm({
+  ".svelte-kit/output/server/chunks/app-b4c389c3.js"() {
     init_shims();
     __accessCheck = (obj, member, msg) => {
       if (!member.has(obj))
@@ -6759,7 +6725,7 @@ var init_app_0f36cf3f = __esm({
     };
     objectProtoOwnPropertyNames = Object.getOwnPropertyNames(Object.prototype).sort().join("\0");
     Promise.resolve();
-    subscriber_queue2 = [];
+    subscriber_queue = [];
     escape_json_string_in_html_dict = {
       '"': '\\"',
       "<": "\\u003C",
@@ -6956,18 +6922,18 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_81e4a60c(), layout_81e4a60c_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_6f0e8d05(), error_6f0e8d05_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_3ec8dfd3(), index_3ec8dfd3_exports)),
-      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_f124169d(), calculator_f124169d_exports)),
-      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_bab63b17(), index_bab63b17_exports)),
-      "src/routes/blog/index.svelte": () => Promise.resolve().then(() => (init_index_693a0e9b(), index_693a0e9b_exports)),
-      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_d5cb4853(), secondpost_d5cb4853_exports)),
-      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_2bf0b27c(), firstpost_2bf0b27c_exports)),
-      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_b974971d(), thirdpost_b974971d_exports)),
-      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_fbf6bbdf(), tag_fbf6bbdf_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_7b8a9c00(), layout_7b8a9c00_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_2b64c1d8(), error_2b64c1d8_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_04a4c01b(), index_04a4c01b_exports)),
+      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_6031fa03(), calculator_6031fa03_exports)),
+      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_c0395021(), index_c0395021_exports)),
+      "src/routes/blog/index.svelte": () => Promise.resolve().then(() => (init_index_c8287d87(), index_c8287d87_exports)),
+      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_81eda95b(), secondpost_81eda95b_exports)),
+      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_d1350ba7(), firstpost_d1350ba7_exports)),
+      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_e2ce54db(), thirdpost_e2ce54db_exports)),
+      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_9851f48d(), tag_9851f48d_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-6f176d90.js", "css": ["assets/pages/__layout.svelte-da9c71f5.css"], "js": ["pages/__layout.svelte-6f176d90.js", "chunks/vendor-0425b063.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-aef9e12e.js", "css": ["assets/pages/__error.svelte-89d5cf62.css"], "js": ["pages/__error.svelte-aef9e12e.js", "chunks/vendor-0425b063.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-b31a4d29.js", "css": ["assets/pages/index.svelte-22afd3fd.css"], "js": ["pages/index.svelte-b31a4d29.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-0425b063.js", "chunks/store-2a82956e.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-47a1c607.js", "css": ["assets/pages/calculator.svelte-89386e7c.css"], "js": ["pages/calculator.svelte-47a1c607.js", "chunks/vendor-0425b063.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-7b9d731b.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-98a7782a.css"], "js": ["pages/flowcharts/schildklier/index.svelte-7b9d731b.js", "chunks/vendor-0425b063.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-c5e03418.js", "css": ["assets/pages/blog/index.svelte-deb39da5.css"], "js": ["pages/blog/index.svelte-c5e03418.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-0425b063.js", "chunks/store-2a82956e.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-42f88b3b.js", "css": [], "js": ["pages/blog/secondpost.md-42f88b3b.js", "chunks/vendor-0425b063.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-93531bda.js", "css": [], "js": ["pages/blog/firstpost.md-93531bda.js", "chunks/vendor-0425b063.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-65fb8c3f.js", "css": [], "js": ["pages/blog/thirdpost.md-65fb8c3f.js", "chunks/vendor-0425b063.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-0806ef82.js", "css": ["assets/pages/tags/_tag_.svelte-d1ba6ac8.css"], "js": ["pages/tags/_tag_.svelte-0806ef82.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-0425b063.js"], "styles": [] } };
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-cfa7c24b.js", "css": ["assets/pages/__layout.svelte-da9c71f5.css"], "js": ["pages/__layout.svelte-cfa7c24b.js", "chunks/vendor-46806856.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-1dfa2340.js", "css": ["assets/pages/__error.svelte-89d5cf62.css"], "js": ["pages/__error.svelte-1dfa2340.js", "chunks/vendor-46806856.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-67127da0.js", "css": ["assets/pages/index.svelte-22afd3fd.css"], "js": ["pages/index.svelte-67127da0.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-46806856.js", "chunks/Seo-f5fa1abb.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-fdd9b1f0.js", "css": ["assets/pages/calculator.svelte-89386e7c.css"], "js": ["pages/calculator.svelte-fdd9b1f0.js", "chunks/vendor-46806856.js", "chunks/Seo-f5fa1abb.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-26844ad5.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-98a7782a.css"], "js": ["pages/flowcharts/schildklier/index.svelte-26844ad5.js", "chunks/vendor-46806856.js", "chunks/Seo-f5fa1abb.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-55b37058.js", "css": ["assets/pages/blog/index.svelte-deb39da5.css"], "js": ["pages/blog/index.svelte-55b37058.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-46806856.js", "chunks/Seo-f5fa1abb.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-17a4cd0f.js", "css": [], "js": ["pages/blog/secondpost.md-17a4cd0f.js", "chunks/vendor-46806856.js", "chunks/Seo-f5fa1abb.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-4e0dec1f.js", "css": [], "js": ["pages/blog/firstpost.md-4e0dec1f.js", "chunks/vendor-46806856.js", "chunks/Seo-f5fa1abb.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-01f24443.js", "css": [], "js": ["pages/blog/thirdpost.md-01f24443.js", "chunks/vendor-46806856.js", "chunks/Seo-f5fa1abb.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-d6ffb739.js", "css": ["assets/pages/tags/_tag_.svelte-d1ba6ac8.css"], "js": ["pages/tags/_tag_.svelte-d6ffb739.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-46806856.js"], "styles": [] } };
   }
 });
 
@@ -7020,7 +6986,7 @@ function getRawBody(req) {
 
 // .svelte-kit/output/server/app.js
 init_shims();
-init_app_0f36cf3f();
+init_app_b4c389c3();
 
 // .svelte-kit/vercel/entry.js
 init();

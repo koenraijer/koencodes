@@ -24,20 +24,18 @@
 
 <script>
 
-    import { seo } from "$lib/store.js"
-
-    $seo = {
-    title: "Blog",
-    description: "This is the blog, it contains all blog posts on the website."
-    }
-
     export let posts;
 
     const dateSortedPosts = posts.slice().sort((post1, post2) => {
         return new Date(post2.metadata.date) - new Date(post1.metadata.date);
     });
+    import Seo from '$lib/Seo.svelte'
+
+let pageTitle = "Blog"
+let metaDescription = "Collection of all blog posts on the website."
 
 </script>
+<Seo {pageTitle}{metaDescription}/>
 
 <div class="blog">
     {#each dateSortedPosts as { path, metadata: { title, tags, date } }}

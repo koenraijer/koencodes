@@ -23,19 +23,19 @@ for (let path in allPosts) {
 </script>
 
 <script>
-    import { seo } from "$lib/store.js"
+    import Seo from '$lib/Seo.svelte'
 
-    $seo = {
-    title: "Home",
-    description: "This is the homepage, it contains a mission statement, project links and the latest blog posts."
-    }
-
+    let pageTitle = "home"
+    let metaDescription = "The homepage: a collection of projects and blog posts."
+    
     export let posts;
 
     const dateSortedPosts = posts.slice().sort((post1, post2) => {
         return new Date(post2.metadata.date) - new Date(post1.metadata.date);
     });
 </script>
+
+<Seo {pageTitle} {metaDescription}/>
 
 <h2 style="font-weight: normal;">hi! I might blog here about about beginner web development (I'm a noob). I also study medicine. Welcome to my online hub.</h2>
 

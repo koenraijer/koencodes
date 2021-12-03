@@ -16,8 +16,15 @@
     ];
 
     $: calculatorData[0].value = volatileAssets;
-    $: calculatorData[1].value = stableAssets;  
+    $: calculatorData[1].value = stableAssets; 
+    import Seo from '$lib/Seo.svelte'
+
+let pageTitle = "Portfolio rebalancing calculator"
+let metaDescription = "An interactive calculator meant to rebalance an investing portfolio consisting of volatile assets such as stocks, and stable assets such as bonds."
+
 </script>
+<Seo {pageTitle}{metaDescription}/> 
+
 
 <main>
     <h1>Portfolio rebalancing calculator</h1>

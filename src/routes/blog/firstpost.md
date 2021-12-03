@@ -4,7 +4,17 @@ tags:
     - tech
     - fun
 date: 2021-11-01
+snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" 
 ---
+<script>
+    import Seo from '$lib/Seo.svelte'
+
+    let pageTitle = title
+    let metaDescription = snippet
+    
+</script>
+
+<Seo {pageTitle}{metaDescription}/>
 
 # {title}
 

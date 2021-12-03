@@ -3,7 +3,18 @@ title: Third post
 tags: 
     - career
 date: 2021-12-01
+snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
 ---
+
+<script>
+    import Seo from '$lib/Seo.svelte'
+
+    let pageTitle = title
+    let metaDescription = snippet
+    
+</script>
+
+<Seo {pageTitle}{metaDescription}/>
 
 # {title}
 
