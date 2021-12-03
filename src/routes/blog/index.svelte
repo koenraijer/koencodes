@@ -31,7 +31,7 @@
     });
     import Seo from '$lib/Seo.svelte'
 
-let pageTitle = "Blog"
+let pageTitle = "blog"
 let metaDescription = "Collection of all blog posts on the website."
 
 </script>

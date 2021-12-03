@@ -33,7 +33,7 @@
 
     import Seo from '$lib/Seo.svelte'
 
-    let pageTitle = "Interactive flowchart for diagnosing thyroid disease"
+    let pageTitle = "interactive flowchart for diagnosing thyroid disease"
     let metaDescription = "An interactive flowchart for diagnosing thyroid disease, adapted from a guideline by the Dutch Association of General Practitioners."
     
 </script>

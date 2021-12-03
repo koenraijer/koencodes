@@ -19,7 +19,7 @@
     $: calculatorData[1].value = stableAssets; 
     import Seo from '$lib/Seo.svelte'
 
-let pageTitle = "Portfolio rebalancing calculator"
+let pageTitle = "portfolio rebalancing calculator"
 let metaDescription = "An interactive calculator meant to rebalance an investing portfolio consisting of volatile assets such as stocks, and stable assets such as bonds."
 
 </script>
@@ -84,7 +84,7 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
     </div>
 
     <hr>
-    <p>This calculator is intended for people who follow a long-term investment strategy such as the <a href="https://www.bogleheads.org/wiki/Bogleheads®_investment_philosophy">Boglehead method</a>, where there's a volatile part and a stable part: stocks and bonds.</p>
+    <p>This calculator is intended for people who follow a long-term investment strategy such as the <a target="_blank" href="https://www.bogleheads.org/wiki/Bogleheads®_investment_philosophy">Boglehead method</a>, where there's a volatile part and a stable part: stocks and bonds.</p>
     <p>In recent years, low interest rates have made bonds unattractive. People now opt for deposit savings or cash buffers. Stocks are still in high demand, but crypto currencies are gaining ground.</p> 
     <p>None of this is relevant for this calculator, as long as there is a volatile and a stable asset that you're trying to balance!</p>
 

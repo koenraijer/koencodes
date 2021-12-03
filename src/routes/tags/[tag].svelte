@@ -32,7 +32,15 @@
 <script>
     export let filteredPosts;
     export let tag;
+
+    import Seo from '$lib/Seo.svelte'
+
+    let pageTitle = tag
+    let metaDescription = "All blog posts about {tag}";
+    
 </script>
+
+<Seo {pageTitle}{metaDescription}/>
 
 <h1>{tag.replace(/^\w/, (c) => c.toUpperCase())}</h1>
 

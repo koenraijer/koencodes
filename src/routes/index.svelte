@@ -42,8 +42,8 @@ for (let path in allPosts) {
 <h2 id="projects">Projects</h2>
 <div class="project-parent">
     <div class="project">
-        <div><h3><a href="https://www.vriendenvoorkika.nl/">my charity website</a></h3></div>
-        <p>Climbing a mountain for charity. Made a <a href="https://www.vriendenvoorkika.nl/">website</a> for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!</p>
+        <div><h3><a target="_blank" href="https://www.vriendenvoorkika.nl/">my charity website</a></h3></div>
+        <p>Climbing a mountain for charity. Made a <a target="_blank" href="https://www.vriendenvoorkika.nl/">website</a> for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!</p>
     </div>
     
     <div class="project">
