@@ -1,3 +1,12 @@
+<script>
+    import Seo from '$lib/Seo.svelte'
+
+    let pageTitle = "Error!"
+    let metaDescription = "Error page. Page not found."
+
+</script>
+
+<Seo {pageTitle}{metaDescription}/>
 <h1>wtf! Page not found.</h1>
 <p>You are in grave danger. <a href="/">Get back to safety</a>.</p>
 

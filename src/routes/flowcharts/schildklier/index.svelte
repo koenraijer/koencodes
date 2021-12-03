@@ -39,8 +39,8 @@
 </script>
 <Seo {pageTitle}{metaDescription}/>
 <h1>Diagnostiek bij vermoeden van een schildklierfunctiestoornis</h1>
-<p><i>This interactive flowchart is adapted from the <a href="https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie">NHG-Standaard Schildklieraandoeningen</a>, and specifically from <a href="https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png">this flowchart</a>. I might have made mistakes so plz don't use it.</i></p>
-<p style="padding-bottom: 0.5rem;">Dit interactieve stroomdiagram is een aanpassing van de <a href="https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie">NHG-Standaard Schildklieraandoeningen</a>, en specifiek van <a href="https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png">dit stroomdiagram</a>. Er kunnen zeker nog fouten in zitten!</p>
+<p><i>This interactive flowchart is adapted from the <a target="_blank" rel="noopener" href="https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie">NHG-Standaard Schildklieraandoeningen</a>, and specifically from <a href="https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png">this flowchart</a>. I might have made mistakes so plz don't use it.</i></p>
+<p style="padding-bottom: 0.5rem;">Dit interactieve stroomdiagram is een aanpassing van de <a target="_blank" rel="noopener" href="https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie">NHG-Standaard Schildklieraandoeningen</a>, en specifiek van <a href="https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png">dit stroomdiagram</a>. Er kunnen zeker nog fouten in zitten!</p>
 
 <button on:click={() => (start = true)}>Start beslisboom</button>
 {#if start }
