@@ -52,12 +52,15 @@
                 window.pageXOffset || window.document.documentElement.scrollLeft,
                 window.onscroll = function() {
                 window.scrollTo(scrollLeft, scrollTop);
+            document.body.style.overflow = 'hidden';
+            document.getElementsByTagName("body")[0].style = "padding: 20px 0 20px 20px;border-right: solid 20px rgba(0, 0, 0, 0);"
             }};
         }
 
     function enableScroll() {
         if (browser) {
             window.onscroll = function() {};
+            document.body.style.overflow = 'auto';
         }
     };
 
