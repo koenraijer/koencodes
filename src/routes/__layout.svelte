@@ -19,7 +19,7 @@ import { page } from "$app/stores";
   
     :root {
         $dark: #111344;
-
+        scroll-behavior: smooth;
         max-width: 60ch;
         padding: 0.5rem 0.5rem 1rem;
         margin: auto;
