@@ -66,11 +66,13 @@
             }
     
     $: if(open === true) {
-        console.log("disableScroll");
-        document.body.style.overflow = 'hidden';
+        onMount(() => {
+          document.body.style.overflow = 'hidden';
+        });
       }else if (!open) {
-        console.log("enableScroll");
-        document.body.style.overflow = 'auto';
+        onMount(() => {
+          document.body.style.overflow = 'auto';
+        });
       }
 </script>
 
