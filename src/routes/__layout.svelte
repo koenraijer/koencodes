@@ -21,10 +21,10 @@ import { page } from "$app/stores";
         $dark: #111344;
         scroll-behavior: smooth;
         max-width: 60ch;
-        padding: 0.5rem 0.5rem 1rem;
+        padding: 0.25rem 0.25rem 0.5rem;
         margin: auto;
         line-height: 1.3;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: $dark;
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         @media screen and (min-width: 600px) {
