@@ -15,11 +15,10 @@ import { page } from "$app/stores";
 </div>
 
 
-<style lang="scss">        
+<style lang="scss">
+  
     :root {
         $dark: #111344;
-        $light: white;
-        $accent: #3D42CF;
 
         max-width: 60ch;
         padding: 0.5rem 0.5rem 1rem;

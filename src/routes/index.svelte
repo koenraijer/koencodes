@@ -81,6 +81,8 @@ for (let path in allPosts) {
 
 
 <style lang="scss">
+    
+
     :global(.dark) {
         .project {
             border: white 2px solid;

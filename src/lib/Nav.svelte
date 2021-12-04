@@ -65,16 +65,10 @@
         window.onscroll = function() {};
             }
     
-    onMount(() => {
-      disableScroll();
-    })
-    
     $: if(open === true) {
         console.log("disableScroll");
-          disableScroll();
       }else if (!open) {
         console.log("enableScroll");
-          enableScroll();
       }
 </script>
 

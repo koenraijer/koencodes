@@ -4696,16 +4696,16 @@ var init_shims = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-b55ad03c.js
-var layout_b55ad03c_exports = {};
-__export(layout_b55ad03c_exports, {
+// .svelte-kit/output/server/chunks/__layout-7acece1a.js
+var layout_7acece1a_exports = {};
+__export(layout_7acece1a_exports, {
   default: () => _layout
 });
 var css$3, BurgerButton, css$2, SideMenu, DarkMode, css$1, Nav, css, _layout;
-var init_layout_b55ad03c = __esm({
-  ".svelte-kit/output/server/chunks/__layout-b55ad03c.js"() {
+var init_layout_7acece1a = __esm({
+  ".svelte-kit/output/server/chunks/__layout-7acece1a.js"() {
     init_shims();
-    init_app_e2c0f21c();
+    init_app_b903359c();
     css$3 = {
       code: "button.svelte-1ompq2.svelte-1ompq2{display:inline-block;float:right;position:relative;margin-left:auto;right:0px;top:0px;margin:0.5rem;margin-right:0;z-index:10;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.hamburger.svelte-1ompq2 line.svelte-1ompq2{stroke:#111344;stroke-width:6}.dark .hamburger.svelte-1ompq2 line.svelte-1ompq2{stroke:white}.dark .open.svelte-1ompq2 .hamburger line.svelte-1ompq2{stroke:#111344}.open.svelte-1ompq2 .hamburger line.svelte-1ompq2{stroke:white}.open.svelte-1ompq2 #top.svelte-1ompq2{transform:translate(12px, 0) rotate(90deg)}.open.svelte-1ompq2 #bot.svelte-1ompq2{transform:translateY(32px) rotate(-90deg)}",
       map: null
@@ -4809,6 +4809,15 @@ var init_layout_b55ad03c = __esm({
       let $$rendered;
       do {
         $$settled = true;
+        open = open;
+        open = open;
+        {
+          if (open === true) {
+            console.log("disableScroll");
+          } else if (!open) {
+            console.log("enableScroll");
+          }
+        }
         $$rendered = `<nav>${validate_component(BurgerButton, "BurgerButton").$$render($$result, Object.assign(burgerProps, { open }), {
           open: ($$value) => {
             open = $$value;
@@ -4858,12 +4867,12 @@ var init_layout_b55ad03c = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Seo-ce5b791c.js
+// .svelte-kit/output/server/chunks/Seo-c956edb8.js
 var Seo;
-var init_Seo_ce5b791c = __esm({
-  ".svelte-kit/output/server/chunks/Seo-ce5b791c.js"() {
+var init_Seo_c956edb8 = __esm({
+  ".svelte-kit/output/server/chunks/Seo-c956edb8.js"() {
     init_shims();
-    init_app_e2c0f21c();
+    init_app_b903359c();
     Seo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { metaDescription: metaDescription7 } = $$props;
       let { pageTitle: pageTitle6 } = $$props;
@@ -4876,17 +4885,17 @@ var init_Seo_ce5b791c = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__error-4e3477cc.js
-var error_4e3477cc_exports = {};
-__export(error_4e3477cc_exports, {
+// .svelte-kit/output/server/chunks/__error-799e17d1.js
+var error_799e17d1_exports = {};
+__export(error_799e17d1_exports, {
   default: () => _error
 });
 var css2, pageTitle, metaDescription, _error;
-var init_error_4e3477cc = __esm({
-  ".svelte-kit/output/server/chunks/__error-4e3477cc.js"() {
+var init_error_799e17d1 = __esm({
+  ".svelte-kit/output/server/chunks/__error-799e17d1.js"() {
     init_shims();
-    init_app_e2c0f21c();
-    init_Seo_ce5b791c();
+    init_app_b903359c();
+    init_Seo_c956edb8();
     css2 = {
       code: "a.svelte-69aaan{color:inherit;text-decoration:none;opacity:0.5}a.svelte-69aaan:hover{text-decoration:underline}",
       map: null
@@ -4902,18 +4911,18 @@ var init_error_4e3477cc = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/firstpost-3f1239f7.js
-var firstpost_3f1239f7_exports = {};
-__export(firstpost_3f1239f7_exports, {
+// .svelte-kit/output/server/chunks/firstpost-3bdc2459.js
+var firstpost_3bdc2459_exports = {};
+__export(firstpost_3bdc2459_exports, {
   default: () => Firstpost,
   metadata: () => metadata
 });
 var metadata, title, tags, date, snippet, Firstpost;
-var init_firstpost_3f1239f7 = __esm({
-  ".svelte-kit/output/server/chunks/firstpost-3f1239f7.js"() {
+var init_firstpost_3bdc2459 = __esm({
+  ".svelte-kit/output/server/chunks/firstpost-3bdc2459.js"() {
     init_shims();
-    init_app_e2c0f21c();
-    init_Seo_ce5b791c();
+    init_app_b903359c();
+    init_Seo_c956edb8();
     metadata = {
       "title": "First post",
       "tags": ["tech", "fun"],
@@ -4935,18 +4944,18 @@ var init_firstpost_3f1239f7 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/secondpost-1ab06c32.js
-var secondpost_1ab06c32_exports = {};
-__export(secondpost_1ab06c32_exports, {
+// .svelte-kit/output/server/chunks/secondpost-6728b68c.js
+var secondpost_6728b68c_exports = {};
+__export(secondpost_6728b68c_exports, {
   default: () => Secondpost,
   metadata: () => metadata2
 });
 var metadata2, title2, tags2, date2, snippet2, Secondpost;
-var init_secondpost_1ab06c32 = __esm({
-  ".svelte-kit/output/server/chunks/secondpost-1ab06c32.js"() {
+var init_secondpost_6728b68c = __esm({
+  ".svelte-kit/output/server/chunks/secondpost-6728b68c.js"() {
     init_shims();
-    init_app_e2c0f21c();
-    init_Seo_ce5b791c();
+    init_app_b903359c();
+    init_Seo_c956edb8();
     metadata2 = {
       "title": "How to get that money (for charity)",
       "tags": ["fun"],
@@ -4968,18 +4977,18 @@ var init_secondpost_1ab06c32 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/thirdpost-3dc87316.js
-var thirdpost_3dc87316_exports = {};
-__export(thirdpost_3dc87316_exports, {
+// .svelte-kit/output/server/chunks/thirdpost-027ee772.js
+var thirdpost_027ee772_exports = {};
+__export(thirdpost_027ee772_exports, {
   default: () => Thirdpost,
   metadata: () => metadata3
 });
 var metadata3, title3, tags3, date3, snippet3, Thirdpost;
-var init_thirdpost_3dc87316 = __esm({
-  ".svelte-kit/output/server/chunks/thirdpost-3dc87316.js"() {
+var init_thirdpost_027ee772 = __esm({
+  ".svelte-kit/output/server/chunks/thirdpost-027ee772.js"() {
     init_shims();
-    init_app_e2c0f21c();
-    init_Seo_ce5b791c();
+    init_app_b903359c();
+    init_Seo_c956edb8();
     metadata3 = {
       "title": "Third post",
       "tags": ["career"],
@@ -5001,23 +5010,23 @@ var init_thirdpost_3dc87316 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-3ae094b9.js
-var index_3ae094b9_exports = {};
-__export(index_3ae094b9_exports, {
+// .svelte-kit/output/server/chunks/index-0ef350ac.js
+var index_0ef350ac_exports = {};
+__export(index_0ef350ac_exports, {
   default: () => Routes,
   load: () => load
 });
 var css3, allPosts, body, load, pageTitle2, metaDescription2, Routes;
-var init_index_3ae094b9 = __esm({
-  ".svelte-kit/output/server/chunks/index-3ae094b9.js"() {
+var init_index_0ef350ac = __esm({
+  ".svelte-kit/output/server/chunks/index-0ef350ac.js"() {
     init_shims();
-    init_app_e2c0f21c();
-    init_Seo_ce5b791c();
+    init_app_b903359c();
+    init_Seo_c956edb8();
     css3 = {
       code: ".dark .project.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{border:white 2px solid;box-shadow:0 0 5px white}.dark .project.svelte-kgi98x h3.svelte-kgi98x.svelte-kgi98x{color:#111344}.dark .project.svelte-kgi98x div.svelte-kgi98x.svelte-kgi98x{background:white}p.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x,span.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x{color:#06D6A0;text-decoration:none}p.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x:hover,span.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x:hover{text-decoration:underline}h3.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x{color:inherit;text-decoration:none}h3.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x:hover{text-decoration:underline}.project-parent.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{display:grid;grid-gap:1rem}@media screen and (min-width: 600px){.project-parent.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{grid-template-columns:1fr 1fr}}.project.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}.project.svelte-kgi98x p.svelte-kgi98x.svelte-kgi98x{padding:0.5rem 0 0;margin:0}.project.svelte-kgi98x h3.svelte-kgi98x.svelte-kgi98x{padding:0;padding-left:0.5rem;margin:0;font-weight:normal;color:white}.project.svelte-kgi98x div.svelte-kgi98x.svelte-kgi98x{width:calc(100% + 1rem);margin:-0.5rem -0.5rem 0;padding:0.25rem 0 0.25rem;background:#111344}#projects.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x,#blogposts.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{margin-left:-0.5rem}@media screen and (min-width: 600px){#projects.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x,#blogposts.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{margin-left:-1rem}}.blog.svelte-kgi98x h3.svelte-kgi98x.svelte-kgi98x{margin-bottom:0.25rem}.blog.svelte-kgi98x h3.svelte-kgi98x a.svelte-kgi98x:hover{text-decoration:underline}.blog.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x{color:inherit;text-decoration:none}.blog.svelte-kgi98x .tag a.svelte-kgi98x.svelte-kgi98x{color:#06D6A0}.blog.svelte-kgi98x p.svelte-kgi98x a.svelte-kgi98x,.blog.svelte-kgi98x span a.svelte-kgi98x.svelte-kgi98x{color:#06D6A0;text-decoration:none}.blog.svelte-kgi98x p.svelte-kgi98x a.svelte-kgi98x:hover,.blog.svelte-kgi98x span a.svelte-kgi98x.svelte-kgi98x:hover{text-decoration:underline}.date.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{opacity:0.5;font-size:1rem}",
       map: null
     };
-    allPosts = { "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_3f1239f7(), firstpost_3f1239f7_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_1ab06c32(), secondpost_1ab06c32_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_3dc87316(), thirdpost_3dc87316_exports)) };
+    allPosts = { "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_3bdc2459(), firstpost_3bdc2459_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_6728b68c(), secondpost_6728b68c_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_027ee772(), thirdpost_027ee772_exports)) };
     body = [];
     for (let path in allPosts) {
       body.push(allPosts[path]().then(({ metadata: metadata4 }) => {
@@ -5068,17 +5077,17 @@ var init_index_3ae094b9 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/calculator-f4618f74.js
-var calculator_f4618f74_exports = {};
-__export(calculator_f4618f74_exports, {
+// .svelte-kit/output/server/chunks/calculator-1d87d10f.js
+var calculator_1d87d10f_exports = {};
+__export(calculator_1d87d10f_exports, {
   default: () => Calculator
 });
 var css4, pageTitle3, metaDescription3, Calculator;
-var init_calculator_f4618f74 = __esm({
-  ".svelte-kit/output/server/chunks/calculator-f4618f74.js"() {
+var init_calculator_1d87d10f = __esm({
+  ".svelte-kit/output/server/chunks/calculator-1d87d10f.js"() {
     init_shims();
-    init_app_e2c0f21c();
-    init_Seo_ce5b791c();
+    init_app_b903359c();
+    init_Seo_c956edb8();
     css4 = {
       code: '.explanation.svelte-v28rry.svelte-v28rry{display:grid;padding:1rem 0 1rem;grid-template-columns:1fr}@media screen and (min-width: 600px){.explanation.svelte-v28rry.svelte-v28rry{grid-template-columns:1fr 1fr}}.explanation-pie.svelte-v28rry.svelte-v28rry{padding:1rem 0 0;justify-self:center}@media screen and (min-width: 600px){.explanation-pie.svelte-v28rry.svelte-v28rry{padding:0}}h3.svelte-v28rry.svelte-v28rry{font-weight:normal;margin:0}svg.svelte-v28rry.svelte-v28rry{width:10rem;height:10rem}svg.svelte-v28rry text.svelte-v28rry{font-weight:bold;fill:white}.dark .circle.svelte-v28rry.svelte-v28rry{fill:#6E71DB}a.svelte-v28rry.svelte-v28rry{color:#06D6A0;text-decoration:none}a.svelte-v28rry.svelte-v28rry:hover{text-decoration:underline}ol.svelte-v28rry.svelte-v28rry{list-style:none;margin:0;padding:0}ol.svelte-v28rry li.svelte-v28rry{display:grid;grid-template-columns:1fr;grid-gap:0.25rem;padding-bottom:1rem}span.svelte-v28rry.svelte-v28rry{color:#06D6A0;font-weight:bold}form.svelte-v28rry.svelte-v28rry{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}input[type="number"].svelte-v28rry.svelte-v28rry{font-size:inherit;box-shadow:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;outline:1px black solid;padding:0.25rem;margin:0 0.25rem 0;width:auto}label.svelte-v28rry.svelte-v28rry{padding-left:0.25rem}.svelte-v28rry.svelte-v28rry::-moz-focus-inner{border:0;padding:0}input[type="range"].svelte-v28rry.svelte-v28rry{-webkit-appearance:none;width:auto;margin:0.25rem 0 0.25rem;padding:0 0.25rem 0}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{-webkit-appearance:none;height:20px;width:20px;background:#06D6A0;margin-top:-7.5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{height:15px;width:15px;margin-top:-5px}}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:20px;width:20px;background:#06D6A0;margin-top:-5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:15px;width:15px;margin-top:-5px}}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:white;height:5px}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:white;height:5px}.dark form.svelte-v28rry.svelte-v28rry{box-shadow:0 0 5px white;border:white 2px solid}',
       map: null
@@ -5130,17 +5139,17 @@ var init_calculator_f4618f74 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-8d164bb8.js
-var index_8d164bb8_exports = {};
-__export(index_8d164bb8_exports, {
+// .svelte-kit/output/server/chunks/index-8d1ff10d.js
+var index_8d1ff10d_exports = {};
+__export(index_8d1ff10d_exports, {
   default: () => Schildklier
 });
 var css5, pageTitle4, metaDescription4, Schildklier;
-var init_index_8d164bb8 = __esm({
-  ".svelte-kit/output/server/chunks/index-8d164bb8.js"() {
+var init_index_8d1ff10d = __esm({
+  ".svelte-kit/output/server/chunks/index-8d1ff10d.js"() {
     init_shims();
-    init_app_e2c0f21c();
-    init_Seo_ce5b791c();
+    init_app_b903359c();
+    init_Seo_c956edb8();
     css5 = {
       code: "button.svelte-1dd3gzp{font-family:inherit;font-size:inherit;padding:0.25rem;background:transparent;box-shadow:none;outline:none;border:2px solid #111344}button.svelte-1dd3gzp:hover{outline:2px solid #06D6A0;cursor:pointer}.dark button.svelte-1dd3gzp{color:white;border:2px solid white}a.svelte-1dd3gzp{color:#06D6A0;text-decoration:none}a.svelte-1dd3gzp:hover{text-decoration:underline}",
       map: null
@@ -5237,72 +5246,78 @@ ${tsh ? `${tsh === 3 ? `<p>Euthyreo\xEFdie</p>` : `${tsh === 1 ? `<p>Is het Vrij
   }
 });
 
-// .svelte-kit/output/server/chunks/index-a5247d47.js
-var index_a5247d47_exports = {};
-__export(index_a5247d47_exports, {
+// .svelte-kit/output/server/chunks/index-0df5b9f1.js
+var index_0df5b9f1_exports = {};
+__export(index_0df5b9f1_exports, {
   default: () => Blog,
   load: () => load2
 });
 var css6, allPosts2, body2, load2, pageTitle5, metaDescription5, Blog;
-var init_index_a5247d47 = __esm({
-  ".svelte-kit/output/server/chunks/index-a5247d47.js"() {
+var init_index_0df5b9f1 = __esm({
+  ".svelte-kit/output/server/chunks/index-0df5b9f1.js"() {
     init_shims();
-    init_app_e2c0f21c();
-    init_Seo_ce5b791c();
+    init_app_b903359c();
+    init_Seo_c956edb8();
     css6 = {
       code: ".blog.svelte-ot3rxw h3.svelte-ot3rxw{margin-bottom:0.25rem}.blog.svelte-ot3rxw h3 a.svelte-ot3rxw:hover{text-decoration:underline}.blog.svelte-ot3rxw a.svelte-ot3rxw{color:inherit;text-decoration:none}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw{color:#06D6A0}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw:hover{text-decoration:underline}.date.svelte-ot3rxw.svelte-ot3rxw{opacity:0.5;font-size:1rem}",
       map: null
     };
-    allPosts2 = { "./firstpost.md": () => Promise.resolve().then(() => (init_firstpost_3f1239f7(), firstpost_3f1239f7_exports)), "./secondpost.md": () => Promise.resolve().then(() => (init_secondpost_1ab06c32(), secondpost_1ab06c32_exports)), "./thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_3dc87316(), thirdpost_3dc87316_exports)) };
+    allPosts2 = { "./firstpost.md": () => Promise.resolve().then(() => (init_firstpost_3bdc2459(), firstpost_3bdc2459_exports)), "./secondpost.md": () => Promise.resolve().then(() => (init_secondpost_6728b68c(), secondpost_6728b68c_exports)), "./thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_027ee772(), thirdpost_027ee772_exports)) };
     body2 = [];
     for (let path in allPosts2) {
       body2.push(allPosts2[path]().then(({ metadata: metadata4 }) => {
         return { path, metadata: metadata4 };
       }));
     }
-    load2 = async () => {
+    load2 = async ({ page }) => {
       const posts = await Promise.all(body2);
-      return { props: { posts } };
+      const tag = page.params.tag;
+      return { props: { posts, tag } };
     };
     pageTitle5 = "blog";
     metaDescription5 = "Collection of all blog posts on the website.";
     Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { posts } = $$props;
+      let { tag } = $$props;
       const dateSortedPosts = posts.slice().sort((post1, post2) => {
         return new Date(post2.metadata.date) - new Date(post1.metadata.date);
       });
       if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0)
         $$bindings.posts(posts);
+      if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
+        $$bindings.tag(tag);
       $$result.css.add(css6);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle5, metaDescription: metaDescription5 }, {}, {})}
-
+<h1>Blog</h1>
+<h2>All posts</h2>
 <div class="${"blog svelte-ot3rxw"}">${each(dateSortedPosts, ({ path, metadata: { title: title4, tags: tags4, date: date4 } }) => `<h3 class="${"svelte-ot3rxw"}"><a${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)} class="${"svelte-ot3rxw"}">${escape(title4)}</a></h3>
         <span class="${"date svelte-ot3rxw"}">${escape(new Date(date4).toLocaleDateString())}</span>
-        ${each(tags4, (tag) => `<span class="${"tag"}"><a${add_attribute("href", `/tags/${tag}`, 0)} class="${"svelte-ot3rxw"}">#${escape(tag)}</a>\xA0
+        ${each(tags4, (tag2) => `<span class="${"tag"}"><a${add_attribute("href", `/tags/${tag2}`, 0)} class="${"svelte-ot3rxw"}">#${escape(tag2)}</a>\xA0
         </span>`)}
-    <hr>`)}
-</div>`;
+    <hr>`)}</div>
+<h2>Tags</h2>
+<div class="${"tags"}"></div>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/_tag_-9b3dd524.js
-var tag_9b3dd524_exports = {};
-__export(tag_9b3dd524_exports, {
+// .svelte-kit/output/server/chunks/_tag_-e37bd291.js
+var tag_e37bd291_exports = {};
+__export(tag_e37bd291_exports, {
   default: () => U5Btagu5D,
   load: () => load3
 });
 var css7, allPosts3, body3, load3, metaDescription6, U5Btagu5D;
-var init_tag_9b3dd524 = __esm({
-  ".svelte-kit/output/server/chunks/_tag_-9b3dd524.js"() {
+var init_tag_e37bd291 = __esm({
+  ".svelte-kit/output/server/chunks/_tag_-e37bd291.js"() {
     init_shims();
-    init_app_e2c0f21c();
-    init_Seo_ce5b791c();
+    init_app_b903359c();
+    init_Seo_c956edb8();
     css7 = {
       code: ".blog.svelte-ot3rxw h3.svelte-ot3rxw{margin-bottom:0.25rem}.blog.svelte-ot3rxw h3 a.svelte-ot3rxw:hover{text-decoration:underline}.blog.svelte-ot3rxw a.svelte-ot3rxw{color:inherit;text-decoration:none}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw{color:#06D6A0}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw:hover{text-decoration:underline}.date.svelte-ot3rxw.svelte-ot3rxw{opacity:0.5;font-size:1rem}",
       map: null
     };
-    allPosts3 = { "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_3f1239f7(), firstpost_3f1239f7_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_1ab06c32(), secondpost_1ab06c32_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_3dc87316(), thirdpost_3dc87316_exports)) };
+    allPosts3 = { "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_3bdc2459(), firstpost_3bdc2459_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_6728b68c(), secondpost_6728b68c_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_027ee772(), thirdpost_027ee772_exports)) };
     body3 = [];
     for (let path in allPosts3) {
       body3.push(allPosts3[path]().then(({ metadata: metadata4 }) => {
@@ -5341,7 +5356,7 @@ var init_tag_9b3dd524 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/app-e2c0f21c.js
+// .svelte-kit/output/server/chunks/app-b903359c.js
 function get_single_valued_header(headers, key) {
   const value = headers[key];
   if (Array.isArray(value)) {
@@ -6646,9 +6661,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-a1dd6b85.js",
+      file: assets + "/_app/start-cf1e463d.js",
       css: [assets + "/_app/assets/start-61d1577b.css"],
-      js: [assets + "/_app/start-a1dd6b85.js", assets + "/_app/chunks/vendor-43e105ad.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
+      js: [assets + "/_app/start-cf1e463d.js", assets + "/_app/chunks/vendor-43e105ad.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
     },
     fetched: void 0,
     floc: false,
@@ -6692,8 +6707,8 @@ function render(request, {
   return respond({ ...request, host }, options, { prerender });
 }
 var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, absolute, scheme, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css8, Root, base, assets, user_hooks, template, options, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_e2c0f21c = __esm({
-  ".svelte-kit/output/server/chunks/app-e2c0f21c.js"() {
+var init_app_b903359c = __esm({
+  ".svelte-kit/output/server/chunks/app-b903359c.js"() {
     init_shims();
     __accessCheck = (obj, member, msg) => {
       if (!member.has(obj))
@@ -6931,18 +6946,18 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_b55ad03c(), layout_b55ad03c_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_4e3477cc(), error_4e3477cc_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_3ae094b9(), index_3ae094b9_exports)),
-      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_f4618f74(), calculator_f4618f74_exports)),
-      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_8d164bb8(), index_8d164bb8_exports)),
-      "src/routes/blog/index.svelte": () => Promise.resolve().then(() => (init_index_a5247d47(), index_a5247d47_exports)),
-      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_1ab06c32(), secondpost_1ab06c32_exports)),
-      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_3f1239f7(), firstpost_3f1239f7_exports)),
-      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_3dc87316(), thirdpost_3dc87316_exports)),
-      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_9b3dd524(), tag_9b3dd524_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_7acece1a(), layout_7acece1a_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_799e17d1(), error_799e17d1_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_0ef350ac(), index_0ef350ac_exports)),
+      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_1d87d10f(), calculator_1d87d10f_exports)),
+      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_8d1ff10d(), index_8d1ff10d_exports)),
+      "src/routes/blog/index.svelte": () => Promise.resolve().then(() => (init_index_0df5b9f1(), index_0df5b9f1_exports)),
+      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_6728b68c(), secondpost_6728b68c_exports)),
+      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_3bdc2459(), firstpost_3bdc2459_exports)),
+      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_027ee772(), thirdpost_027ee772_exports)),
+      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_e37bd291(), tag_e37bd291_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-cca33ba6.js", "css": ["assets/pages/__layout.svelte-da9c71f5.css"], "js": ["pages/__layout.svelte-cca33ba6.js", "chunks/vendor-43e105ad.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-b3d66c75.js", "css": ["assets/pages/__error.svelte-89d5cf62.css"], "js": ["pages/__error.svelte-b3d66c75.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-de4a58a2.js", "css": ["assets/pages/index.svelte-22afd3fd.css"], "js": ["pages/index.svelte-de4a58a2.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-208fe9ff.js", "css": ["assets/pages/calculator.svelte-89386e7c.css"], "js": ["pages/calculator.svelte-208fe9ff.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-446c93b2.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-98a7782a.css"], "js": ["pages/flowcharts/schildklier/index.svelte-446c93b2.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-c53362bd.js", "css": ["assets/pages/tags/_tag_.svelte-ff42206c.css"], "js": ["pages/blog/index.svelte-c53362bd.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-1196b3f0.js", "css": [], "js": ["pages/blog/secondpost.md-1196b3f0.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-ef3c96fd.js", "css": [], "js": ["pages/blog/firstpost.md-ef3c96fd.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-ee3755a6.js", "css": [], "js": ["pages/blog/thirdpost.md-ee3755a6.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-a308d2b2.js", "css": ["assets/pages/tags/_tag_.svelte-ff42206c.css"], "js": ["pages/tags/_tag_.svelte-a308d2b2.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] } };
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-3f29e0f7.js", "css": ["assets/pages/__layout.svelte-da9c71f5.css"], "js": ["pages/__layout.svelte-3f29e0f7.js", "chunks/vendor-43e105ad.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-b3d66c75.js", "css": ["assets/pages/__error.svelte-89d5cf62.css"], "js": ["pages/__error.svelte-b3d66c75.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-de4a58a2.js", "css": ["assets/pages/index.svelte-22afd3fd.css"], "js": ["pages/index.svelte-de4a58a2.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-208fe9ff.js", "css": ["assets/pages/calculator.svelte-89386e7c.css"], "js": ["pages/calculator.svelte-208fe9ff.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-446c93b2.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-98a7782a.css"], "js": ["pages/flowcharts/schildklier/index.svelte-446c93b2.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-596afb17.js", "css": ["assets/pages/tags/_tag_.svelte-ff42206c.css"], "js": ["pages/blog/index.svelte-596afb17.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-1196b3f0.js", "css": [], "js": ["pages/blog/secondpost.md-1196b3f0.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-ef3c96fd.js", "css": [], "js": ["pages/blog/firstpost.md-ef3c96fd.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-ee3755a6.js", "css": [], "js": ["pages/blog/thirdpost.md-ee3755a6.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-a308d2b2.js", "css": ["assets/pages/tags/_tag_.svelte-ff42206c.css"], "js": ["pages/tags/_tag_.svelte-a308d2b2.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] } };
   }
 });
 
@@ -6995,7 +7010,7 @@ function getRawBody(req) {
 
 // .svelte-kit/output/server/app.js
 init_shims();
-init_app_e2c0f21c();
+init_app_b903359c();
 
 // .svelte-kit/vercel/entry.js
 init();

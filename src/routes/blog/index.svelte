@@ -11,12 +11,13 @@
         );
     }
 
-    export const load = async () => {
+    export const load = async ({page}) => {
         const posts = await Promise.all(body);
-
+        const tag = page.params.tag; 
         return {
             props: {
                 posts, 
+                tag, 
             },
         };
     };
@@ -25,6 +26,7 @@
 <script>
 
     export let posts;
+    export let tag;
 
     const dateSortedPosts = posts.slice().sort((post1, post2) => {
         return new Date(post2.metadata.date) - new Date(post1.metadata.date);
@@ -36,7 +38,8 @@ let metaDescription = "Collection of all blog posts on the website."
 
 </script>
 <Seo {pageTitle}{metaDescription}/>
-
+<h1>Blog</h1>
+<h2>All posts</h2>
 <div class="blog">
     {#each dateSortedPosts as { path, metadata: { title, tags, date } }}
         <h3><a href={`/blog/${path.replace(".md", "")}`}>{title}</a></h3>
@@ -49,7 +52,10 @@ let metaDescription = "Collection of all blog posts on the website."
     <hr>
     {/each}
 </div>
+<h2>Tags</h2>
+<div class="tags">
 
+</div>
 <style lang="scss">
     .blog {
             h3 {
