@@ -39,44 +39,35 @@
     $: switchTheme = theme === "dark" ? "light" : "dark";
 
     // SCROLLING
-    import { onMount } from 'svelte';
-
-    $: open = open;
+    import { browser } from '$app/env';
 
     let scrollTop = null;
     let scrollLeft = null;
 
-    let w;
-
-    onMount(() => {
-      w = window
-    })
-    
     function disableScroll() {
-            // Get the current page scroll position
+        if (browser) {
             scrollTop = 
-              w.pageYOffset|| document.documentElement.scrollTop;
+                window.pageYOffset || window.document.documentElement.scrollTop;
             scrollLeft = 
-              w.pageXOffset || document.documentElement.scrollLeft,
-  
-                // if any scroll is attempted,
-                // set this to the previous value
-                w.onscroll = function() {
-                    w.scrollTo(scrollLeft, scrollTop);
-    }};
+                window.pageXOffset || window.document.documentElement.scrollLeft,
+                window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+            }};
+        }
 
     function enableScroll() {
-        w.onscroll = function() {};
-            }
-    
-    $: if(open === true) {
+        if (browser) {
+            window.onscroll = function() {};
+        }
+    };
+
+    $: if (open) {
         disableScroll();
-      }else if (!open) {
-        onMount(() => {
-          enableScroll();
-        });
-      }
+    } else {
+        enableScroll();
+    }
 </script>
+
 <nav >
     <BurgerButton {...burgerProps} bind:open={open}/>
 
