@@ -46,36 +46,37 @@
     let scrollTop = null;
     let scrollLeft = null;
 
-    $: open = open;
+    let w;
+
+    onMount(() => {
+      w = window
+    })
     
     function disableScroll() {
             // Get the current page scroll position
             scrollTop = 
-              window.pageYOffset || document.documentElement.scrollTop;
+              w.pageYOffset|| document.documentElement.scrollTop;
             scrollLeft = 
-              window.pageXOffset || document.documentElement.scrollLeft,
+              w.pageXOffset || document.documentElement.scrollLeft,
   
                 // if any scroll is attempted,
                 // set this to the previous value
-                window.onscroll = function() {
-                    window.scrollTo(scrollLeft, scrollTop);
+                w.onscroll = function() {
+                    w.scrollTo(scrollLeft, scrollTop);
     }};
 
     function enableScroll() {
-        window.onscroll = function() {};
+        w.onscroll = function() {};
             }
     
     $: if(open === true) {
-        onMount(() => {
-          document.body.style.overflow = 'hidden';
-        });
+        disableScroll();
       }else if (!open) {
         onMount(() => {
-          document.body.style.overflow = 'auto';
+          enableScroll();
         });
       }
 </script>
-
 <nav >
     <BurgerButton {...burgerProps} bind:open={open}/>
 

@@ -4696,16 +4696,16 @@ var init_shims = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-bc1115f7.js
-var layout_bc1115f7_exports = {};
-__export(layout_bc1115f7_exports, {
+// .svelte-kit/output/server/chunks/__layout-49943116.js
+var layout_49943116_exports = {};
+__export(layout_49943116_exports, {
   default: () => _layout
 });
 var css$3, BurgerButton, css$2, SideMenu, DarkMode, css$1, Nav, css, _layout;
-var init_layout_bc1115f7 = __esm({
-  ".svelte-kit/output/server/chunks/__layout-bc1115f7.js"() {
+var init_layout_49943116 = __esm({
+  ".svelte-kit/output/server/chunks/__layout-49943116.js"() {
     init_shims();
-    init_app_022d1f8c();
+    init_app_6929d92d();
     css$3 = {
       code: "button.svelte-1ompq2.svelte-1ompq2{display:inline-block;float:right;position:relative;margin-left:auto;right:0px;top:0px;margin:0.5rem;margin-right:0;z-index:10;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.hamburger.svelte-1ompq2 line.svelte-1ompq2{stroke:#111344;stroke-width:6}.dark .hamburger.svelte-1ompq2 line.svelte-1ompq2{stroke:white}.dark .open.svelte-1ompq2 .hamburger line.svelte-1ompq2{stroke:#111344}.open.svelte-1ompq2 .hamburger line.svelte-1ompq2{stroke:white}.open.svelte-1ompq2 #top.svelte-1ompq2{transform:translate(12px, 0) rotate(90deg)}.open.svelte-1ompq2 #bot.svelte-1ompq2{transform:translateY(32px) rotate(-90deg)}",
       map: null
@@ -4788,6 +4788,15 @@ var init_layout_bc1115f7 = __esm({
         menuColor
       };
       let theme;
+      let scrollTop = null;
+      let scrollLeft = null;
+      let w;
+      function disableScroll() {
+        scrollTop = w.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = w.pageXOffset || document.documentElement.scrollLeft, w.onscroll = function() {
+          w.scrollTo(scrollLeft, scrollTop);
+        };
+      }
       if ($$props.open === void 0 && $$bindings.open && open !== void 0)
         $$bindings.open(open);
       if ($$props.duration === void 0 && $$bindings.duration && duration !== void 0)
@@ -4810,7 +4819,11 @@ var init_layout_bc1115f7 = __esm({
       do {
         $$settled = true;
         open = open;
-        open = open;
+        {
+          if (open === true) {
+            disableScroll();
+          }
+        }
         $$rendered = `<nav>${validate_component(BurgerButton, "BurgerButton").$$render($$result, Object.assign(burgerProps, { open }), {
           open: ($$value) => {
             open = $$value;
@@ -4860,12 +4873,12 @@ var init_layout_bc1115f7 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Seo-fb926acd.js
+// .svelte-kit/output/server/chunks/Seo-8e5e2f5f.js
 var Seo;
-var init_Seo_fb926acd = __esm({
-  ".svelte-kit/output/server/chunks/Seo-fb926acd.js"() {
+var init_Seo_8e5e2f5f = __esm({
+  ".svelte-kit/output/server/chunks/Seo-8e5e2f5f.js"() {
     init_shims();
-    init_app_022d1f8c();
+    init_app_6929d92d();
     Seo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { metaDescription: metaDescription7 } = $$props;
       let { pageTitle: pageTitle6 } = $$props;
@@ -4878,17 +4891,17 @@ var init_Seo_fb926acd = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__error-6e0ca046.js
-var error_6e0ca046_exports = {};
-__export(error_6e0ca046_exports, {
+// .svelte-kit/output/server/chunks/__error-1fc5c5ba.js
+var error_1fc5c5ba_exports = {};
+__export(error_1fc5c5ba_exports, {
   default: () => _error
 });
 var css2, pageTitle, metaDescription, _error;
-var init_error_6e0ca046 = __esm({
-  ".svelte-kit/output/server/chunks/__error-6e0ca046.js"() {
+var init_error_1fc5c5ba = __esm({
+  ".svelte-kit/output/server/chunks/__error-1fc5c5ba.js"() {
     init_shims();
-    init_app_022d1f8c();
-    init_Seo_fb926acd();
+    init_app_6929d92d();
+    init_Seo_8e5e2f5f();
     css2 = {
       code: "a.svelte-69aaan{color:inherit;text-decoration:none;opacity:0.5}a.svelte-69aaan:hover{text-decoration:underline}",
       map: null
@@ -4904,18 +4917,18 @@ var init_error_6e0ca046 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/firstpost-e4869ea2.js
-var firstpost_e4869ea2_exports = {};
-__export(firstpost_e4869ea2_exports, {
+// .svelte-kit/output/server/chunks/firstpost-546ab41e.js
+var firstpost_546ab41e_exports = {};
+__export(firstpost_546ab41e_exports, {
   default: () => Firstpost,
   metadata: () => metadata
 });
 var metadata, title, tags, date, snippet, Firstpost;
-var init_firstpost_e4869ea2 = __esm({
-  ".svelte-kit/output/server/chunks/firstpost-e4869ea2.js"() {
+var init_firstpost_546ab41e = __esm({
+  ".svelte-kit/output/server/chunks/firstpost-546ab41e.js"() {
     init_shims();
-    init_app_022d1f8c();
-    init_Seo_fb926acd();
+    init_app_6929d92d();
+    init_Seo_8e5e2f5f();
     metadata = {
       "title": "First post",
       "tags": ["tech", "fun"],
@@ -4937,18 +4950,18 @@ var init_firstpost_e4869ea2 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/secondpost-a1a64123.js
-var secondpost_a1a64123_exports = {};
-__export(secondpost_a1a64123_exports, {
+// .svelte-kit/output/server/chunks/secondpost-f26aea5a.js
+var secondpost_f26aea5a_exports = {};
+__export(secondpost_f26aea5a_exports, {
   default: () => Secondpost,
   metadata: () => metadata2
 });
 var metadata2, title2, tags2, date2, snippet2, Secondpost;
-var init_secondpost_a1a64123 = __esm({
-  ".svelte-kit/output/server/chunks/secondpost-a1a64123.js"() {
+var init_secondpost_f26aea5a = __esm({
+  ".svelte-kit/output/server/chunks/secondpost-f26aea5a.js"() {
     init_shims();
-    init_app_022d1f8c();
-    init_Seo_fb926acd();
+    init_app_6929d92d();
+    init_Seo_8e5e2f5f();
     metadata2 = {
       "title": "How to get that money (for charity)",
       "tags": ["fun"],
@@ -4970,18 +4983,18 @@ var init_secondpost_a1a64123 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/thirdpost-dca10a91.js
-var thirdpost_dca10a91_exports = {};
-__export(thirdpost_dca10a91_exports, {
+// .svelte-kit/output/server/chunks/thirdpost-d2702c9f.js
+var thirdpost_d2702c9f_exports = {};
+__export(thirdpost_d2702c9f_exports, {
   default: () => Thirdpost,
   metadata: () => metadata3
 });
 var metadata3, title3, tags3, date3, snippet3, Thirdpost;
-var init_thirdpost_dca10a91 = __esm({
-  ".svelte-kit/output/server/chunks/thirdpost-dca10a91.js"() {
+var init_thirdpost_d2702c9f = __esm({
+  ".svelte-kit/output/server/chunks/thirdpost-d2702c9f.js"() {
     init_shims();
-    init_app_022d1f8c();
-    init_Seo_fb926acd();
+    init_app_6929d92d();
+    init_Seo_8e5e2f5f();
     metadata3 = {
       "title": "Third post",
       "tags": ["career"],
@@ -5003,23 +5016,23 @@ var init_thirdpost_dca10a91 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-cd404431.js
-var index_cd404431_exports = {};
-__export(index_cd404431_exports, {
+// .svelte-kit/output/server/chunks/index-c38cdd74.js
+var index_c38cdd74_exports = {};
+__export(index_c38cdd74_exports, {
   default: () => Routes,
   load: () => load
 });
 var css3, allPosts, body, load, pageTitle2, metaDescription2, Routes;
-var init_index_cd404431 = __esm({
-  ".svelte-kit/output/server/chunks/index-cd404431.js"() {
+var init_index_c38cdd74 = __esm({
+  ".svelte-kit/output/server/chunks/index-c38cdd74.js"() {
     init_shims();
-    init_app_022d1f8c();
-    init_Seo_fb926acd();
+    init_app_6929d92d();
+    init_Seo_8e5e2f5f();
     css3 = {
       code: ".dark .project.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{border:white 2px solid;box-shadow:0 0 5px white}.dark .project.svelte-kgi98x h3.svelte-kgi98x.svelte-kgi98x{color:#111344}.dark .project.svelte-kgi98x div.svelte-kgi98x.svelte-kgi98x{background:white}p.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x,span.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x{color:#06D6A0;text-decoration:none}p.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x:hover,span.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x:hover{text-decoration:underline}h3.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x{color:inherit;text-decoration:none}h3.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x:hover{text-decoration:underline}.project-parent.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{display:grid;grid-gap:1rem}@media screen and (min-width: 600px){.project-parent.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{grid-template-columns:1fr 1fr}}.project.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}.project.svelte-kgi98x p.svelte-kgi98x.svelte-kgi98x{padding:0.5rem 0 0;margin:0}.project.svelte-kgi98x h3.svelte-kgi98x.svelte-kgi98x{padding:0;padding-left:0.5rem;margin:0;font-weight:normal;color:white}.project.svelte-kgi98x div.svelte-kgi98x.svelte-kgi98x{width:calc(100% + 1rem);margin:-0.5rem -0.5rem 0;padding:0.25rem 0 0.25rem;background:#111344}#projects.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x,#blogposts.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{margin-left:-0.5rem}@media screen and (min-width: 600px){#projects.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x,#blogposts.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{margin-left:-1rem}}.blog.svelte-kgi98x h3.svelte-kgi98x.svelte-kgi98x{margin-bottom:0.25rem}.blog.svelte-kgi98x h3.svelte-kgi98x a.svelte-kgi98x:hover{text-decoration:underline}.blog.svelte-kgi98x a.svelte-kgi98x.svelte-kgi98x{color:inherit;text-decoration:none}.blog.svelte-kgi98x .tag a.svelte-kgi98x.svelte-kgi98x{color:#06D6A0}.blog.svelte-kgi98x p.svelte-kgi98x a.svelte-kgi98x,.blog.svelte-kgi98x span a.svelte-kgi98x.svelte-kgi98x{color:#06D6A0;text-decoration:none}.blog.svelte-kgi98x p.svelte-kgi98x a.svelte-kgi98x:hover,.blog.svelte-kgi98x span a.svelte-kgi98x.svelte-kgi98x:hover{text-decoration:underline}.date.svelte-kgi98x.svelte-kgi98x.svelte-kgi98x{opacity:0.5;font-size:1rem}",
       map: null
     };
-    allPosts = { "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_e4869ea2(), firstpost_e4869ea2_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_a1a64123(), secondpost_a1a64123_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_dca10a91(), thirdpost_dca10a91_exports)) };
+    allPosts = { "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_546ab41e(), firstpost_546ab41e_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_f26aea5a(), secondpost_f26aea5a_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d2702c9f(), thirdpost_d2702c9f_exports)) };
     body = [];
     for (let path in allPosts) {
       body.push(allPosts[path]().then(({ metadata: metadata4 }) => {
@@ -5070,17 +5083,17 @@ var init_index_cd404431 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/calculator-b9972590.js
-var calculator_b9972590_exports = {};
-__export(calculator_b9972590_exports, {
+// .svelte-kit/output/server/chunks/calculator-3daedb0e.js
+var calculator_3daedb0e_exports = {};
+__export(calculator_3daedb0e_exports, {
   default: () => Calculator
 });
 var css4, pageTitle3, metaDescription3, Calculator;
-var init_calculator_b9972590 = __esm({
-  ".svelte-kit/output/server/chunks/calculator-b9972590.js"() {
+var init_calculator_3daedb0e = __esm({
+  ".svelte-kit/output/server/chunks/calculator-3daedb0e.js"() {
     init_shims();
-    init_app_022d1f8c();
-    init_Seo_fb926acd();
+    init_app_6929d92d();
+    init_Seo_8e5e2f5f();
     css4 = {
       code: '.explanation.svelte-v28rry.svelte-v28rry{display:grid;padding:1rem 0 1rem;grid-template-columns:1fr}@media screen and (min-width: 600px){.explanation.svelte-v28rry.svelte-v28rry{grid-template-columns:1fr 1fr}}.explanation-pie.svelte-v28rry.svelte-v28rry{padding:1rem 0 0;justify-self:center}@media screen and (min-width: 600px){.explanation-pie.svelte-v28rry.svelte-v28rry{padding:0}}h3.svelte-v28rry.svelte-v28rry{font-weight:normal;margin:0}svg.svelte-v28rry.svelte-v28rry{width:10rem;height:10rem}svg.svelte-v28rry text.svelte-v28rry{font-weight:bold;fill:white}.dark .circle.svelte-v28rry.svelte-v28rry{fill:#6E71DB}a.svelte-v28rry.svelte-v28rry{color:#06D6A0;text-decoration:none}a.svelte-v28rry.svelte-v28rry:hover{text-decoration:underline}ol.svelte-v28rry.svelte-v28rry{list-style:none;margin:0;padding:0}ol.svelte-v28rry li.svelte-v28rry{display:grid;grid-template-columns:1fr;grid-gap:0.25rem;padding-bottom:1rem}span.svelte-v28rry.svelte-v28rry{color:#06D6A0;font-weight:bold}form.svelte-v28rry.svelte-v28rry{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}input[type="number"].svelte-v28rry.svelte-v28rry{font-size:inherit;box-shadow:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;outline:1px black solid;padding:0.25rem;margin:0 0.25rem 0;width:auto}label.svelte-v28rry.svelte-v28rry{padding-left:0.25rem}.svelte-v28rry.svelte-v28rry::-moz-focus-inner{border:0;padding:0}input[type="range"].svelte-v28rry.svelte-v28rry{-webkit-appearance:none;width:auto;margin:0.25rem 0 0.25rem;padding:0 0.25rem 0}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{-webkit-appearance:none;height:20px;width:20px;background:#06D6A0;margin-top:-7.5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{height:15px;width:15px;margin-top:-5px}}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:20px;width:20px;background:#06D6A0;margin-top:-5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:15px;width:15px;margin-top:-5px}}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:white;height:5px}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:white;height:5px}.dark form.svelte-v28rry.svelte-v28rry{box-shadow:0 0 5px white;border:white 2px solid}',
       map: null
@@ -5132,9 +5145,9 @@ var init_calculator_b9972590 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-4e50d340.js
-var index_4e50d340_exports = {};
-__export(index_4e50d340_exports, {
+// .svelte-kit/output/server/chunks/index-57e4a25a.js
+var index_57e4a25a_exports = {};
+__export(index_57e4a25a_exports, {
   default: () => Schildklier
 });
 function pageScroll() {
@@ -5142,11 +5155,11 @@ function pageScroll() {
   setTimeout("pageScroll()", 100);
 }
 var css5, pageTitle4, metaDescription4, Schildklier;
-var init_index_4e50d340 = __esm({
-  ".svelte-kit/output/server/chunks/index-4e50d340.js"() {
+var init_index_57e4a25a = __esm({
+  ".svelte-kit/output/server/chunks/index-57e4a25a.js"() {
     init_shims();
-    init_app_022d1f8c();
-    init_Seo_fb926acd();
+    init_app_6929d92d();
+    init_Seo_8e5e2f5f();
     css5 = {
       code: "button.svelte-1dd3gzp{font-family:inherit;font-size:inherit;padding:0.25rem;background:transparent;box-shadow:none;outline:none;border:2px solid #111344}button.svelte-1dd3gzp:hover{outline:2px solid #06D6A0;cursor:pointer}.dark button.svelte-1dd3gzp{color:white;border:2px solid white}a.svelte-1dd3gzp{color:#06D6A0;text-decoration:none}a.svelte-1dd3gzp:hover{text-decoration:underline}",
       map: null
@@ -5244,23 +5257,23 @@ ${tsh ? `${tsh === 3 ? `<p>Euthyreo\xEFdie</p>` : `${tsh === 1 ? `<p>Is het Vrij
   }
 });
 
-// .svelte-kit/output/server/chunks/index-fefc2fab.js
-var index_fefc2fab_exports = {};
-__export(index_fefc2fab_exports, {
+// .svelte-kit/output/server/chunks/index-528ebf78.js
+var index_528ebf78_exports = {};
+__export(index_528ebf78_exports, {
   default: () => Blog,
   load: () => load2
 });
 var css6, allPosts2, body2, load2, pageTitle5, metaDescription5, Blog;
-var init_index_fefc2fab = __esm({
-  ".svelte-kit/output/server/chunks/index-fefc2fab.js"() {
+var init_index_528ebf78 = __esm({
+  ".svelte-kit/output/server/chunks/index-528ebf78.js"() {
     init_shims();
-    init_app_022d1f8c();
-    init_Seo_fb926acd();
+    init_app_6929d92d();
+    init_Seo_8e5e2f5f();
     css6 = {
-      code: ".blog.svelte-ot3rxw h3.svelte-ot3rxw{margin-bottom:0.25rem}.blog.svelte-ot3rxw h3 a.svelte-ot3rxw:hover{text-decoration:underline}.blog.svelte-ot3rxw a.svelte-ot3rxw{color:inherit;text-decoration:none}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw{color:#06D6A0}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw:hover{text-decoration:underline}.date.svelte-ot3rxw.svelte-ot3rxw{opacity:0.5;font-size:1rem}",
+      code: "h1.svelte-1pzmm11.svelte-1pzmm11,h2.svelte-1pzmm11.svelte-1pzmm11{margin-left:-0.5rem}@media screen and (min-width: 600px){h1.svelte-1pzmm11.svelte-1pzmm11,h2.svelte-1pzmm11.svelte-1pzmm11{margin-left:-1rem}}.blog.svelte-1pzmm11 h3.svelte-1pzmm11{margin-bottom:0.25rem}.blog.svelte-1pzmm11 h3 a.svelte-1pzmm11:hover{text-decoration:underline}.blog.svelte-1pzmm11 a.svelte-1pzmm11{color:inherit;text-decoration:none}.blog.svelte-1pzmm11 .tag a.svelte-1pzmm11{color:#06D6A0}.blog.svelte-1pzmm11 .tag a.svelte-1pzmm11:hover{text-decoration:underline}.date.svelte-1pzmm11.svelte-1pzmm11{opacity:0.5;font-size:1rem}",
       map: null
     };
-    allPosts2 = { "./firstpost.md": () => Promise.resolve().then(() => (init_firstpost_e4869ea2(), firstpost_e4869ea2_exports)), "./secondpost.md": () => Promise.resolve().then(() => (init_secondpost_a1a64123(), secondpost_a1a64123_exports)), "./thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_dca10a91(), thirdpost_dca10a91_exports)) };
+    allPosts2 = { "./firstpost.md": () => Promise.resolve().then(() => (init_firstpost_546ab41e(), firstpost_546ab41e_exports)), "./secondpost.md": () => Promise.resolve().then(() => (init_secondpost_f26aea5a(), secondpost_f26aea5a_exports)), "./thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d2702c9f(), thirdpost_d2702c9f_exports)) };
     body2 = [];
     for (let path in allPosts2) {
       body2.push(allPosts2[path]().then(({ metadata: metadata4 }) => {
@@ -5286,36 +5299,36 @@ var init_index_fefc2fab = __esm({
         $$bindings.tag(tag);
       $$result.css.add(css6);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle5, metaDescription: metaDescription5 }, {}, {})}
-<h1>Blog</h1>
-<h2>All posts</h2>
-<div class="${"blog svelte-ot3rxw"}">${each(dateSortedPosts, ({ path, metadata: { title: title4, tags: tags4, date: date4 } }) => `<h3 class="${"svelte-ot3rxw"}"><a${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)} class="${"svelte-ot3rxw"}">${escape(title4)}</a></h3>
-        <span class="${"date svelte-ot3rxw"}">${escape(new Date(date4).toLocaleDateString())}</span>
-        ${each(tags4, (tag2) => `<span class="${"tag"}"><a${add_attribute("href", `/tags/${tag2}`, 0)} class="${"svelte-ot3rxw"}">#${escape(tag2)}</a>\xA0
+<h1 class="${"svelte-1pzmm11"}">Blog</h1>
+<h2 class="${"svelte-1pzmm11"}">All posts</h2>
+<div class="${"blog svelte-1pzmm11"}">${each(dateSortedPosts, ({ path, metadata: { title: title4, tags: tags4, date: date4 } }) => `<h3 class="${"svelte-1pzmm11"}"><a${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)} class="${"svelte-1pzmm11"}">${escape(title4)}</a></h3>
+        <span class="${"date svelte-1pzmm11"}">${escape(new Date(date4).toLocaleDateString())}</span>
+        ${each(tags4, (tag2) => `<span class="${"tag"}"><a${add_attribute("href", `/tags/${tag2}`, 0)} class="${"svelte-1pzmm11"}">#${escape(tag2)}</a>\xA0
         </span>`)}
     <hr>`)}</div>
-<h2>Tags</h2>
+<h2 class="${"svelte-1pzmm11"}">Tags</h2>
 <div class="${"tags"}"></div>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/_tag_-0d466691.js
-var tag_0d466691_exports = {};
-__export(tag_0d466691_exports, {
+// .svelte-kit/output/server/chunks/_tag_-e9c6c657.js
+var tag_e9c6c657_exports = {};
+__export(tag_e9c6c657_exports, {
   default: () => U5Btagu5D,
   load: () => load3
 });
 var css7, allPosts3, body3, load3, metaDescription6, U5Btagu5D;
-var init_tag_0d466691 = __esm({
-  ".svelte-kit/output/server/chunks/_tag_-0d466691.js"() {
+var init_tag_e9c6c657 = __esm({
+  ".svelte-kit/output/server/chunks/_tag_-e9c6c657.js"() {
     init_shims();
-    init_app_022d1f8c();
-    init_Seo_fb926acd();
+    init_app_6929d92d();
+    init_Seo_8e5e2f5f();
     css7 = {
       code: ".blog.svelte-ot3rxw h3.svelte-ot3rxw{margin-bottom:0.25rem}.blog.svelte-ot3rxw h3 a.svelte-ot3rxw:hover{text-decoration:underline}.blog.svelte-ot3rxw a.svelte-ot3rxw{color:inherit;text-decoration:none}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw{color:#06D6A0}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw:hover{text-decoration:underline}.date.svelte-ot3rxw.svelte-ot3rxw{opacity:0.5;font-size:1rem}",
       map: null
     };
-    allPosts3 = { "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_e4869ea2(), firstpost_e4869ea2_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_a1a64123(), secondpost_a1a64123_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_dca10a91(), thirdpost_dca10a91_exports)) };
+    allPosts3 = { "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_546ab41e(), firstpost_546ab41e_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_f26aea5a(), secondpost_f26aea5a_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d2702c9f(), thirdpost_d2702c9f_exports)) };
     body3 = [];
     for (let path in allPosts3) {
       body3.push(allPosts3[path]().then(({ metadata: metadata4 }) => {
@@ -5354,7 +5367,7 @@ var init_tag_0d466691 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/app-022d1f8c.js
+// .svelte-kit/output/server/chunks/app-6929d92d.js
 function get_single_valued_header(headers, key) {
   const value = headers[key];
   if (Array.isArray(value)) {
@@ -6659,9 +6672,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-3d42753c.js",
+      file: assets + "/_app/start-65d15c9c.js",
       css: [assets + "/_app/assets/start-61d1577b.css"],
-      js: [assets + "/_app/start-3d42753c.js", assets + "/_app/chunks/vendor-43e105ad.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
+      js: [assets + "/_app/start-65d15c9c.js", assets + "/_app/chunks/vendor-43e105ad.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
     },
     fetched: void 0,
     floc: false,
@@ -6705,8 +6718,8 @@ function render(request, {
   return respond({ ...request, host }, options, { prerender });
 }
 var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, absolute, scheme, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css8, Root, base, assets, user_hooks, template, options, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_022d1f8c = __esm({
-  ".svelte-kit/output/server/chunks/app-022d1f8c.js"() {
+var init_app_6929d92d = __esm({
+  ".svelte-kit/output/server/chunks/app-6929d92d.js"() {
     init_shims();
     __accessCheck = (obj, member, msg) => {
       if (!member.has(obj))
@@ -6944,18 +6957,18 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_bc1115f7(), layout_bc1115f7_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_6e0ca046(), error_6e0ca046_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_cd404431(), index_cd404431_exports)),
-      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_b9972590(), calculator_b9972590_exports)),
-      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_4e50d340(), index_4e50d340_exports)),
-      "src/routes/blog/index.svelte": () => Promise.resolve().then(() => (init_index_fefc2fab(), index_fefc2fab_exports)),
-      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_a1a64123(), secondpost_a1a64123_exports)),
-      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_e4869ea2(), firstpost_e4869ea2_exports)),
-      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_dca10a91(), thirdpost_dca10a91_exports)),
-      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_0d466691(), tag_0d466691_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_49943116(), layout_49943116_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_1fc5c5ba(), error_1fc5c5ba_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_c38cdd74(), index_c38cdd74_exports)),
+      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_3daedb0e(), calculator_3daedb0e_exports)),
+      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_57e4a25a(), index_57e4a25a_exports)),
+      "src/routes/blog/index.svelte": () => Promise.resolve().then(() => (init_index_528ebf78(), index_528ebf78_exports)),
+      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_f26aea5a(), secondpost_f26aea5a_exports)),
+      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_546ab41e(), firstpost_546ab41e_exports)),
+      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d2702c9f(), thirdpost_d2702c9f_exports)),
+      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_e9c6c657(), tag_e9c6c657_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-75dc14c5.js", "css": ["assets/pages/__layout.svelte-f129962d.css"], "js": ["pages/__layout.svelte-75dc14c5.js", "chunks/vendor-43e105ad.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-b3d66c75.js", "css": ["assets/pages/__error.svelte-89d5cf62.css"], "js": ["pages/__error.svelte-b3d66c75.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-de4a58a2.js", "css": ["assets/pages/index.svelte-22afd3fd.css"], "js": ["pages/index.svelte-de4a58a2.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-208fe9ff.js", "css": ["assets/pages/calculator.svelte-89386e7c.css"], "js": ["pages/calculator.svelte-208fe9ff.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-ed34ae23.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-98a7782a.css"], "js": ["pages/flowcharts/schildklier/index.svelte-ed34ae23.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-596afb17.js", "css": ["assets/pages/blog/index.svelte-deb39da5.css"], "js": ["pages/blog/index.svelte-596afb17.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-1196b3f0.js", "css": [], "js": ["pages/blog/secondpost.md-1196b3f0.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-ef3c96fd.js", "css": [], "js": ["pages/blog/firstpost.md-ef3c96fd.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-ee3755a6.js", "css": [], "js": ["pages/blog/thirdpost.md-ee3755a6.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-a308d2b2.js", "css": ["assets/pages/blog/index.svelte-deb39da5.css"], "js": ["pages/tags/_tag_.svelte-a308d2b2.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] } };
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-1caf151a.js", "css": ["assets/pages/__layout.svelte-f129962d.css"], "js": ["pages/__layout.svelte-1caf151a.js", "chunks/vendor-43e105ad.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-b3d66c75.js", "css": ["assets/pages/__error.svelte-89d5cf62.css"], "js": ["pages/__error.svelte-b3d66c75.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-de4a58a2.js", "css": ["assets/pages/index.svelte-22afd3fd.css"], "js": ["pages/index.svelte-de4a58a2.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-208fe9ff.js", "css": ["assets/pages/calculator.svelte-89386e7c.css"], "js": ["pages/calculator.svelte-208fe9ff.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-ed34ae23.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-98a7782a.css"], "js": ["pages/flowcharts/schildklier/index.svelte-ed34ae23.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-696a05a4.js", "css": ["assets/pages/blog/index.svelte-f71b80f3.css"], "js": ["pages/blog/index.svelte-696a05a4.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-1196b3f0.js", "css": [], "js": ["pages/blog/secondpost.md-1196b3f0.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-ef3c96fd.js", "css": [], "js": ["pages/blog/firstpost.md-ef3c96fd.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-ee3755a6.js", "css": [], "js": ["pages/blog/thirdpost.md-ee3755a6.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-a308d2b2.js", "css": ["assets/pages/tags/_tag_.svelte-ff42206c.css"], "js": ["pages/tags/_tag_.svelte-a308d2b2.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] } };
   }
 });
 
@@ -7008,7 +7021,7 @@ function getRawBody(req) {
 
 // .svelte-kit/output/server/app.js
 init_shims();
-init_app_022d1f8c();
+init_app_6929d92d();
 
 // .svelte-kit/vercel/entry.js
 init();

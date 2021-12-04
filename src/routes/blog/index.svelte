@@ -57,6 +57,13 @@ let metaDescription = "Collection of all blog posts on the website."
 
 </div>
 <style lang="scss">
+
+    h1, h2 {
+        margin-left: -0.5rem;
+        @media screen and (min-width: 600px) {
+        margin-left: -1rem;
+      }
+    }
     .blog {
             h3 {
                 margin-bottom: 0.25rem;
