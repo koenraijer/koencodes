@@ -7,6 +7,7 @@
     export let paddingTop;
     export let backgroundColor;
     export let menuColor;
+
 </script>
 
 <style lang="scss">

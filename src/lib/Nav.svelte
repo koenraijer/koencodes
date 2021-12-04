@@ -38,6 +38,44 @@
 
     $: switchTheme = theme === "dark" ? "light" : "dark";
 
+    // SCROLLING
+    import { onMount } from 'svelte';
+
+    $: open = open;
+
+    let scrollTop = null;
+    let scrollLeft = null;
+
+    $: open = open;
+    
+    function disableScroll() {
+            // Get the current page scroll position
+            scrollTop = 
+              window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = 
+              window.pageXOffset || document.documentElement.scrollLeft,
+  
+                // if any scroll is attempted,
+                // set this to the previous value
+                window.onscroll = function() {
+                    window.scrollTo(scrollLeft, scrollTop);
+    }};
+
+    function enableScroll() {
+        window.onscroll = function() {};
+            }
+    
+    onMount(() => {
+      disableScroll();
+    })
+    
+    $: if(open === true) {
+        console.log("disableScroll");
+          disableScroll();
+      }else if (!open) {
+        console.log("enableScroll");
+          enableScroll();
+      }
 </script>
 
 <nav >
