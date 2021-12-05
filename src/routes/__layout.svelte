@@ -20,13 +20,13 @@ import { page } from "$app/stores";
     :root {
         $dark: #111344;
         scroll-behavior: smooth;
+        line-height: 1.3;
+        font-size: 1.1rem;
+        color: $dark;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         max-width: 60ch;
         padding: 0.25rem 0.25rem 0.5rem;
         margin: auto;
-        line-height: 1.3;
-        font-size: 1rem;
-        color: $dark;
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         @media screen and (min-width: 600px) {
         padding: 0.5rem 2rem 2rem;
         font-size: 1.5rem;
@@ -35,6 +35,7 @@ import { page } from "$app/stores";
 
     body {
       position: fixed;
+      
     }
 
     .container {
