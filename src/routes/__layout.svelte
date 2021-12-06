@@ -9,7 +9,7 @@ import { page } from "$app/stores";
 
 
 <Nav />
-<h1 class="sitetitle"><a on:click={open = false} href="/">koen.wtf</a></h1>
+<h1 class="sitetitle"><a on:click={open = false} href="/">koen.codes</a></h1>
 <div class="container">
   <slot />
 </div>
