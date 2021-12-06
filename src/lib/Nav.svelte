@@ -75,9 +75,9 @@
     <BurgerButton {...burgerProps} bind:open={open}/>
 
     <SideMenu {...menuProps} bind:open={open}>
-      <h2><a on:click={() => (open = !open)} class="menuitem" href='/'>Home</a></h2>
-      <h2><a on:click={() => (open = !open)} class="menuitem" href='/blog'>Blog</a></h2>
-      <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">Email me</a></h2>
+      <h2><a on:click={() => (open = !open)} class="menuitem" href='/'>home</a></h2>
+      <h2><a on:click={() => (open = !open)} class="menuitem" href='/blog'>blog</a></h2>
+      <h2><a class="menuitem" href="mailto:koenraijer@protonmail.com">email me</a></h2>
       <DarkMode bind:theme />
       <input aria-label="Darkmode" name="Darkmode" class="toggle" type="checkbox" on:click={() => (theme = switchTheme)}> 
     </SideMenu>
@@ -144,5 +144,9 @@
         &:hover {
           text-decoration: underline;
         }
+    }
+
+    h2 {
+        font-weight: normal;
     }
 </style>

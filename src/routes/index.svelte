@@ -33,6 +33,15 @@ for (let path in allPosts) {
     const dateSortedPosts = posts.slice().sort((post1, post2) => {
         return new Date(post2.metadata.date) - new Date(post1.metadata.date);
     });
+
+    import Project from '$lib/Project.svelte'
+
+    let projects = [
+		{ title: 'my charity website' , src: 'https://www.vriendenvoorkika.nl/', description: 'Climbing a mountain for charity. Made a <a target="_blank" rel="noopener" href="https://www.vriendenvoorkika.nl/">website</a> for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!'},
+		{ title: 'this blog', src: '/', description: 'Maxed out Jekyll, and felt overwhelmed by React. In comes SvelteKit!'},
+        { title: 'an investing calculator', src: '/calculator', description: 'Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.'},
+        { title: 'interactive diagnostic flowchart', src: '/flowcharts/schildklier', description: 'Quick and dirty way to diagnose thyroid problems. Adapted from a flowchart by the NHG (Dutch GP association).'},
+	];
 </script>
 
 <Seo {pageTitle} {metaDescription}/>
@@ -41,25 +50,9 @@ for (let path in allPosts) {
 
 <h2 id="projects">Projects</h2>
 <div class="project-parent">
-    <div class="project">
-        <div><h3><a target="_blank" rel="noopener" href="https://www.vriendenvoorkika.nl/">my charity website</a></h3></div>
-        <p>Climbing a mountain for charity. Made a <a target="_blank" rel="noopener" href="https://www.vriendenvoorkika.nl/">website</a> for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!</p>
-    </div>
-    
-    <div class="project">
-        <div><h3>this blog</h3></div>
-        <p>Maxed out Jekyll, and felt overwhelmed by React. In comes SvelteKit!</p>
-    </div>  
-    
-    <div class="project">
-        <div><h3><a href="/calculator">an investing calculator</a></h3></div>
-        <p>Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.</p>
-    </div>
-
-    <div class="project">
-        <div><h3><a href="/flowcharts/schildklier">interactive diagnostic flowchart</a></h3></div>
-        <p>Quick and dirty way to diagnose thyroid problems. Adapted from a flowchart by the NHG (Dutch GP association).</p>
-    </div>
+{#each projects as { title, src, description }}
+    <Project {title} {src} {description} />
+{/each}
 </div>
 
 <div class="blog">
@@ -73,7 +66,6 @@ for (let path in allPosts) {
             <a href={`/tags/${tag}`}>#{tag}</a>&nbsp;
         </span>
         {/each}
-    <hr>
     {/each}
     <span style="float: right;"><a href="/blog">all posts &#10132;</a></span>
 </div>

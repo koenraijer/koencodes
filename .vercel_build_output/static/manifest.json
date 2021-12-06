@@ -1,0 +1,11 @@
+{
+    "short_name": "koen.wtf",
+    "name": "koen.wtf",
+    "start_url": "/",
+    "icons": [],
+    "background-color": "white",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#111344",
+    "description": "The online turf of a programming noob and medicine student."
+}

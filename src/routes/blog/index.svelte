@@ -24,6 +24,8 @@
 </script>
 
 <script>
+    import TagCloud from '$lib/TagCloud.svelte';
+    import Seo from '$lib/Seo.svelte';
 
     export let posts;
     export let tag;
@@ -31,10 +33,11 @@
     const dateSortedPosts = posts.slice().sort((post1, post2) => {
         return new Date(post2.metadata.date) - new Date(post1.metadata.date);
     });
-    import Seo from '$lib/Seo.svelte'
 
 let pageTitle = "blog"
 let metaDescription = "Collection of all blog posts on the website."
+
+    let tagArray = ["fun", "career", "tech"]; 
 
 </script>
 <Seo {pageTitle}{metaDescription}/>
@@ -44,18 +47,18 @@ let metaDescription = "Collection of all blog posts on the website."
     {#each dateSortedPosts as { path, metadata: { title, tags, date } }}
         <h3><a href={`/blog/${path.replace(".md", "")}`}>{title}</a></h3>
         <span class="date">{new Date(date).toLocaleDateString()}</span>
+
         {#each tags as tag}
         <span class="tag">
             <a href={`/tags/${tag}`}>#{tag}</a>&nbsp;
         </span>
         {/each}
-    <hr>
     {/each}
 </div>
-<h2>Tags</h2>
-<div class="tags">
 
-</div>
+<h2>Tags</h2>
+<TagCloud tags={tagArray}/>
+
 <style lang="scss">
 
     h1, h2 {
