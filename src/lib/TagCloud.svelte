@@ -1,18 +1,33 @@
 <script>
-    export let tags = [];
+    let tagArray = ["fun", "career", "tech"]; 
+    import Variables from '$lib/Variables.svelte';
 </script>
+<Variables/>
 
-{#each tags as tag}
-    <a href={`/tags/${tag}`}>#{tag}</a>
+<div>
+{#each tagArray as tag}
+    <a href={`/tags/${tag}`}>{tag}</a>
 {/each}
-
+</div>
 <style lang="scss">
+
                 a {
+                    color: inherit;
+                    padding: 0.5rem 0.85rem 0.5rem;
+                    margin: 0.5rem 0.5rem 0rem 0.5rem;
+                    border-radius: 10px;
+                    background: var(--primary-400);
                     text-decoration: none;
-                    padding-right: 0.5rem;
                     &:hover {
-                    text-decoration: underline;
+                    background: var(--primary-300);
+                    color: white;
                     }
-                    color: #06D6A0;
+                }
+
+                div {
+                    margin: var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0;
+                    padding: var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0;
                 }
 </style>
+
+

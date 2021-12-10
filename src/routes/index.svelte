@@ -1,29 +1,31 @@
 <script context="module">
-const allPosts = import.meta.glob("./blog/*.md");
+    const allPosts = import.meta.glob("./blog/*.md");
 
-let body = [];
+    let body = [];
 
-for (let path in allPosts) {
-    body.push(
-        allPosts[path]().then(({metadata}) => {
-            return { path, metadata };
-        }) 
-    );
-}
+    for (let path in allPosts) {
+        body.push(
+            allPosts[path]().then(({metadata}) => {
+                return { path, metadata };
+            }) 
+        );
+    }
 
-    export const load = async () => {
-    const posts = await Promise.all(body);
+        export const load = async () => {
+        const posts = await Promise.all(body);
 
-    return {
-        props: {
-            posts, 
-        },
+        return {
+            props: {
+                posts, 
+            },
+        };
     };
-};
 </script>
 
 <script>
     import Seo from '$lib/Seo.svelte'
+    import TagCloud from '$lib/TagCloud.svelte'
+    import Variables from '$lib/Variables.svelte'
 
     let pageTitle = "home"
     let metaDescription = "The homepage: a collection of projects and blog posts."
@@ -37,56 +39,275 @@ for (let path in allPosts) {
     import Project from '$lib/Project.svelte'
 
     let projects = [
-		{ title: 'my charity website' , src: 'https://www.vriendenvoorkika.nl/', description: 'Climbing a mountain for charity. Made a <a target="_blank" rel="noopener" href="https://www.vriendenvoorkika.nl/">website</a> for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!'},
-		{ title: 'this blog', src: '/', description: 'Maxed out Jekyll, and felt overwhelmed by React. In comes SvelteKit!'},
-        { title: 'an investing calculator', src: '/calculator', description: 'Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.'},
-        { title: 'interactive diagnostic flowchart', src: '/flowcharts/schildklier', description: 'Quick and dirty way to diagnose thyroid problems. Adapted from a flowchart by the NHG (Dutch GP association).'},
+		{   title: 'My charity website' , 
+            src: 'https://www.vriendenvoorkika.nl/', 
+            description: 'Climbing a mountain for charity. Made a website for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!', 
+            img:"illustration-crosses.svg"
+        },
+		{   title: 'This blog', 
+            src: '/', 
+            description: 'Maxed out Jekyll, and felt overwhelmed by React. In comes SvelteKit!', 
+            img:"illustration-3scribbles.svg"
+        },
+        {   title: 'An investing calculator', 
+            src: '/calculator', 
+            description: 'Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.', 
+            img:"illustration-shapes.svg"
+        },
+        {   title: 'Interactive diagnostic flowchart', 
+            src: '/flowcharts/schildklier', 
+            description: 'Quick and dirty way to diagnose thyroid problems. Adapted from a flowchart by the NHG (Dutch GP association).', 
+            img:"illustration-0arrow.svg"
+        }
 	];
+
+    import Art from '$lib/Art.svelte'
+
 </script>
+
+<Variables />
 
 <Seo {pageTitle} {metaDescription}/>
 
-<h2 style="font-weight: normal;">hi! I might blog here about about beginner web development (I'm a noob). I also study medicine. Welcome to my online hub.</h2>
-
-<h2 id="projects">Projects</h2>
-<div class="project-parent">
-{#each projects as { title, src, description }}
-    <Project {title} {src} {description} />
-{/each}
+<div class="hero-background">
+    <div class="container">
+        <div class="grid1">
+            <div class="grid1-art">
+                <Art />
+            </div>
+            <div class="grid1-hero">
+                <div>
+                    <h2>Hi, I'm Koen!</h2>
+                    <h1>I do some programming in my off-time.</h1>
+                    <h3>I write about web development as if you knew nothing, because neither do I!</h3>
+                    <nav>
+                        <a class="button blogbutton" href="#blogposts">Blog</a>
+                        <a class="button projectsbutton" href="#projects">Projects</a>
+                    </nav>
+                </div>
+            </div>
+        </div>    
+    </div>
 </div>
 
-<div class="blog">
-    <h2 id="blogposts">Latest posts</h2>
+<div class="container">
+<div class="grid2">
+    <div class="grid2-blog">
+        <h1 id="blogposts" class="header">Recently published</h1>
+            <div class="blog-parent">
+                {#each posts.slice(0, 4) as { path, metadata: { title, snippet, date } }}
+                    <a class="divlink" href={`${path.replace(".md", "")}`}>
+                    <div class="blogPost">
+                        <h3>{title}</h3>
+                        <span class="date">{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                        <p>{snippet}</p>
+                    </div>
+                    </a>
+                {/each}
+                <a href="/blog" class="divlink">
+                    <div class="blogPost allPostButton">
+                        <h4>All posts &#10132;</h4>
+                    </div>
+                </a>
+            </div>               
+    </div> 
 
-    {#each posts.slice(0, 4) as { path, metadata: { title, tags, date } }}
-        <h3><a href={`${path.replace(".md", "")}`}>{title}</a></h3>
-        <span class="date">{new Date(date).toLocaleDateString()}</span>
-        {#each tags as tag}
-        <span class="tag">
-            <a href={`/tags/${tag}`}>#{tag}</a>&nbsp;
-        </span>
-        {/each}
-    {/each}
-    <span style="float: right;"><a href="/blog">all posts &#10132;</a></span>
+    <div class="grid2-tags">
+        <h2 id="tags" class="header">Explore topics</h2>
+        <TagCloud/>
+        
+    </div>  
 </div>
-
-
-
-<style lang="scss">
     
+<h1 id="projects" class="header">Projects</h1>
+<div class="grid3">
+    {#each projects as { title, src, description, img }}
+        <Project {title} {src} {description} {img}/>
+    {/each}
+</div>
+
+
+</div>
+<style lang="scss">
+
+    .grid1, .grid2, .grid3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5rem;
+        align-content: stretch;
+        justify-content: stretch;
+        margin: var(--spacing-unit);
+    }
+
+    .grid1, .grid2 {
+        .grid1-hero {
+            display: grid;
+            align-items: center;
+            text-align: center;
+            h1 {
+                font-weight: 500;
+            }
+            h2 {
+                font-weight: 600;
+                span {
+                    color: var(--secondary-300);
+                    font-weight: 500;
+                }
+            }
+            h3, h4 {
+                margin: 0;
+                color: var(--gray-100);
+                font-weight: normal;
+                span {
+                    color: var(--secondary-300);
+                    font-weight: bold;
+                }
+            }
+            margin: calc(var(--spacing-unit) * -3.5) var(--spacing-unit) var(--spacing-unit);
+            grid-column: 1/2;
+            grid-row: 2/3;
+            nav {
+                float: none;
+                @media screen and (min-width: 1200px) {
+                    float: right;
+                }
+            }
+        }
+        .grid1-art {
+            display: grid;
+            place-items: center;
+        }
+        @media screen and (min-width: 1200px) {
+            grid-template-columns: 3fr 1fr;
+            .grid1-hero {
+                margin: var(--spacing-unit);
+                grid-column: 1/2;
+                grid-row: 1/2;
+                text-align: left;
+            }
+        }
+    }
+
+    .grid3 {
+        @media screen and (min-width: 800px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (min-width: 1100px) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    
+    // BLOG POSTS
 
     :global(.dark) {
         .project {
-            border: white 2px solid;
             box-shadow: 0 0 5px white;
-            h3 {
-                color: #111344;
-            }
             div {
                 background: white;
             }
         }
     }
+
+    p :global(a) {
+                color: #06D6A0;
+                text-decoration: none;
+                &:hover{
+                text-decoration: underline;
+                }
+            }
+    
+    p, span {
+        a {
+            color: #06D6A0;
+            text-decoration: none;
+            &:hover{
+            text-decoration: underline;
+            }
+        }
+    }
+      
+
+h3 {
+    a {
+                    color: inherit;
+                    text-decoration: none;
+                    &:hover{
+                        color: var(--primary-300);
+                    }
+                }
+}
+
+    .blogPost {
+        overflow: hidden;
+        border-radius: var(--corner-unit);
+        position: relative;
+        box-shadow: var(--shadow-elevation-medium);
+        padding: var(--spacing-unit);
+        p {
+            padding: 0;
+            margin: 0;
+        }
+        h3 {
+            padding: 0;
+            margin: var(--spacing-unit) 0 var(--spacing-unit);
+        }
+    }
+
+    .divlink {
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+        &:hover {
+            &:hover {
+                h3 {
+                    color: var(--primary-300);
+                }
+                .blogPost {
+                    transform: translate(-0.05rem, -0.05rem);
+                    transition: 0.1s ease;
+                    box-shadow: var(--shadow-elevation-mediumhigh);
+                }
+                .allPostButton {
+                    background: var(--primary-300);
+                }
+            }
+        }
+    }
+
+    .allPostButton {
+        background: var(--primary-200);
+        justify-self: start;
+        align-self: start;
+        h4 {
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .grid2-tags {
+        position: relative;
+        margin-bottom: var(--spacing-unit);
+    }
+
+    /***********************/
+
+    .blog-parent {
+        display: grid;
+        grid-gap: 1.5rem;
+        justify-content: stretch;
+        align-content: stretch;
+        grid-template-columns: 1fr;
+        margin-bottom: calc(var(--spacing-unit) * 2);
+        @media screen and (min-width: 900px) {
+            grid-template-columns: 1fr 1fr;
+            a:first-child {
+                grid-row: 1 / 2;
+                grid-column: 1 / 3;
+            }
+        }
 
         p, span {
             a {
@@ -96,98 +317,127 @@ for (let path in allPosts) {
                 text-decoration: underline;
             }
             }
-        }    
-
-h3 {
-    a {
-                    color: inherit;
-                    text-decoration: none;
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-}
-
-   
-
-    .project-parent {
-        display: grid;
-        grid-gap: 1rem;
-        @media screen and (min-width: 600px) {
-            grid-template-columns: 1fr 1fr;
         }
-    }
-    .project {
-        border: #111344 2px solid;
-        box-shadow: 0 0 5px #111344;
-        padding: 0.5rem;
-        p {
-            padding: 0.5rem 0 0;
-            margin: 0;
-        }
-        h3 {
-            padding: 0;
-            padding-left: 0.5rem;
-            margin: 0;
-            font-weight: normal;
-            color: white;
-        }
-        div {
-            width: calc(100% + 1rem);
-            margin: -0.5rem -0.5rem 0;
-            padding: 0.25rem 0 0.25rem;
-            background: #111344;
-        }
-    }
-
-    #projects, #blogposts {
-        margin-left: -0.5rem;
-        @media screen and (min-width: 600px) {
-        margin-left: -1rem;
-      }
-    }
-
-    /***********************/
-
-    .blog {
-            h3 {
-                margin-bottom: 0.25rem;
-                a {
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-
-            a {
-                    color: inherit;
-                    text-decoration: none;
-                }
-
-            p{
-                margin-top: 0;
-            }
-
-            .tag {
-                a {
-                    color: #06D6A0;
-                }
-            }
-
-            p, span {
-            a {
-            color: #06D6A0;
-            text-decoration: none;
-            &:hover{
-                text-decoration: underline;
-            }
-            }
-        }   
     }
 
     .date {
         opacity: 0.5;
         font-size: 1rem;
     }
+
+// BACKGROUNDS
+.full-bleed {
+    width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.hero-background {
+    background: var(--primary-400);
+    position: relative;
+    margin-bottom: 12rem;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    &:before {
+        content: '';
+        background: var(--primary-400);
+        position: absolute;
+        z-index: -1;
+        top: -50vh;
+        left: 0;
+        height: 50vh;
+        width: 100vw;
+    }
+    &:after {
+        content: '';
+        background: url('layered-waves.svg');
+        background-size: cover;
+        position: absolute;
+        z-index: -1;
+        bottom: -20rem;
+        width: 100vw;
+        height: 20rem;
+    }
+}
+
+.blobs {
+    position: absolute;
+    z-index: -1;
+}
+
+.blob1 {
+        top: 0;
+        left: 10rem;
+        height: 10rem;
+        transform: translate(8rem, 0);
+        @media screen and (min-width: 900px ) {
+            transform: translate(-5rem, 15rem);
+        }
+    }
+
+.container {
+      max-width: 1300px;
+      margin: auto;
+    }
+
+.header {
+    margin-left: var(--spacing-unit);
+}
+
+#blogposts {
+    @media screen and (min-width: 900px) {
+        margin-left: -0.5rem;
+    }
+}
+#tags {
+    margin-left: 0;
+}
+
+// BUTTONS 
+.button {
+        color: inherit;
+        display: inline-block;
+        font-size: 1.2em;
+        padding: 0.5rem 0.85rem 0.5rem;
+        margin: var(--spacing-unit) var(--spacing-unit) 0rem;
+        border-radius: calc(var(--corner-unit) * 2);
+        background: var(--primary-400);
+        box-shadow: var(--shadow-elevation-medium);
+        text-decoration: none;
+        font-weight: 600;
+        &:hover {
+            background: var(--primary-300);
+            box-shadow: var(--shadow-elevation-mediumhigh);
+            color: white;
+    }
+}
+
+
+.projectsbutton {
+    background: var(--primary-300);
+    color: white;
+    &:hover {
+        background: var(--primary-350);
+        transform: translate(-0.05rem, -0.05rem);
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.blogbutton {
+    background: var(--secondary-350);
+    color: white;
+    &:hover {
+        background: var(--secondary-300);
+        transform: translate(-0.05rem, -0.05rem);
+        transition: 0.2s ease-in-out;
+    }
+}
 
 </style>

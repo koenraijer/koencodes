@@ -6,7 +6,12 @@ const config = {
 	},
 
 	remarkPlugins: [],
-	rehypePlugins: []
+	rehypePlugins: [],
+
+	layout: {
+		blog: 'src/lib/layouts/blog.svelte',
+	}
+
 };
 
 export default config;

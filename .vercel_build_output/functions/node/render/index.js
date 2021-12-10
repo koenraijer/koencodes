@@ -4696,150 +4696,59 @@ var init_shims = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-4bdecb11.js
-var layout_4bdecb11_exports = {};
-__export(layout_4bdecb11_exports, {
-  default: () => _layout
-});
-var css$3, BurgerButton, css$2, SideMenu, DarkMode, css$1, Nav, css, _layout;
-var init_layout_4bdecb11 = __esm({
-  ".svelte-kit/output/server/chunks/__layout-4bdecb11.js"() {
+// .svelte-kit/output/server/chunks/Variables-d44f12e5.js
+var css, Variables;
+var init_Variables_d44f12e5 = __esm({
+  ".svelte-kit/output/server/chunks/Variables-d44f12e5.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    css$3 = {
-      code: "button.svelte-1ompq2.svelte-1ompq2{display:inline-block;float:right;position:relative;margin-left:auto;right:0px;top:0px;margin:0.5rem;margin-right:0;z-index:10;background-color:Transparent;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.hamburger.svelte-1ompq2 line.svelte-1ompq2{stroke:#111344;stroke-width:6}.dark .hamburger.svelte-1ompq2 line.svelte-1ompq2{stroke:white}.dark .open.svelte-1ompq2 .hamburger line.svelte-1ompq2{stroke:#111344}.open.svelte-1ompq2 .hamburger line.svelte-1ompq2{stroke:white}.open.svelte-1ompq2 #top.svelte-1ompq2{transform:translate(12px, 0) rotate(90deg)}.open.svelte-1ompq2 #bot.svelte-1ompq2{transform:translateY(32px) rotate(-90deg)}",
+    init_app_3ec609b6();
+    css = {
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:hsl(176, 5%, 60%);--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:hsl(176, 100%, 10%);--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:hsl(19, 100%, 50%);--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n            0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n            1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n        0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n        2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n        6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n            1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n            2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n            5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n            1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n            2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n            4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n            7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n            12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n            19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n            28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}",
       map: null
     };
-    BurgerButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { open } = $$props;
-      let { duration } = $$props;
-      let { burgerColor } = $$props;
-      let { menuColor } = $$props;
-      if ($$props.open === void 0 && $$bindings.open && open !== void 0)
-        $$bindings.open(open);
-      if ($$props.duration === void 0 && $$bindings.duration && duration !== void 0)
-        $$bindings.duration(duration);
-      if ($$props.burgerColor === void 0 && $$bindings.burgerColor && burgerColor !== void 0)
-        $$bindings.burgerColor(burgerColor);
-      if ($$props.menuColor === void 0 && $$bindings.menuColor && menuColor !== void 0)
-        $$bindings.menuColor(menuColor);
-      $$result.css.add(css$3);
-      return `<button name="${"Menu"}" aria-label="${"Menu"}" id="${"burger-button"}" style="${"transition: color " + escape(duration) + "s ease-in-out; color: " + escape(open ? menuColor : burgerColor) + ";"}" class="${["svelte-1ompq2", open ? "open" : ""].join(" ").trim()}"><svg class="${"hamburger svelte-1ompq2"}" width="${"32"}" height="${"32"}"><line id="${"top"}" x1="${"0"}" y1="${"9"}" x2="${"32"}" y2="${"9"}" style="${"transition: transform " + escape(duration) + "s ease-in-out, opacity " + escape(duration) + "s ease-in-out;"}" class="${"svelte-1ompq2"}"></line><line id="${"bot"}" x1="${"0"}" y1="${"28"}" x2="${"32"}" y2="${"28"}" style="${"transition: transform " + escape(duration) + "s ease-in-out, opacity " + escape(duration) + "s ease-in-out;"}" class="${"svelte-1ompq2"}"></line></svg></button>`;
-    });
-    css$2 = {
-      code: ".sidemenu.svelte-1pavh4v{position:fixed;height:100vh;width:50vw;top:0px;z-index:8 !important;overflow-y:hidden;background-color:rgba(17, 19, 68, 0.95);color:white;margin:auto;text-align:center}#menu.svelte-1pavh4v{position:absolute;padding:2rem;margin:0;left:50%;transform:translateX(-50%);max-width:50vw}.dark .sidemenu.svelte-1pavh4v{background-color:rgba(255, 255, 255, 0.95);color:#111344}",
-      map: null
-    };
-    SideMenu = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { open = false } = $$props;
-      let { duration } = $$props;
-      let { width } = $$props;
-      let { padding } = $$props;
-      let { paddingTop } = $$props;
-      let { backgroundColor } = $$props;
-      let { menuColor } = $$props;
-      if ($$props.open === void 0 && $$bindings.open && open !== void 0)
-        $$bindings.open(open);
-      if ($$props.duration === void 0 && $$bindings.duration && duration !== void 0)
-        $$bindings.duration(duration);
-      if ($$props.width === void 0 && $$bindings.width && width !== void 0)
-        $$bindings.width(width);
-      if ($$props.padding === void 0 && $$bindings.padding && padding !== void 0)
-        $$bindings.padding(padding);
-      if ($$props.paddingTop === void 0 && $$bindings.paddingTop && paddingTop !== void 0)
-        $$bindings.paddingTop(paddingTop);
-      if ($$props.backgroundColor === void 0 && $$bindings.backgroundColor && backgroundColor !== void 0)
-        $$bindings.backgroundColor(backgroundColor);
-      if ($$props.menuColor === void 0 && $$bindings.menuColor && menuColor !== void 0)
-        $$bindings.menuColor(menuColor);
-      $$result.css.add(css$2);
-      return `<div class="${"sidemenu svelte-1pavh4v"}" style="${"width: " + escape(width) + "; left: " + escape(open ? "0px" : "-" + width) + "; transition: left " + escape(duration) + "s ease-in-out"}"><div id="${"menu"}" style="${"padding: " + escape(padding) + "; padding-top: " + escape(paddingTop) + "; display: " + escape(open ? "block" : "none") + ";"}" class="${"svelte-1pavh4v"}">${slots.default ? slots.default({}) : ``}</div></div>`;
-    });
-    DarkMode = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { theme = "dark" } = $$props;
-      let { key = "theme" } = $$props;
-      createEventDispatcher();
-      if ($$props.theme === void 0 && $$bindings.theme && theme !== void 0)
-        $$bindings.theme(theme);
-      if ($$props.key === void 0 && $$bindings.key && key !== void 0)
-        $$bindings.key(key);
+    Variables = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css);
       return ``;
     });
-    css$1 = {
-      code: ".dark{background:#111344;color:#f1f8ff}.toggle.svelte-1am26ik{-webkit-appearance:none;-moz-appearance:none;appearance:none;width:1.5rem;height:0.75rem;display:inline-block;position:relative;border-radius:0.5rem;overflow:hidden;outline:none;border:none;cursor:pointer;background-color:#06D6A0;transition:background-color ease-in-out 0.3s}.toggle.svelte-1am26ik:checked{background-color:#06D6A0}.toggle.svelte-1am26ik:checked:before{left:0.755rem;background-color:#111344}.toggle.svelte-1am26ik:before{content:'';display:block;position:absolute;z-index:2;width:0.70rem;height:0.70rem;background:white;left:0.05rem;top:0.025rem;border-radius:50%;font:10px/28px;color:#111344;transition:all cubic-bezier(0.3, 1.25, 0.7, 1) 0.35s}a.svelte-1am26ik{color:inherit}.menuitem.svelte-1am26ik{text-decoration:none}.menuitem.svelte-1am26ik:hover{text-decoration:underline}h2.svelte-1am26ik{font-weight:normal}",
+  }
+});
+
+// .svelte-kit/output/server/chunks/TagCloud-ed16ad3d.js
+var css2, TagCloud;
+var init_TagCloud_ed16ad3d = __esm({
+  ".svelte-kit/output/server/chunks/TagCloud-ed16ad3d.js"() {
+    init_shims();
+    init_app_3ec609b6();
+    init_Variables_d44f12e5();
+    css2 = {
+      code: "a.svelte-1yt19sl{color:inherit;padding:0.5rem 0.85rem 0.5rem;margin:0.5rem 0.5rem 0rem 0.5rem;border-radius:10px;background:var(--primary-400);text-decoration:none}a.svelte-1yt19sl:hover{background:var(--primary-300);color:white}div.svelte-1yt19sl{margin:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0;padding:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0}",
       map: null
     };
-    Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { open = false } = $$props;
-      let { duration = 0.25 } = $$props;
-      let { width = "100vw" } = $$props;
-      let { padding = "2rem" } = $$props;
-      let { paddingTop = "4rem" } = $$props;
-      let { backgroundColor = "#111344" } = $$props;
-      let { burgerColor = "rgb(18.4, 18.4, 18.4)" } = $$props;
-      let { menuColor = "white" } = $$props;
-      let burgerProps = { duration, burgerColor, menuColor };
-      let menuProps = {
-        duration,
-        width,
-        padding,
-        paddingTop,
-        backgroundColor,
-        menuColor
-      };
-      let theme;
-      if ($$props.open === void 0 && $$bindings.open && open !== void 0)
-        $$bindings.open(open);
-      if ($$props.duration === void 0 && $$bindings.duration && duration !== void 0)
-        $$bindings.duration(duration);
-      if ($$props.width === void 0 && $$bindings.width && width !== void 0)
-        $$bindings.width(width);
-      if ($$props.padding === void 0 && $$bindings.padding && padding !== void 0)
-        $$bindings.padding(padding);
-      if ($$props.paddingTop === void 0 && $$bindings.paddingTop && paddingTop !== void 0)
-        $$bindings.paddingTop(paddingTop);
-      if ($$props.backgroundColor === void 0 && $$bindings.backgroundColor && backgroundColor !== void 0)
-        $$bindings.backgroundColor(backgroundColor);
-      if ($$props.burgerColor === void 0 && $$bindings.burgerColor && burgerColor !== void 0)
-        $$bindings.burgerColor(burgerColor);
-      if ($$props.menuColor === void 0 && $$bindings.menuColor && menuColor !== void 0)
-        $$bindings.menuColor(menuColor);
-      $$result.css.add(css$1);
-      let $$settled;
-      let $$rendered;
-      do {
-        $$settled = true;
-        $$rendered = `<nav>${validate_component(BurgerButton, "BurgerButton").$$render($$result, Object.assign(burgerProps, { open }), {
-          open: ($$value) => {
-            open = $$value;
-            $$settled = false;
-          }
-        }, {})}
+    TagCloud = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let tagArray = ["fun", "career", "tech"];
+      $$result.css.add(css2);
+      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
 
-    ${validate_component(SideMenu, "SideMenu").$$render($$result, Object.assign(menuProps, { open }), {
-          open: ($$value) => {
-            open = $$value;
-            $$settled = false;
-          }
-        }, {
-          default: () => `<h2 class="${"svelte-1am26ik"}"><a class="${"menuitem svelte-1am26ik"}" href="${"/"}">home</a></h2>
-      <h2 class="${"svelte-1am26ik"}"><a class="${"menuitem svelte-1am26ik"}" href="${"/blog"}">blog</a></h2>
-      <h2 class="${"svelte-1am26ik"}"><a class="${"menuitem svelte-1am26ik"}" href="${"mailto:koenraijer@protonmail.com"}">email me</a></h2>
-      ${validate_component(DarkMode, "DarkMode").$$render($$result, { theme }, {
-            theme: ($$value) => {
-              theme = $$value;
-              $$settled = false;
-            }
-          }, {})}
-      <input aria-label="${"Darkmode"}" name="${"Darkmode"}" class="${"toggle svelte-1am26ik"}" type="${"checkbox"}">`
-        })}
-
-</nav>`;
-      } while (!$$settled);
-      return $$rendered;
+<div class="${"svelte-1yt19sl"}">${each(tagArray, (tag) => `<a${add_attribute("href", `/tags/${tag}`, 0)} class="${"svelte-1yt19sl"}">${escape(tag)}</a>`)}
+</div>`;
     });
-    css = {
-      code: ":root{scroll-behavior:smooth;line-height:1.3;font-size:1.1rem;color:#111344;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;max-width:60ch;padding:0.25rem 0.25rem 0.5rem;margin:auto}@media screen and (min-width: 600px){:root{padding:0.5rem 2rem 2rem;font-size:1.5rem}}.container.svelte-kswivx.svelte-kswivx{padding-left:0.5rem;padding-right:0.5rem}@media screen and (min-width: 600px){.container.svelte-kswivx.svelte-kswivx{padding-left:1rem;padding-right:1rem}}a.svelte-kswivx.svelte-kswivx{text-decoration:none;color:inherit}a.svelte-kswivx.svelte-kswivx:visited{color:inherit}.sitetitle.svelte-kswivx a.svelte-kswivx:hover{text-decoration:underline}",
+  }
+});
+
+// .svelte-kit/output/server/chunks/__layout-c4208bfc.js
+var layout_c4208bfc_exports = {};
+__export(layout_c4208bfc_exports, {
+  default: () => _layout
+});
+var css3, _layout;
+var init_layout_c4208bfc = __esm({
+  ".svelte-kit/output/server/chunks/__layout-c4208bfc.js"() {
+    init_shims();
+    init_app_3ec609b6();
+    init_Variables_d44f12e5();
+    init_TagCloud_ed16ad3d();
+    css3 = {
+      code: ":root{scroll-behavior:smooth;line-height:1.3;font-size:1.2rem;overflow-x:hidden;color:var(--primary-100);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}@media screen and (min-width: 600px){:root{font-size:1.5rem}}.sitetitle.svelte-1wvlawc.svelte-1wvlawc{color:var(--primary-100);font-size:2.3em}.sitetitle.svelte-1wvlawc a.svelte-1wvlawc{position:relative;font-weight:700;color:inherit;text-decoration:none}.sitetitle.svelte-1wvlawc a.svelte-1wvlawc:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}.sitetitle.svelte-1wvlawc a.svelte-1wvlawc:hover:before{display:block}.container.svelte-1wvlawc.svelte-1wvlawc{max-width:1300px;margin:auto;padding:0 var(--spacing-unit) var(--spacing-unit)}.wrapperForFooter.svelte-1wvlawc.svelte-1wvlawc{min-height:calc(100vh - 10rem);margin-bottom:calc(var(--spacing-unit))}.footerWrapper.svelte-1wvlawc.svelte-1wvlawc{height:12rem;background:transparent;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-bottom:-1rem;position:relative}footer.svelte-1wvlawc.svelte-1wvlawc{display:grid;align-items:stretch;grid-template-columns:1fr 1fr;height:10rem;z-index:-2 !important;background:transparent;max-width:1300px;margin:auto;padding:calc(var(--spacing-unit) * 2)}footer.svelte-1wvlawc div.svelte-1wvlawc:nth-child(3){display:none}@media screen and (min-width: 900px){footer.svelte-1wvlawc.svelte-1wvlawc{grid-template-columns:1fr 1fr 1fr}footer.svelte-1wvlawc div.svelte-1wvlawc:nth-child(3){display:block}}footer.svelte-1wvlawc h3.svelte-1wvlawc{color:var(--primary-100)}footer.svelte-1wvlawc h3 a.svelte-1wvlawc{position:relative;font-weight:700;color:inherit;text-decoration:none}footer.svelte-1wvlawc h3 a.svelte-1wvlawc:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}footer.svelte-1wvlawc h3 a.svelte-1wvlawc:hover:before{display:block}footer.svelte-1wvlawc h4.svelte-1wvlawc{font-weight:500}.footer-wave.svelte-1wvlawc.svelte-1wvlawc{margin:auto;width:100%;transform:translateY(2rem)}a.svelte-1wvlawc.svelte-1wvlawc{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none;width:100%}a.svelte-1wvlawc.svelte-1wvlawc:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}a.svelte-1wvlawc.svelte-1wvlawc:hover:before{display:block}",
       map: null
     };
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -4849,21 +4758,30 @@ var init_layout_4bdecb11 = __esm({
         $$bindings.location(location);
       if ($$props.open === void 0 && $$bindings.open && open !== void 0)
         $$bindings.open(open);
-      $$result.css.add(css);
-      return `${validate_component(Nav, "Nav").$$render($$result, {}, {}, {})}
-<h1 class="${"sitetitle svelte-kswivx"}"><a href="${"/"}" class="${"svelte-kswivx"}">koen.wtf</a></h1>
-<div class="${"container svelte-kswivx"}">${slots.default ? slots.default({}) : ``}
+      $$result.css.add(css3);
+      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
+<div class="${"wrapperForFooter svelte-1wvlawc"}"><div class="${"container svelte-1wvlawc"}"><header><h1 class="${"sitetitle svelte-1wvlawc"}"><a href="${"/"}" class="${"svelte-1wvlawc"}">koen.codes</a></h1></header></div>
+    
+    <main>${slots.default ? slots.default({}) : ``}</main></div>
+<div class="${"footerWrapper svelte-1wvlawc"}"><img class="${"footer-wave svelte-1wvlawc"}" src="${"../static/footer-waveline.svg"}">
+  <footer class="${"svelte-1wvlawc"}"><div class="${"svelte-1wvlawc"}"><h3 class="${"svelte-1wvlawc"}"><a href="${"/"}" class="${"svelte-1wvlawc"}">koen.codes</a></h3>
+      <h4 class="${"svelte-1wvlawc"}">Thanks for reading!</h4></div>
+    <div class="${"svelte-1wvlawc"}"><h3 class="${"svelte-1wvlawc"}">Links</h3>
+      <h4 class="${"svelte-1wvlawc"}"><a href="${"/blog"}" class="${"svelte-1wvlawc"}">Blog</a></h4>
+      <h4 class="${"svelte-1wvlawc"}"><a href="${"#projects"}" class="${"svelte-1wvlawc"}">Projects</a></h4></div>
+    <div class="${"svelte-1wvlawc"}"><h3 class="${"svelte-1wvlawc"}">Topics</h3>
+      ${validate_component(TagCloud, "TagCloud").$$render($$result, {}, {}, {})}</div></footer>
 </div>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/Seo-1b2700f7.js
+// .svelte-kit/output/server/chunks/Seo-3a257015.js
 var Seo;
-var init_Seo_1b2700f7 = __esm({
-  ".svelte-kit/output/server/chunks/Seo-1b2700f7.js"() {
+var init_Seo_3a257015 = __esm({
+  ".svelte-kit/output/server/chunks/Seo-3a257015.js"() {
     init_shims();
-    init_app_6b99a6ea();
+    init_app_3ec609b6();
     Seo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { metaDescription: metaDescription7 } = $$props;
       let { pageTitle: pageTitle6 } = $$props;
@@ -4876,25 +4794,25 @@ var init_Seo_1b2700f7 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__error-91fc8a28.js
-var error_91fc8a28_exports = {};
-__export(error_91fc8a28_exports, {
+// .svelte-kit/output/server/chunks/__error-48344ff2.js
+var error_48344ff2_exports = {};
+__export(error_48344ff2_exports, {
   default: () => _error
 });
-var css2, pageTitle, metaDescription, _error;
-var init_error_91fc8a28 = __esm({
-  ".svelte-kit/output/server/chunks/__error-91fc8a28.js"() {
+var css4, pageTitle, metaDescription, _error;
+var init_error_48344ff2 = __esm({
+  ".svelte-kit/output/server/chunks/__error-48344ff2.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    init_Seo_1b2700f7();
-    css2 = {
+    init_app_3ec609b6();
+    init_Seo_3a257015();
+    css4 = {
       code: "a.svelte-69aaan{color:inherit;text-decoration:none;opacity:0.5}a.svelte-69aaan:hover{text-decoration:underline}",
       map: null
     };
     pageTitle = "Error!";
     metaDescription = "Error page. Page not found.";
     _error = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css2);
+      $$result.css.add(css4);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle, metaDescription }, {}, {})}
 <h1>wtf! Page not found.</h1>
 <p>You are in grave danger. <a href="${"/"}" class="${"svelte-69aaan"}">Get back to safety</a>.</p>`;
@@ -4902,145 +4820,301 @@ var init_error_91fc8a28 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/firstpost-29320d1d.js
-var firstpost_29320d1d_exports = {};
-__export(firstpost_29320d1d_exports, {
-  default: () => Firstpost,
+// .svelte-kit/output/server/chunks/Date-bcbde33d.js
+var Date_1;
+var init_Date_bcbde33d = __esm({
+  ".svelte-kit/output/server/chunks/Date-bcbde33d.js"() {
+    init_shims();
+    init_app_3ec609b6();
+    Date_1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { date } = $$props;
+      if ($$props.date === void 0 && $$bindings.date && date !== void 0)
+        $$bindings.date(date);
+      return `${escape(new Date(date).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      }))}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/chunks/blog-c1ac8870.js
+var css5, Blog;
+var init_blog_c1ac8870 = __esm({
+  ".svelte-kit/output/server/chunks/blog-c1ac8870.js"() {
+    init_shims();
+    init_app_3ec609b6();
+    init_Variables_d44f12e5();
+    init_Seo_3a257015();
+    init_Date_bcbde33d();
+    css5 = {
+      code: ".container.svelte-1hr9604{max-width:60ch;margin:auto;position:relative;padding:var(--spacing-unit)}.post-hero.svelte-1hr9604{padding:calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 4);display:grid;align-items:center;position:relative}h1.svelte-1hr9604{text-align:center;margin:var(--spacing-unit) 0 calc(var(--spacing-unit) * 4)}.date.svelte-1hr9604{text-align:center}.background.svelte-1hr9604{position:absolute;z-index:-1;max-width:30rem;left:50%;top:50%;transform:translate(-50%, -60%)}",
+      map: null
+    };
+    Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { title } = $$props;
+      let { snippet } = $$props;
+      let { date } = $$props;
+      let { tags } = $$props;
+      let { backgroundNumber = 4 } = $$props;
+      let pageTitle6 = title;
+      let metaDescription7 = snippet;
+      let backgroundLink = "../static/postBackground-" + backgroundNumber + ".svg";
+      if ($$props.title === void 0 && $$bindings.title && title !== void 0)
+        $$bindings.title(title);
+      if ($$props.snippet === void 0 && $$bindings.snippet && snippet !== void 0)
+        $$bindings.snippet(snippet);
+      if ($$props.date === void 0 && $$bindings.date && date !== void 0)
+        $$bindings.date(date);
+      if ($$props.tags === void 0 && $$bindings.tags && tags !== void 0)
+        $$bindings.tags(tags);
+      if ($$props.backgroundNumber === void 0 && $$bindings.backgroundNumber && backgroundNumber !== void 0)
+        $$bindings.backgroundNumber(backgroundNumber);
+      $$result.css.add(css5);
+      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
+${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription7 }, {}, {})}
+
+<div class="${"container svelte-1hr9604"}"><div class="${"post-hero svelte-1hr9604"}"><img class="${"background svelte-1hr9604"}"${add_attribute("src", backgroundLink, 0)}>
+        <span class="${"date svelte-1hr9604"}">${validate_component(Date_1, "Date").$$render($$result, { date }, {}, {})}</span>
+        <h1 class="${"svelte-1hr9604"}">${escape(title)}</h1></div>
+    
+    ${slots.default ? slots.default({}) : ``}
+</div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/chunks/fifthpost-179639bb.js
+var fifthpost_179639bb_exports = {};
+__export(fifthpost_179639bb_exports, {
+  default: () => Fifthpost,
   metadata: () => metadata
 });
-var metadata, title, tags, date, snippet, Firstpost;
-var init_firstpost_29320d1d = __esm({
-  ".svelte-kit/output/server/chunks/firstpost-29320d1d.js"() {
+var metadata, Fifthpost;
+var init_fifthpost_179639bb = __esm({
+  ".svelte-kit/output/server/chunks/fifthpost-179639bb.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    init_Seo_1b2700f7();
+    init_app_3ec609b6();
+    init_blog_c1ac8870();
+    init_Variables_d44f12e5();
+    init_Seo_3a257015();
+    init_Date_bcbde33d();
     metadata = {
+      "title": "Fifth post",
+      "tags": ["fun"],
+      "date": "2021-12-01T00:00:00.000Z",
+      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+      "layout": "blog",
+      "backgroundNumber": 1
+    };
+    Fifthpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata), {}, {
+        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
+<p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
+<p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
+<p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
+      })}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/chunks/firstpost-50b5327a.js
+var firstpost_50b5327a_exports = {};
+__export(firstpost_50b5327a_exports, {
+  default: () => Firstpost,
+  metadata: () => metadata2
+});
+var metadata2, Firstpost;
+var init_firstpost_50b5327a = __esm({
+  ".svelte-kit/output/server/chunks/firstpost-50b5327a.js"() {
+    init_shims();
+    init_app_3ec609b6();
+    init_blog_c1ac8870();
+    init_Variables_d44f12e5();
+    init_Seo_3a257015();
+    init_Date_bcbde33d();
+    metadata2 = {
       "title": "First post",
       "tags": ["tech", "fun"],
       "date": "2021-11-01T00:00:00.000Z",
-      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+      "backgroundNumber": 2
     };
-    ({ title, tags, date, snippet } = metadata);
     Firstpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let pageTitle6 = title;
-      let metaDescription7 = snippet;
-      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription7 }, {}, {})}
-<h1>${escape(title)}</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
+      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata2), {}, {
+        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
 <p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
 <p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
 <p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`;
+<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
+      })}`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/secondpost-7c2f5438.js
-var secondpost_7c2f5438_exports = {};
-__export(secondpost_7c2f5438_exports, {
-  default: () => Secondpost,
-  metadata: () => metadata2
+// .svelte-kit/output/server/chunks/fourthpost-8504d1eb.js
+var fourthpost_8504d1eb_exports = {};
+__export(fourthpost_8504d1eb_exports, {
+  default: () => Fourthpost,
+  metadata: () => metadata3
 });
-var metadata2, title2, tags2, date2, snippet2, Secondpost;
-var init_secondpost_7c2f5438 = __esm({
-  ".svelte-kit/output/server/chunks/secondpost-7c2f5438.js"() {
+var metadata3, Fourthpost;
+var init_fourthpost_8504d1eb = __esm({
+  ".svelte-kit/output/server/chunks/fourthpost-8504d1eb.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    init_Seo_1b2700f7();
-    metadata2 = {
+    init_app_3ec609b6();
+    init_blog_c1ac8870();
+    init_Variables_d44f12e5();
+    init_Seo_3a257015();
+    init_Date_bcbde33d();
+    metadata3 = {
+      "title": "Fourth post",
+      "tags": ["tech"],
+      "date": "2021-12-01T00:00:00.000Z",
+      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+      "backgroundNumber": 3
+    };
+    Fourthpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata3), {}, {
+        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
+<p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
+<p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
+<p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
+      })}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/chunks/secondpost-6aef6d5c.js
+var secondpost_6aef6d5c_exports = {};
+__export(secondpost_6aef6d5c_exports, {
+  default: () => Secondpost,
+  metadata: () => metadata4
+});
+var metadata4, Secondpost;
+var init_secondpost_6aef6d5c = __esm({
+  ".svelte-kit/output/server/chunks/secondpost-6aef6d5c.js"() {
+    init_shims();
+    init_app_3ec609b6();
+    init_blog_c1ac8870();
+    init_Variables_d44f12e5();
+    init_Seo_3a257015();
+    init_Date_bcbde33d();
+    metadata4 = {
       "title": "How to get that money (for charity)",
       "tags": ["fun"],
       "date": "2021-09-01T00:00:00.000Z",
-      "snippet": "Lorem ipsum dolor sit amet, "
+      "snippet": "Lorem ipsum dolor sit amet, ",
+      "backgroundNumber": 4
     };
-    ({ title: title2, tags: tags2, date: date2, snippet: snippet2 } = metadata2);
     Secondpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let pageTitle6 = title2;
-      let metaDescription7 = snippet2;
-      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription7 }, {}, {})}
-<h1>${escape(title2)}</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
+      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata4), {}, {
+        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
 <p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
 <p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
 <p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`;
+<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
+      })}`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/thirdpost-d52bc2eb.js
-var thirdpost_d52bc2eb_exports = {};
-__export(thirdpost_d52bc2eb_exports, {
+// .svelte-kit/output/server/chunks/thirdpost-bc9aadad.js
+var thirdpost_bc9aadad_exports = {};
+__export(thirdpost_bc9aadad_exports, {
   default: () => Thirdpost,
-  metadata: () => metadata3
+  metadata: () => metadata5
 });
-var metadata3, title3, tags3, date3, snippet3, Thirdpost;
-var init_thirdpost_d52bc2eb = __esm({
-  ".svelte-kit/output/server/chunks/thirdpost-d52bc2eb.js"() {
+var metadata5, Thirdpost;
+var init_thirdpost_bc9aadad = __esm({
+  ".svelte-kit/output/server/chunks/thirdpost-bc9aadad.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    init_Seo_1b2700f7();
-    metadata3 = {
+    init_app_3ec609b6();
+    init_blog_c1ac8870();
+    init_Variables_d44f12e5();
+    init_Seo_3a257015();
+    init_Date_bcbde33d();
+    metadata5 = {
       "title": "Third post",
       "tags": ["career"],
       "date": "2021-12-01T00:00:00.000Z",
-      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+      "backgroundNumber": 1
     };
-    ({ title: title3, tags: tags3, date: date3, snippet: snippet3 } = metadata3);
     Thirdpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let pageTitle6 = title3;
-      let metaDescription7 = snippet3;
-      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription7 }, {}, {})}
-<h1>${escape(title3)}</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
+      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata5), {}, {
+        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
 <p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
 <p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
 <p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`;
+<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
+      })}`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/index-b2643ca1.js
-var index_b2643ca1_exports = {};
-__export(index_b2643ca1_exports, {
+// .svelte-kit/output/server/chunks/index-b4221af0.js
+var index_b4221af0_exports = {};
+__export(index_b4221af0_exports, {
   default: () => Routes,
   load: () => load
 });
-var css$12, Project, css3, allPosts, body, load, pageTitle2, metaDescription2, Routes;
-var init_index_b2643ca1 = __esm({
-  ".svelte-kit/output/server/chunks/index-b2643ca1.js"() {
+var css$2, Project, css$1, Art, css6, allPosts, body, load, pageTitle2, metaDescription2, Routes;
+var init_index_b4221af0 = __esm({
+  ".svelte-kit/output/server/chunks/index-b4221af0.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    init_Seo_1b2700f7();
-    css$12 = {
-      code: ".dark .project.svelte-12751t2.svelte-12751t2{border:white 2px solid;box-shadow:0 0 5px white}.dark .project.svelte-12751t2 h3.svelte-12751t2{color:#111344}.dark .project.svelte-12751t2 div.svelte-12751t2{background:white}p.svelte-12751t2 a{color:#06D6A0;text-decoration:none}p.svelte-12751t2 a:hover{text-decoration:underline}h3.svelte-12751t2 a.svelte-12751t2{color:inherit;text-decoration:none}h3.svelte-12751t2 a.svelte-12751t2:hover{text-decoration:underline}.project.svelte-12751t2.svelte-12751t2{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}.project.svelte-12751t2 p.svelte-12751t2{padding:0.5rem 0 0;margin:0}.project.svelte-12751t2 h3.svelte-12751t2{padding:0;padding-left:0.5rem;margin:0;font-weight:normal;color:white}.project.svelte-12751t2 div.svelte-12751t2{width:calc(100% + 1rem);margin:-0.5rem -0.5rem 0;padding:0.25rem 0 0.25rem;background:#111344}",
+    init_app_3ec609b6();
+    init_Seo_3a257015();
+    init_TagCloud_ed16ad3d();
+    init_Variables_d44f12e5();
+    css$2 = {
+      code: ".dark .project.svelte-1qj9iy.svelte-1qj9iy{box-shadow:0 0 5px white}.dark .project.svelte-1qj9iy div.svelte-1qj9iy{background:white}p.svelte-1qj9iy a{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none}p.svelte-1qj9iy a:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}p.svelte-1qj9iy a:hover:before{display:block}.divlink.svelte-1qj9iy.svelte-1qj9iy{text-decoration:none;color:inherit}.divlink.svelte-1qj9iy:hover h3.svelte-1qj9iy{color:var(--primary-300)}.divlink.svelte-1qj9iy:hover .project.svelte-1qj9iy{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.project.svelte-1qj9iy.svelte-1qj9iy{overflow:hidden;border-radius:var(--corner-unit);position:relative;background:white;box-shadow:var(--shadow-elevation-medium)}.project.svelte-1qj9iy div.svelte-1qj9iy:first-child{display:grid;place-items:center;background:var(--gray-500);position:relative;padding:var(--spacing-unit)}.project.svelte-1qj9iy div:first-child div.svelte-1qj9iy{width:50%;max-height:5rem}.project.svelte-1qj9iy div:first-child div img.svelte-1qj9iy{max-height:5rem}.project.svelte-1qj9iy div.svelte-1qj9iy:nth-child(2){padding:var(--spacing-unit)}.project.svelte-1qj9iy div:nth-child(2) p.svelte-1qj9iy{padding:0;margin:0}.project.svelte-1qj9iy div:nth-child(2) h3.svelte-1qj9iy{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}",
       map: null
     };
     Project = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { title: title4 = "a project" } = $$props;
+      let { title = "a project" } = $$props;
       let { src: src2 = "/" } = $$props;
       let { description = "a project about something." } = $$props;
-      if ($$props.title === void 0 && $$bindings.title && title4 !== void 0)
-        $$bindings.title(title4);
+      let { img = "&#128161" } = $$props;
+      if ($$props.title === void 0 && $$bindings.title && title !== void 0)
+        $$bindings.title(title);
       if ($$props.src === void 0 && $$bindings.src && src2 !== void 0)
         $$bindings.src(src2);
       if ($$props.description === void 0 && $$bindings.description && description !== void 0)
         $$bindings.description(description);
-      $$result.css.add(css$12);
-      return `<main><div class="${"project svelte-12751t2"}"><div class="${"svelte-12751t2"}"><h3 class="${"svelte-12751t2"}"><a target="${"_blank"}" rel="${"noopener"}"${add_attribute("href", src2, 0)} class="${"svelte-12751t2"}">${escape(title4)}</a></h3></div>
-        <p class="${"svelte-12751t2"}"><!-- HTML_TAG_START -->${description}<!-- HTML_TAG_END --></p></div>
-</main>`;
+      if ($$props.img === void 0 && $$bindings.img && img !== void 0)
+        $$bindings.img(img);
+      $$result.css.add(css$2);
+      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
+    <a class="${"divlink svelte-1qj9iy"}" target="${"_blank"}" rel="${"noopener"}"${add_attribute("href", src2, 0)}><div class="${"project svelte-1qj9iy"}"><div class="${"svelte-1qj9iy"}"><div class="${"svelte-1qj9iy"}"><img${add_attribute("src", img, 0)} class="${"svelte-1qj9iy"}"></div></div>
+        <div class="${"svelte-1qj9iy"}"><h3 class="${"svelte-1qj9iy"}">${escape(title)}</h3>
+            <p class="${"svelte-1qj9iy"}"><!-- HTML_TAG_START -->${description}<!-- HTML_TAG_END --></p></div></div>
+    </a>`;
     });
-    css3 = {
-      code: "span.svelte-kgi98x a.svelte-kgi98x{color:#06D6A0;text-decoration:none}span.svelte-kgi98x a.svelte-kgi98x:hover{text-decoration:underline}h3.svelte-kgi98x a.svelte-kgi98x{color:inherit;text-decoration:none}h3.svelte-kgi98x a.svelte-kgi98x:hover{text-decoration:underline}.project-parent.svelte-kgi98x.svelte-kgi98x{display:grid;grid-gap:1rem}@media screen and (min-width: 600px){.project-parent.svelte-kgi98x.svelte-kgi98x{grid-template-columns:1fr 1fr}}#projects.svelte-kgi98x.svelte-kgi98x,#blogposts.svelte-kgi98x.svelte-kgi98x{margin-left:-0.5rem}@media screen and (min-width: 600px){#projects.svelte-kgi98x.svelte-kgi98x,#blogposts.svelte-kgi98x.svelte-kgi98x{margin-left:-1rem}}.blog.svelte-kgi98x h3.svelte-kgi98x{margin-bottom:0.25rem}.blog.svelte-kgi98x h3 a.svelte-kgi98x:hover{text-decoration:underline}.blog.svelte-kgi98x a.svelte-kgi98x{color:inherit;text-decoration:none}.blog.svelte-kgi98x .tag a.svelte-kgi98x{color:#06D6A0}.blog.svelte-kgi98x p a.svelte-kgi98x,.blog.svelte-kgi98x span a.svelte-kgi98x{color:#06D6A0;text-decoration:none}.blog.svelte-kgi98x p a.svelte-kgi98x:hover,.blog.svelte-kgi98x span a.svelte-kgi98x:hover{text-decoration:underline}.date.svelte-kgi98x.svelte-kgi98x{opacity:0.5;font-size:1rem}",
+    css$1 = {
+      code: "img.svelte-whc5nk{width:20rem;height:auto;margin-top:-2rem}",
       map: null
     };
-    allPosts = { "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_29320d1d(), firstpost_29320d1d_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_7c2f5438(), secondpost_7c2f5438_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d52bc2eb(), thirdpost_d52bc2eb_exports)) };
+    Art = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css$1);
+      return `<img src="${"artError-3.svg"}" class="${"svelte-whc5nk"}">
+
+
+
+`;
+    });
+    css6 = {
+      code: `.grid1.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b,.grid2.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b,.grid3.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{display:grid;grid-template-columns:1fr;grid-gap:1.5rem;align-content:stretch;justify-content:stretch;margin:var(--spacing-unit)}.grid1.svelte-1c5j14b .grid1-hero.svelte-1c5j14b.svelte-1c5j14b{display:grid;align-items:center;text-align:center;margin:calc(var(--spacing-unit) * -3.5) var(--spacing-unit) var(--spacing-unit);grid-column:1/2;grid-row:2/3}.grid1.svelte-1c5j14b .grid1-hero h1.svelte-1c5j14b.svelte-1c5j14b,.grid2.svelte-1c5j14b .grid1-hero.svelte-1c5j14b h1.svelte-1c5j14b{font-weight:500}.grid1.svelte-1c5j14b .grid1-hero h2.svelte-1c5j14b.svelte-1c5j14b,.grid2.svelte-1c5j14b .grid1-hero.svelte-1c5j14b h2.svelte-1c5j14b{font-weight:600}.grid2.svelte-1c5j14b .grid1-hero h2 span.svelte-1c5j14b.svelte-1c5j14b{color:var(--secondary-300);font-weight:500}.grid1.svelte-1c5j14b .grid1-hero h3.svelte-1c5j14b.svelte-1c5j14b,.grid2.svelte-1c5j14b .grid1-hero.svelte-1c5j14b h3.svelte-1c5j14b,.grid2.svelte-1c5j14b .grid1-hero h4.svelte-1c5j14b.svelte-1c5j14b{margin:0;color:var(--gray-100);font-weight:normal}.grid2.svelte-1c5j14b .grid1-hero h3 span.svelte-1c5j14b.svelte-1c5j14b,.grid2.svelte-1c5j14b .grid1-hero h4 span.svelte-1c5j14b.svelte-1c5j14b{color:var(--secondary-300);font-weight:bold}.grid1.svelte-1c5j14b .grid1-hero nav.svelte-1c5j14b.svelte-1c5j14b,.grid2 .grid1-hero.svelte-1c5j14b nav.svelte-1c5j14b.svelte-1c5j14b{float:none}@media screen and (min-width: 1200px){.grid1.svelte-1c5j14b .grid1-hero nav.svelte-1c5j14b.svelte-1c5j14b,.grid2 .grid1-hero.svelte-1c5j14b nav.svelte-1c5j14b.svelte-1c5j14b{float:right}}.grid1.svelte-1c5j14b .grid1-art.svelte-1c5j14b.svelte-1c5j14b{display:grid;place-items:center}@media screen and (min-width: 1200px){.grid1.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b,.grid2.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{grid-template-columns:3fr 1fr}.grid1.svelte-1c5j14b .grid1-hero.svelte-1c5j14b.svelte-1c5j14b{margin:var(--spacing-unit);grid-column:1/2;grid-row:1/2;text-align:left}}@media screen and (min-width: 800px){.grid3.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{grid-template-columns:1fr 1fr}}@media screen and (min-width: 1100px){.grid3.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{grid-template-columns:1fr 1fr 1fr}}p.svelte-1c5j14b a{color:#06D6A0;text-decoration:none}p.svelte-1c5j14b a:hover{text-decoration:underline}.blogPost.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{overflow:hidden;border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-1c5j14b p.svelte-1c5j14b.svelte-1c5j14b{padding:0;margin:0}.blogPost.svelte-1c5j14b h3.svelte-1c5j14b.svelte-1c5j14b{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.divlink.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{height:100%;text-decoration:none;color:inherit}.divlink.svelte-1c5j14b:hover:hover h3.svelte-1c5j14b.svelte-1c5j14b{color:var(--primary-300)}.divlink.svelte-1c5j14b:hover:hover .blogPost.svelte-1c5j14b.svelte-1c5j14b{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.divlink.svelte-1c5j14b:hover:hover .allPostButton.svelte-1c5j14b.svelte-1c5j14b{background:var(--primary-300)}.allPostButton.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{background:var(--primary-200);justify-self:start;align-self:start}.allPostButton.svelte-1c5j14b h4.svelte-1c5j14b.svelte-1c5j14b{margin:0;padding:0;color:white;text-decoration:none}.grid2-tags.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{position:relative;margin-bottom:var(--spacing-unit)}.blog-parent.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{display:grid;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{grid-template-columns:1fr 1fr}.blog-parent.svelte-1c5j14b a.svelte-1c5j14b.svelte-1c5j14b:first-child{grid-row:1 / 2;grid-column:1 / 3}}.blog-parent.svelte-1c5j14b p a.svelte-1c5j14b.svelte-1c5j14b,.blog-parent.svelte-1c5j14b span a.svelte-1c5j14b.svelte-1c5j14b{color:#06D6A0;text-decoration:none}.blog-parent.svelte-1c5j14b p a.svelte-1c5j14b.svelte-1c5j14b:hover,.blog-parent.svelte-1c5j14b span a.svelte-1c5j14b.svelte-1c5j14b:hover{text-decoration:underline}.date.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{opacity:0.5;font-size:1rem}.hero-background.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{background:var(--primary-400);position:relative;margin-bottom:12rem;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}.hero-background.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b:before{content:'';background:var(--primary-400);position:absolute;z-index:-1;top:-50vh;left:0;height:50vh;width:100vw}.hero-background.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b:after{content:'';background:url("layered-waves.svg");background-size:cover;position:absolute;z-index:-1;bottom:-20rem;width:100vw;height:20rem}@media screen and (min-width: 900px){}.container.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{max-width:1300px;margin:auto}.header.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{margin-left:var(--spacing-unit)}@media screen and (min-width: 900px){#blogposts.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{margin-left:-0.5rem}}#tags.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{margin-left:0}.button.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{color:inherit;display:inline-block;font-size:1.2em;padding:0.5rem 0.85rem 0.5rem;margin:var(--spacing-unit) var(--spacing-unit) 0rem;border-radius:calc(var(--corner-unit) * 2);background:var(--primary-400);box-shadow:var(--shadow-elevation-medium);text-decoration:none;font-weight:600}.button.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b:hover{background:var(--primary-300);box-shadow:var(--shadow-elevation-mediumhigh);color:white}.projectsbutton.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{background:var(--primary-300);color:white}.projectsbutton.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b:hover{background:var(--primary-350);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}.blogbutton.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b{background:var(--secondary-350);color:white}.blogbutton.svelte-1c5j14b.svelte-1c5j14b.svelte-1c5j14b:hover{background:var(--secondary-300);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}`,
+      map: null
+    };
+    allPosts = { "./blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_179639bb(), fifthpost_179639bb_exports)), "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_50b5327a(), firstpost_50b5327a_exports)), "./blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_8504d1eb(), fourthpost_8504d1eb_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_6aef6d5c(), secondpost_6aef6d5c_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_bc9aadad(), thirdpost_bc9aadad_exports)) };
     body = [];
     for (let path in allPosts) {
-      body.push(allPosts[path]().then(({ metadata: metadata4 }) => {
-        return { path, metadata: metadata4 };
+      body.push(allPosts[path]().then(({ metadata: metadata6 }) => {
+        return { path, metadata: metadata6 };
       }));
     }
     load = async () => {
@@ -5056,60 +5130,79 @@ var init_index_b2643ca1 = __esm({
       });
       let projects = [
         {
-          title: "my charity website",
+          title: "My charity website",
           src: "https://www.vriendenvoorkika.nl/",
-          description: 'Climbing a mountain for charity. Made a <a target="_blank" rel="noopener" href="https://www.vriendenvoorkika.nl/">website</a> for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!'
+          description: 'Climbing a mountain for charity. Made a website for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!',
+          img: "illustration-crosses.svg"
         },
         {
-          title: "this blog",
+          title: "This blog",
           src: "/",
-          description: "Maxed out Jekyll, and felt overwhelmed by React. In comes SvelteKit!"
+          description: "Maxed out Jekyll, and felt overwhelmed by React. In comes SvelteKit!",
+          img: "illustration-3scribbles.svg"
         },
         {
-          title: "an investing calculator",
+          title: "An investing calculator",
           src: "/calculator",
-          description: "Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting."
+          description: "Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.",
+          img: "illustration-shapes.svg"
         },
         {
-          title: "interactive diagnostic flowchart",
+          title: "Interactive diagnostic flowchart",
           src: "/flowcharts/schildklier",
-          description: "Quick and dirty way to diagnose thyroid problems. Adapted from a flowchart by the NHG (Dutch GP association)."
+          description: "Quick and dirty way to diagnose thyroid problems. Adapted from a flowchart by the NHG (Dutch GP association).",
+          img: "illustration-0arrow.svg"
         }
       ];
       if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0)
         $$bindings.posts(posts);
-      $$result.css.add(css3);
-      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle2, metaDescription: metaDescription2 }, {}, {})}
+      $$result.css.add(css6);
+      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
 
-<h2 style="${"font-weight: normal;"}">hi! I might blog here about about beginner web development (I&#39;m a noob). I also study medicine. Welcome to my online hub.</h2>
+${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle2, metaDescription: metaDescription2 }, {}, {})}
 
-<h2 id="${"projects"}" class="${"svelte-kgi98x"}">Projects</h2>
-<div class="${"project-parent svelte-kgi98x"}">${each(projects, ({ title: title4, src: src2, description }) => `${validate_component(Project, "Project").$$render($$result, { title: title4, src: src2, description }, {}, {})}`)}</div>
+<div class="${"hero-background svelte-1c5j14b"}"><div class="${"container svelte-1c5j14b"}"><div class="${"grid1 svelte-1c5j14b"}"><div class="${"grid1-art svelte-1c5j14b"}">${validate_component(Art, "Art").$$render($$result, {}, {}, {})}</div>
+            <div class="${"grid1-hero svelte-1c5j14b"}"><div><h2 class="${"svelte-1c5j14b"}">Hi, I&#39;m Koen!</h2>
+                    <h1 class="${"svelte-1c5j14b"}">I do some programming in my off-time.</h1>
+                    <h3 class="${"svelte-1c5j14b"}">I write about web development as if you knew nothing, because neither do I!</h3>
+                    <nav class="${"svelte-1c5j14b"}"><a class="${"button blogbutton svelte-1c5j14b"}" href="${"#blogposts"}">Blog</a>
+                        <a class="${"button projectsbutton svelte-1c5j14b"}" href="${"#projects"}">Projects</a></nav></div></div></div></div></div>
 
-<div class="${"blog svelte-kgi98x"}"><h2 id="${"blogposts"}" class="${"svelte-kgi98x"}">Latest posts</h2>
+<div class="${"container svelte-1c5j14b"}"><div class="${"grid2 svelte-1c5j14b"}"><div class="${"grid2-blog"}"><h1 id="${"blogposts"}" class="${"header svelte-1c5j14b"}">Recently published</h1>
+            <div class="${"blog-parent svelte-1c5j14b"}">${each(posts.slice(0, 4), ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-1c5j14b"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-1c5j14b"}"><h3 class="${"svelte-1c5j14b"}">${escape(title)}</h3>
+                        <span class="${"date svelte-1c5j14b"}">${escape(new Date(date).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      }))}</span>
+                        <p class="${"svelte-1c5j14b"}">${escape(snippet)}</p></div>
+                    </a>`)}
+                <a href="${"/blog"}" class="${"divlink svelte-1c5j14b"}"><div class="${"blogPost allPostButton svelte-1c5j14b"}"><h4 class="${"svelte-1c5j14b"}">All posts \u2794</h4></div></a></div></div> 
 
-    ${each(posts.slice(0, 4), ({ path, metadata: { title: title4, tags: tags4, date: date4 } }) => `<h3 class="${"svelte-kgi98x"}"><a${add_attribute("href", `${path.replace(".md", "")}`, 0)} class="${"svelte-kgi98x"}">${escape(title4)}</a></h3>
-        <span class="${"date svelte-kgi98x"}">${escape(new Date(date4).toLocaleDateString())}</span>
-        ${each(tags4, (tag) => `<span class="${"tag svelte-kgi98x"}"><a${add_attribute("href", `/tags/${tag}`, 0)} class="${"svelte-kgi98x"}">#${escape(tag)}</a>\xA0
-        </span>`)}`)}
-    <span style="${"float: right;"}" class="${"svelte-kgi98x"}"><a href="${"/blog"}" class="${"svelte-kgi98x"}">all posts \u2794</a></span>
+    <div class="${"grid2-tags svelte-1c5j14b"}"><h2 id="${"tags"}" class="${"header svelte-1c5j14b"}">Explore topics</h2>
+        ${validate_component(TagCloud, "TagCloud").$$render($$result, {}, {}, {})}</div></div>
+    
+<h1 id="${"projects"}" class="${"header svelte-1c5j14b"}">Projects</h1>
+<div class="${"grid3 svelte-1c5j14b"}">${each(projects, ({ title, src: src2, description, img }) => `${validate_component(Project, "Project").$$render($$result, { title, src: src2, description, img }, {}, {})}`)}</div>
+
+
 </div>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/calculator-2e92c23c.js
-var calculator_2e92c23c_exports = {};
-__export(calculator_2e92c23c_exports, {
+// .svelte-kit/output/server/chunks/calculator-7207c584.js
+var calculator_7207c584_exports = {};
+__export(calculator_7207c584_exports, {
   default: () => Calculator
 });
-var css4, pageTitle3, metaDescription3, Calculator;
-var init_calculator_2e92c23c = __esm({
-  ".svelte-kit/output/server/chunks/calculator-2e92c23c.js"() {
+var css7, pageTitle3, metaDescription3, Calculator;
+var init_calculator_7207c584 = __esm({
+  ".svelte-kit/output/server/chunks/calculator-7207c584.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    init_Seo_1b2700f7();
-    css4 = {
+    init_app_3ec609b6();
+    init_Seo_3a257015();
+    css7 = {
       code: '.explanation.svelte-v28rry.svelte-v28rry{display:grid;padding:1rem 0 1rem;grid-template-columns:1fr}@media screen and (min-width: 600px){.explanation.svelte-v28rry.svelte-v28rry{grid-template-columns:1fr 1fr}}.explanation-pie.svelte-v28rry.svelte-v28rry{padding:1rem 0 0;justify-self:center}@media screen and (min-width: 600px){.explanation-pie.svelte-v28rry.svelte-v28rry{padding:0}}h3.svelte-v28rry.svelte-v28rry{font-weight:normal;margin:0}svg.svelte-v28rry.svelte-v28rry{width:10rem;height:10rem}svg.svelte-v28rry text.svelte-v28rry{font-weight:bold;fill:white}.dark .circle.svelte-v28rry.svelte-v28rry{fill:#6E71DB}a.svelte-v28rry.svelte-v28rry{color:#06D6A0;text-decoration:none}a.svelte-v28rry.svelte-v28rry:hover{text-decoration:underline}ol.svelte-v28rry.svelte-v28rry{list-style:none;margin:0;padding:0}ol.svelte-v28rry li.svelte-v28rry{display:grid;grid-template-columns:1fr;grid-gap:0.25rem;padding-bottom:1rem}span.svelte-v28rry.svelte-v28rry{color:#06D6A0;font-weight:bold}form.svelte-v28rry.svelte-v28rry{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}input[type="number"].svelte-v28rry.svelte-v28rry{font-size:inherit;box-shadow:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;outline:1px black solid;padding:0.25rem;margin:0 0.25rem 0;width:auto}label.svelte-v28rry.svelte-v28rry{padding-left:0.25rem}.svelte-v28rry.svelte-v28rry::-moz-focus-inner{border:0;padding:0}input[type="range"].svelte-v28rry.svelte-v28rry{-webkit-appearance:none;width:auto;margin:0.25rem 0 0.25rem;padding:0 0.25rem 0}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{-webkit-appearance:none;height:20px;width:20px;background:#06D6A0;margin-top:-7.5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{height:15px;width:15px;margin-top:-5px}}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:20px;width:20px;background:#06D6A0;margin-top:-5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:15px;width:15px;margin-top:-5px}}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:white;height:5px}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:white;height:5px}.dark form.svelte-v28rry.svelte-v28rry{box-shadow:0 0 5px white;border:white 2px solid}',
       map: null
     };
@@ -5122,7 +5215,7 @@ var init_calculator_2e92c23c = __esm({
       let volatileAssets = null;
       let stableAssets = null;
       let desiredPercVolatile = 0;
-      $$result.css.add(css4);
+      $$result.css.add(css7);
       totalPortfValue = volatileAssets + stableAssets;
       actPercVolatile = volatileAssets / totalPortfValue * 100;
       diffActAndDesVolatile = volatileAssets - desiredPercVolatile / 100 * totalPortfValue;
@@ -5160,22 +5253,22 @@ var init_calculator_2e92c23c = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-35baa302.js
-var index_35baa302_exports = {};
-__export(index_35baa302_exports, {
+// .svelte-kit/output/server/chunks/index-c02f0e42.js
+var index_c02f0e42_exports = {};
+__export(index_c02f0e42_exports, {
   default: () => Schildklier
 });
 function pageScroll() {
   window.scrollBy(0, 50);
   setTimeout("pageScroll()", 100);
 }
-var css5, pageTitle4, metaDescription4, Schildklier;
-var init_index_35baa302 = __esm({
-  ".svelte-kit/output/server/chunks/index-35baa302.js"() {
+var css8, pageTitle4, metaDescription4, Schildklier;
+var init_index_c02f0e42 = __esm({
+  ".svelte-kit/output/server/chunks/index-c02f0e42.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    init_Seo_1b2700f7();
-    css5 = {
+    init_app_3ec609b6();
+    init_Seo_3a257015();
+    css8 = {
       code: "button.svelte-1dd3gzp{font-family:inherit;font-size:inherit;padding:0.25rem;background:transparent;box-shadow:none;outline:none;border:2px solid #111344}button.svelte-1dd3gzp:hover{outline:2px solid #06D6A0;cursor:pointer}.dark button.svelte-1dd3gzp{color:white;border:2px solid white}a.svelte-1dd3gzp{color:#06D6A0;text-decoration:none}a.svelte-1dd3gzp:hover{text-decoration:underline}",
       map: null
     };
@@ -5197,7 +5290,7 @@ var init_index_35baa302 = __esm({
       let nodus;
       let solnodus;
       pageScroll();
-      $$result.css.add(css5);
+      $$result.css.add(css8);
       start = false;
       tsh = null;
       tsh1t4 = null;
@@ -5272,38 +5365,43 @@ ${tsh ? `${tsh === 3 ? `<p>Euthyreo\xEFdie</p>` : `${tsh === 1 ? `<p>Is het Vrij
   }
 });
 
-// .svelte-kit/output/server/chunks/index-ec5c0477.js
-var index_ec5c0477_exports = {};
-__export(index_ec5c0477_exports, {
-  default: () => Blog,
+// .svelte-kit/output/server/chunks/blog-311d2256.js
+var blog_311d2256_exports = {};
+__export(blog_311d2256_exports, {
+  default: () => Blog2,
   load: () => load2
 });
-var css$13, TagCloud, css6, allPosts2, body2, load2, pageTitle5, metaDescription5, Blog;
-var init_index_ec5c0477 = __esm({
-  ".svelte-kit/output/server/chunks/index-ec5c0477.js"() {
+var css$12, Posts, css9, allPosts2, body2, load2, pageTitle5, metaDescription5, Blog2;
+var init_blog_311d2256 = __esm({
+  ".svelte-kit/output/server/chunks/blog-311d2256.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    init_Seo_1b2700f7();
-    css$13 = {
-      code: "a.svelte-jtei5d{text-decoration:none;padding-right:0.5rem;color:#06D6A0}a.svelte-jtei5d:hover{text-decoration:underline}",
+    init_app_3ec609b6();
+    init_Seo_3a257015();
+    init_Date_bcbde33d();
+    css$12 = {
+      code: ".blog-parent.svelte-1gkvs7t.svelte-1gkvs7t{display:grid;grid-auto-flow:dense;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-1gkvs7t.svelte-1gkvs7t{grid-template-columns:1fr 1fr 1fr}.blog-parent.svelte-1gkvs7t a.svelte-1gkvs7t:first-child{grid-row:1 / 2;grid-column:1 / 3}}.divlink.svelte-1gkvs7t.svelte-1gkvs7t{height:100%;text-decoration:none;color:inherit}.divlink.svelte-1gkvs7t .date.svelte-1gkvs7t{opacity:0.5;font-size:1rem}.divlink.svelte-1gkvs7t:hover:hover h3.svelte-1gkvs7t{color:var(--primary-300)}.divlink.svelte-1gkvs7t:hover:hover .blogPost.svelte-1gkvs7t{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-1gkvs7t.svelte-1gkvs7t{overflow:hidden;background:white;border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-1gkvs7t p.svelte-1gkvs7t{padding:0;margin:0}.blogPost.svelte-1gkvs7t h3.svelte-1gkvs7t{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}",
       map: null
     };
-    TagCloud = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { tags: tags4 = [] } = $$props;
-      if ($$props.tags === void 0 && $$bindings.tags && tags4 !== void 0)
-        $$bindings.tags(tags4);
-      $$result.css.add(css$13);
-      return `${each(tags4, (tag) => `<a${add_attribute("href", `/tags/${tag}`, 0)} class="${"svelte-jtei5d"}">#${escape(tag)}</a>`)}`;
+    Posts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { dateSortedPosts } = $$props;
+      if ($$props.dateSortedPosts === void 0 && $$bindings.dateSortedPosts && dateSortedPosts !== void 0)
+        $$bindings.dateSortedPosts(dateSortedPosts);
+      $$result.css.add(css$12);
+      return `<div class="${"blog-parent svelte-1gkvs7t"}">${each(dateSortedPosts, ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-1gkvs7t"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-1gkvs7t"}"><h3 class="${"svelte-1gkvs7t"}">${escape(title)}</h3>
+            <span class="${"date svelte-1gkvs7t"}">${validate_component(Date_1, "Date").$$render($$result, { date }, {}, {})}</span>
+            <p class="${"svelte-1gkvs7t"}">${escape(snippet)}</p></div>
+        </a>`)}
+</div>`;
     });
-    css6 = {
-      code: "h1.svelte-1pzmm11.svelte-1pzmm11,h2.svelte-1pzmm11.svelte-1pzmm11{margin-left:-0.5rem}@media screen and (min-width: 600px){h1.svelte-1pzmm11.svelte-1pzmm11,h2.svelte-1pzmm11.svelte-1pzmm11{margin-left:-1rem}}.blog.svelte-1pzmm11 h3.svelte-1pzmm11{margin-bottom:0.25rem}.blog.svelte-1pzmm11 h3 a.svelte-1pzmm11:hover{text-decoration:underline}.blog.svelte-1pzmm11 a.svelte-1pzmm11{color:inherit;text-decoration:none}.blog.svelte-1pzmm11 .tag a.svelte-1pzmm11{color:#06D6A0}.blog.svelte-1pzmm11 .tag a.svelte-1pzmm11:hover{text-decoration:underline}.date.svelte-1pzmm11.svelte-1pzmm11{opacity:0.5;font-size:1rem}",
+    css9 = {
+      code: ".container.svelte-1vbikjs.svelte-1vbikjs{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}.container.svelte-1vbikjs div.svelte-1vbikjs{display:grid;align-items:center}.container.svelte-1vbikjs div h1.svelte-1vbikjs{text-align:center}.wrapper.svelte-1vbikjs.svelte-1vbikjs{margin-top:calc(var(--spacing-unit) * 3)}.background.svelte-1vbikjs.svelte-1vbikjs{width:100vw;height:calc(100% + 25rem);top:-15rem;z-index:-1;position:fixed;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:var(--primary-400);background-size:cover;background-position:center}",
       map: null
     };
-    allPosts2 = { "./firstpost.md": () => Promise.resolve().then(() => (init_firstpost_29320d1d(), firstpost_29320d1d_exports)), "./secondpost.md": () => Promise.resolve().then(() => (init_secondpost_7c2f5438(), secondpost_7c2f5438_exports)), "./thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d52bc2eb(), thirdpost_d52bc2eb_exports)) };
+    allPosts2 = { "./blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_179639bb(), fifthpost_179639bb_exports)), "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_50b5327a(), firstpost_50b5327a_exports)), "./blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_8504d1eb(), fourthpost_8504d1eb_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_6aef6d5c(), secondpost_6aef6d5c_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_bc9aadad(), thirdpost_bc9aadad_exports)) };
     body2 = [];
     for (let path in allPosts2) {
-      body2.push(allPosts2[path]().then(({ metadata: metadata4 }) => {
-        return { path, metadata: metadata4 };
+      body2.push(allPosts2[path]().then(({ metadata: metadata6 }) => {
+        return { path, metadata: metadata6 };
       }));
     }
     load2 = async ({ page }) => {
@@ -5313,54 +5411,48 @@ var init_index_ec5c0477 = __esm({
     };
     pageTitle5 = "blog";
     metaDescription5 = "Collection of all blog posts on the website.";
-    Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+    Blog2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { posts } = $$props;
-      let { tag } = $$props;
       const dateSortedPosts = posts.slice().sort((post1, post2) => {
         return new Date(post2.metadata.date) - new Date(post1.metadata.date);
       });
-      let tagArray = ["fun", "career", "tech"];
       if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0)
         $$bindings.posts(posts);
-      if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
-        $$bindings.tag(tag);
-      $$result.css.add(css6);
+      if ($$props.dateSortedPosts === void 0 && $$bindings.dateSortedPosts && dateSortedPosts !== void 0)
+        $$bindings.dateSortedPosts(dateSortedPosts);
+      $$result.css.add(css9);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle5, metaDescription: metaDescription5 }, {}, {})}
-<h1 class="${"svelte-1pzmm11"}">Blog</h1>
-<h2 class="${"svelte-1pzmm11"}">All posts</h2>
-<div class="${"blog svelte-1pzmm11"}">${each(dateSortedPosts, ({ path, metadata: { title: title4, tags: tags4, date: date4 } }) => `<h3 class="${"svelte-1pzmm11"}"><a${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)} class="${"svelte-1pzmm11"}">${escape(title4)}</a></h3>
-        <span class="${"date svelte-1pzmm11"}">${escape(new Date(date4).toLocaleDateString())}</span>
 
-        ${each(tags4, (tag2) => `<span class="${"tag"}"><a${add_attribute("href", `/tags/${tag2}`, 0)} class="${"svelte-1pzmm11"}">#${escape(tag2)}</a>\xA0
-        </span>`)}`)}</div>
-
-<h2 class="${"svelte-1pzmm11"}">Tags</h2>
-${validate_component(TagCloud, "TagCloud").$$render($$result, { tags: tagArray }, {}, {})}`;
+    <main class="${"container svelte-1vbikjs"}"><div class="${"svelte-1vbikjs"}"><h1 class="${"svelte-1vbikjs"}">All posts</h1></div>
+        <div class="${"wrapper svelte-1vbikjs"}">${validate_component(Posts, "Posts").$$render($$result, { dateSortedPosts }, {}, {})} 
+            <div class="${"background svelte-1vbikjs"}"></div></div>
+    </main>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/_tag_-f5d00220.js
-var tag_f5d00220_exports = {};
-__export(tag_f5d00220_exports, {
+// .svelte-kit/output/server/chunks/_tag_-51f85f45.js
+var tag_51f85f45_exports = {};
+__export(tag_51f85f45_exports, {
   default: () => U5Btagu5D,
   load: () => load3
 });
-var css7, allPosts3, body3, load3, metaDescription6, U5Btagu5D;
-var init_tag_f5d00220 = __esm({
-  ".svelte-kit/output/server/chunks/_tag_-f5d00220.js"() {
+var css10, allPosts3, body3, load3, metaDescription6, U5Btagu5D;
+var init_tag_51f85f45 = __esm({
+  ".svelte-kit/output/server/chunks/_tag_-51f85f45.js"() {
     init_shims();
-    init_app_6b99a6ea();
-    init_Seo_1b2700f7();
-    css7 = {
-      code: ".blog.svelte-ot3rxw h3.svelte-ot3rxw{margin-bottom:0.25rem}.blog.svelte-ot3rxw h3 a.svelte-ot3rxw:hover{text-decoration:underline}.blog.svelte-ot3rxw a.svelte-ot3rxw{color:inherit;text-decoration:none}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw{color:#06D6A0}.blog.svelte-ot3rxw .tag a.svelte-ot3rxw:hover{text-decoration:underline}.date.svelte-ot3rxw.svelte-ot3rxw{opacity:0.5;font-size:1rem}",
+    init_app_3ec609b6();
+    init_Seo_3a257015();
+    init_Variables_d44f12e5();
+    css10 = {
+      code: ".blog-parent.svelte-dtfkrr.svelte-dtfkrr{display:grid;grid-auto-flow:dense;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-dtfkrr.svelte-dtfkrr{grid-template-columns:1fr 1fr}}.divlink.svelte-dtfkrr.svelte-dtfkrr{height:100%;text-decoration:none;color:inherit}.divlink.svelte-dtfkrr .date.svelte-dtfkrr{opacity:0.5;font-size:1rem}.divlink.svelte-dtfkrr:hover:hover h3.svelte-dtfkrr{color:var(--primary-300)}.divlink.svelte-dtfkrr:hover:hover .blogPost.svelte-dtfkrr{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-dtfkrr.svelte-dtfkrr{overflow:hidden;background:white;border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-dtfkrr p.svelte-dtfkrr{padding:0;margin:0}.blogPost.svelte-dtfkrr h3.svelte-dtfkrr{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.container.svelte-dtfkrr.svelte-dtfkrr{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}",
       map: null
     };
-    allPosts3 = { "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_29320d1d(), firstpost_29320d1d_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_7c2f5438(), secondpost_7c2f5438_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d52bc2eb(), thirdpost_d52bc2eb_exports)) };
+    allPosts3 = { "../blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_179639bb(), fifthpost_179639bb_exports)), "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_50b5327a(), firstpost_50b5327a_exports)), "../blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_8504d1eb(), fourthpost_8504d1eb_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_6aef6d5c(), secondpost_6aef6d5c_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_bc9aadad(), thirdpost_bc9aadad_exports)) };
     body3 = [];
     for (let path in allPosts3) {
-      body3.push(allPosts3[path]().then(({ metadata: metadata4 }) => {
-        return { path, metadata: metadata4 };
+      body3.push(allPosts3[path]().then(({ metadata: metadata6 }) => {
+        return { path, metadata: metadata6 };
       }));
     }
     load3 = async ({ page }) => {
@@ -5380,22 +5472,27 @@ var init_tag_f5d00220 = __esm({
         $$bindings.filteredPosts(filteredPosts);
       if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
         $$bindings.tag(tag);
-      $$result.css.add(css7);
+      $$result.css.add(css10);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription6 }, {}, {})}
 
-<h1>${escape(tag.replace(/^\w/, (c) => c.toUpperCase()))}</h1>
+${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
 
-<div class="${"blog svelte-ot3rxw"}">${each(filteredPosts, ({ path, metadata: { title: title4, tags: tags4, date: date4 } }) => `<h3 class="${"svelte-ot3rxw"}"><a${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)} class="${"svelte-ot3rxw"}">${escape(title4)}</a></h3>
-        <span class="${"date svelte-ot3rxw"}">${escape(new Date(date4).toLocaleDateString())}</span>
-        ${each(tags4, (tag2) => `<span class="${"tag"}"><a${add_attribute("href", `/tags/${tag2}`, 0)} class="${"svelte-ot3rxw"}">#${escape(tag2)}</a>\xA0
-        </span>`)}
-    <hr>`)}
-</div>`;
+<main class="${"container svelte-dtfkrr"}"><h1>${escape(tag.replace(/^\w/, (c) => c.toUpperCase()))}</h1>
+
+    <div class="${"blog-parent svelte-dtfkrr"}">${each(filteredPosts, ({ path, metadata: { title, date, snippet } }) => `<a class="${"divlink svelte-dtfkrr"}"${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-dtfkrr"}"><h3 class="${"svelte-dtfkrr"}">${escape(title)}</h3>
+                    <span class="${"date svelte-dtfkrr"}">${escape(new Date(date).toLocaleDateString("en-us", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      }))}</span>
+                    <p class="${"svelte-dtfkrr"}">${escape(snippet)}</p></div>
+            </a>`)}</div>
+</main>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/app-6b99a6ea.js
+// .svelte-kit/output/server/chunks/app-3ec609b6.js
 function get_single_valued_header(headers, key) {
   const value = headers[key];
   if (Array.isArray(value)) {
@@ -6599,11 +6696,6 @@ function blank_object() {
 function run_all(fns) {
   fns.forEach(run);
 }
-function custom_event(type, detail, bubbles = false) {
-  const e = document.createEvent("CustomEvent");
-  e.initCustomEvent(type, bubbles, false, detail);
-  return e;
-}
 function set_current_component(component) {
   current_component = component;
 }
@@ -6611,18 +6703,6 @@ function get_current_component() {
   if (!current_component)
     throw new Error("Function called outside component initialization");
   return current_component;
-}
-function createEventDispatcher() {
-  const component = get_current_component();
-  return (type, detail) => {
-    const callbacks = component.$$.callbacks[type];
-    if (callbacks) {
-      const event = custom_event(type, detail);
-      callbacks.slice().forEach((fn) => {
-        fn.call(component, event);
-      });
-    }
-  };
 }
 function setContext(key, context) {
   get_current_component().$$.context.set(key, context);
@@ -6700,9 +6780,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-58d4199f.js",
+      file: assets + "/_app/start-8e2bfbf7.js",
       css: [assets + "/_app/assets/start-61d1577b.css"],
-      js: [assets + "/_app/start-58d4199f.js", assets + "/_app/chunks/vendor-43e105ad.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
+      js: [assets + "/_app/start-8e2bfbf7.js", assets + "/_app/chunks/vendor-4f02d0e1.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
     },
     fetched: void 0,
     floc: false,
@@ -6745,9 +6825,9 @@ function render(request, {
   const host = request.headers["host"];
   return respond({ ...request, host }, options, { prerender });
 }
-var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, absolute, scheme, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css8, Root, base, assets, user_hooks, template, options, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_6b99a6ea = __esm({
-  ".svelte-kit/output/server/chunks/app-6b99a6ea.js"() {
+var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, absolute, scheme, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css11, Root, base, assets, user_hooks, template, options, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
+var init_app_3ec609b6 = __esm({
+  ".svelte-kit/output/server/chunks/app-3ec609b6.js"() {
     init_shims();
     __accessCheck = (obj, member, msg) => {
       if (!member.has(obj))
@@ -6864,7 +6944,7 @@ var init_app_6b99a6ea = __esm({
     missing_component = {
       $$render: () => ""
     };
-    css8 = {
+    css11 = {
       code: "#svelte-announcer.svelte-1j55zn5{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}",
       map: null
     };
@@ -6889,7 +6969,7 @@ var init_app_6b99a6ea = __esm({
         $$bindings.props_1(props_1);
       if ($$props.props_2 === void 0 && $$bindings.props_2 && props_2 !== void 0)
         $$bindings.props_2(props_2);
-      $$result.css.add(css8);
+      $$result.css.add(css11);
       {
         stores.page.set(page);
       }
@@ -6916,7 +6996,7 @@ ${``}`;
     d = (s2) => s2.replace(/%23/g, "#").replace(/%3[Bb]/g, ";").replace(/%2[Cc]/g, ",").replace(/%2[Ff]/g, "/").replace(/%3[Ff]/g, "?").replace(/%3[Aa]/g, ":").replace(/%40/g, "@").replace(/%26/g, "&").replace(/%3[Dd]/g, "=").replace(/%2[Bb]/g, "+").replace(/%24/g, "$");
     empty = () => ({});
     manifest = {
-      assets: [{ "file": "favicon.png", "size": 1571, "type": "image/png" }, { "file": "manifest.json", "size": 287, "type": "application/json" }],
+      assets: [{ "file": ".DS_Store", "size": 6148, "type": null }, { "file": "artComputerman.svg", "size": 35544, "type": "image/svg+xml" }, { "file": "artError-2.svg", "size": 18616, "type": "image/svg+xml" }, { "file": "artError-3.svg", "size": 18616, "type": "image/svg+xml" }, { "file": "artError.svg", "size": 67186, "type": "image/svg+xml" }, { "file": "artMountain.svg", "size": 30329, "type": "image/svg+xml" }, { "file": "background-stackedwaves.svg", "size": 4914, "type": "image/svg+xml" }, { "file": "blob-scene.svg", "size": 4970, "type": "image/svg+xml" }, { "file": "favicon.png", "size": 1571, "type": "image/png" }, { "file": "footer-waveline.svg", "size": 584, "type": "image/svg+xml" }, { "file": "illustration-0arrow.svg", "size": 2484, "type": "image/svg+xml" }, { "file": "illustration-3scribbles.svg", "size": 11862, "type": "image/svg+xml" }, { "file": "illustration-crosses.svg", "size": 16139, "type": "image/svg+xml" }, { "file": "illustration-shapes.svg", "size": 13936, "type": "image/svg+xml" }, { "file": "layered-waves.svg", "size": 4056, "type": "image/svg+xml" }, { "file": "manifest.json", "size": 287, "type": "application/json" }, { "file": "postBackground-1.svg", "size": 687, "type": "image/svg+xml" }, { "file": "postBackground-2.svg", "size": 678, "type": "image/svg+xml" }, { "file": "postBackground-3.svg", "size": 689, "type": "image/svg+xml" }, { "file": "postBackground-4.svg", "size": 570, "type": "image/svg+xml" }],
       layout: "src/routes/__layout.svelte",
       error: "src/routes/__error.svelte",
       routes: [
@@ -6943,9 +7023,9 @@ ${``}`;
         },
         {
           type: "page",
-          pattern: /^\/blog\/?$/,
+          pattern: /^\/blog\/fourthpost\/?$/,
           params: empty,
-          a: ["src/routes/__layout.svelte", "src/routes/blog/index.svelte"],
+          a: ["src/routes/__layout.svelte", "src/routes/blog/fourthpost.md"],
           b: ["src/routes/__error.svelte"]
         },
         {
@@ -6953,6 +7033,13 @@ ${``}`;
           pattern: /^\/blog\/secondpost\/?$/,
           params: empty,
           a: ["src/routes/__layout.svelte", "src/routes/blog/secondpost.md"],
+          b: ["src/routes/__error.svelte"]
+        },
+        {
+          type: "page",
+          pattern: /^\/blog\/fifthpost\/?$/,
+          params: empty,
+          a: ["src/routes/__layout.svelte", "src/routes/blog/fifthpost.md"],
           b: ["src/routes/__error.svelte"]
         },
         {
@@ -6971,6 +7058,13 @@ ${``}`;
         },
         {
           type: "page",
+          pattern: /^\/blog\/?$/,
+          params: empty,
+          a: ["src/routes/__layout.svelte", "src/routes/blog.svelte"],
+          b: ["src/routes/__error.svelte"]
+        },
+        {
+          type: "page",
           pattern: /^\/tags\/([^/]+?)\/?$/,
           params: (m) => ({ tag: d(m[1]) }),
           a: ["src/routes/__layout.svelte", "src/routes/tags/[tag].svelte"],
@@ -6985,18 +7079,20 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_4bdecb11(), layout_4bdecb11_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_91fc8a28(), error_91fc8a28_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_b2643ca1(), index_b2643ca1_exports)),
-      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_2e92c23c(), calculator_2e92c23c_exports)),
-      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_35baa302(), index_35baa302_exports)),
-      "src/routes/blog/index.svelte": () => Promise.resolve().then(() => (init_index_ec5c0477(), index_ec5c0477_exports)),
-      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_7c2f5438(), secondpost_7c2f5438_exports)),
-      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_29320d1d(), firstpost_29320d1d_exports)),
-      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d52bc2eb(), thirdpost_d52bc2eb_exports)),
-      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_f5d00220(), tag_f5d00220_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_c4208bfc(), layout_c4208bfc_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_48344ff2(), error_48344ff2_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_b4221af0(), index_b4221af0_exports)),
+      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_7207c584(), calculator_7207c584_exports)),
+      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_c02f0e42(), index_c02f0e42_exports)),
+      "src/routes/blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_8504d1eb(), fourthpost_8504d1eb_exports)),
+      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_6aef6d5c(), secondpost_6aef6d5c_exports)),
+      "src/routes/blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_179639bb(), fifthpost_179639bb_exports)),
+      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_50b5327a(), firstpost_50b5327a_exports)),
+      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_bc9aadad(), thirdpost_bc9aadad_exports)),
+      "src/routes/blog.svelte": () => Promise.resolve().then(() => (init_blog_311d2256(), blog_311d2256_exports)),
+      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_51f85f45(), tag_51f85f45_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-017a61eb.js", "css": ["assets/pages/__layout.svelte-3823e314.css"], "js": ["pages/__layout.svelte-017a61eb.js", "chunks/vendor-43e105ad.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-b3d66c75.js", "css": ["assets/pages/__error.svelte-89d5cf62.css"], "js": ["pages/__error.svelte-b3d66c75.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-3d249299.js", "css": ["assets/pages/index.svelte-515fa36e.css"], "js": ["pages/index.svelte-3d249299.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-208fe9ff.js", "css": ["assets/pages/calculator.svelte-89386e7c.css"], "js": ["pages/calculator.svelte-208fe9ff.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-ed34ae23.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-98a7782a.css"], "js": ["pages/flowcharts/schildklier/index.svelte-ed34ae23.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-ddd94b7a.js", "css": ["assets/pages/blog/index.svelte-0214c44e.css"], "js": ["pages/blog/index.svelte-ddd94b7a.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-1196b3f0.js", "css": [], "js": ["pages/blog/secondpost.md-1196b3f0.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-ef3c96fd.js", "css": [], "js": ["pages/blog/firstpost.md-ef3c96fd.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-ee3755a6.js", "css": [], "js": ["pages/blog/thirdpost.md-ee3755a6.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-a308d2b2.js", "css": ["assets/pages/tags/_tag_.svelte-ff42206c.css"], "js": ["pages/tags/_tag_.svelte-a308d2b2.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-43e105ad.js", "chunks/Seo-6b6c9f65.js"], "styles": [] } };
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-368f0a36.js", "css": ["assets/pages/__layout.svelte-a63f5c86.css", "assets/Variables-da71c3e7.css", "assets/TagCloud-2ccc98c6.css"], "js": ["pages/__layout.svelte-368f0a36.js", "chunks/vendor-4f02d0e1.js", "chunks/Variables-490c0fbc.js", "chunks/TagCloud-df179f89.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-85ae241b.js", "css": ["assets/pages/__error.svelte-89d5cf62.css"], "js": ["pages/__error.svelte-85ae241b.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-50e7611c.js", "css": ["assets/pages/index.svelte-677d08fe.css", "assets/TagCloud-2ccc98c6.css", "assets/Variables-da71c3e7.css"], "js": ["pages/index.svelte-50e7611c.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js", "chunks/TagCloud-df179f89.js", "chunks/Variables-490c0fbc.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-d972ee29.js", "css": ["assets/pages/calculator.svelte-89386e7c.css"], "js": ["pages/calculator.svelte-d972ee29.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-9a4a72ac.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-98a7782a.css"], "js": ["pages/flowcharts/schildklier/index.svelte-9a4a72ac.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js"], "styles": [] }, "src/routes/blog/fourthpost.md": { "entry": "pages/blog/fourthpost.md-a2f72c3d.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/fourthpost.md-a2f72c3d.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-1ebfbb25.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-3c543b44.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/secondpost.md-3c543b44.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-1ebfbb25.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/fifthpost.md": { "entry": "pages/blog/fifthpost.md-d6481eaa.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/fifthpost.md-d6481eaa.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-1ebfbb25.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-644493f1.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/firstpost.md-644493f1.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-1ebfbb25.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-37a1812a.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/thirdpost.md-37a1812a.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-1ebfbb25.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog.svelte": { "entry": "pages/blog.svelte-3a84696e.js", "css": ["assets/pages/blog.svelte-826aa700.css"], "js": ["pages/blog.svelte-3a84696e.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-cff24fe7.js", "css": ["assets/pages/tags/_tag_.svelte-e1b55627.css", "assets/Variables-da71c3e7.css"], "js": ["pages/tags/_tag_.svelte-cff24fe7.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js", "chunks/Variables-490c0fbc.js"], "styles": [] } };
   }
 });
 
@@ -7049,7 +7145,7 @@ function getRawBody(req) {
 
 // .svelte-kit/output/server/app.js
 init_shims();
-init_app_6b99a6ea();
+init_app_3ec609b6();
 
 // .svelte-kit/vercel/entry.js
 init();

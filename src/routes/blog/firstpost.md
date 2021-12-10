@@ -5,18 +5,8 @@ tags:
     - fun
 date: 2021-11-01
 snippet: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do" 
+backgroundNumber: 2
 ---
-<script>
-    import Seo from '$lib/Seo.svelte'
-
-    let pageTitle = title
-    let metaDescription = snippet
-    
-</script>
-
-<Seo {pageTitle}{metaDescription}/>
-
-# {title}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.
 
