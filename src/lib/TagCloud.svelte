@@ -1,8 +1,6 @@
 <script>
     let tagArray = ["fun", "career", "tech"]; 
-    import Variables from '$lib/Variables.svelte';
 </script>
-<Variables/>
 
 <div>
 {#each tagArray as tag}

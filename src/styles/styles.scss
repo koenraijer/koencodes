@@ -1,0 +1,115 @@
+:root {
+    // COLORS
+    --gray-100: hsl(176, 5%, 10%);
+    --gray-200: hsl(176, 5%, 25%);
+    --gray-300: hsl(176, 5%, 46%);
+    --gray-350: #949e9d;
+    --gray-400: #bfd9d7;
+    --gray-500: #faffff;
+    
+    --white: hsl(0, 0%, 100%);
+
+    --primary-100: #003330;
+    --primary-200: #008077;
+    --primary-300: #00bdb0;
+    --primary-325: #53c6be;
+    --primary-350: hsl(176, 100%, 50%);
+    --primary-400: #d9f7f5;
+    --primary-500: #ebfffe;
+
+    --secondary-100: hsl(19, 100%, 15%);
+    --secondary-200: hsl(19, 100%, 30%);
+    --secondary-300: #ff5100;
+    --secondary-350: hsl(19, 100%, 60%);
+    --secondary-400: #FFA076;
+    --secondary-500: #FFF1EB;
+
+    --secondary-300-transparent50: hsla(326, 100%, 50%, 0.5);
+
+    // SHADOWS
+    --shadow-color: 0deg 0% 70%;
+    --shadow-elevation-low:
+        0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),
+        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),
+        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);
+    --shadow-elevation-medium:
+    0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),
+    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),
+    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),
+    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);
+    --shadow-elevation-mediumhigh: 
+        0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),
+        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),
+        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),
+        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);
+    --shadow-elevation-high:
+        0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),
+        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),
+        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),
+        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),
+        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),
+        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),
+        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),
+        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);
+
+    // SIZES
+    --spacing-unit: 1rem;
+    --corner-unit: 10px;
+}
+
+// OTHER GLOBAL STYLES
+
+            /*
+    1. Use a more-intuitive box-sizing model.
+    */
+    *, *::before, *::after {
+    box-sizing: border-box;
+    }
+    /*
+    2. Remove default margin
+    */
+    * {
+    margin: 0;
+    }
+    /*
+    3. Allow percentage-based heights in the application
+    */
+    html, body {
+    height: 100%;
+    }
+    /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+    */
+    body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    }
+    /*
+    6. Improve media defaults
+    */
+    img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    }
+    /*
+    7. Remove built-in form typography styles
+    */
+    input, button, textarea, select {
+    font: inherit;
+    }
+    /*
+    8. Avoid text overflows
+    */
+    p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    }
+    /*
+    9. Create a root stacking context
+    */
+    #root, #__next {
+    isolation: isolate;
+    }
+
+

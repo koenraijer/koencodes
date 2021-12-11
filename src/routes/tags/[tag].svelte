@@ -37,28 +37,28 @@
 
     let pageTitle = tag
     let metaDescription = "All blog posts about {tag}";
-
-    import Variables from '$lib/Variables.svelte';
     
 </script>
 
 <Seo {pageTitle}{metaDescription}/>
 
-<Variables/>
-
 <main class="container">
-    <h1>{tag.replace(/^\w/, (c) => c.toUpperCase())}</h1>
-
-    <div class="blog-parent">
-        {#each filteredPosts as { path, metadata: { title, date, snippet } }}
-            <a class="divlink" href={`/blog/${path.replace(".md", "")}`}>
-                <div class="blogPost">
-                    <h3>{title}</h3>
-                    <span class="date">{new Date(date).toLocaleDateString('en-us', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
-                    <p>{snippet}</p>
-                </div>
-            </a>
-        {/each}
+    <div class="title">
+        <h1>{tag.replace(/^\w/, (c) => c.toUpperCase())}</h1>
+    </div>
+    <div class="wrapper">
+        <div class="blog-parent">
+            {#each filteredPosts as { path, metadata: { title, date, snippet } }}
+                <a class="divlink" href={`/blog/${path.replace(".md", "")}`}>
+                    <div class="blogPost">
+                        <h3>{title}</h3>
+                        <span class="date">{new Date(date).toLocaleDateString('en-us', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+                        <p>{snippet}</p>
+                    </div>
+                </a>
+            {/each}
+        </div>
+        <div class="background"></div>
     </div>
 </main>
 
@@ -104,7 +104,7 @@
 
     .blogPost {
         overflow: hidden;
-        background: white;
+        background: hsla(0, 0%, 100%, 0.5);
         border-radius: var(--corner-unit);
         position: relative;
         box-shadow: var(--shadow-elevation-medium);
@@ -123,6 +123,32 @@
       max-width: 1300px;
       margin: auto;
       position: relative;
-      padding: 0 var(--spacing-unit) 0;    
+      padding: 0 var(--spacing-unit) 0;   
+      .title {
+          display: grid;
+          align-items: center;
+          h1 {
+              text-align: center;
+          }
+      } 
+    }
+
+    .wrapper {
+          margin-top: calc(var(--spacing-unit) * 3);
+    }
+
+    .background {
+        width: 100vw;
+        height: calc(100% + 25rem);
+        top: -15rem;
+        z-index: -1;
+        position: fixed;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background: var(--primary-500);
+        background-size: cover;
+        background-position: center;
     }
 </style>

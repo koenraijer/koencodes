@@ -3,15 +3,13 @@
     export let src = "/";
     export let description = "a project about something.";
     export let img = "&#128161";
-    import Variables from '$lib/Variables.svelte'
 </script>
 
-<Variables />
     <a class="divlink" target="_blank" rel="noopener" href="{src}">
     <div class="project">
         <div>
             <div>
-                <img src={img}>
+                <img alt="simple brushed line decoration" src={img}>
             </div>
         </div>
         <div>
@@ -22,14 +20,6 @@
     </a>
 
 <style lang="scss">
-    :global(.dark) {
-        .project {
-            box-shadow: 0 0 5px white;
-            div {
-                background: white;
-            }
-        }
-    }
 
     p :global(a) {
                     position: relative;
@@ -99,12 +89,6 @@
                 padding: 0;
                 margin: var(--spacing-unit) 0 var(--spacing-unit);
             }
-            &:hover {
-                a {
-                    text-decoration: underline;
-                }
-            }
         }
-
     }
 </style>

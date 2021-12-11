@@ -5,7 +5,6 @@
     export let tags;
     export let backgroundNumber = 4;
 
-    import Variables from '$lib/Variables.svelte';
     import Seo from '$lib/Seo.svelte';
     import Date from '$lib/Date.svelte';
 
@@ -15,7 +14,6 @@
     let backgroundLink = '/postBackground-' + backgroundNumber + '.svg' ;
 </script>
 
-<Variables/>
 <Seo {pageTitle}{metaDescription}/>
 
 <div class="container">

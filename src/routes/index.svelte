@@ -25,7 +25,6 @@
 <script>
     import Seo from '$lib/Seo.svelte'
     import TagCloud from '$lib/TagCloud.svelte'
-    import Variables from '$lib/Variables.svelte'
 
     let pageTitle = "home"
     let metaDescription = "The homepage: a collection of projects and blog posts."
@@ -64,8 +63,6 @@
     import Art from '$lib/Art.svelte'
 
 </script>
-
-<Variables />
 
 <Seo {pageTitle} {metaDescription}/>
 
@@ -192,45 +189,6 @@
 
     
     // BLOG POSTS
-
-    :global(.dark) {
-        .project {
-            box-shadow: 0 0 5px white;
-            div {
-                background: white;
-            }
-        }
-    }
-
-    p :global(a) {
-                color: #06D6A0;
-                text-decoration: none;
-                &:hover{
-                text-decoration: underline;
-                }
-            }
-    
-    p, span {
-        a {
-            color: #06D6A0;
-            text-decoration: none;
-            &:hover{
-            text-decoration: underline;
-            }
-        }
-    }
-      
-
-h3 {
-    a {
-                    color: inherit;
-                    text-decoration: none;
-                    &:hover{
-                        color: var(--primary-300);
-                    }
-                }
-}
-
     .blogPost {
         overflow: hidden;
         border-radius: var(--corner-unit);

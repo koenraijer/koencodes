@@ -1,12 +1,10 @@
 <script>
-    import Variables from "$lib/Variables.svelte";
     import TagCloud from '$lib/TagCloud.svelte';
-
-    export let location;
+    
     export let open = false;
 
 </script>
-<Variables/>
+
 <div class="wrapperForFooter">
     <div class="container">
       <header>
@@ -21,7 +19,7 @@
     </main>
 </div>
 <div class="footerWrapper">
-  <img class="footer-wave" src="../footer-waveline.svg">
+  <img alt="wavy line to separate content from footer" class="footer-wave" src="../footer-waveline.svg">
   <footer>
     <div>
       <h3><a href="/">koen.codes</a></h3>

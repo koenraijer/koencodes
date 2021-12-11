@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-    <title>koen.wtf · {pageTitle}</title>
+    <title>koen.codes · {pageTitle}</title>
     <meta name="description" content="The online turf of a programming noob and medicine student. {metaDescription}" />
     <meta
         name="robots"

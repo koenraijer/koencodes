@@ -1,9 +1,4 @@
-<script>
-   import Variables from '$lib/Variables.svelte';
-</script>
-<Variables/>
-
-<img src="artError-3.svg">
+<img alt="man with map on top of 404-error statue trying to figure out what to do" src="artError-3.svg">
 
 <style>
    img {

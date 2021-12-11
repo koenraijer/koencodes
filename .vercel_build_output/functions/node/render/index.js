@@ -4696,92 +4696,67 @@ var init_shims = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Variables-e67d66db.js
-var css, Variables;
-var init_Variables_e67d66db = __esm({
-  ".svelte-kit/output/server/chunks/Variables-e67d66db.js"() {
+// .svelte-kit/output/server/chunks/TagCloud-fc42a25d.js
+var css, TagCloud;
+var init_TagCloud_fc42a25d = __esm({
+  ".svelte-kit/output/server/chunks/TagCloud-fc42a25d.js"() {
     init_shims();
-    init_app_60280033();
+    init_app_fc10dfe1();
     css = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:hsl(176, 5%, 60%);--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:hsl(176, 100%, 10%);--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:hsl(19, 100%, 50%);--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n            0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n            1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n        0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n        2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n        6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n            1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n            2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n            5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n            1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n            2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n            4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n            7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n            12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n            19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n            28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}",
-      map: null
-    };
-    Variables = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css);
-      return ``;
-    });
-  }
-});
-
-// .svelte-kit/output/server/chunks/TagCloud-b52d8330.js
-var css2, TagCloud;
-var init_TagCloud_b52d8330 = __esm({
-  ".svelte-kit/output/server/chunks/TagCloud-b52d8330.js"() {
-    init_shims();
-    init_app_60280033();
-    init_Variables_e67d66db();
-    css2 = {
-      code: "a.svelte-1yt19sl{color:inherit;padding:0.5rem 0.85rem 0.5rem;margin:0.5rem 0.5rem 0rem 0.5rem;border-radius:10px;background:var(--primary-400);text-decoration:none}a.svelte-1yt19sl:hover{background:var(--primary-300);color:white}div.svelte-1yt19sl{margin:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0;padding:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-15n25zz,.svelte-15n25zz::before,.svelte-15n25zz::after{box-sizing:border-box}.svelte-15n25zz{margin:0}a.svelte-15n25zz{color:inherit;padding:0.5rem 0.85rem 0.5rem;margin:0.5rem 0.5rem 0rem 0.5rem;border-radius:10px;background:var(--primary-400);text-decoration:none}a.svelte-15n25zz:hover{background:var(--primary-300);color:white}div.svelte-15n25zz{margin:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0;padding:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0}",
       map: null
     };
     TagCloud = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let tagArray = ["fun", "career", "tech"];
-      $$result.css.add(css2);
-      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
-
-<div class="${"svelte-1yt19sl"}">${each(tagArray, (tag) => `<a${add_attribute("href", `/tags/${tag}`, 0)} class="${"svelte-1yt19sl"}">${escape(tag)}</a>`)}
+      $$result.css.add(css);
+      return `<div class="${"svelte-15n25zz"}">${each(tagArray, (tag) => `<a${add_attribute("href", `/tags/${tag}`, 0)} class="${"svelte-15n25zz"}">${escape(tag)}</a>`)}
 </div>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-9841fe65.js
-var layout_9841fe65_exports = {};
-__export(layout_9841fe65_exports, {
+// .svelte-kit/output/server/chunks/__layout-9a6a029f.js
+var layout_9a6a029f_exports = {};
+__export(layout_9a6a029f_exports, {
   default: () => _layout
 });
-var css3, _layout;
-var init_layout_9841fe65 = __esm({
-  ".svelte-kit/output/server/chunks/__layout-9841fe65.js"() {
+var css2, _layout;
+var init_layout_9a6a029f = __esm({
+  ".svelte-kit/output/server/chunks/__layout-9a6a029f.js"() {
     init_shims();
-    init_app_60280033();
-    init_Variables_e67d66db();
-    init_TagCloud_b52d8330();
-    css3 = {
-      code: ":root{scroll-behavior:smooth;line-height:1.3;font-size:1.2rem;overflow-x:hidden;color:var(--primary-100);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}@media screen and (min-width: 600px){:root{font-size:1.5rem}}.sitetitle.svelte-1wvlawc.svelte-1wvlawc{color:var(--primary-100);font-size:2.3em}.sitetitle.svelte-1wvlawc a.svelte-1wvlawc{position:relative;font-weight:700;color:inherit;text-decoration:none}.sitetitle.svelte-1wvlawc a.svelte-1wvlawc:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}.sitetitle.svelte-1wvlawc a.svelte-1wvlawc:hover:before{display:block}.container.svelte-1wvlawc.svelte-1wvlawc{max-width:1300px;margin:auto;padding:0 var(--spacing-unit) var(--spacing-unit)}.wrapperForFooter.svelte-1wvlawc.svelte-1wvlawc{min-height:calc(100vh - 10rem);margin-bottom:calc(var(--spacing-unit))}.footerWrapper.svelte-1wvlawc.svelte-1wvlawc{height:12rem;background:transparent;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-bottom:-1rem;position:relative}footer.svelte-1wvlawc.svelte-1wvlawc{display:grid;align-items:stretch;grid-template-columns:1fr 1fr;height:10rem;z-index:-2 !important;background:transparent;max-width:1300px;margin:auto;padding:calc(var(--spacing-unit) * 2)}footer.svelte-1wvlawc div.svelte-1wvlawc:nth-child(3){display:none}@media screen and (min-width: 900px){footer.svelte-1wvlawc.svelte-1wvlawc{grid-template-columns:1fr 1fr 1fr}footer.svelte-1wvlawc div.svelte-1wvlawc:nth-child(3){display:block}}footer.svelte-1wvlawc h3.svelte-1wvlawc{color:var(--primary-100)}footer.svelte-1wvlawc h3 a.svelte-1wvlawc{position:relative;font-weight:700;color:inherit;text-decoration:none}footer.svelte-1wvlawc h3 a.svelte-1wvlawc:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}footer.svelte-1wvlawc h3 a.svelte-1wvlawc:hover:before{display:block}footer.svelte-1wvlawc h4.svelte-1wvlawc{font-weight:500}.footer-wave.svelte-1wvlawc.svelte-1wvlawc{margin:auto;width:100%;transform:translateY(2rem)}a.svelte-1wvlawc.svelte-1wvlawc{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none;width:100%}a.svelte-1wvlawc.svelte-1wvlawc:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}a.svelte-1wvlawc.svelte-1wvlawc:hover:before{display:block}",
+    init_app_fc10dfe1();
+    init_TagCloud_fc42a25d();
+    css2 = {
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-14rslre.svelte-14rslre,.svelte-14rslre.svelte-14rslre::before,.svelte-14rslre.svelte-14rslre::after{box-sizing:border-box}.svelte-14rslre.svelte-14rslre{margin:0}img.svelte-14rslre.svelte-14rslre{display:block;max-width:100%}h1.svelte-14rslre.svelte-14rslre,h3.svelte-14rslre.svelte-14rslre,h4.svelte-14rslre.svelte-14rslre{overflow-wrap:break-word}:root{scroll-behavior:smooth;line-height:1.3;font-size:1.2rem;overflow-x:hidden;color:var(--primary-100);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}@media screen and (min-width: 600px){:root{font-size:1.5rem}}.sitetitle.svelte-14rslre.svelte-14rslre{color:var(--primary-100);font-size:2.3em}.sitetitle.svelte-14rslre a.svelte-14rslre{position:relative;font-weight:700;color:inherit;text-decoration:none}.sitetitle.svelte-14rslre a.svelte-14rslre:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}.sitetitle.svelte-14rslre a.svelte-14rslre:hover:before{display:block}.container.svelte-14rslre.svelte-14rslre{max-width:1300px;margin:auto;padding:0 var(--spacing-unit) var(--spacing-unit)}.wrapperForFooter.svelte-14rslre.svelte-14rslre{min-height:calc(100vh - 10rem);margin-bottom:calc(var(--spacing-unit))}.footerWrapper.svelte-14rslre.svelte-14rslre{height:12rem;background:transparent;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-bottom:-1rem;position:relative}footer.svelte-14rslre.svelte-14rslre{display:grid;align-items:stretch;grid-template-columns:1fr 1fr;height:10rem;z-index:-2 !important;background:transparent;max-width:1300px;margin:auto;padding:calc(var(--spacing-unit) * 2)}footer.svelte-14rslre div.svelte-14rslre:nth-child(3){display:none}@media screen and (min-width: 900px){footer.svelte-14rslre.svelte-14rslre{grid-template-columns:1fr 1fr 1fr}footer.svelte-14rslre div.svelte-14rslre:nth-child(3){display:block}}footer.svelte-14rslre h3.svelte-14rslre{color:var(--primary-100)}footer.svelte-14rslre h3 a.svelte-14rslre{position:relative;font-weight:700;color:inherit;text-decoration:none}footer.svelte-14rslre h3 a.svelte-14rslre:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}footer.svelte-14rslre h3 a.svelte-14rslre:hover:before{display:block}footer.svelte-14rslre h4.svelte-14rslre{font-weight:500}.footer-wave.svelte-14rslre.svelte-14rslre{margin:auto;width:100%;transform:translateY(2rem)}a.svelte-14rslre.svelte-14rslre{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none;width:100%}a.svelte-14rslre.svelte-14rslre:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}a.svelte-14rslre.svelte-14rslre:hover:before{display:block}",
       map: null
     };
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { location } = $$props;
       let { open = false } = $$props;
-      if ($$props.location === void 0 && $$bindings.location && location !== void 0)
-        $$bindings.location(location);
       if ($$props.open === void 0 && $$bindings.open && open !== void 0)
         $$bindings.open(open);
-      $$result.css.add(css3);
-      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
-<div class="${"wrapperForFooter svelte-1wvlawc"}"><div class="${"container svelte-1wvlawc"}"><header><h1 class="${"sitetitle svelte-1wvlawc"}"><a href="${"/"}" class="${"svelte-1wvlawc"}">koen.codes</a></h1></header></div>
+      $$result.css.add(css2);
+      return `<div class="${"wrapperForFooter svelte-14rslre"}"><div class="${"container svelte-14rslre"}"><header class="${"svelte-14rslre"}"><h1 class="${"sitetitle svelte-14rslre"}"><a href="${"/"}" class="${"svelte-14rslre"}">koen.codes</a></h1></header></div>
     
-    <main>${slots.default ? slots.default({}) : ``}</main></div>
-<div class="${"footerWrapper svelte-1wvlawc"}"><img class="${"footer-wave svelte-1wvlawc"}" src="${"../footer-waveline.svg"}">
-  <footer class="${"svelte-1wvlawc"}"><div class="${"svelte-1wvlawc"}"><h3 class="${"svelte-1wvlawc"}"><a href="${"/"}" class="${"svelte-1wvlawc"}">koen.codes</a></h3>
-      <h4 class="${"svelte-1wvlawc"}">Thanks for reading!</h4></div>
-    <div class="${"svelte-1wvlawc"}"><h3 class="${"svelte-1wvlawc"}">Links</h3>
-      <h4 class="${"svelte-1wvlawc"}"><a href="${"/blog"}" class="${"svelte-1wvlawc"}">Blog</a></h4>
-      <h4 class="${"svelte-1wvlawc"}"><a href="${"#projects"}" class="${"svelte-1wvlawc"}">Projects</a></h4></div>
-    <div class="${"svelte-1wvlawc"}"><h3 class="${"svelte-1wvlawc"}">Topics</h3>
+    <main class="${"svelte-14rslre"}">${slots.default ? slots.default({}) : ``}</main></div>
+<div class="${"footerWrapper svelte-14rslre"}"><img alt="${"wavy line to separate content from footer"}" class="${"footer-wave svelte-14rslre"}" src="${"../footer-waveline.svg"}">
+  <footer class="${"svelte-14rslre"}"><div class="${"svelte-14rslre"}"><h3 class="${"svelte-14rslre"}"><a href="${"/"}" class="${"svelte-14rslre"}">koen.codes</a></h3>
+      <h4 class="${"svelte-14rslre"}">Thanks for reading!</h4></div>
+    <div class="${"svelte-14rslre"}"><h3 class="${"svelte-14rslre"}">Links</h3>
+      <h4 class="${"svelte-14rslre"}"><a href="${"/blog"}" class="${"svelte-14rslre"}">Blog</a></h4>
+      <h4 class="${"svelte-14rslre"}"><a href="${"#projects"}" class="${"svelte-14rslre"}">Projects</a></h4></div>
+    <div class="${"svelte-14rslre"}"><h3 class="${"svelte-14rslre"}">Topics</h3>
       ${validate_component(TagCloud, "TagCloud").$$render($$result, {}, {}, {})}</div></footer>
 </div>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/Seo-7205d950.js
+// .svelte-kit/output/server/chunks/Seo-e5ba867d.js
 var Seo;
-var init_Seo_7205d950 = __esm({
-  ".svelte-kit/output/server/chunks/Seo-7205d950.js"() {
+var init_Seo_e5ba867d = __esm({
+  ".svelte-kit/output/server/chunks/Seo-e5ba867d.js"() {
     init_shims();
-    init_app_60280033();
+    init_app_fc10dfe1();
     Seo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { metaDescription: metaDescription7 } = $$props;
       let { pageTitle: pageTitle6 } = $$props;
@@ -4789,43 +4764,44 @@ var init_Seo_7205d950 = __esm({
         $$bindings.metaDescription(metaDescription7);
       if ($$props.pageTitle === void 0 && $$bindings.pageTitle && pageTitle6 !== void 0)
         $$bindings.pageTitle(pageTitle6);
-      return `${$$result.head += `${$$result.title = `<title>koen.wtf \xB7 ${escape(pageTitle6)}</title>`, ""}<meta name="${"description"}" content="${"The online turf of a programming noob and medicine student. " + escape(metaDescription7)}" data-svelte="svelte-1v0jshd"><meta name="${"robots"}" content="${"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"}" data-svelte="svelte-1v0jshd"><html lang="${"en"}" data-svelte="svelte-1v0jshd"></html>`, ""}`;
+      return `${$$result.head += `${$$result.title = `<title>koen.codes \xB7 ${escape(pageTitle6)}</title>`, ""}<meta name="${"description"}" content="${"The online turf of a programming noob and medicine student. " + escape(metaDescription7)}" data-svelte="svelte-15621n2"><meta name="${"robots"}" content="${"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"}" data-svelte="svelte-15621n2"><html lang="${"en"}" data-svelte="svelte-15621n2"></html>`, ""}`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/__error-b63f1fd4.js
-var error_b63f1fd4_exports = {};
-__export(error_b63f1fd4_exports, {
+// .svelte-kit/output/server/chunks/__error-a98d8d2d.js
+var error_a98d8d2d_exports = {};
+__export(error_a98d8d2d_exports, {
   default: () => _error
 });
-var css4, pageTitle, metaDescription, _error;
-var init_error_b63f1fd4 = __esm({
-  ".svelte-kit/output/server/chunks/__error-b63f1fd4.js"() {
+var css3, pageTitle, metaDescription, _error;
+var init_error_a98d8d2d = __esm({
+  ".svelte-kit/output/server/chunks/__error-a98d8d2d.js"() {
     init_shims();
-    init_app_60280033();
-    init_Seo_7205d950();
-    css4 = {
-      code: "a.svelte-69aaan{color:inherit;text-decoration:none;opacity:0.5}a.svelte-69aaan:hover{text-decoration:underline}",
+    init_app_fc10dfe1();
+    init_Seo_e5ba867d();
+    css3 = {
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1sfmv3m.svelte-1sfmv3m,.svelte-1sfmv3m.svelte-1sfmv3m::before,.svelte-1sfmv3m.svelte-1sfmv3m::after{box-sizing:border-box}.svelte-1sfmv3m.svelte-1sfmv3m{margin:0}p.svelte-1sfmv3m.svelte-1sfmv3m,h1.svelte-1sfmv3m.svelte-1sfmv3m{overflow-wrap:break-word}.container.svelte-1sfmv3m.svelte-1sfmv3m{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0;display:grid;align-items:center;text-align:center}.container.svelte-1sfmv3m div.svelte-1sfmv3m{margin-top:calc(var(--spacing-unit) * 4)}a.svelte-1sfmv3m.svelte-1sfmv3m{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none}a.svelte-1sfmv3m.svelte-1sfmv3m:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}a.svelte-1sfmv3m.svelte-1sfmv3m:hover:before{display:block}",
       map: null
     };
     pageTitle = "Error!";
     metaDescription = "Error page. Page not found.";
     _error = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css4);
+      $$result.css.add(css3);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle, metaDescription }, {}, {})}
-<h1>wtf! Page not found.</h1>
-<p>You are in grave danger. <a href="${"/"}" class="${"svelte-69aaan"}">Get back to safety</a>.</p>`;
+<main class="${"container svelte-1sfmv3m"}"><div class="${"svelte-1sfmv3m"}"><h1 class="${"svelte-1sfmv3m"}">Page not found.</h1>
+        <p class="${"svelte-1sfmv3m"}">You are in grave danger. <a href="${"/"}" class="${"svelte-1sfmv3m"}">Get back to safety</a>.</p></div>
+</main>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/Date-abfc5b52.js
+// .svelte-kit/output/server/chunks/Date-21e19824.js
 var Date_1;
-var init_Date_abfc5b52 = __esm({
-  ".svelte-kit/output/server/chunks/Date-abfc5b52.js"() {
+var init_Date_21e19824 = __esm({
+  ".svelte-kit/output/server/chunks/Date-21e19824.js"() {
     init_shims();
-    init_app_60280033();
+    init_app_fc10dfe1();
     Date_1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { date } = $$props;
       if ($$props.date === void 0 && $$bindings.date && date !== void 0)
@@ -4839,16 +4815,15 @@ var init_Date_abfc5b52 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/blog-d3e36a0b.js
-var css5, Blog;
-var init_blog_d3e36a0b = __esm({
-  ".svelte-kit/output/server/chunks/blog-d3e36a0b.js"() {
+// .svelte-kit/output/server/chunks/blog-f6b03af9.js
+var css4, Blog;
+var init_blog_f6b03af9 = __esm({
+  ".svelte-kit/output/server/chunks/blog-f6b03af9.js"() {
     init_shims();
-    init_app_60280033();
-    init_Variables_e67d66db();
-    init_Seo_7205d950();
-    init_Date_abfc5b52();
-    css5 = {
+    init_app_fc10dfe1();
+    init_Seo_e5ba867d();
+    init_Date_21e19824();
+    css4 = {
       code: ".container.svelte-1hr9604{max-width:60ch;margin:auto;position:relative;padding:var(--spacing-unit)}.post-hero.svelte-1hr9604{padding:calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 4);display:grid;align-items:center;position:relative}h1.svelte-1hr9604{text-align:center;margin:var(--spacing-unit) 0 calc(var(--spacing-unit) * 4)}.date.svelte-1hr9604{text-align:center}.background.svelte-1hr9604{position:absolute;z-index:-1;max-width:30rem;left:50%;top:50%;transform:translate(-50%, -60%)}",
       map: null
     };
@@ -4871,9 +4846,8 @@ var init_blog_d3e36a0b = __esm({
         $$bindings.tags(tags);
       if ($$props.backgroundNumber === void 0 && $$bindings.backgroundNumber && backgroundNumber !== void 0)
         $$bindings.backgroundNumber(backgroundNumber);
-      $$result.css.add(css5);
-      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
-${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription7 }, {}, {})}
+      $$result.css.add(css4);
+      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription7 }, {}, {})}
 
 <div class="${"container svelte-1hr9604"}"><div class="${"post-hero svelte-1hr9604"}"><img alt="${"colored shapes to illustrate the title"}" class="${"background svelte-1hr9604"}"${add_attribute("src", backgroundLink, 0)}>
         <span class="${"date svelte-1hr9604"}">${validate_component(Date_1, "Date").$$render($$result, { date }, {}, {})}</span>
@@ -4886,21 +4860,20 @@ ${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, met
   }
 });
 
-// .svelte-kit/output/server/chunks/fifthpost-8988938c.js
-var fifthpost_8988938c_exports = {};
-__export(fifthpost_8988938c_exports, {
+// .svelte-kit/output/server/chunks/fifthpost-bfea811f.js
+var fifthpost_bfea811f_exports = {};
+__export(fifthpost_bfea811f_exports, {
   default: () => Fifthpost,
   metadata: () => metadata
 });
 var metadata, Fifthpost;
-var init_fifthpost_8988938c = __esm({
-  ".svelte-kit/output/server/chunks/fifthpost-8988938c.js"() {
+var init_fifthpost_bfea811f = __esm({
+  ".svelte-kit/output/server/chunks/fifthpost-bfea811f.js"() {
     init_shims();
-    init_app_60280033();
-    init_blog_d3e36a0b();
-    init_Variables_e67d66db();
-    init_Seo_7205d950();
-    init_Date_abfc5b52();
+    init_app_fc10dfe1();
+    init_blog_f6b03af9();
+    init_Seo_e5ba867d();
+    init_Date_21e19824();
     metadata = {
       "title": "Fifth post",
       "tags": ["fun"],
@@ -4921,21 +4894,20 @@ var init_fifthpost_8988938c = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/firstpost-fe185df6.js
-var firstpost_fe185df6_exports = {};
-__export(firstpost_fe185df6_exports, {
+// .svelte-kit/output/server/chunks/firstpost-50165931.js
+var firstpost_50165931_exports = {};
+__export(firstpost_50165931_exports, {
   default: () => Firstpost,
   metadata: () => metadata2
 });
 var metadata2, Firstpost;
-var init_firstpost_fe185df6 = __esm({
-  ".svelte-kit/output/server/chunks/firstpost-fe185df6.js"() {
+var init_firstpost_50165931 = __esm({
+  ".svelte-kit/output/server/chunks/firstpost-50165931.js"() {
     init_shims();
-    init_app_60280033();
-    init_blog_d3e36a0b();
-    init_Variables_e67d66db();
-    init_Seo_7205d950();
-    init_Date_abfc5b52();
+    init_app_fc10dfe1();
+    init_blog_f6b03af9();
+    init_Seo_e5ba867d();
+    init_Date_21e19824();
     metadata2 = {
       "title": "First post",
       "tags": ["tech", "fun"],
@@ -4955,21 +4927,20 @@ var init_firstpost_fe185df6 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/fourthpost-989c53ab.js
-var fourthpost_989c53ab_exports = {};
-__export(fourthpost_989c53ab_exports, {
+// .svelte-kit/output/server/chunks/fourthpost-16ebf1b4.js
+var fourthpost_16ebf1b4_exports = {};
+__export(fourthpost_16ebf1b4_exports, {
   default: () => Fourthpost,
   metadata: () => metadata3
 });
 var metadata3, Fourthpost;
-var init_fourthpost_989c53ab = __esm({
-  ".svelte-kit/output/server/chunks/fourthpost-989c53ab.js"() {
+var init_fourthpost_16ebf1b4 = __esm({
+  ".svelte-kit/output/server/chunks/fourthpost-16ebf1b4.js"() {
     init_shims();
-    init_app_60280033();
-    init_blog_d3e36a0b();
-    init_Variables_e67d66db();
-    init_Seo_7205d950();
-    init_Date_abfc5b52();
+    init_app_fc10dfe1();
+    init_blog_f6b03af9();
+    init_Seo_e5ba867d();
+    init_Date_21e19824();
     metadata3 = {
       "title": "Fourth post",
       "tags": ["tech"],
@@ -4989,21 +4960,20 @@ var init_fourthpost_989c53ab = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/secondpost-af8b5e91.js
-var secondpost_af8b5e91_exports = {};
-__export(secondpost_af8b5e91_exports, {
+// .svelte-kit/output/server/chunks/secondpost-25dd1e6e.js
+var secondpost_25dd1e6e_exports = {};
+__export(secondpost_25dd1e6e_exports, {
   default: () => Secondpost,
   metadata: () => metadata4
 });
 var metadata4, Secondpost;
-var init_secondpost_af8b5e91 = __esm({
-  ".svelte-kit/output/server/chunks/secondpost-af8b5e91.js"() {
+var init_secondpost_25dd1e6e = __esm({
+  ".svelte-kit/output/server/chunks/secondpost-25dd1e6e.js"() {
     init_shims();
-    init_app_60280033();
-    init_blog_d3e36a0b();
-    init_Variables_e67d66db();
-    init_Seo_7205d950();
-    init_Date_abfc5b52();
+    init_app_fc10dfe1();
+    init_blog_f6b03af9();
+    init_Seo_e5ba867d();
+    init_Date_21e19824();
     metadata4 = {
       "title": "How to get that money (for charity)",
       "tags": ["fun"],
@@ -5023,21 +4993,20 @@ var init_secondpost_af8b5e91 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/thirdpost-e53dae8d.js
-var thirdpost_e53dae8d_exports = {};
-__export(thirdpost_e53dae8d_exports, {
+// .svelte-kit/output/server/chunks/thirdpost-b3bbdc5a.js
+var thirdpost_b3bbdc5a_exports = {};
+__export(thirdpost_b3bbdc5a_exports, {
   default: () => Thirdpost,
   metadata: () => metadata5
 });
 var metadata5, Thirdpost;
-var init_thirdpost_e53dae8d = __esm({
-  ".svelte-kit/output/server/chunks/thirdpost-e53dae8d.js"() {
+var init_thirdpost_b3bbdc5a = __esm({
+  ".svelte-kit/output/server/chunks/thirdpost-b3bbdc5a.js"() {
     init_shims();
-    init_app_60280033();
-    init_blog_d3e36a0b();
-    init_Variables_e67d66db();
-    init_Seo_7205d950();
-    init_Date_abfc5b52();
+    init_app_fc10dfe1();
+    init_blog_f6b03af9();
+    init_Seo_e5ba867d();
+    init_Date_21e19824();
     metadata5 = {
       "title": "Third post",
       "tags": ["career"],
@@ -5057,22 +5026,21 @@ var init_thirdpost_e53dae8d = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-288f07e0.js
-var index_288f07e0_exports = {};
-__export(index_288f07e0_exports, {
+// .svelte-kit/output/server/chunks/index-af051116.js
+var index_af051116_exports = {};
+__export(index_af051116_exports, {
   default: () => Routes,
   load: () => load
 });
-var css$2, Project, css$1, Art, css6, allPosts, body, load, pageTitle2, metaDescription2, Routes;
-var init_index_288f07e0 = __esm({
-  ".svelte-kit/output/server/chunks/index-288f07e0.js"() {
+var css$2, Project, css$1, Art, css5, allPosts, body, load, pageTitle2, metaDescription2, Routes;
+var init_index_af051116 = __esm({
+  ".svelte-kit/output/server/chunks/index-af051116.js"() {
     init_shims();
-    init_app_60280033();
-    init_Seo_7205d950();
-    init_TagCloud_b52d8330();
-    init_Variables_e67d66db();
+    init_app_fc10dfe1();
+    init_Seo_e5ba867d();
+    init_TagCloud_fc42a25d();
     css$2 = {
-      code: ".dark .project.svelte-1qj9iy.svelte-1qj9iy{box-shadow:0 0 5px white}.dark .project.svelte-1qj9iy div.svelte-1qj9iy{background:white}p.svelte-1qj9iy a{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none}p.svelte-1qj9iy a:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}p.svelte-1qj9iy a:hover:before{display:block}.divlink.svelte-1qj9iy.svelte-1qj9iy{text-decoration:none;color:inherit}.divlink.svelte-1qj9iy:hover h3.svelte-1qj9iy{color:var(--primary-300)}.divlink.svelte-1qj9iy:hover .project.svelte-1qj9iy{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.project.svelte-1qj9iy.svelte-1qj9iy{overflow:hidden;border-radius:var(--corner-unit);position:relative;background:white;box-shadow:var(--shadow-elevation-medium)}.project.svelte-1qj9iy div.svelte-1qj9iy:first-child{display:grid;place-items:center;background:var(--gray-500);position:relative;padding:var(--spacing-unit)}.project.svelte-1qj9iy div:first-child div.svelte-1qj9iy{width:50%;max-height:5rem}.project.svelte-1qj9iy div:first-child div img.svelte-1qj9iy{max-height:5rem}.project.svelte-1qj9iy div.svelte-1qj9iy:nth-child(2){padding:var(--spacing-unit)}.project.svelte-1qj9iy div:nth-child(2) p.svelte-1qj9iy{padding:0;margin:0}.project.svelte-1qj9iy div:nth-child(2) h3.svelte-1qj9iy{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-3ck4a4.svelte-3ck4a4,.svelte-3ck4a4.svelte-3ck4a4::before,.svelte-3ck4a4.svelte-3ck4a4::after{box-sizing:border-box}.svelte-3ck4a4.svelte-3ck4a4{margin:0}img.svelte-3ck4a4.svelte-3ck4a4{display:block;max-width:100%}p.svelte-3ck4a4.svelte-3ck4a4,h3.svelte-3ck4a4.svelte-3ck4a4{overflow-wrap:break-word}p.svelte-3ck4a4 a{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none}p.svelte-3ck4a4 a:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}p.svelte-3ck4a4 a:hover:before{display:block}.divlink.svelte-3ck4a4.svelte-3ck4a4{text-decoration:none;color:inherit}.divlink.svelte-3ck4a4:hover h3.svelte-3ck4a4{color:var(--primary-300)}.divlink.svelte-3ck4a4:hover .project.svelte-3ck4a4{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.project.svelte-3ck4a4.svelte-3ck4a4{overflow:hidden;border-radius:var(--corner-unit);position:relative;background:white;box-shadow:var(--shadow-elevation-medium)}.project.svelte-3ck4a4 div.svelte-3ck4a4:first-child{display:grid;place-items:center;background:var(--gray-500);position:relative;padding:var(--spacing-unit)}.project.svelte-3ck4a4 div:first-child div.svelte-3ck4a4{width:50%;max-height:5rem}.project.svelte-3ck4a4 div:first-child div img.svelte-3ck4a4{max-height:5rem}.project.svelte-3ck4a4 div.svelte-3ck4a4:nth-child(2){padding:var(--spacing-unit)}.project.svelte-3ck4a4 div:nth-child(2) p.svelte-3ck4a4{padding:0;margin:0}.project.svelte-3ck4a4 div:nth-child(2) h3.svelte-3ck4a4{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}",
       map: null
     };
     Project = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5089,10 +5057,9 @@ var init_index_288f07e0 = __esm({
       if ($$props.img === void 0 && $$bindings.img && img !== void 0)
         $$bindings.img(img);
       $$result.css.add(css$2);
-      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
-    <a class="${"divlink svelte-1qj9iy"}" target="${"_blank"}" rel="${"noopener"}"${add_attribute("href", src2, 0)}><div class="${"project svelte-1qj9iy"}"><div class="${"svelte-1qj9iy"}"><div class="${"svelte-1qj9iy"}"><img${add_attribute("src", img, 0)} class="${"svelte-1qj9iy"}"></div></div>
-        <div class="${"svelte-1qj9iy"}"><h3 class="${"svelte-1qj9iy"}">${escape(title)}</h3>
-            <p class="${"svelte-1qj9iy"}"><!-- HTML_TAG_START -->${description}<!-- HTML_TAG_END --></p></div></div>
+      return `<a class="${"divlink svelte-3ck4a4"}" target="${"_blank"}" rel="${"noopener"}"${add_attribute("href", src2, 0)}><div class="${"project svelte-3ck4a4"}"><div class="${"svelte-3ck4a4"}"><div class="${"svelte-3ck4a4"}"><img alt="${"simple brushed line decoration"}"${add_attribute("src", img, 0)} class="${"svelte-3ck4a4"}"></div></div>
+        <div class="${"svelte-3ck4a4"}"><h3 class="${"svelte-3ck4a4"}">${escape(title)}</h3>
+            <p class="${"svelte-3ck4a4"}"><!-- HTML_TAG_START -->${description}<!-- HTML_TAG_END --></p></div></div>
     </a>`;
     });
     css$1 = {
@@ -5101,19 +5068,32 @@ var init_index_288f07e0 = __esm({
     };
     Art = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$1);
-      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
-
-<img src="${"artError-3.svg"}" class="${"svelte-a20h3y"}">
+      return `<img alt="${"man with map on top of 404-error statue trying to figure out what to do"}" src="${"artError-3.svg"}" class="${"svelte-a20h3y"}">
 
 
 
 `;
     });
-    css6 = {
-      code: `.grid1.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj,.grid2.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj,.grid3.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{display:grid;grid-template-columns:1fr;grid-gap:1.5rem;align-content:stretch;justify-content:stretch;margin:var(--spacing-unit)}.grid1.svelte-qt7ozj .grid1-hero.svelte-qt7ozj.svelte-qt7ozj{display:grid;align-items:center;text-align:center;margin:calc(var(--spacing-unit) * -3.5) var(--spacing-unit) var(--spacing-unit);grid-column:1/2;grid-row:2/3}.grid1.svelte-qt7ozj .grid1-hero h1.svelte-qt7ozj.svelte-qt7ozj,.grid2.svelte-qt7ozj .grid1-hero.svelte-qt7ozj h1.svelte-qt7ozj{font-weight:600}.grid1.svelte-qt7ozj .grid1-hero h2.svelte-qt7ozj.svelte-qt7ozj,.grid2.svelte-qt7ozj .grid1-hero.svelte-qt7ozj h2.svelte-qt7ozj{font-weight:600;color:var(--gray-100)}.grid1.svelte-qt7ozj .grid1-hero h3.svelte-qt7ozj.svelte-qt7ozj,.grid2.svelte-qt7ozj .grid1-hero.svelte-qt7ozj h3.svelte-qt7ozj,.grid2.svelte-qt7ozj .grid1-hero h4.svelte-qt7ozj.svelte-qt7ozj{margin:0;color:var(--gray-100);font-weight:normal}.grid1.svelte-qt7ozj .grid1-hero nav.svelte-qt7ozj.svelte-qt7ozj,.grid2 .grid1-hero.svelte-qt7ozj nav.svelte-qt7ozj.svelte-qt7ozj{float:none}@media screen and (min-width: 1200px){.grid1.svelte-qt7ozj .grid1-hero nav.svelte-qt7ozj.svelte-qt7ozj,.grid2 .grid1-hero.svelte-qt7ozj nav.svelte-qt7ozj.svelte-qt7ozj{float:right}}.grid1.svelte-qt7ozj .grid1-art.svelte-qt7ozj.svelte-qt7ozj{display:grid;place-items:center}@media screen and (min-width: 1200px){.grid1.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj,.grid2.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{grid-template-columns:3fr 1fr}.grid1.svelte-qt7ozj .grid1-hero.svelte-qt7ozj.svelte-qt7ozj{margin:var(--spacing-unit);grid-column:1/2;grid-row:1/2;text-align:left}}@media screen and (min-width: 800px){.grid3.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{grid-template-columns:1fr 1fr}}@media screen and (min-width: 1100px){.grid3.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{grid-template-columns:1fr 1fr 1fr}}p.svelte-qt7ozj a{color:#06D6A0;text-decoration:none}p.svelte-qt7ozj a:hover{text-decoration:underline}.blogPost.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{overflow:hidden;border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-qt7ozj p.svelte-qt7ozj.svelte-qt7ozj{padding:0;margin:0}.blogPost.svelte-qt7ozj h3.svelte-qt7ozj.svelte-qt7ozj{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.divlink.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{height:100%;text-decoration:none;color:inherit}.divlink.svelte-qt7ozj:hover:hover h3.svelte-qt7ozj.svelte-qt7ozj{color:var(--primary-300)}.divlink.svelte-qt7ozj:hover:hover .blogPost.svelte-qt7ozj.svelte-qt7ozj{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.divlink.svelte-qt7ozj:hover:hover .allPostButton.svelte-qt7ozj.svelte-qt7ozj{background:var(--primary-300)}.allPostButton.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{background:var(--primary-200);justify-self:start;align-self:start}.allPostButton.svelte-qt7ozj h4.svelte-qt7ozj.svelte-qt7ozj{margin:0;padding:0;color:white;text-decoration:none}.grid2-tags.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{position:relative;margin-bottom:var(--spacing-unit)}.blog-parent.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{display:grid;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{grid-template-columns:1fr 1fr}.blog-parent.svelte-qt7ozj a.svelte-qt7ozj.svelte-qt7ozj:first-child{grid-row:1 / 2;grid-column:1 / 3}}.blog-parent.svelte-qt7ozj p a.svelte-qt7ozj.svelte-qt7ozj,.blog-parent.svelte-qt7ozj span a.svelte-qt7ozj.svelte-qt7ozj{color:#06D6A0;text-decoration:none}.blog-parent.svelte-qt7ozj p a.svelte-qt7ozj.svelte-qt7ozj:hover,.blog-parent.svelte-qt7ozj span a.svelte-qt7ozj.svelte-qt7ozj:hover{text-decoration:underline}.date.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{opacity:0.5;font-size:1rem}.hero-background.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{background:var(--primary-400);position:relative;margin-bottom:12rem;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}.hero-background.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj:before{content:'';background:var(--primary-400);position:absolute;z-index:-1;top:-50vh;left:0;height:50vh;width:100vw}.hero-background.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj:after{content:'';background:url("/layered-waves.svg");background-size:cover;position:absolute;z-index:-1;bottom:-20rem;width:100vw;height:20rem}@media screen and (min-width: 900px){}.container.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{max-width:1300px;margin:auto}.header.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{margin-left:var(--spacing-unit)}@media screen and (min-width: 900px){#blogposts.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{margin-left:-0.5rem}}#tags.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{margin-left:0}.button.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{color:inherit;display:inline-block;font-size:1.2em;padding:0.5rem 0.85rem 0.5rem;margin:var(--spacing-unit) var(--spacing-unit) 0rem;border-radius:calc(var(--corner-unit) * 2);background:var(--primary-400);box-shadow:var(--shadow-elevation-medium);text-decoration:none;font-weight:600}.button.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj:hover{background:var(--primary-300);box-shadow:var(--shadow-elevation-mediumhigh);color:white}.projectsbutton.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{background:var(--primary-300);color:white}.projectsbutton.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj:hover{background:var(--primary-350);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}.blogbutton.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj{background:var(--secondary-350);color:white}.blogbutton.svelte-qt7ozj.svelte-qt7ozj.svelte-qt7ozj:hover{background:var(--secondary-300);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}`,
+    css5 = {
+      code: `:root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),
+        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),
+        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),
+    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),
+    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),
+    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),
+        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),
+        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),
+        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),
+        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),
+        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),
+        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),
+        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),
+        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),
+        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),
+        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx,.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx::before,.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx::after{box-sizing:border-box}.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{margin:0}p.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx,h1.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx,h2.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx,h3.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx,h4.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{overflow-wrap:break-word}.grid1.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx,.grid2.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx,.grid3.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{display:grid;grid-template-columns:1fr;grid-gap:1.5rem;align-content:stretch;justify-content:stretch;margin:var(--spacing-unit)}.grid1.svelte-uhgmkx .grid1-hero.svelte-uhgmkx.svelte-uhgmkx{display:grid;align-items:center;text-align:center;margin:calc(var(--spacing-unit) * -3.5) var(--spacing-unit) var(--spacing-unit);grid-column:1/2;grid-row:2/3}.grid1.svelte-uhgmkx .grid1-hero h1.svelte-uhgmkx.svelte-uhgmkx,.grid2.svelte-uhgmkx .grid1-hero.svelte-uhgmkx h1.svelte-uhgmkx{font-weight:600}.grid1.svelte-uhgmkx .grid1-hero h2.svelte-uhgmkx.svelte-uhgmkx,.grid2.svelte-uhgmkx .grid1-hero.svelte-uhgmkx h2.svelte-uhgmkx{font-weight:600;color:var(--gray-100)}.grid1.svelte-uhgmkx .grid1-hero h3.svelte-uhgmkx.svelte-uhgmkx,.grid2.svelte-uhgmkx .grid1-hero.svelte-uhgmkx h3.svelte-uhgmkx,.grid2.svelte-uhgmkx .grid1-hero h4.svelte-uhgmkx.svelte-uhgmkx{margin:0;color:var(--gray-100);font-weight:normal}.grid1.svelte-uhgmkx .grid1-hero nav.svelte-uhgmkx.svelte-uhgmkx,.grid2 .grid1-hero.svelte-uhgmkx nav.svelte-uhgmkx.svelte-uhgmkx{float:none}@media screen and (min-width: 1200px){.grid1.svelte-uhgmkx .grid1-hero nav.svelte-uhgmkx.svelte-uhgmkx,.grid2 .grid1-hero.svelte-uhgmkx nav.svelte-uhgmkx.svelte-uhgmkx{float:right}}.grid1.svelte-uhgmkx .grid1-art.svelte-uhgmkx.svelte-uhgmkx{display:grid;place-items:center}@media screen and (min-width: 1200px){.grid1.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx,.grid2.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{grid-template-columns:3fr 1fr}.grid1.svelte-uhgmkx .grid1-hero.svelte-uhgmkx.svelte-uhgmkx{margin:var(--spacing-unit);grid-column:1/2;grid-row:1/2;text-align:left}}@media screen and (min-width: 800px){.grid3.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{grid-template-columns:1fr 1fr}}@media screen and (min-width: 1100px){.grid3.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{grid-template-columns:1fr 1fr 1fr}}.blogPost.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{overflow:hidden;border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-uhgmkx p.svelte-uhgmkx.svelte-uhgmkx{padding:0;margin:0}.blogPost.svelte-uhgmkx h3.svelte-uhgmkx.svelte-uhgmkx{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.divlink.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{height:100%;text-decoration:none;color:inherit}.divlink.svelte-uhgmkx:hover:hover h3.svelte-uhgmkx.svelte-uhgmkx{color:var(--primary-300)}.divlink.svelte-uhgmkx:hover:hover .blogPost.svelte-uhgmkx.svelte-uhgmkx{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.divlink.svelte-uhgmkx:hover:hover .allPostButton.svelte-uhgmkx.svelte-uhgmkx{background:var(--primary-300)}.allPostButton.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{background:var(--primary-200);justify-self:start;align-self:start}.allPostButton.svelte-uhgmkx h4.svelte-uhgmkx.svelte-uhgmkx{margin:0;padding:0;color:white;text-decoration:none}.grid2-tags.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{position:relative;margin-bottom:var(--spacing-unit)}.blog-parent.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{display:grid;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{grid-template-columns:1fr 1fr}.blog-parent.svelte-uhgmkx a.svelte-uhgmkx.svelte-uhgmkx:first-child{grid-row:1 / 2;grid-column:1 / 3}}.blog-parent.svelte-uhgmkx p a.svelte-uhgmkx.svelte-uhgmkx,.blog-parent.svelte-uhgmkx span a.svelte-uhgmkx.svelte-uhgmkx{color:#06D6A0;text-decoration:none}.blog-parent.svelte-uhgmkx p a.svelte-uhgmkx.svelte-uhgmkx:hover,.blog-parent.svelte-uhgmkx span a.svelte-uhgmkx.svelte-uhgmkx:hover{text-decoration:underline}.date.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{opacity:0.5;font-size:1rem}.hero-background.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{background:var(--primary-400);position:relative;margin-bottom:12rem;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}.hero-background.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx:before{content:'';background:var(--primary-400);position:absolute;z-index:-1;top:-50vh;left:0;height:50vh;width:100vw}.hero-background.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx:after{content:'';background:url("/layered-waves.svg");background-size:cover;position:absolute;z-index:-1;bottom:-20rem;width:100vw;height:20rem}@media screen and (min-width: 900px){}.container.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{max-width:1300px;margin:auto}.header.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{margin-left:var(--spacing-unit)}@media screen and (min-width: 900px){#blogposts.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{margin-left:-0.5rem}}#tags.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{margin-left:0}.button.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{color:inherit;display:inline-block;font-size:1.2em;padding:0.5rem 0.85rem 0.5rem;margin:var(--spacing-unit) var(--spacing-unit) 0rem;border-radius:calc(var(--corner-unit) * 2);background:var(--primary-400);box-shadow:var(--shadow-elevation-medium);text-decoration:none;font-weight:600}.button.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx:hover{background:var(--primary-300);box-shadow:var(--shadow-elevation-mediumhigh);color:white}.projectsbutton.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{background:var(--primary-300);color:white}.projectsbutton.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx:hover{background:var(--primary-350);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}.blogbutton.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx{background:var(--secondary-350);color:white}.blogbutton.svelte-uhgmkx.svelte-uhgmkx.svelte-uhgmkx:hover{background:var(--secondary-300);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}`,
       map: null
     };
-    allPosts = { "./blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_8988938c(), fifthpost_8988938c_exports)), "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_fe185df6(), firstpost_fe185df6_exports)), "./blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_989c53ab(), fourthpost_989c53ab_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_af8b5e91(), secondpost_af8b5e91_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_e53dae8d(), thirdpost_e53dae8d_exports)) };
+    allPosts = { "./blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_bfea811f(), fifthpost_bfea811f_exports)), "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_50165931(), firstpost_50165931_exports)), "./blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_16ebf1b4(), fourthpost_16ebf1b4_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_25dd1e6e(), secondpost_25dd1e6e_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_b3bbdc5a(), thirdpost_b3bbdc5a_exports)) };
     body = [];
     for (let path in allPosts) {
       body.push(allPosts[path]().then(({ metadata: metadata6 }) => {
@@ -5159,34 +5139,32 @@ var init_index_288f07e0 = __esm({
       ];
       if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0)
         $$bindings.posts(posts);
-      $$result.css.add(css6);
-      return `${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
+      $$result.css.add(css5);
+      return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle2, metaDescription: metaDescription2 }, {}, {})}
 
-${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle2, metaDescription: metaDescription2 }, {}, {})}
+<div class="${"hero-background svelte-uhgmkx"}"><div class="${"container svelte-uhgmkx"}"><div class="${"grid1 svelte-uhgmkx"}"><div class="${"grid1-art svelte-uhgmkx"}">${validate_component(Art, "Art").$$render($$result, {}, {}, {})}</div>
+            <div class="${"grid1-hero svelte-uhgmkx"}"><div class="${"svelte-uhgmkx"}"><h2 class="${"svelte-uhgmkx"}">Hi, I&#39;m Koen!</h2>
+                    <h1 class="${"svelte-uhgmkx"}">I do some programming in my off-time.</h1>
+                    <h3 class="${"svelte-uhgmkx"}">I write about web development as if you knew nothing, because neither do I!</h3>
+                    <nav class="${"svelte-uhgmkx"}"><a class="${"button blogbutton svelte-uhgmkx"}" href="${"#blogposts"}">Blog</a>
+                        <a class="${"button projectsbutton svelte-uhgmkx"}" href="${"#projects"}">Projects</a></nav></div></div></div></div></div>
 
-<div class="${"hero-background svelte-qt7ozj"}"><div class="${"container svelte-qt7ozj"}"><div class="${"grid1 svelte-qt7ozj"}"><div class="${"grid1-art svelte-qt7ozj"}">${validate_component(Art, "Art").$$render($$result, {}, {}, {})}</div>
-            <div class="${"grid1-hero svelte-qt7ozj"}"><div><h2 class="${"svelte-qt7ozj"}">Hi, I&#39;m Koen!</h2>
-                    <h1 class="${"svelte-qt7ozj"}">I do some programming in my off-time.</h1>
-                    <h3 class="${"svelte-qt7ozj"}">I write about web development as if you knew nothing, because neither do I!</h3>
-                    <nav class="${"svelte-qt7ozj"}"><a class="${"button blogbutton svelte-qt7ozj"}" href="${"#blogposts"}">Blog</a>
-                        <a class="${"button projectsbutton svelte-qt7ozj"}" href="${"#projects"}">Projects</a></nav></div></div></div></div></div>
-
-<div class="${"container svelte-qt7ozj"}"><div class="${"grid2 svelte-qt7ozj"}"><div class="${"grid2-blog"}"><h1 id="${"blogposts"}" class="${"header svelte-qt7ozj"}">Recently published</h1>
-            <div class="${"blog-parent svelte-qt7ozj"}">${each(posts.slice(0, 4), ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-qt7ozj"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-qt7ozj"}"><h3 class="${"svelte-qt7ozj"}">${escape(title)}</h3>
-                        <span class="${"date svelte-qt7ozj"}">${escape(new Date(date).toLocaleDateString("en-US", {
+<div class="${"container svelte-uhgmkx"}"><div class="${"grid2 svelte-uhgmkx"}"><div class="${"grid2-blog svelte-uhgmkx"}"><h1 id="${"blogposts"}" class="${"header svelte-uhgmkx"}">Recently published</h1>
+            <div class="${"blog-parent svelte-uhgmkx"}">${each(posts.slice(0, 4), ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-uhgmkx"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-uhgmkx"}"><h3 class="${"svelte-uhgmkx"}">${escape(title)}</h3>
+                        <span class="${"date svelte-uhgmkx"}">${escape(new Date(date).toLocaleDateString("en-US", {
         year: "numeric",
         month: "long",
         day: "numeric"
       }))}</span>
-                        <p class="${"svelte-qt7ozj"}">${escape(snippet)}</p></div>
+                        <p class="${"svelte-uhgmkx"}">${escape(snippet)}</p></div>
                     </a>`)}
-                <a href="${"/blog"}" class="${"divlink svelte-qt7ozj"}"><div class="${"blogPost allPostButton svelte-qt7ozj"}"><h4 class="${"svelte-qt7ozj"}">All posts \u2794</h4></div></a></div></div> 
+                <a href="${"/blog"}" class="${"divlink svelte-uhgmkx"}"><div class="${"blogPost allPostButton svelte-uhgmkx"}"><h4 class="${"svelte-uhgmkx"}">All posts \u2794</h4></div></a></div></div> 
 
-    <div class="${"grid2-tags svelte-qt7ozj"}"><h2 id="${"tags"}" class="${"header svelte-qt7ozj"}">Explore topics</h2>
+    <div class="${"grid2-tags svelte-uhgmkx"}"><h2 id="${"tags"}" class="${"header svelte-uhgmkx"}">Explore topics</h2>
         ${validate_component(TagCloud, "TagCloud").$$render($$result, {}, {}, {})}</div></div>
     
-<h1 id="${"projects"}" class="${"header svelte-qt7ozj"}">Projects</h1>
-<div class="${"grid3 svelte-qt7ozj"}">${each(projects, ({ title, src: src2, description, img }) => `${validate_component(Project, "Project").$$render($$result, { title, src: src2, description, img }, {}, {})}`)}</div>
+<h1 id="${"projects"}" class="${"header svelte-uhgmkx"}">Projects</h1>
+<div class="${"grid3 svelte-uhgmkx"}">${each(projects, ({ title, src: src2, description, img }) => `${validate_component(Project, "Project").$$render($$result, { title, src: src2, description, img }, {}, {})}`)}</div>
 
 
 </div>`;
@@ -5194,19 +5172,19 @@ ${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle2, met
   }
 });
 
-// .svelte-kit/output/server/chunks/calculator-37d580d7.js
-var calculator_37d580d7_exports = {};
-__export(calculator_37d580d7_exports, {
+// .svelte-kit/output/server/chunks/calculator-fc15f58f.js
+var calculator_fc15f58f_exports = {};
+__export(calculator_fc15f58f_exports, {
   default: () => Calculator
 });
-var css7, pageTitle3, metaDescription3, Calculator;
-var init_calculator_37d580d7 = __esm({
-  ".svelte-kit/output/server/chunks/calculator-37d580d7.js"() {
+var css6, pageTitle3, metaDescription3, Calculator;
+var init_calculator_fc15f58f = __esm({
+  ".svelte-kit/output/server/chunks/calculator-fc15f58f.js"() {
     init_shims();
-    init_app_60280033();
-    init_Seo_7205d950();
-    css7 = {
-      code: '.explanation.svelte-v28rry.svelte-v28rry{display:grid;padding:1rem 0 1rem;grid-template-columns:1fr}@media screen and (min-width: 600px){.explanation.svelte-v28rry.svelte-v28rry{grid-template-columns:1fr 1fr}}.explanation-pie.svelte-v28rry.svelte-v28rry{padding:1rem 0 0;justify-self:center}@media screen and (min-width: 600px){.explanation-pie.svelte-v28rry.svelte-v28rry{padding:0}}h3.svelte-v28rry.svelte-v28rry{font-weight:normal;margin:0}svg.svelte-v28rry.svelte-v28rry{width:10rem;height:10rem}svg.svelte-v28rry text.svelte-v28rry{font-weight:bold;fill:white}.dark .circle.svelte-v28rry.svelte-v28rry{fill:#6E71DB}a.svelte-v28rry.svelte-v28rry{color:#06D6A0;text-decoration:none}a.svelte-v28rry.svelte-v28rry:hover{text-decoration:underline}ol.svelte-v28rry.svelte-v28rry{list-style:none;margin:0;padding:0}ol.svelte-v28rry li.svelte-v28rry{display:grid;grid-template-columns:1fr;grid-gap:0.25rem;padding-bottom:1rem}span.svelte-v28rry.svelte-v28rry{color:#06D6A0;font-weight:bold}form.svelte-v28rry.svelte-v28rry{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}input[type="number"].svelte-v28rry.svelte-v28rry{font-size:inherit;box-shadow:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;outline:1px black solid;padding:0.25rem;margin:0 0.25rem 0;width:auto}label.svelte-v28rry.svelte-v28rry{padding-left:0.25rem}.svelte-v28rry.svelte-v28rry::-moz-focus-inner{border:0;padding:0}input[type="range"].svelte-v28rry.svelte-v28rry{-webkit-appearance:none;width:auto;margin:0.25rem 0 0.25rem;padding:0 0.25rem 0}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:#111344;height:5px}input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{-webkit-appearance:none;height:20px;width:20px;background:#06D6A0;margin-top:-7.5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-thumb{height:15px;width:15px;margin-top:-5px}}input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:20px;width:20px;background:#06D6A0;margin-top:-5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-thumb{height:15px;width:15px;margin-top:-5px}}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-webkit-slider-runnable-track{background:white;height:5px}.dark input[type="range"].svelte-v28rry.svelte-v28rry::-moz-range-track{background:white;height:5px}.dark form.svelte-v28rry.svelte-v28rry{box-shadow:0 0 5px white;border:white 2px solid}',
+    init_app_fc10dfe1();
+    init_Seo_e5ba867d();
+    css6 = {
+      code: ':root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1je4mdg.svelte-1je4mdg,.svelte-1je4mdg.svelte-1je4mdg::before,.svelte-1je4mdg.svelte-1je4mdg::after{box-sizing:border-box}.svelte-1je4mdg.svelte-1je4mdg{margin:0}svg.svelte-1je4mdg.svelte-1je4mdg{display:block;max-width:100%}input.svelte-1je4mdg.svelte-1je4mdg{font:inherit}p.svelte-1je4mdg.svelte-1je4mdg,h1.svelte-1je4mdg.svelte-1je4mdg,h3.svelte-1je4mdg.svelte-1je4mdg{overflow-wrap:break-word}.explanation.svelte-1je4mdg.svelte-1je4mdg{display:grid;padding:1rem 0 1rem;grid-template-columns:1fr}@media screen and (min-width: 600px){.explanation.svelte-1je4mdg.svelte-1je4mdg{grid-template-columns:1fr 1fr}}.explanation-pie.svelte-1je4mdg.svelte-1je4mdg{padding:1rem 0 0;justify-self:center}@media screen and (min-width: 600px){.explanation-pie.svelte-1je4mdg.svelte-1je4mdg{padding:0}}h3.svelte-1je4mdg.svelte-1je4mdg{font-weight:normal;margin:0}svg.svelte-1je4mdg.svelte-1je4mdg{width:10rem;height:10rem}svg.svelte-1je4mdg text.svelte-1je4mdg{font-weight:bold;fill:white}.dark .circle.svelte-1je4mdg.svelte-1je4mdg{fill:#6E71DB}a.svelte-1je4mdg.svelte-1je4mdg{color:#06D6A0;text-decoration:none}a.svelte-1je4mdg.svelte-1je4mdg:hover{text-decoration:underline}ol.svelte-1je4mdg.svelte-1je4mdg{list-style:none;margin:0;padding:0}ol.svelte-1je4mdg li.svelte-1je4mdg{display:grid;grid-template-columns:1fr;grid-gap:0.25rem;padding-bottom:1rem}span.svelte-1je4mdg.svelte-1je4mdg{color:#06D6A0;font-weight:bold}form.svelte-1je4mdg.svelte-1je4mdg{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}input[type="number"].svelte-1je4mdg.svelte-1je4mdg{font-size:inherit;box-shadow:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;outline:1px black solid;padding:0.25rem;margin:0 0.25rem 0;width:auto}label.svelte-1je4mdg.svelte-1je4mdg{padding-left:0.25rem}.svelte-1je4mdg.svelte-1je4mdg::-moz-focus-inner{border:0;padding:0}input[type="range"].svelte-1je4mdg.svelte-1je4mdg{-webkit-appearance:none;width:auto;margin:0.25rem 0 0.25rem;padding:0 0.25rem 0}input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-webkit-slider-runnable-track{background:#111344;height:5px}input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-moz-range-track{background:#111344;height:5px}input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-webkit-slider-thumb{-webkit-appearance:none;height:20px;width:20px;background:#06D6A0;margin-top:-7.5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-webkit-slider-thumb{height:15px;width:15px;margin-top:-5px}}input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-moz-range-thumb{height:20px;width:20px;background:#06D6A0;margin-top:-5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-moz-range-thumb{height:15px;width:15px;margin-top:-5px}}.dark input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-webkit-slider-runnable-track{background:white;height:5px}.dark input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-moz-range-track{background:white;height:5px}.dark form.svelte-1je4mdg.svelte-1je4mdg{box-shadow:0 0 5px white;border:white 2px solid}',
       map: null
     };
     pageTitle3 = "portfolio rebalancing calculator";
@@ -5218,36 +5196,36 @@ var init_calculator_37d580d7 = __esm({
       let volatileAssets = null;
       let stableAssets = null;
       let desiredPercVolatile = 0;
-      $$result.css.add(css7);
+      $$result.css.add(css6);
       totalPortfValue = volatileAssets + stableAssets;
       actPercVolatile = volatileAssets / totalPortfValue * 100;
       diffActAndDesVolatile = volatileAssets - desiredPercVolatile / 100 * totalPortfValue;
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle3, metaDescription: metaDescription3 }, {}, {})} 
 
 
-<main class="${"svelte-v28rry"}"><h1 class="${"svelte-v28rry"}">Portfolio rebalancing calculator</h1>
+<main class="${"svelte-1je4mdg"}"><h1 class="${"svelte-1je4mdg"}">Portfolio rebalancing calculator</h1>
     
-    <form name="${"calculator"}" class="${"svelte-v28rry"}"><input type="${"hidden"}" name="${"form-name"}" value="${"contact"}" class="${"svelte-v28rry"}">
-        <ol class="${"svelte-v28rry"}"><li class="${"svelte-v28rry"}"><label for="${"field-volatile"}" class="${"svelte-v28rry"}">Current money in volatile assets?</label>
-                <input type="${"number"}" min="${"0"}" name="${"volatile"}" id="${"field-volatile"}" required="${""}" aria-required="${"true"}" placeholder="${"Enter value of volatile assets"}" autocomplete="${"volatile"}" autocorrect="${"off"}" autocapitalize="${"off"}" oninput="${"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');"}" class="${"svelte-v28rry"}"${add_attribute("value", volatileAssets, 0)}></li>
-            <li class="${"svelte-v28rry"}"><label for="${"field-stable"}" class="${"svelte-v28rry"}">Current money in stable assets?</label>
-                <input type="${"number"}" min="${"0"}" name="${"stable"}" id="${"field-stable"}" required="${""}" aria-required="${"true"}" placeholder="${"Enter value of stable assets"}" autocomplete="${"stable"}" oninput="${"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');"}" class="${"svelte-v28rry"}"${add_attribute("value", stableAssets, 0)}></li>
-            <li class="${"svelte-v28rry"}"><label for="${"field-percentage"}" class="${"svelte-v28rry"}">Preferred percentage of volatile assets?</label>
-                <input type="${"range"}" min="${"0"}" max="${"100"}" name="${"percentage"}" id="${"field-percentage"}" required="${""}" aria-required="${"true"}" autocapitalize="${"off"}" class="${" svelte-v28rry"}"${add_attribute("value", desiredPercVolatile, 0)}>
-                <label class="${"svelte-v28rry"}">${escape(desiredPercVolatile)}%</label></li></ol></form>
+    <form name="${"calculator"}" class="${"svelte-1je4mdg"}"><input type="${"hidden"}" name="${"form-name"}" value="${"contact"}" class="${"svelte-1je4mdg"}">
+        <ol class="${"svelte-1je4mdg"}"><li class="${"svelte-1je4mdg"}"><label for="${"field-volatile"}" class="${"svelte-1je4mdg"}">Current money in volatile assets?</label>
+                <input type="${"number"}" min="${"0"}" name="${"volatile"}" id="${"field-volatile"}" required="${""}" aria-required="${"true"}" placeholder="${"Enter value of volatile assets"}" autocomplete="${"volatile"}" autocorrect="${"off"}" autocapitalize="${"off"}" oninput="${"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');"}" class="${"svelte-1je4mdg"}"${add_attribute("value", volatileAssets, 0)}></li>
+            <li class="${"svelte-1je4mdg"}"><label for="${"field-stable"}" class="${"svelte-1je4mdg"}">Current money in stable assets?</label>
+                <input type="${"number"}" min="${"0"}" name="${"stable"}" id="${"field-stable"}" required="${""}" aria-required="${"true"}" placeholder="${"Enter value of stable assets"}" autocomplete="${"stable"}" oninput="${"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');"}" class="${"svelte-1je4mdg"}"${add_attribute("value", stableAssets, 0)}></li>
+            <li class="${"svelte-1je4mdg"}"><label for="${"field-percentage"}" class="${"svelte-1je4mdg"}">Preferred percentage of volatile assets?</label>
+                <input type="${"range"}" min="${"0"}" max="${"100"}" name="${"percentage"}" id="${"field-percentage"}" required="${""}" aria-required="${"true"}" autocapitalize="${"off"}" class="${" svelte-1je4mdg"}"${add_attribute("value", desiredPercVolatile, 0)}>
+                <label class="${"svelte-1je4mdg"}">${escape(desiredPercVolatile)}%</label></li></ol></form>
 
-    <div class="${"explanation svelte-v28rry"}">
-        <div class="${"explanation-text svelte-v28rry"}"><h3 class="${"svelte-v28rry"}">You currently have <span class="${"svelte-v28rry"}">${`${`${`0%`}`}
-            `}</span> of your total portfolio value of <span class="${"svelte-v28rry"}">\u20AC${escape(totalPortfValue)}</span> in volatile assets.<br class="${"svelte-v28rry"}"> To rebalance, 
+    <div class="${"explanation svelte-1je4mdg"}">
+        <div class="${"explanation-text svelte-1je4mdg"}"><h3 class="${"svelte-1je4mdg"}">You currently have <span class="${"svelte-1je4mdg"}">${`${`${`0%`}`}
+            `}</span> of your total portfolio value of <span class="${"svelte-1je4mdg"}">\u20AC${escape(totalPortfValue)}</span> in volatile assets.<br class="${"svelte-1je4mdg"}"> To rebalance, 
             ${diffActAndDesVolatile > 0 ? `sell` : `buy`}
-            <span class="${"svelte-v28rry"}">\u20AC${escape(Math.abs(Math.round(diffActAndDesVolatile)))}</span> of volatile assets. </h3></div>
+            <span class="${"svelte-1je4mdg"}">\u20AC${escape(Math.abs(Math.round(diffActAndDesVolatile)))}</span> of volatile assets. </h3></div>
         
-        <div class="${"explanation-pie svelte-v28rry"}"><svg height="${"20"}" width="${"20"}" viewBox="${"0 0 20 20"}" class="${"svelte-v28rry"}"><circle class="${"circle svelte-v28rry"}" r="${"10"}" cx="${"10"}" cy="${"10"}" fill="${"#111344"}"></circle><circle r="${"5"}" cx="${"10"}" cy="${"10"}" fill="${"transparent"}" stroke="${"#06D6A0"}" stroke-width="${"10"}" stroke-dasharray="${"calc(" + escape(Math.round(actPercVolatile)) + " * 30.65 / 100) 31.4159"}" transform="${"rotate(-90) translate(-20)"}" class="${"svelte-v28rry"}"></circle><text x="${"50%"}" y="${"50%"}" dominant-baseline="${"middle"}" text-anchor="${"middle"}" font-size="${"3"}" class="${"svelte-v28rry"}">${!actPercVolatile ? `` : `${escape(Math.round(actPercVolatile))}`}</text></svg></div></div>
+        <div class="${"explanation-pie svelte-1je4mdg"}"><svg height="${"20"}" width="${"20"}" viewBox="${"0 0 20 20"}" class="${"svelte-1je4mdg"}"><circle class="${"circle svelte-1je4mdg"}" r="${"10"}" cx="${"10"}" cy="${"10"}" fill="${"#111344"}"></circle><circle r="${"5"}" cx="${"10"}" cy="${"10"}" fill="${"transparent"}" stroke="${"#06D6A0"}" stroke-width="${"10"}" stroke-dasharray="${"calc(" + escape(Math.round(actPercVolatile)) + " * 30.65 / 100) 31.4159"}" transform="${"rotate(-90) translate(-20)"}" class="${"svelte-1je4mdg"}"></circle><text x="${"50%"}" y="${"50%"}" dominant-baseline="${"middle"}" text-anchor="${"middle"}" font-size="${"3"}" class="${"svelte-1je4mdg"}">${!actPercVolatile ? `` : `${escape(Math.round(actPercVolatile))}`}</text></svg></div></div>
 
-    <hr class="${"svelte-v28rry"}">
-    <p class="${"svelte-v28rry"}">This calculator is intended for people who follow a long-term investment strategy such as the <a target="${"_blank"}" rel="${"noopener"}" href="${"https://www.bogleheads.org/wiki/Bogleheads\xAE_investment_philosophy"}" class="${"svelte-v28rry"}">Boglehead method</a>, where there&#39;s a volatile part and a stable part: stocks and bonds.</p>
-    <p class="${"svelte-v28rry"}">In recent years, low interest rates have made bonds unattractive. People now opt for deposit savings or cash buffers. Stocks are still in high demand, but crypto currencies are gaining ground.</p> 
-    <p class="${"svelte-v28rry"}">None of this is relevant for this calculator, as long as there is a volatile and a stable asset that you&#39;re trying to balance!</p></main>
+    <hr class="${"svelte-1je4mdg"}">
+    <p class="${"svelte-1je4mdg"}">This calculator is intended for people who follow a long-term investment strategy such as the <a target="${"_blank"}" rel="${"noopener"}" href="${"https://www.bogleheads.org/wiki/Bogleheads\xAE_investment_philosophy"}" class="${"svelte-1je4mdg"}">Boglehead method</a>, where there&#39;s a volatile part and a stable part: stocks and bonds.</p>
+    <p class="${"svelte-1je4mdg"}">In recent years, low interest rates have made bonds unattractive. People now opt for deposit savings or cash buffers. Stocks are still in high demand, but crypto currencies are gaining ground.</p> 
+    <p class="${"svelte-1je4mdg"}">None of this is relevant for this calculator, as long as there is a volatile and a stable asset that you&#39;re trying to balance!</p></main>
 
 
 
@@ -5256,23 +5234,23 @@ var init_calculator_37d580d7 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-664ee5de.js
-var index_664ee5de_exports = {};
-__export(index_664ee5de_exports, {
+// .svelte-kit/output/server/chunks/index-e72399e6.js
+var index_e72399e6_exports = {};
+__export(index_e72399e6_exports, {
   default: () => Schildklier
 });
 function pageScroll() {
   window.scrollBy(0, 50);
   setTimeout("pageScroll()", 100);
 }
-var css8, pageTitle4, metaDescription4, Schildklier;
-var init_index_664ee5de = __esm({
-  ".svelte-kit/output/server/chunks/index-664ee5de.js"() {
+var css7, pageTitle4, metaDescription4, Schildklier;
+var init_index_e72399e6 = __esm({
+  ".svelte-kit/output/server/chunks/index-e72399e6.js"() {
     init_shims();
-    init_app_60280033();
-    init_Seo_7205d950();
-    css8 = {
-      code: "button.svelte-1dd3gzp{font-family:inherit;font-size:inherit;padding:0.25rem;background:transparent;box-shadow:none;outline:none;border:2px solid #111344}button.svelte-1dd3gzp:hover{outline:2px solid #06D6A0;cursor:pointer}.dark button.svelte-1dd3gzp{color:white;border:2px solid white}a.svelte-1dd3gzp{color:#06D6A0;text-decoration:none}a.svelte-1dd3gzp:hover{text-decoration:underline}",
+    init_app_fc10dfe1();
+    init_Seo_e5ba867d();
+    css7 = {
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1xco7v3,.svelte-1xco7v3::before,.svelte-1xco7v3::after{box-sizing:border-box}.svelte-1xco7v3{margin:0}button.svelte-1xco7v3{font:inherit}p.svelte-1xco7v3,h1.svelte-1xco7v3{overflow-wrap:break-word}button.svelte-1xco7v3{font-family:inherit;font-size:inherit;padding:0.25rem;background:transparent;box-shadow:none;outline:none;border:2px solid #111344}button.svelte-1xco7v3:hover{outline:2px solid #06D6A0;cursor:pointer}.dark button.svelte-1xco7v3{color:white;border:2px solid white}a.svelte-1xco7v3{color:#06D6A0;text-decoration:none}a.svelte-1xco7v3:hover{text-decoration:underline}",
       map: null
     };
     pageTitle4 = "interactive flowchart for diagnosing thyroid disease";
@@ -5293,7 +5271,7 @@ var init_index_664ee5de = __esm({
       let nodus;
       let solnodus;
       pageScroll();
-      $$result.css.add(css8);
+      $$result.css.add(css7);
       start = false;
       tsh = null;
       tsh1t4 = null;
@@ -5309,80 +5287,80 @@ var init_index_664ee5de = __esm({
       nodus = null;
       solnodus = null;
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle4, metaDescription: metaDescription4 }, {}, {})}
-<h1>Diagnostiek bij vermoeden van een schildklierfunctiestoornis</h1>
-<p><i>This interactive flowchart is adapted from the <a target="${"_blank"}" rel="${"noopener"}" href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-1dd3gzp"}">NHG-Standaard Schildklieraandoeningen</a>, and specifically from <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-1dd3gzp"}">this flowchart</a>. I might have made mistakes so plz don&#39;t use it.</i></p>
-<p style="${"padding-bottom: 0.5rem;"}">Dit interactieve stroomdiagram is een aanpassing van de <a target="${"_blank"}" rel="${"noopener"}" href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-1dd3gzp"}">NHG-Standaard Schildklieraandoeningen</a>, en specifiek van <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-1dd3gzp"}">dit stroomdiagram</a>. Er kunnen zeker nog fouten in zitten!</p>
+<h1 class="${"svelte-1xco7v3"}">Diagnostiek bij vermoeden van een schildklierfunctiestoornis</h1>
+<p class="${"svelte-1xco7v3"}"><i class="${"svelte-1xco7v3"}">This interactive flowchart is adapted from the <a target="${"_blank"}" rel="${"noopener"}" href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-1xco7v3"}">NHG-Standaard Schildklieraandoeningen</a>, and specifically from <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-1xco7v3"}">this flowchart</a>. I might have made mistakes so plz don&#39;t use it.</i></p>
+<p style="${"padding-bottom: 0.5rem;"}" class="${"svelte-1xco7v3"}">Dit interactieve stroomdiagram is een aanpassing van de <a target="${"_blank"}" rel="${"noopener"}" href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-1xco7v3"}">NHG-Standaard Schildklieraandoeningen</a>, en specifiek van <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-1xco7v3"}">dit stroomdiagram</a>. Er kunnen zeker nog fouten in zitten!</p>
 
-<button class="${"svelte-1dd3gzp"}">Start beslisboom</button>
-${start ? `<p>Is het TSH verhoogd, verlaagd of normaal?</p>
-    <button class="${"svelte-1dd3gzp"}">Verhoogd</button>
-    <button class="${"svelte-1dd3gzp"}">Verlaagd</button>
-    <button class="${"svelte-1dd3gzp"}">Normaal</button>
+<button class="${"svelte-1xco7v3"}">Start beslisboom</button>
+${start ? `<p class="${"svelte-1xco7v3"}">Is het TSH verhoogd, verlaagd of normaal?</p>
+    <button class="${"svelte-1xco7v3"}">Verhoogd</button>
+    <button class="${"svelte-1xco7v3"}">Verlaagd</button>
+    <button class="${"svelte-1xco7v3"}">Normaal</button>
     ` : ``}
-${tsh ? `${tsh === 3 ? `<p>Euthyreo\xEFdie</p>` : `${tsh === 1 ? `<p>Is het Vrije T4 verhoogd, verlaagd of normaal?</p>
-        <button class="${"svelte-1dd3gzp"}">Verhoogd</button>
-        <button class="${"svelte-1dd3gzp"}">Verlaagd</button>
-        <button class="${"svelte-1dd3gzp"}">Normaal</button>
-        ${tsh1t4 === 3 ? `<p>Subklinische hypothyreo\xEFdie</p>` : `${tsh1t4 === 1 ? `<ul><li>TSH-producerend adenoom van de hypofyse</li>
-                <li>Perifere resistentie schildklierhormoon (<i>zeldzaam</i>)</li></ul>` : `${tsh1t4 === 2 ? `<p>Minder dan 1 jaar geleden bevallen?</p>
-            <button class="${"svelte-1dd3gzp"}">Nee</button>
-            <button class="${"svelte-1dd3gzp"}">Ja</button>
+${tsh ? `${tsh === 3 ? `<p class="${"svelte-1xco7v3"}">Euthyreo\xEFdie</p>` : `${tsh === 1 ? `<p class="${"svelte-1xco7v3"}">Is het Vrije T4 verhoogd, verlaagd of normaal?</p>
+        <button class="${"svelte-1xco7v3"}">Verhoogd</button>
+        <button class="${"svelte-1xco7v3"}">Verlaagd</button>
+        <button class="${"svelte-1xco7v3"}">Normaal</button>
+        ${tsh1t4 === 3 ? `<p class="${"svelte-1xco7v3"}">Subklinische hypothyreo\xEFdie</p>` : `${tsh1t4 === 1 ? `<ul class="${"svelte-1xco7v3"}"><li class="${"svelte-1xco7v3"}">TSH-producerend adenoom van de hypofyse</li>
+                <li class="${"svelte-1xco7v3"}">Perifere resistentie schildklierhormoon (<i class="${"svelte-1xco7v3"}">zeldzaam</i>)</li></ul>` : `${tsh1t4 === 2 ? `<p class="${"svelte-1xco7v3"}">Minder dan 1 jaar geleden bevallen?</p>
+            <button class="${"svelte-1xco7v3"}">Nee</button>
+            <button class="${"svelte-1xco7v3"}">Ja</button>
 
-            ${bevallen === 1 ? `<p>Post-partum thyreo\xEFditis</p>` : `${bevallen === 2 ? `<p>Schildklieroperatie, bestraling van de hals, of medicatiegebruik?</p>
-                <button class="${"svelte-1dd3gzp"}">Nee</button>
-                <button class="${"svelte-1dd3gzp"}">Ja</button>
-                ${iatrogeen === 1 ? `<p>Iatrogene hypothyreo\xEFdie</p>` : `${iatrogeen === 2 ? `<ul><li>Thyreo\xEFditis van Hashimoto</li>
-                        <li>Stille lymfocytaire thyreo\xEFditis</li></ul>` : ``}`}` : ``}`}` : ``}`}`}` : `${tsh === 2 ? `<p>Is het Vrije T4 verhoogd, verlaagd of normaal?</p>
-        <button class="${"svelte-1dd3gzp"}">Verhoogd</button>
-        <button class="${"svelte-1dd3gzp"}">Verlaagd</button>
-        <button class="${"svelte-1dd3gzp"}">Normaal</button>
-        ${tsh0t4 === 3 ? `<p>Subklinische hyperthyreo\xEFdie</p>` : `${tsh0t4 === 1 ? `<p>Hyperthyreo\xEFdie</p>
-            <p>Pijnlijke schildklier, koorts, koude rillingen en malaise?</p>
-            <button class="${"svelte-1dd3gzp"}">Nee</button>
-            <button class="${"svelte-1dd3gzp"}">Ja</button>
-            ${ziek === 2 ? `x (TSH-R)` : `${ziek === 1 ? `<p>Verhoogde BSE, leucocytose?</p>
-                <button class="${"svelte-1dd3gzp"}">Nee</button>
-                <button class="${"svelte-1dd3gzp"}">Ja</button>
-                ${bse === 1 ? `<p>Sucacute thyreo\xEFditis</p>` : `${bse === 2 ? `<p>Anti-TSH-R antistoffen?</p>
-                    <button class="${"svelte-1dd3gzp"}">Nee</button>
-                    <button class="${"svelte-1dd3gzp"}">Ja</button>
-                    ${tshr === 1 ? `<p>Ziekte van Graves</p>` : `${tshr === 2 ? `<p>Amiodaron of lithiumgebruik?</p>
-                        <button class="${"svelte-1dd3gzp"}">Nee</button>
-                        <button class="${"svelte-1dd3gzp"}">Ja</button>
-                        ${amiolith === 1 ? `<p>Iatrogene hyperthyreo\xEFdie</p>` : `${amiolith === 2 ? `<p>Minder dan 1 jaar geleden bevallen?</p>
-                            <button class="${"svelte-1dd3gzp"}">Nee</button>
-                            <button class="${"svelte-1dd3gzp"}">Ja</button>
-                            ${bevallen2 === 1 ? `<p>Post-partum thyreo\xEFditis</p>` : `${bevallen2 === 2 ? `<p>Is er sprake van struma?</p>
-                                <button class="${"svelte-1dd3gzp"}">Nee</button>
-                                <button class="${"svelte-1dd3gzp"}">Ja</button>
-                                ${struma === 1 ? `<p>Is er een dominante nodus?</p>
-                                    <button class="${"svelte-1dd3gzp"}">Nee</button>
-                                    <button class="${"svelte-1dd3gzp"}">Ja</button>
-                                    ${nodus === 1 ? `<p>Multinodulair struma</p>` : `${nodus === 2 ? `<p>Multinodulair struma met dominante nodus</p>` : ``}`}` : `${struma === 2 ? `<p>Is er een solitaire nodus?</p>
-                                    <button class="${"svelte-1dd3gzp"}">Nee</button>
-                                    <button class="${"svelte-1dd3gzp"}">Ja</button>
-                                    ${solnodus === 2 ? `<p>Stille lymfocytaire thyreo\xEFditis</p>` : `${solnodus === 1 ? `<p>Toxisch adenoom</p>` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : `${tsh0t4 === 2 ? `<p>Secundaire of tertiaire hypothyreo\xEFdie (<i>zeldzaam</i>)</p>` : ``}`}`}` : ``}`}`}` : ``}
+            ${bevallen === 1 ? `<p class="${"svelte-1xco7v3"}">Post-partum thyreo\xEFditis</p>` : `${bevallen === 2 ? `<p class="${"svelte-1xco7v3"}">Schildklieroperatie, bestraling van de hals, of medicatiegebruik?</p>
+                <button class="${"svelte-1xco7v3"}">Nee</button>
+                <button class="${"svelte-1xco7v3"}">Ja</button>
+                ${iatrogeen === 1 ? `<p class="${"svelte-1xco7v3"}">Iatrogene hypothyreo\xEFdie</p>` : `${iatrogeen === 2 ? `<ul class="${"svelte-1xco7v3"}"><li class="${"svelte-1xco7v3"}">Thyreo\xEFditis van Hashimoto</li>
+                        <li class="${"svelte-1xco7v3"}">Stille lymfocytaire thyreo\xEFditis</li></ul>` : ``}`}` : ``}`}` : ``}`}`}` : `${tsh === 2 ? `<p class="${"svelte-1xco7v3"}">Is het Vrije T4 verhoogd, verlaagd of normaal?</p>
+        <button class="${"svelte-1xco7v3"}">Verhoogd</button>
+        <button class="${"svelte-1xco7v3"}">Verlaagd</button>
+        <button class="${"svelte-1xco7v3"}">Normaal</button>
+        ${tsh0t4 === 3 ? `<p class="${"svelte-1xco7v3"}">Subklinische hyperthyreo\xEFdie</p>` : `${tsh0t4 === 1 ? `<p class="${"svelte-1xco7v3"}">Hyperthyreo\xEFdie</p>
+            <p class="${"svelte-1xco7v3"}">Pijnlijke schildklier, koorts, koude rillingen en malaise?</p>
+            <button class="${"svelte-1xco7v3"}">Nee</button>
+            <button class="${"svelte-1xco7v3"}">Ja</button>
+            ${ziek === 2 ? `x (TSH-R)` : `${ziek === 1 ? `<p class="${"svelte-1xco7v3"}">Verhoogde BSE, leucocytose?</p>
+                <button class="${"svelte-1xco7v3"}">Nee</button>
+                <button class="${"svelte-1xco7v3"}">Ja</button>
+                ${bse === 1 ? `<p class="${"svelte-1xco7v3"}">Sucacute thyreo\xEFditis</p>` : `${bse === 2 ? `<p class="${"svelte-1xco7v3"}">Anti-TSH-R antistoffen?</p>
+                    <button class="${"svelte-1xco7v3"}">Nee</button>
+                    <button class="${"svelte-1xco7v3"}">Ja</button>
+                    ${tshr === 1 ? `<p class="${"svelte-1xco7v3"}">Ziekte van Graves</p>` : `${tshr === 2 ? `<p class="${"svelte-1xco7v3"}">Amiodaron of lithiumgebruik?</p>
+                        <button class="${"svelte-1xco7v3"}">Nee</button>
+                        <button class="${"svelte-1xco7v3"}">Ja</button>
+                        ${amiolith === 1 ? `<p class="${"svelte-1xco7v3"}">Iatrogene hyperthyreo\xEFdie</p>` : `${amiolith === 2 ? `<p class="${"svelte-1xco7v3"}">Minder dan 1 jaar geleden bevallen?</p>
+                            <button class="${"svelte-1xco7v3"}">Nee</button>
+                            <button class="${"svelte-1xco7v3"}">Ja</button>
+                            ${bevallen2 === 1 ? `<p class="${"svelte-1xco7v3"}">Post-partum thyreo\xEFditis</p>` : `${bevallen2 === 2 ? `<p class="${"svelte-1xco7v3"}">Is er sprake van struma?</p>
+                                <button class="${"svelte-1xco7v3"}">Nee</button>
+                                <button class="${"svelte-1xco7v3"}">Ja</button>
+                                ${struma === 1 ? `<p class="${"svelte-1xco7v3"}">Is er een dominante nodus?</p>
+                                    <button class="${"svelte-1xco7v3"}">Nee</button>
+                                    <button class="${"svelte-1xco7v3"}">Ja</button>
+                                    ${nodus === 1 ? `<p class="${"svelte-1xco7v3"}">Multinodulair struma</p>` : `${nodus === 2 ? `<p class="${"svelte-1xco7v3"}">Multinodulair struma met dominante nodus</p>` : ``}`}` : `${struma === 2 ? `<p class="${"svelte-1xco7v3"}">Is er een solitaire nodus?</p>
+                                    <button class="${"svelte-1xco7v3"}">Nee</button>
+                                    <button class="${"svelte-1xco7v3"}">Ja</button>
+                                    ${solnodus === 2 ? `<p class="${"svelte-1xco7v3"}">Stille lymfocytaire thyreo\xEFditis</p>` : `${solnodus === 1 ? `<p class="${"svelte-1xco7v3"}">Toxisch adenoom</p>` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : `${tsh0t4 === 2 ? `<p class="${"svelte-1xco7v3"}">Secundaire of tertiaire hypothyreo\xEFdie (<i class="${"svelte-1xco7v3"}">zeldzaam</i>)</p>` : ``}`}`}` : ``}`}`}` : ``}
 
 `;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/blog-b0e34926.js
-var blog_b0e34926_exports = {};
-__export(blog_b0e34926_exports, {
+// .svelte-kit/output/server/chunks/blog-989f107f.js
+var blog_989f107f_exports = {};
+__export(blog_989f107f_exports, {
   default: () => Blog2,
   load: () => load2
 });
-var css$12, Posts, css9, allPosts2, body2, load2, pageTitle5, metaDescription5, Blog2;
-var init_blog_b0e34926 = __esm({
-  ".svelte-kit/output/server/chunks/blog-b0e34926.js"() {
+var css$12, Posts, css8, allPosts2, body2, load2, pageTitle5, metaDescription5, Blog2;
+var init_blog_989f107f = __esm({
+  ".svelte-kit/output/server/chunks/blog-989f107f.js"() {
     init_shims();
-    init_app_60280033();
-    init_Seo_7205d950();
-    init_Date_abfc5b52();
+    init_app_fc10dfe1();
+    init_Seo_e5ba867d();
+    init_Date_21e19824();
     css$12 = {
-      code: ".blog-parent.svelte-1mtz2ov.svelte-1mtz2ov{display:grid;grid-auto-flow:dense;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-1mtz2ov.svelte-1mtz2ov{grid-template-columns:1fr 1fr}}.divlink.svelte-1mtz2ov.svelte-1mtz2ov{height:100%;text-decoration:none;color:inherit}.divlink.svelte-1mtz2ov .date.svelte-1mtz2ov{opacity:0.5;font-size:1rem}.divlink.svelte-1mtz2ov:hover:hover h3.svelte-1mtz2ov{color:var(--primary-300)}.divlink.svelte-1mtz2ov:hover:hover .blogPost.svelte-1mtz2ov{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-1mtz2ov.svelte-1mtz2ov{overflow:hidden;background:rgba(255, 255, 255, 0.5);border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-1mtz2ov p.svelte-1mtz2ov{padding:0;margin:0}.blogPost.svelte-1mtz2ov h3.svelte-1mtz2ov{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-s1q2mh.svelte-s1q2mh,.svelte-s1q2mh.svelte-s1q2mh::before,.svelte-s1q2mh.svelte-s1q2mh::after{box-sizing:border-box}.svelte-s1q2mh.svelte-s1q2mh{margin:0}p.svelte-s1q2mh.svelte-s1q2mh,h3.svelte-s1q2mh.svelte-s1q2mh{overflow-wrap:break-word}.blog-parent.svelte-s1q2mh.svelte-s1q2mh{display:grid;grid-auto-flow:dense;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-s1q2mh.svelte-s1q2mh{grid-template-columns:1fr 1fr}}.divlink.svelte-s1q2mh.svelte-s1q2mh{height:100%;text-decoration:none;color:inherit}.divlink.svelte-s1q2mh .date.svelte-s1q2mh{opacity:0.5;font-size:1rem}.divlink.svelte-s1q2mh:hover:hover h3.svelte-s1q2mh{color:var(--primary-300)}.divlink.svelte-s1q2mh:hover:hover .blogPost.svelte-s1q2mh{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-s1q2mh.svelte-s1q2mh{overflow:hidden;background:rgba(255, 255, 255, 0.5);border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-s1q2mh p.svelte-s1q2mh{padding:0;margin:0}.blogPost.svelte-s1q2mh h3.svelte-s1q2mh{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}",
       map: null
     };
     Posts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5390,17 +5368,17 @@ var init_blog_b0e34926 = __esm({
       if ($$props.dateSortedPosts === void 0 && $$bindings.dateSortedPosts && dateSortedPosts !== void 0)
         $$bindings.dateSortedPosts(dateSortedPosts);
       $$result.css.add(css$12);
-      return `<div class="${"blog-parent svelte-1mtz2ov"}">${each(dateSortedPosts, ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-1mtz2ov"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-1mtz2ov"}"><h3 class="${"svelte-1mtz2ov"}">${escape(title)}</h3>
-            <span class="${"date svelte-1mtz2ov"}">${validate_component(Date_1, "Date").$$render($$result, { date }, {}, {})}</span>
-            <p class="${"svelte-1mtz2ov"}">${escape(snippet)}</p></div>
+      return `<div class="${"blog-parent svelte-s1q2mh"}">${each(dateSortedPosts, ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-s1q2mh"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-s1q2mh"}"><h3 class="${"svelte-s1q2mh"}">${escape(title)}</h3>
+            <span class="${"date svelte-s1q2mh"}">${validate_component(Date_1, "Date").$$render($$result, { date }, {}, {})}</span>
+            <p class="${"svelte-s1q2mh"}">${escape(snippet)}</p></div>
         </a>`)}
 </div>`;
     });
-    css9 = {
-      code: ".container.svelte-1kosnb5.svelte-1kosnb5{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}.container.svelte-1kosnb5 div.svelte-1kosnb5{display:grid;align-items:center}.container.svelte-1kosnb5 div h1.svelte-1kosnb5{text-align:center}.wrapper.svelte-1kosnb5.svelte-1kosnb5{margin-top:calc(var(--spacing-unit) * 3)}.background.svelte-1kosnb5.svelte-1kosnb5{width:100vw;height:calc(100% + 25rem);top:-15rem;z-index:-1;position:fixed;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:var(--primary-500);background-size:cover;background-position:center}",
+    css8 = {
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-7iocq3.svelte-7iocq3,.svelte-7iocq3.svelte-7iocq3::before,.svelte-7iocq3.svelte-7iocq3::after{box-sizing:border-box}.svelte-7iocq3.svelte-7iocq3{margin:0}h1.svelte-7iocq3.svelte-7iocq3{overflow-wrap:break-word}.container.svelte-7iocq3.svelte-7iocq3{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}.container.svelte-7iocq3 div.svelte-7iocq3{display:grid;align-items:center}.container.svelte-7iocq3 div h1.svelte-7iocq3{text-align:center}.wrapper.svelte-7iocq3.svelte-7iocq3{margin-top:calc(var(--spacing-unit) * 3)}.background.svelte-7iocq3.svelte-7iocq3{width:100vw;height:calc(100% + 25rem);top:-15rem;z-index:-1;position:fixed;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:var(--primary-500);background-size:cover;background-position:center}",
       map: null
     };
-    allPosts2 = { "./blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_8988938c(), fifthpost_8988938c_exports)), "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_fe185df6(), firstpost_fe185df6_exports)), "./blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_989c53ab(), fourthpost_989c53ab_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_af8b5e91(), secondpost_af8b5e91_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_e53dae8d(), thirdpost_e53dae8d_exports)) };
+    allPosts2 = { "./blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_bfea811f(), fifthpost_bfea811f_exports)), "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_50165931(), firstpost_50165931_exports)), "./blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_16ebf1b4(), fourthpost_16ebf1b4_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_25dd1e6e(), secondpost_25dd1e6e_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_b3bbdc5a(), thirdpost_b3bbdc5a_exports)) };
     body2 = [];
     for (let path in allPosts2) {
       body2.push(allPosts2[path]().then(({ metadata: metadata6 }) => {
@@ -5423,35 +5401,34 @@ var init_blog_b0e34926 = __esm({
         $$bindings.posts(posts);
       if ($$props.dateSortedPosts === void 0 && $$bindings.dateSortedPosts && dateSortedPosts !== void 0)
         $$bindings.dateSortedPosts(dateSortedPosts);
-      $$result.css.add(css9);
+      $$result.css.add(css8);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle5, metaDescription: metaDescription5 }, {}, {})}
 
-    <main class="${"container svelte-1kosnb5"}"><div class="${"svelte-1kosnb5"}"><h1 class="${"svelte-1kosnb5"}">All posts</h1></div>
-        <div class="${"wrapper svelte-1kosnb5"}">${validate_component(Posts, "Posts").$$render($$result, { dateSortedPosts }, {}, {})} 
-            <div class="${"background svelte-1kosnb5"}"></div></div>
+    <main class="${"container svelte-7iocq3"}"><div class="${"svelte-7iocq3"}"><h1 class="${"svelte-7iocq3"}">All posts</h1></div>
+        <div class="${"wrapper svelte-7iocq3"}">${validate_component(Posts, "Posts").$$render($$result, { dateSortedPosts }, {}, {})} 
+            <div class="${"background svelte-7iocq3"}"></div></div>
     </main>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/_tag_-0a883ce0.js
-var tag_0a883ce0_exports = {};
-__export(tag_0a883ce0_exports, {
+// .svelte-kit/output/server/chunks/_tag_-d03590d2.js
+var tag_d03590d2_exports = {};
+__export(tag_d03590d2_exports, {
   default: () => U5Btagu5D,
   load: () => load3
 });
-var css10, allPosts3, body3, load3, metaDescription6, U5Btagu5D;
-var init_tag_0a883ce0 = __esm({
-  ".svelte-kit/output/server/chunks/_tag_-0a883ce0.js"() {
+var css9, allPosts3, body3, load3, metaDescription6, U5Btagu5D;
+var init_tag_d03590d2 = __esm({
+  ".svelte-kit/output/server/chunks/_tag_-d03590d2.js"() {
     init_shims();
-    init_app_60280033();
-    init_Seo_7205d950();
-    init_Variables_e67d66db();
-    css10 = {
-      code: ".blog-parent.svelte-dtfkrr.svelte-dtfkrr{display:grid;grid-auto-flow:dense;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-dtfkrr.svelte-dtfkrr{grid-template-columns:1fr 1fr}}.divlink.svelte-dtfkrr.svelte-dtfkrr{height:100%;text-decoration:none;color:inherit}.divlink.svelte-dtfkrr .date.svelte-dtfkrr{opacity:0.5;font-size:1rem}.divlink.svelte-dtfkrr:hover:hover h3.svelte-dtfkrr{color:var(--primary-300)}.divlink.svelte-dtfkrr:hover:hover .blogPost.svelte-dtfkrr{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-dtfkrr.svelte-dtfkrr{overflow:hidden;background:white;border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-dtfkrr p.svelte-dtfkrr{padding:0;margin:0}.blogPost.svelte-dtfkrr h3.svelte-dtfkrr{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.container.svelte-dtfkrr.svelte-dtfkrr{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}",
+    init_app_fc10dfe1();
+    init_Seo_e5ba867d();
+    css9 = {
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1x8gbfb.svelte-1x8gbfb,.svelte-1x8gbfb.svelte-1x8gbfb::before,.svelte-1x8gbfb.svelte-1x8gbfb::after{box-sizing:border-box}.svelte-1x8gbfb.svelte-1x8gbfb{margin:0}p.svelte-1x8gbfb.svelte-1x8gbfb,h1.svelte-1x8gbfb.svelte-1x8gbfb,h3.svelte-1x8gbfb.svelte-1x8gbfb{overflow-wrap:break-word}.blog-parent.svelte-1x8gbfb.svelte-1x8gbfb{display:grid;grid-auto-flow:dense;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-1x8gbfb.svelte-1x8gbfb{grid-template-columns:1fr 1fr}}.divlink.svelte-1x8gbfb.svelte-1x8gbfb{height:100%;text-decoration:none;color:inherit}.divlink.svelte-1x8gbfb .date.svelte-1x8gbfb{opacity:0.5;font-size:1rem}.divlink.svelte-1x8gbfb:hover:hover h3.svelte-1x8gbfb{color:var(--primary-300)}.divlink.svelte-1x8gbfb:hover:hover .blogPost.svelte-1x8gbfb{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-1x8gbfb.svelte-1x8gbfb{overflow:hidden;background:rgba(255, 255, 255, 0.5);border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-1x8gbfb p.svelte-1x8gbfb{padding:0;margin:0}.blogPost.svelte-1x8gbfb h3.svelte-1x8gbfb{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.container.svelte-1x8gbfb.svelte-1x8gbfb{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}.container.svelte-1x8gbfb .title.svelte-1x8gbfb{display:grid;align-items:center}.container.svelte-1x8gbfb .title h1.svelte-1x8gbfb{text-align:center}.wrapper.svelte-1x8gbfb.svelte-1x8gbfb{margin-top:calc(var(--spacing-unit) * 3)}.background.svelte-1x8gbfb.svelte-1x8gbfb{width:100vw;height:calc(100% + 25rem);top:-15rem;z-index:-1;position:fixed;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:var(--primary-500);background-size:cover;background-position:center}",
       map: null
     };
-    allPosts3 = { "../blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_8988938c(), fifthpost_8988938c_exports)), "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_fe185df6(), firstpost_fe185df6_exports)), "../blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_989c53ab(), fourthpost_989c53ab_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_af8b5e91(), secondpost_af8b5e91_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_e53dae8d(), thirdpost_e53dae8d_exports)) };
+    allPosts3 = { "../blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_bfea811f(), fifthpost_bfea811f_exports)), "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_50165931(), firstpost_50165931_exports)), "../blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_16ebf1b4(), fourthpost_16ebf1b4_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_25dd1e6e(), secondpost_25dd1e6e_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_b3bbdc5a(), thirdpost_b3bbdc5a_exports)) };
     body3 = [];
     for (let path in allPosts3) {
       body3.push(allPosts3[path]().then(({ metadata: metadata6 }) => {
@@ -5475,27 +5452,25 @@ var init_tag_0a883ce0 = __esm({
         $$bindings.filteredPosts(filteredPosts);
       if ($$props.tag === void 0 && $$bindings.tag && tag !== void 0)
         $$bindings.tag(tag);
-      $$result.css.add(css10);
+      $$result.css.add(css9);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription6 }, {}, {})}
 
-${validate_component(Variables, "Variables").$$render($$result, {}, {}, {})}
-
-<main class="${"container svelte-dtfkrr"}"><h1>${escape(tag.replace(/^\w/, (c) => c.toUpperCase()))}</h1>
-
-    <div class="${"blog-parent svelte-dtfkrr"}">${each(filteredPosts, ({ path, metadata: { title, date, snippet } }) => `<a class="${"divlink svelte-dtfkrr"}"${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-dtfkrr"}"><h3 class="${"svelte-dtfkrr"}">${escape(title)}</h3>
-                    <span class="${"date svelte-dtfkrr"}">${escape(new Date(date).toLocaleDateString("en-us", {
+<main class="${"container svelte-1x8gbfb"}"><div class="${"title svelte-1x8gbfb"}"><h1 class="${"svelte-1x8gbfb"}">${escape(tag.replace(/^\w/, (c) => c.toUpperCase()))}</h1></div>
+    <div class="${"wrapper svelte-1x8gbfb"}"><div class="${"blog-parent svelte-1x8gbfb"}">${each(filteredPosts, ({ path, metadata: { title, date, snippet } }) => `<a class="${"divlink svelte-1x8gbfb"}"${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-1x8gbfb"}"><h3 class="${"svelte-1x8gbfb"}">${escape(title)}</h3>
+                        <span class="${"date svelte-1x8gbfb"}">${escape(new Date(date).toLocaleDateString("en-us", {
         year: "numeric",
         month: "long",
         day: "numeric"
       }))}</span>
-                    <p class="${"svelte-dtfkrr"}">${escape(snippet)}</p></div>
-            </a>`)}</div>
+                        <p class="${"svelte-1x8gbfb"}">${escape(snippet)}</p></div>
+                </a>`)}</div>
+        <div class="${"background svelte-1x8gbfb"}"></div></div>
 </main>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/app-60280033.js
+// .svelte-kit/output/server/chunks/app-fc10dfe1.js
 function get_single_valued_header(headers, key) {
   const value = headers[key];
   if (Array.isArray(value)) {
@@ -6783,9 +6758,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-516a710f.js",
+      file: assets + "/_app/start-67f6a58d.js",
       css: [assets + "/_app/assets/start-61d1577b.css"],
-      js: [assets + "/_app/start-516a710f.js", assets + "/_app/chunks/vendor-4f02d0e1.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
+      js: [assets + "/_app/start-67f6a58d.js", assets + "/_app/chunks/vendor-4f02d0e1.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
     },
     fetched: void 0,
     floc: false,
@@ -6828,9 +6803,9 @@ function render(request, {
   const host = request.headers["host"];
   return respond({ ...request, host }, options, { prerender });
 }
-var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, absolute, scheme, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css11, Root, base, assets, user_hooks, template, options, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_60280033 = __esm({
-  ".svelte-kit/output/server/chunks/app-60280033.js"() {
+var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, absolute, scheme, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css10, Root, base, assets, user_hooks, template, options, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
+var init_app_fc10dfe1 = __esm({
+  ".svelte-kit/output/server/chunks/app-fc10dfe1.js"() {
     init_shims();
     __accessCheck = (obj, member, msg) => {
       if (!member.has(obj))
@@ -6947,7 +6922,7 @@ var init_app_60280033 = __esm({
     missing_component = {
       $$render: () => ""
     };
-    css11 = {
+    css10 = {
       code: "#svelte-announcer.svelte-1j55zn5{position:absolute;left:0;top:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}",
       map: null
     };
@@ -6972,7 +6947,7 @@ var init_app_60280033 = __esm({
         $$bindings.props_1(props_1);
       if ($$props.props_2 === void 0 && $$bindings.props_2 && props_2 !== void 0)
         $$bindings.props_2(props_2);
-      $$result.css.add(css11);
+      $$result.css.add(css10);
       {
         stores.page.set(page);
       }
@@ -6993,13 +6968,23 @@ ${``}`;
       __proto__: null,
       [Symbol.toStringTag]: "Module"
     });
-    template = ({ head, body: body4 }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="" />\n		<link rel="icon" type="image/svg+xml" href="icon.svg">\n		<link rel="icon" href="/favicon.png" />\n		<link rel="manifest" crossorigin="use-credentials" href="manifest.json" />\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n	<body>\n		<div id="svelte">' + body4 + "</div>\n	</body>\n</html>\n";
+    template = ({ head, body: body4 }) => `<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel='stylesheet' href='styles/styles.scss'>
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		` + head + '\n	</head>\n	<body>\n		<div id="svelte">' + body4 + "</div>\n	</body>\n</html>\n";
     options = null;
     default_settings = { paths: { "base": "", "assets": "" } };
     d = (s2) => s2.replace(/%23/g, "#").replace(/%3[Bb]/g, ";").replace(/%2[Cc]/g, ",").replace(/%2[Ff]/g, "/").replace(/%3[Ff]/g, "?").replace(/%3[Aa]/g, ":").replace(/%40/g, "@").replace(/%26/g, "&").replace(/%3[Dd]/g, "=").replace(/%2[Bb]/g, "+").replace(/%24/g, "$");
     empty = () => ({});
     manifest = {
-      assets: [{ "file": ".DS_Store", "size": 6148, "type": null }, { "file": "artComputerman.svg", "size": 35544, "type": "image/svg+xml" }, { "file": "artError-2.svg", "size": 18616, "type": "image/svg+xml" }, { "file": "artError-3.svg", "size": 18615, "type": "image/svg+xml" }, { "file": "artError.svg", "size": 67186, "type": "image/svg+xml" }, { "file": "artMountain.svg", "size": 30329, "type": "image/svg+xml" }, { "file": "background-stackedwaves.svg", "size": 4914, "type": "image/svg+xml" }, { "file": "blob-scene.svg", "size": 4970, "type": "image/svg+xml" }, { "file": "favicon.png", "size": 21886, "type": "image/png" }, { "file": "footer-waveline.svg", "size": 584, "type": "image/svg+xml" }, { "file": "icon.svg", "size": 4211, "type": "image/svg+xml" }, { "file": "illustration-0arrow.svg", "size": 2484, "type": "image/svg+xml" }, { "file": "illustration-3scribbles.svg", "size": 11862, "type": "image/svg+xml" }, { "file": "illustration-crosses.svg", "size": 16139, "type": "image/svg+xml" }, { "file": "illustration-shapes.svg", "size": 13936, "type": "image/svg+xml" }, { "file": "layered-waves.svg", "size": 4056, "type": "image/svg+xml" }, { "file": "man.svg", "size": 18398, "type": "image/svg+xml" }, { "file": "manifest.json", "size": 287, "type": "application/json" }, { "file": "postBackground-1.svg", "size": 687, "type": "image/svg+xml" }, { "file": "postBackground-2.svg", "size": 678, "type": "image/svg+xml" }, { "file": "postBackground-3.svg", "size": 689, "type": "image/svg+xml" }, { "file": "postBackground-4.svg", "size": 570, "type": "image/svg+xml" }],
+      assets: [{ "file": ".DS_Store", "size": 6148, "type": null }, { "file": "artComputerman.svg", "size": 35544, "type": "image/svg+xml" }, { "file": "artError-2.svg", "size": 18616, "type": "image/svg+xml" }, { "file": "artError-3.svg", "size": 18615, "type": "image/svg+xml" }, { "file": "artError.svg", "size": 67186, "type": "image/svg+xml" }, { "file": "artMountain.svg", "size": 30329, "type": "image/svg+xml" }, { "file": "background-stackedwaves.svg", "size": 4914, "type": "image/svg+xml" }, { "file": "blob-scene.svg", "size": 4970, "type": "image/svg+xml" }, { "file": "favicon/android-chrome-192x192.png", "size": 7714, "type": "image/png" }, { "file": "favicon/android-chrome-512x512.png", "size": 25407, "type": "image/png" }, { "file": "favicon/apple-touch-icon.png", "size": 7004, "type": "image/png" }, { "file": "favicon/favicon-16x16.png", "size": 525, "type": "image/png" }, { "file": "favicon/favicon-32x32.png", "size": 1005, "type": "image/png" }, { "file": "favicon/favicon.ico", "size": 15406, "type": "image/vnd.microsoft.icon" }, { "file": "favicon/site.webmanifest", "size": 263, "type": "application/manifest+json" }, { "file": "footer-waveline.svg", "size": 584, "type": "image/svg+xml" }, { "file": "illustration-0arrow.svg", "size": 2484, "type": "image/svg+xml" }, { "file": "illustration-3scribbles.svg", "size": 11862, "type": "image/svg+xml" }, { "file": "illustration-crosses.svg", "size": 16139, "type": "image/svg+xml" }, { "file": "illustration-shapes.svg", "size": 13936, "type": "image/svg+xml" }, { "file": "layered-waves.svg", "size": 4056, "type": "image/svg+xml" }, { "file": "man.svg", "size": 18398, "type": "image/svg+xml" }, { "file": "postBackground-1.svg", "size": 687, "type": "image/svg+xml" }, { "file": "postBackground-2.svg", "size": 678, "type": "image/svg+xml" }, { "file": "postBackground-3.svg", "size": 689, "type": "image/svg+xml" }, { "file": "postBackground-4.svg", "size": 570, "type": "image/svg+xml" }],
       layout: "src/routes/__layout.svelte",
       error: "src/routes/__error.svelte",
       routes: [
@@ -7082,20 +7067,20 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_9841fe65(), layout_9841fe65_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_b63f1fd4(), error_b63f1fd4_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_288f07e0(), index_288f07e0_exports)),
-      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_37d580d7(), calculator_37d580d7_exports)),
-      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_664ee5de(), index_664ee5de_exports)),
-      "src/routes/blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_989c53ab(), fourthpost_989c53ab_exports)),
-      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_af8b5e91(), secondpost_af8b5e91_exports)),
-      "src/routes/blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_8988938c(), fifthpost_8988938c_exports)),
-      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_fe185df6(), firstpost_fe185df6_exports)),
-      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_e53dae8d(), thirdpost_e53dae8d_exports)),
-      "src/routes/blog.svelte": () => Promise.resolve().then(() => (init_blog_b0e34926(), blog_b0e34926_exports)),
-      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_0a883ce0(), tag_0a883ce0_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_9a6a029f(), layout_9a6a029f_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_a98d8d2d(), error_a98d8d2d_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_af051116(), index_af051116_exports)),
+      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_fc15f58f(), calculator_fc15f58f_exports)),
+      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_e72399e6(), index_e72399e6_exports)),
+      "src/routes/blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_16ebf1b4(), fourthpost_16ebf1b4_exports)),
+      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_25dd1e6e(), secondpost_25dd1e6e_exports)),
+      "src/routes/blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_bfea811f(), fifthpost_bfea811f_exports)),
+      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_50165931(), firstpost_50165931_exports)),
+      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_b3bbdc5a(), thirdpost_b3bbdc5a_exports)),
+      "src/routes/blog.svelte": () => Promise.resolve().then(() => (init_blog_989f107f(), blog_989f107f_exports)),
+      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_d03590d2(), tag_d03590d2_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-55471c05.js", "css": ["assets/pages/__layout.svelte-a63f5c86.css", "assets/Variables-da71c3e7.css", "assets/TagCloud-2ccc98c6.css"], "js": ["pages/__layout.svelte-55471c05.js", "chunks/vendor-4f02d0e1.js", "chunks/Variables-490c0fbc.js", "chunks/TagCloud-df179f89.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-85ae241b.js", "css": ["assets/pages/__error.svelte-89d5cf62.css"], "js": ["pages/__error.svelte-85ae241b.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-78cdb757.js", "css": ["assets/pages/index.svelte-998476ff.css", "assets/TagCloud-2ccc98c6.css", "assets/Variables-da71c3e7.css"], "js": ["pages/index.svelte-78cdb757.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js", "chunks/TagCloud-df179f89.js", "chunks/Variables-490c0fbc.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-d972ee29.js", "css": ["assets/pages/calculator.svelte-89386e7c.css"], "js": ["pages/calculator.svelte-d972ee29.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-9a4a72ac.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-98a7782a.css"], "js": ["pages/flowcharts/schildklier/index.svelte-9a4a72ac.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js"], "styles": [] }, "src/routes/blog/fourthpost.md": { "entry": "pages/blog/fourthpost.md-514da44a.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/fourthpost.md-514da44a.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-ef37b6fc.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-f726c864.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/secondpost.md-f726c864.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-ef37b6fc.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/fifthpost.md": { "entry": "pages/blog/fifthpost.md-a4a0d263.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/fifthpost.md-a4a0d263.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-ef37b6fc.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-c7b2867f.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/firstpost.md-c7b2867f.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-ef37b6fc.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-6acfd1ff.js", "css": ["assets/blog-03e48a3f.css", "assets/Variables-da71c3e7.css"], "js": ["pages/blog/thirdpost.md-6acfd1ff.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-ef37b6fc.js", "chunks/Variables-490c0fbc.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog.svelte": { "entry": "pages/blog.svelte-e172c2b6.js", "css": ["assets/pages/blog.svelte-a9ff565c.css"], "js": ["pages/blog.svelte-e172c2b6.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-949ec029.js", "css": ["assets/pages/tags/_tag_.svelte-e1b55627.css", "assets/Variables-da71c3e7.css"], "js": ["pages/tags/_tag_.svelte-949ec029.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-ea6672b3.js", "chunks/Variables-490c0fbc.js"], "styles": [] } };
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-7b9a7db2.js", "css": ["assets/pages/__layout.svelte-24545bc1.css", "assets/TagCloud-b37cfbaa.css"], "js": ["pages/__layout.svelte-7b9a7db2.js", "chunks/vendor-4f02d0e1.js", "chunks/TagCloud-58fc4c94.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-142de704.js", "css": ["assets/pages/__error.svelte-83e29f2f.css"], "js": ["pages/__error.svelte-142de704.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-4d6edd65.js", "css": ["assets/pages/index.svelte-865626b5.css", "assets/TagCloud-b37cfbaa.css"], "js": ["pages/index.svelte-4d6edd65.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js", "chunks/TagCloud-58fc4c94.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-66d347d4.js", "css": ["assets/pages/calculator.svelte-7db07683.css"], "js": ["pages/calculator.svelte-66d347d4.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-a0e371dd.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-cf2e6bb3.css"], "js": ["pages/flowcharts/schildklier/index.svelte-a0e371dd.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] }, "src/routes/blog/fourthpost.md": { "entry": "pages/blog/fourthpost.md-2104ae4b.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/fourthpost.md-2104ae4b.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-ad3a1065.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/secondpost.md-ad3a1065.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/fifthpost.md": { "entry": "pages/blog/fifthpost.md-acfe72a6.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/fifthpost.md-acfe72a6.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-a854f92b.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/firstpost.md-a854f92b.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-96264c27.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/thirdpost.md-96264c27.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog.svelte": { "entry": "pages/blog.svelte-dd40e0ca.js", "css": ["assets/pages/blog.svelte-4008adec.css"], "js": ["pages/blog.svelte-dd40e0ca.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-39e13c62.js", "css": ["assets/pages/tags/_tag_.svelte-d83a3544.css"], "js": ["pages/tags/_tag_.svelte-39e13c62.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] } };
   }
 });
 
@@ -7148,7 +7133,7 @@ function getRawBody(req) {
 
 // .svelte-kit/output/server/app.js
 init_shims();
-init_app_60280033();
+init_app_fc10dfe1();
 
 // .svelte-kit/vercel/entry.js
 init();
