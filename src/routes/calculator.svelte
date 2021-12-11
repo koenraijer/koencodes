@@ -100,7 +100,7 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
     .container {
         max-width: 70ch;
     }
-    
+
     .wrapper {
         display: grid;
         align-items: center;
@@ -161,7 +161,7 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
     form {
         box-shadow: var(--shadow-elevation-mediumhigh);
         padding: var(--spacing-unit);
-        width: 25rem;
+        max-width: 25rem;
     }
 
     input[type="number"] {
