@@ -16,18 +16,19 @@
 
 <Seo {pageTitle}{metaDescription}/>
 
-<div class="container">
+<article class="container">
     <div class="post-hero">
         <img alt="colored shapes to illustrate the title" class="background" src="{backgroundLink}">
         <span class="date"><Date {date}/></span>
         <h1>{ title }</h1>
     </div>
-    
-    <slot></slot>
-</div>
+    <div class="post-content">
+        <slot></slot>
+    </div>
+</article>
 
 
-<style>
+<style lang="scss">
     .container {
       max-width: 60ch;
       margin: auto;
@@ -60,5 +61,24 @@
         transform: translate(-50%, -60%);
     }
 
-
+    .post-content :global(a) {
+        position: relative;
+        color: var(--secondary-300);
+        font-weight: 500;
+        text-decoration: none;
+        &:before {
+            z-index: -100;
+            content: '';
+            display: none;
+            position: absolute;
+            bottom: -0.1em;
+            left: 0em;
+            width: 100%;
+            height: 0.1em;
+            background: var(--secondary-300);
+        }
+        &:hover:before{
+            display: block;
+        }
+    }
   </style>

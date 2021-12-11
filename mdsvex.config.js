@@ -2,7 +2,10 @@ const config = {
 	extensions: ['.svelte.md', '.md', '.svx'],
 
 	smartypants: {
-		dashes: 'oldschool'
+		dashes: 'oldschool',
+		quotes: true,
+		ellipses: true,
+		backticks: 'all' = true,
 	},
 
 	remarkPlugins: [],

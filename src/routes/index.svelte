@@ -94,8 +94,8 @@
                     <a class="divlink" href={`${path.replace(".md", "")}`}>
                     <div class="blogPost">
                         <h3>{title}</h3>
-                        <span class="date">{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                         <p>{snippet}</p>
+                        <span class="date">{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                     </div>
                     </a>
                 {/each}
@@ -195,11 +195,15 @@
         padding: var(--spacing-unit);
         p {
             padding: 0;
-            margin: 0;
+            margin: 0 0 var(--spacing-unit);
         }
         h3 {
             padding: 0;
             margin: var(--spacing-unit) 0 var(--spacing-unit);
+        }
+        .date {
+            opacity: 0.5;
+            font-size: 0.9rem;
         }
     }
 
@@ -257,21 +261,6 @@
                 grid-column: 1 / 3;
             }
         }
-
-        p, span {
-            a {
-            color: #06D6A0;
-            text-decoration: none;
-            &:hover{
-                text-decoration: underline;
-            }
-            }
-        }
-    }
-
-    .date {
-        opacity: 0.5;
-        font-size: 1rem;
     }
 
 // BACKGROUNDS

@@ -2,9 +2,10 @@
 title: Global styles in SvelteKit
 tags: 
     - SvelteKit
-date: 2021-12-11
-snippet: "Shows you how to set up Svelte Preprocess to allow global SCSS variables in your SvelteKit project."
+date: 2021-12-09
+snippet: "Set up Svelte Preprocess to have global SCSS variables in your SvelteKit project."
 backgroundNumber: 3
+layout: blog
 ---
 
 Svelte styles are scoped to their components by default, but global styles can be very useful for things like color schemes, dark mode and CSS resets. This article shows you how to install and implement Svelte Preprocess, and then prepend your your `.scss` file full of global styles. It's not difficult to set up! 

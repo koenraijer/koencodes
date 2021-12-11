@@ -170,7 +170,6 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
         appearance: none;
         -moz-appearance: none;
         -webkit-appearance: none;
-        outline: 1px var(--gray-300) solid;
         padding: 0.25rem;
         margin: 0 0.25rem 0;
         width: auto;
