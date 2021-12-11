@@ -3,22 +3,39 @@
     export let src = "/";
     export let description = "a project about something.";
     export let img = "&#128161";
+    export let outside = false;
 </script>
 
-    <a class="divlink" target="_blank" rel="noopener" href="{src}">
-    <div class="project">
-        <div>
-            <div>
-                <img alt="simple brushed line decoration" src={img}>
+    {#if outside === true }
+        <a class="divlink"  target="_blank" rel="noopener" href="{src}">
+            <div class="project">
+                <div>
+                    <div>
+                        <img alt="simple brushed line decoration" src={img}>
+                    </div>
+                </div>
+                <div>
+                    <h3>{@html title}</h3>
+                    <p>{@html description}</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <h3>{@html title}</h3>
-            <p>{@html description}</p>
-        </div>
-    </div>
-    </a>
-
+            </a>
+    {:else} 
+        <a class="divlink" href="{src}">
+            <div class="project">
+                <div>
+                    <div>
+                        <img alt="simple brushed line decoration" src={img}>
+                    </div>
+                </div>
+                <div>
+                    <h3>{@html title}</h3>
+                    <p>{@html description}</p>
+                </div>
+            </div>
+            </a>
+    {/if}
+    
 <style lang="scss">
 
     p :global(a) {

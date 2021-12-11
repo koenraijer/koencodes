@@ -41,17 +41,20 @@
 		{   title: 'My charity website <span><img class="svg-icon" src="link.svg"></span>', 
             src: 'https://www.vriendenvoorkika.nl/', 
             description: 'Climbing a mountain for charity. Made a website for it using Jekyll and Netlify. Consider <a target="_blank" rel="noopener" href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!', 
-            img:"illustration-crosses.svg"
+            img:"illustration-crosses.svg",
+            outside: true
         },
 		{   title: 'This blog', 
             src: '/', 
             description: 'Maxed out Jekyll, and felt overwhelmed by React. In comes SvelteKit!', 
-            img:"illustration-3scribbles.svg"
+            img:"illustration-3scribbles.svg",
+            outside: false
         },
         {   title: 'An investing calculator', 
             src: '/calculator', 
             description: 'Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.', 
-            img:"illustration-shapes.svg"
+            img:"illustration-shapes.svg",
+            outside: false
         },
 	];
 
@@ -113,8 +116,8 @@
     
 <h1 id="projects" class="header">Projects</h1>
 <div class="grid3">
-    {#each projects as { title, src, description, img }}
-        <Project {title} {src} {description} {img}/>
+    {#each projects as { title, src, description, img, outside }}
+        <Project {title} {src} {description} {img} {outside}/>
     {/each}
 </div>
 
@@ -348,21 +351,26 @@
 
 // BUTTONS 
 .button {
-        color: inherit;
-        display: inline-block;
-        font-size: 1.2em;
-        padding: 0.5rem 0.85rem 0.5rem;
-        margin: var(--spacing-unit) var(--spacing-unit) 0rem;
-        border-radius: calc(var(--corner-unit) * 2);
-        background: var(--primary-400);
-        box-shadow: var(--shadow-elevation-medium);
-        text-decoration: none;
-        font-weight: 600;
-        &:hover {
-            background: var(--primary-300);
-            box-shadow: var(--shadow-elevation-mediumhigh);
-            color: white;
+    color: inherit;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 0.5rem 0.85rem 0.5rem;
+    margin: var(--spacing-unit) var(--spacing-unit) 0rem;
+    border-radius: calc(var(--corner-unit) * 2);
+    background: var(--primary-400);
+    box-shadow: var(--shadow-elevation-medium);
+    text-decoration: none;
+    font-weight: 600;
+    &:hover {
+        background: var(--primary-300);
+        box-shadow: var(--shadow-elevation-mediumhigh);
+        color: white;
     }
+    @media screen and (max-width: 500px) {
+        font-size: 1em;
+        margin: var(--spacing-unit) calc(var(--spacing-unit) * 0.5) 0rem
+    }
+
 }
 
 

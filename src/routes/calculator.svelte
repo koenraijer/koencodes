@@ -17,6 +17,7 @@
 
     $: calculatorData[0].value = volatileAssets;
     $: calculatorData[1].value = stableAssets; 
+
     import Seo from '$lib/Seo.svelte'
 
 let pageTitle = "portfolio rebalancing calculator"
@@ -26,86 +27,96 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
 <Seo {pageTitle}{metaDescription}/> 
 
 
-<main>
+<main class="container">
     <h1>Portfolio rebalancing calculator</h1>
-    <!--------------- FORM ----------------->
-    <form name="calculator">
-        <input type="hidden" name="form-name" value="contact">
-        <ol>
-            <li>
-                <label for="field-volatile">Current money in volatile assets?</label>
-                <input type="number" min=0 bind:value={volatileAssets} name="volatile" id="field-volatile" required="" aria-required="true" placeholder="Enter value of volatile assets" autocomplete="volatile" autocorrect="off" autocapitalize="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-            </li>
-            <li>
-                <label for="field-stable">Current money in stable assets?</label>
-                <input type="number" min=0 bind:value={stableAssets} name="stable" id="field-stable" required="" aria-required="true" placeholder="Enter value of stable assets" autocomplete="stable" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-            </li>
-            <li>
-                <label for="field-percentage">Preferred percentage of volatile assets?</label>
-                <input type="range" bind:value={desiredPercVolatile} min=0 max=100 name="percentage" id="field-percentage" required="" aria-required="true" autocapitalize="off" class="">
-                <label>{desiredPercVolatile}%</label>
-        </ol>
-    </form>
-
-    <div class="explanation">
-        <!---------------POST RESULT-------------------->
-        <div class="explanation-text">
-            <h3>You currently have <span>
-            {#if !volatileAssets}
-                {#if stableAssets}
-                    0%
-                {:else if !stableAssets}
-                    0%
-                {/if}
-            {:else if !stableAssets}
-                {#if volatileAssets}
-                    100%
-                {/if}
-            {:else}{Math.round(actPercVolatile)}%{/if}</span> of your total portfolio value of <span>€{totalPortfValue}</span> in volatile assets.<br> To rebalance, 
-            {#if diffActAndDesVolatile > 0}sell{:else}buy{/if}
-            <span>€{Math.abs(Math.round(diffActAndDesVolatile))}</span> of volatile assets. </h3>
+    <div class="grid">
+        <div class="wrapper">
+            <form name="calculator">
+                <input type="hidden" name="form-name" value="contact">
+                <ol>
+                    <li>
+                        <label for="field-volatile">Current money in volatile assets?</label>
+                        <input type="number" min=0 bind:value={volatileAssets} name="volatile" id="field-volatile" required="" aria-required="true" placeholder="Enter value of volatile assets" autocomplete="volatile" autocorrect="off" autocapitalize="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    </li>
+                    <li>
+                        <label for="field-stable">Current money in stable assets?</label>
+                        <input type="number" min=0 bind:value={stableAssets} name="stable" id="field-stable" required="" aria-required="true" placeholder="Enter value of stable assets" autocomplete="stable" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    </li>
+                    <li>
+                        <label for="field-percentage">Preferred percentage of volatile assets?</label>
+                        <input type="range" bind:value={desiredPercVolatile} min=0 max=100 name="percentage" id="field-percentage" required="" aria-required="true" autocapitalize="off" class="">
+                        <label>{desiredPercVolatile}%</label>
+                </ol>
+            </form>
         </div>
-        <!---------------PIE CHART---------------------->
-        <div class="explanation-pie">
-            <svg height="20" width="20" viewBox="0 0 20 20">
-                <circle class="circle" r="10" cx="10" cy="10" fill="#111344"/>
-                <circle r="5" 
-                        cx="10" 
-                        cy="10" 
-                        fill="transparent" 
-                        stroke="#06D6A0"
-                        stroke-width = "10"
-                        stroke-dasharray="calc({Math.round(actPercVolatile)} * 30.65 / 100) 31.4159"
-                        transform="rotate(-90) translate(-20)"
-                />
-                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="3">{#if !actPercVolatile}{:else}{Math.round(actPercVolatile)}{/if}</text>
-            </svg>
+
+        <div class="wrapper">
+            <div class="explanation-text">
+                <h3>You currently have <span>
+                {#if !volatileAssets}
+                    {#if stableAssets}
+                        0%
+                    {:else if !stableAssets}
+                        0%
+                    {/if}
+                {:else if !stableAssets}
+                    {#if volatileAssets}
+                        100%
+                    {/if}
+                {:else}{Math.round(actPercVolatile)}%{/if}</span> of your total portfolio value of <span>€{totalPortfValue}</span> in volatile assets.<br> To rebalance, 
+                {#if diffActAndDesVolatile > 0}sell{:else}buy{/if}
+                <span>€{Math.abs(Math.round(diffActAndDesVolatile))}</span> of volatile assets. </h3>
+            </div>
+
+            <div class="explanation-pie">
+                <svg height="20" width="20" viewBox="0 0 20 20">
+                    <circle class="circle" r="10" cx="10" cy="10" fill="var(--primary-300)"/>
+                    <circle r="5" 
+                            cx="10" 
+                            cy="10" 
+                            fill="transparent" 
+                            stroke="var(--secondary-300)"
+                            stroke-width = "10"
+                            stroke-dasharray="calc({Math.round(actPercVolatile)} * 30.65 / 100) 31.4159"
+                            transform="rotate(-90) translate(-20)"
+                    />
+                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="3">{#if !actPercVolatile}{:else}{Math.round(actPercVolatile)}{/if}</text>
+                </svg>
+            </div>
+        </div>
+
+        <div style="margin-top: var(--spacing-unit);" class="disclaimer">
+            <hr>
+            <p>This calculator is intended for people who follow a long-term investment strategy such as the <a target="_blank" rel="noopener" href="https://www.bogleheads.org/wiki/Bogleheads®_investment_philosophy">Boglehead method</a>, where there's a volatile part and a stable part: stocks and bonds.</p>
+            <p>In recent years, low interest rates have made bonds unattractive. People now opt for deposit savings or cash buffers. Stocks are still in high demand, but crypto currencies are gaining ground.</p> 
+            <p>None of this is relevant for this calculator, as long as there is a volatile and a stable asset that you're trying to balance!</p>
         </div>
     </div>
-
-    <hr>
-    <p>This calculator is intended for people who follow a long-term investment strategy such as the <a target="_blank" rel="noopener" href="https://www.bogleheads.org/wiki/Bogleheads®_investment_philosophy">Boglehead method</a>, where there's a volatile part and a stable part: stocks and bonds.</p>
-    <p>In recent years, low interest rates have made bonds unattractive. People now opt for deposit savings or cash buffers. Stocks are still in high demand, but crypto currencies are gaining ground.</p> 
-    <p>None of this is relevant for this calculator, as long as there is a volatile and a stable asset that you're trying to balance!</p>
-
+    
 </main>
 
 <style lang="scss">
-    .explanation {
+
+    .container {
+        max-width: 70ch;
+    }
+    
+    .wrapper {
         display: grid;
-        padding: 1rem 0 1rem;
-        grid-template-columns: 1fr;
-        @media screen and (min-width: 600px) {
-            grid-template-columns: 1fr 1fr;
-        }
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+        grid-gap: var(--spacing-unit);
+        margin: var(--spacing-unit);
     }
 
     .explanation-pie {
         @media screen and (min-width: 600px) {
             padding: 0;
         }
-        padding: 1rem 0 0;
+        padding: var(--spacing-unit) 0 0;
         justify-self: center;
+        width: 10rem;
     }
     
     h3 {
@@ -121,16 +132,9 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
             fill: white;
         }
     }
-
-    :global(.dark) {
-        .circle {
-            fill: #6E71DB;
-        }
-    }
     
-
     a {
-        color: #06D6A0;
+        color: var(--primary-300);
         text-decoration: none;
         &:hover{
             text-decoration: underline;
@@ -150,18 +154,14 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
     }
 
     span {
-        color: #06D6A0;
+        color: var(--primary-300);
         font-weight: bold;
     }
 
-    #orange {
-        color: #FEA82F;
-    }
-
     form {
-        border: #111344 2px solid;
-        box-shadow: 0 0 5px #111344;
-        padding: 0.5rem;
+        box-shadow: var(--shadow-elevation-mediumhigh);
+        padding: var(--spacing-unit);
+        width: 25rem;
     }
 
     input[type="number"] {
@@ -170,7 +170,7 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
         appearance: none;
         -moz-appearance: none;
         -webkit-appearance: none;
-        outline: 1px black solid;
+        outline: 1px var(--gray-300) solid;
         padding: 0.25rem;
         margin: 0 0.25rem 0;
         width: auto;
@@ -193,12 +193,12 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
     }
 
     input[type="range"]::-webkit-slider-runnable-track {
-    background: #111344;
+    background: var(--primary-100);
     height: 5px;
     }
 
     input[type="range"]::-moz-range-track {
-    background: #111344;
+    background: var(--primary-100);
     height: 5px;
     }
 
@@ -206,7 +206,7 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
-    background: #06D6A0;
+    background: var(--primary-300);
     margin-top: -7.5px;
     border-radius: 50%;
     @media screen and (min-width: 600px) {
@@ -219,7 +219,7 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
     input[type="range"]::-moz-range-thumb {
     height: 20px;
     width: 20px;
-    background: #06D6A0;
+    background: var(--primary-300);
     margin-top: -5px;
     border-radius: 50%;
     @media screen and (min-width: 600px) {
@@ -229,34 +229,17 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
     }
     }
 
-    :global(.dark) {
-        input[type="range"]::-webkit-slider-runnable-track {
-        background: white;
-        height: 5px;
-        }
-
-        input[type="range"]::-moz-range-track {
-        background: white;
-        height: 5px;
-        }
-
-        form {
-            box-shadow: 0 0 5px white;
-            border: white 2px solid;
+    .container {
+        h1 {
+            margin: calc(var(--spacing-unit) * 3) 0 calc(var(--spacing-unit) * 1);
+            text-align: center;
         }
     }
+
+    .form-wrapper {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-items: center;
+    }
 </style>
-
-<!--
-    <svg>
-        {#each calculatorData as data, i}
-            <rect x={i * 20} height={data.value / 100} width="10" fill="#06D6A0" />
-        {/each}
-    </svg>
-
-
-    {#each calculatorData as data}
-    <p>{data.name}: {data.value}</p>
-    {/each}\
-
--->

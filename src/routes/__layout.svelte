@@ -9,7 +9,7 @@
   <div class="wrapperForFooter">
     <div class="container">
       <header>
-        <h1 class="sitetitle"><a on:click={open = false} href="/">koen.codes</a></h1>  
+        <h1 class="sitetitle"><a href="/">koen.codes</a></h1>  
       </header>
     </div>
     
@@ -47,10 +47,13 @@
     :root {
         scroll-behavior: smooth;
         line-height: 1.3;
-        font-size: 1.2rem;
+        font-size: 1rem;
         overflow-x: hidden;
         color: var(--primary-100);
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        @media screen and (min-width: 400px) {
+          font-sizee: 1.2rem;
+        }
         @media screen and (min-width: 600px) {
           font-size: 1.5rem;
         }
@@ -81,6 +84,10 @@
             }
     }
 
+    header {
+      margin-top: var(--spacing-unit);
+    }
+
     .container {
       max-width: 1300px;
       margin: auto;
@@ -108,13 +115,15 @@
       div:nth-child(3) {
         display: none;
       }
-      align-items: stretch;
+      align-items: center;
+      justify-items: center;
+      grid-gap: var(--spacing-unit);
       grid-template-columns: 1fr 1fr;
       @media screen and (min-width: 900px) {
         grid-template-columns: 1fr 1fr 1fr;
         div:nth-child(3) {
-        display: block;
-      }
+          display: block;
+        }
       }
 
       height: 10rem;

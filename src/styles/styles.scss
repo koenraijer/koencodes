@@ -112,4 +112,8 @@
     isolation: isolate;
     }
 
-
+    .container {
+        max-width: 1300px;
+        margin: auto;
+        padding: 0 var(--spacing-unit) var(--spacing-unit);
+      }
