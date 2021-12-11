@@ -12,7 +12,7 @@
     let pageTitle = title;
     let metaDescription = snippet;
 
-    let backgroundLink = '../static/postBackground-' + backgroundNumber + '.svg' ;
+    let backgroundLink = '/postBackground-' + backgroundNumber + '.svg' ;
 </script>
 
 <Variables/>
@@ -20,12 +20,13 @@
 
 <div class="container">
     <div class="post-hero">
-        <img class="background" src="{backgroundLink}">
+        <img alt="colored shapes to illustrate the title" class="background" src="{backgroundLink}">
         <span class="date"><Date {date}/></span>
         <h1>{ title }</h1>
     </div>
     
     <slot></slot>
+    <p>This post was filed under {tags}</p>
 </div>
 
 

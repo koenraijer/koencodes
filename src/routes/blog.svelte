@@ -80,7 +80,7 @@
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
-        background: var(--primary-400);
+        background: var(--primary-500);
         background-size: cover;
         background-position: center;
     }

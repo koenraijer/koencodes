@@ -145,23 +145,16 @@
             align-items: center;
             text-align: center;
             h1 {
-                font-weight: 500;
+                font-weight: 600;
             }
             h2 {
                 font-weight: 600;
-                span {
-                    color: var(--secondary-300);
-                    font-weight: 500;
-                }
+                color: var(--gray-100);
             }
             h3, h4 {
                 margin: 0;
                 color: var(--gray-100);
                 font-weight: normal;
-                span {
-                    color: var(--secondary-300);
-                    font-weight: bold;
-                }
             }
             margin: calc(var(--spacing-unit) * -3.5) var(--spacing-unit) var(--spacing-unit);
             grid-column: 1/2;

@@ -26,11 +26,7 @@
         grid-template-columns: 1fr;
         margin-bottom: calc(var(--spacing-unit) * 2);
         @media screen and (min-width: 900px) {
-            grid-template-columns: 1fr 1fr 1fr;
-            a:first-child {
-                grid-row: 1 / 2;
-                grid-column: 1 / 3;
-            }
+            grid-template-columns: 1fr 1fr;
         }
     }
 
@@ -61,7 +57,7 @@
 
     .blogPost {
         overflow: hidden;
-        background: white;
+        background: hsla(0, 0%, 100%, 0.5);
         border-radius: var(--corner-unit);
         position: relative;
         box-shadow: var(--shadow-elevation-medium);
