@@ -1,6 +1,5 @@
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
-import adapter from '@sveltejs/adapter-auto';
 import SveltePreprocess from 'svelte-preprocess';
 import vercel from '@sveltejs/adapter-vercel'
 import path, { dirname } from 'path'
@@ -34,3 +33,4 @@ export default config;
 
 // OLD ADAPTER
 // adapter: adapter(),
+// import adapter from '@sveltejs/adapter-auto';

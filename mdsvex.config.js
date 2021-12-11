@@ -3,9 +3,6 @@ const config = {
 
 	smartypants: {
 		dashes: 'oldschool',
-		quotes: true,
-		ellipses: true,
-		backticks: 'all' = true,
 	},
 
 	remarkPlugins: [],
