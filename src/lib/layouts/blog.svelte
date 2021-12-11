@@ -24,7 +24,6 @@
     </div>
     
     <slot></slot>
-    <p>This post was filed under {tags}</p>
 </div>
 
 
@@ -37,7 +36,7 @@
     }
   
     .post-hero {
-        padding: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 4);
+        padding: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 2);
         display: grid;
         align-items: center;
         position: relative;

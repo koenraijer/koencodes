@@ -38,9 +38,9 @@
     import Project from '$lib/Project.svelte'
 
     let projects = [
-		{   title: 'My charity website' , 
+		{   title: 'My charity website <span><img class="svg-icon" src="link.svg"></span>', 
             src: 'https://www.vriendenvoorkika.nl/', 
-            description: 'Climbing a mountain for charity. Made a website for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!', 
+            description: 'Climbing a mountain for charity. Made a website for it using Jekyll and Netlify. Consider <a target="_blank" rel="noopener" href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!', 
             img:"illustration-crosses.svg"
         },
 		{   title: 'This blog', 
@@ -53,11 +53,6 @@
             description: 'Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.', 
             img:"illustration-shapes.svg"
         },
-        {   title: 'Interactive diagnostic flowchart', 
-            src: '/flowcharts/schildklier', 
-            description: 'Quick and dirty way to diagnose thyroid problems. Adapted from a flowchart by the NHG (Dutch GP association).', 
-            img:"illustration-0arrow.svg"
-        }
 	];
 
     import Art from '$lib/Art.svelte'

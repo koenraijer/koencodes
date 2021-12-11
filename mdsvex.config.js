@@ -10,8 +10,7 @@ const config = {
 
 	layout: {
 		blog: 'src/lib/layouts/blog.svelte',
-	}
-
+	},
 };
 
 export default config;

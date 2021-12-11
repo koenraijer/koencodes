@@ -1,5 +1,4 @@
 <script>
-import { page } from '$app/stores';
 
     $: start = false;
     $: tsh = null;

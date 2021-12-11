@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
     import TagCloud from '$lib/TagCloud.svelte';
     
     export let open = false;
 
+    import  "../styles/code.css"
 </script>
 
   <div class="wrapperForFooter">
@@ -17,7 +18,7 @@
         <slot />
     
     </main>
-    
+
 <div class="footerWrapper">
   <img alt="wavy line to separate content from footer" class="footer-wave" src="../footer-waveline.svg">
   <footer>

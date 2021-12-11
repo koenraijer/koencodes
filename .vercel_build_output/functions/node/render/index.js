@@ -4696,38 +4696,38 @@ var init_shims = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/TagCloud-647267bc.js
+// .svelte-kit/output/server/chunks/TagCloud-ca4648d5.js
 var css, TagCloud;
-var init_TagCloud_647267bc = __esm({
-  ".svelte-kit/output/server/chunks/TagCloud-647267bc.js"() {
+var init_TagCloud_ca4648d5 = __esm({
+  ".svelte-kit/output/server/chunks/TagCloud-ca4648d5.js"() {
     init_shims();
-    init_app_1e7b7e50();
+    init_app_d99cce65();
     css = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-15n25zz,.svelte-15n25zz::before,.svelte-15n25zz::after{box-sizing:border-box}.svelte-15n25zz{margin:0}a.svelte-15n25zz{color:inherit;padding:0.5rem 0.85rem 0.5rem;margin:0.5rem 0.5rem 0rem 0.5rem;border-radius:10px;background:var(--primary-400);text-decoration:none}a.svelte-15n25zz:hover{background:var(--primary-300);color:white}div.svelte-15n25zz{margin:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0;padding:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-ukhw1c,.svelte-ukhw1c::before,.svelte-ukhw1c::after{box-sizing:border-box}.svelte-ukhw1c{margin:0}a.svelte-ukhw1c{color:inherit;padding:0.5rem 0.85rem 0.5rem;margin:0.5rem 0.5rem 0rem 0.5rem;border-radius:10px;background:var(--primary-400);text-decoration:none}a.svelte-ukhw1c:hover{background:var(--primary-300);color:white}div.svelte-ukhw1c{margin:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0;padding:var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0}",
       map: null
     };
     TagCloud = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let tagArray = ["fun", "career", "tech"];
+      let tagArray = ["SvelteKit"];
       $$result.css.add(css);
-      return `<div class="${"svelte-15n25zz"}">${each(tagArray, (tag) => `<a${add_attribute("href", `/tags/${tag}`, 0)} class="${"svelte-15n25zz"}">${escape(tag)}</a>`)}
+      return `<div class="${"svelte-ukhw1c"}">${each(tagArray, (tag) => `<a${add_attribute("href", `/tags/${tag}`, 0)} class="${"svelte-ukhw1c"}">${escape(tag)}</a>`)}
 </div>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/__layout-2fe3a48e.js
-var layout_2fe3a48e_exports = {};
-__export(layout_2fe3a48e_exports, {
+// .svelte-kit/output/server/chunks/__layout-aed8435b.js
+var layout_aed8435b_exports = {};
+__export(layout_aed8435b_exports, {
   default: () => _layout
 });
 var css2, _layout;
-var init_layout_2fe3a48e = __esm({
-  ".svelte-kit/output/server/chunks/__layout-2fe3a48e.js"() {
+var init_layout_aed8435b = __esm({
+  ".svelte-kit/output/server/chunks/__layout-aed8435b.js"() {
     init_shims();
-    init_app_1e7b7e50();
-    init_TagCloud_647267bc();
+    init_app_d99cce65();
+    init_TagCloud_ca4648d5();
     css2 = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-14rslre.svelte-14rslre,.svelte-14rslre.svelte-14rslre::before,.svelte-14rslre.svelte-14rslre::after{box-sizing:border-box}.svelte-14rslre.svelte-14rslre{margin:0}img.svelte-14rslre.svelte-14rslre{display:block;max-width:100%}h1.svelte-14rslre.svelte-14rslre,h3.svelte-14rslre.svelte-14rslre,h4.svelte-14rslre.svelte-14rslre{overflow-wrap:break-word}:root{scroll-behavior:smooth;line-height:1.3;font-size:1.2rem;overflow-x:hidden;color:var(--primary-100);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}@media screen and (min-width: 600px){:root{font-size:1.5rem}}.sitetitle.svelte-14rslre.svelte-14rslre{color:var(--primary-100);font-size:2.3em}.sitetitle.svelte-14rslre a.svelte-14rslre{position:relative;font-weight:700;color:inherit;text-decoration:none}.sitetitle.svelte-14rslre a.svelte-14rslre:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}.sitetitle.svelte-14rslre a.svelte-14rslre:hover:before{display:block}.container.svelte-14rslre.svelte-14rslre{max-width:1300px;margin:auto;padding:0 var(--spacing-unit) var(--spacing-unit)}.wrapperForFooter.svelte-14rslre.svelte-14rslre{min-height:calc(100vh - 10rem);margin-bottom:calc(var(--spacing-unit))}.footerWrapper.svelte-14rslre.svelte-14rslre{height:12rem;background:transparent;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-bottom:-1rem;position:relative}footer.svelte-14rslre.svelte-14rslre{display:grid;align-items:stretch;grid-template-columns:1fr 1fr;height:10rem;z-index:-2 !important;background:transparent;max-width:1300px;margin:auto;padding:calc(var(--spacing-unit) * 2)}footer.svelte-14rslre div.svelte-14rslre:nth-child(3){display:none}@media screen and (min-width: 900px){footer.svelte-14rslre.svelte-14rslre{grid-template-columns:1fr 1fr 1fr}footer.svelte-14rslre div.svelte-14rslre:nth-child(3){display:block}}footer.svelte-14rslre h3.svelte-14rslre{color:var(--primary-100)}footer.svelte-14rslre h3 a.svelte-14rslre{position:relative;font-weight:700;color:inherit;text-decoration:none}footer.svelte-14rslre h3 a.svelte-14rslre:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}footer.svelte-14rslre h3 a.svelte-14rslre:hover:before{display:block}footer.svelte-14rslre h4.svelte-14rslre{font-weight:500}.footer-wave.svelte-14rslre.svelte-14rslre{margin:auto;width:100%;transform:translateY(2rem)}a.svelte-14rslre.svelte-14rslre{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none;width:100%}a.svelte-14rslre.svelte-14rslre:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}a.svelte-14rslre.svelte-14rslre:hover:before{display:block}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-17nyh33.svelte-17nyh33,.svelte-17nyh33.svelte-17nyh33::before,.svelte-17nyh33.svelte-17nyh33::after{box-sizing:border-box}.svelte-17nyh33.svelte-17nyh33{margin:0}img.svelte-17nyh33.svelte-17nyh33{display:block;max-width:100%}h1.svelte-17nyh33.svelte-17nyh33,h3.svelte-17nyh33.svelte-17nyh33,h4.svelte-17nyh33.svelte-17nyh33{overflow-wrap:break-word}:root{scroll-behavior:smooth;line-height:1.3;font-size:1.2rem;overflow-x:hidden;color:var(--primary-100);font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}@media screen and (min-width: 600px){:root{font-size:1.5rem}}.sitetitle.svelte-17nyh33.svelte-17nyh33{color:var(--primary-100);font-size:2.3em}.sitetitle.svelte-17nyh33 a.svelte-17nyh33{position:relative;font-weight:700;color:inherit;text-decoration:none}.sitetitle.svelte-17nyh33 a.svelte-17nyh33:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}.sitetitle.svelte-17nyh33 a.svelte-17nyh33:hover:before{display:block}.container.svelte-17nyh33.svelte-17nyh33{max-width:1300px;margin:auto;padding:0 var(--spacing-unit) var(--spacing-unit)}.wrapperForFooter.svelte-17nyh33.svelte-17nyh33{min-height:calc(100vh - 10rem);margin-bottom:calc(var(--spacing-unit))}.footerWrapper.svelte-17nyh33.svelte-17nyh33{height:12rem;background:transparent;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;margin-bottom:-1rem;position:relative}footer.svelte-17nyh33.svelte-17nyh33{display:grid;align-items:stretch;grid-template-columns:1fr 1fr;height:10rem;z-index:-2 !important;background:transparent;max-width:1300px;margin:auto;padding:calc(var(--spacing-unit) * 2)}footer.svelte-17nyh33 div.svelte-17nyh33:nth-child(3){display:none}@media screen and (min-width: 900px){footer.svelte-17nyh33.svelte-17nyh33{grid-template-columns:1fr 1fr 1fr}footer.svelte-17nyh33 div.svelte-17nyh33:nth-child(3){display:block}}footer.svelte-17nyh33 h3.svelte-17nyh33{color:var(--primary-100)}footer.svelte-17nyh33 h3 a.svelte-17nyh33{position:relative;font-weight:700;color:inherit;text-decoration:none}footer.svelte-17nyh33 h3 a.svelte-17nyh33:before{z-index:1;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--primary-100)}footer.svelte-17nyh33 h3 a.svelte-17nyh33:hover:before{display:block}footer.svelte-17nyh33 h4.svelte-17nyh33{font-weight:500}.footer-wave.svelte-17nyh33.svelte-17nyh33{margin:auto;width:100%;transform:translateY(2rem)}a.svelte-17nyh33.svelte-17nyh33{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none;width:100%}a.svelte-17nyh33.svelte-17nyh33:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}a.svelte-17nyh33.svelte-17nyh33:hover:before{display:block}",
       map: null
     };
     _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -4735,29 +4735,29 @@ var init_layout_2fe3a48e = __esm({
       if ($$props.open === void 0 && $$bindings.open && open !== void 0)
         $$bindings.open(open);
       $$result.css.add(css2);
-      return `<div class="${"wrapperForFooter svelte-14rslre"}"><div class="${"container svelte-14rslre"}"><header class="${"svelte-14rslre"}"><h1 class="${"sitetitle svelte-14rslre"}"><a href="${"/"}" class="${"svelte-14rslre"}">koen.codes</a></h1></header></div>
+      return `<div class="${"wrapperForFooter svelte-17nyh33"}"><div class="${"container svelte-17nyh33"}"><header class="${"svelte-17nyh33"}"><h1 class="${"sitetitle svelte-17nyh33"}"><a href="${"/"}" class="${"svelte-17nyh33"}">koen.codes</a></h1></header></div>
     
-    <main class="${"svelte-14rslre"}">${slots.default ? slots.default({}) : ``}</main>
-    
-<div class="${"footerWrapper svelte-14rslre"}"><img alt="${"wavy line to separate content from footer"}" class="${"footer-wave svelte-14rslre"}" src="${"../footer-waveline.svg"}">
-  <footer class="${"svelte-14rslre"}"><div class="${"svelte-14rslre"}"><h3 class="${"svelte-14rslre"}"><a href="${"/"}" class="${"svelte-14rslre"}">koen.codes</a></h3>
-      <h4 class="${"svelte-14rslre"}">Thanks for reading!</h4></div>
-    <div class="${"svelte-14rslre"}"><h3 class="${"svelte-14rslre"}">Links</h3>
-      <h4 class="${"svelte-14rslre"}"><a href="${"/blog"}" class="${"svelte-14rslre"}">Blog</a></h4>
-      <h4 class="${"svelte-14rslre"}"><a href="${"#projects"}" class="${"svelte-14rslre"}">Projects</a></h4></div>
-    <div class="${"svelte-14rslre"}"><h3 class="${"svelte-14rslre"}">Topics</h3>
+    <main class="${"svelte-17nyh33"}">${slots.default ? slots.default({}) : ``}</main>
+
+<div class="${"footerWrapper svelte-17nyh33"}"><img alt="${"wavy line to separate content from footer"}" class="${"footer-wave svelte-17nyh33"}" src="${"../footer-waveline.svg"}">
+  <footer class="${"svelte-17nyh33"}"><div class="${"svelte-17nyh33"}"><h3 class="${"svelte-17nyh33"}"><a href="${"/"}" class="${"svelte-17nyh33"}">koen.codes</a></h3>
+      <h4 class="${"svelte-17nyh33"}">Thanks for reading!</h4></div>
+    <div class="${"svelte-17nyh33"}"><h3 class="${"svelte-17nyh33"}">Links</h3>
+      <h4 class="${"svelte-17nyh33"}"><a href="${"/blog"}" class="${"svelte-17nyh33"}">Blog</a></h4>
+      <h4 class="${"svelte-17nyh33"}"><a href="${"#projects"}" class="${"svelte-17nyh33"}">Projects</a></h4></div>
+    <div class="${"svelte-17nyh33"}"><h3 class="${"svelte-17nyh33"}">Topics</h3>
       ${validate_component(TagCloud, "TagCloud").$$render($$result, {}, {}, {})}</div></footer></div>
 </div>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/Seo-4573ac63.js
+// .svelte-kit/output/server/chunks/Seo-5987122c.js
 var Seo;
-var init_Seo_4573ac63 = __esm({
-  ".svelte-kit/output/server/chunks/Seo-4573ac63.js"() {
+var init_Seo_5987122c = __esm({
+  ".svelte-kit/output/server/chunks/Seo-5987122c.js"() {
     init_shims();
-    init_app_1e7b7e50();
+    init_app_d99cce65();
     Seo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { metaDescription: metaDescription7 } = $$props;
       let { pageTitle: pageTitle6 } = $$props;
@@ -4770,19 +4770,19 @@ var init_Seo_4573ac63 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/__error-83fa3836.js
-var error_83fa3836_exports = {};
-__export(error_83fa3836_exports, {
+// .svelte-kit/output/server/chunks/__error-d033120f.js
+var error_d033120f_exports = {};
+__export(error_d033120f_exports, {
   default: () => _error
 });
 var css3, pageTitle, metaDescription, _error;
-var init_error_83fa3836 = __esm({
-  ".svelte-kit/output/server/chunks/__error-83fa3836.js"() {
+var init_error_d033120f = __esm({
+  ".svelte-kit/output/server/chunks/__error-d033120f.js"() {
     init_shims();
-    init_app_1e7b7e50();
-    init_Seo_4573ac63();
+    init_app_d99cce65();
+    init_Seo_5987122c();
     css3 = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1sfmv3m.svelte-1sfmv3m,.svelte-1sfmv3m.svelte-1sfmv3m::before,.svelte-1sfmv3m.svelte-1sfmv3m::after{box-sizing:border-box}.svelte-1sfmv3m.svelte-1sfmv3m{margin:0}p.svelte-1sfmv3m.svelte-1sfmv3m,h1.svelte-1sfmv3m.svelte-1sfmv3m{overflow-wrap:break-word}.container.svelte-1sfmv3m.svelte-1sfmv3m{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0;display:grid;align-items:center;text-align:center}.container.svelte-1sfmv3m div.svelte-1sfmv3m{margin-top:calc(var(--spacing-unit) * 4)}a.svelte-1sfmv3m.svelte-1sfmv3m{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none}a.svelte-1sfmv3m.svelte-1sfmv3m:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}a.svelte-1sfmv3m.svelte-1sfmv3m:hover:before{display:block}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-tpu4qv.svelte-tpu4qv,.svelte-tpu4qv.svelte-tpu4qv::before,.svelte-tpu4qv.svelte-tpu4qv::after{box-sizing:border-box}.svelte-tpu4qv.svelte-tpu4qv{margin:0}p.svelte-tpu4qv.svelte-tpu4qv,h1.svelte-tpu4qv.svelte-tpu4qv{overflow-wrap:break-word}.container.svelte-tpu4qv.svelte-tpu4qv{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0;display:grid;align-items:center;text-align:center}.container.svelte-tpu4qv div.svelte-tpu4qv{margin-top:calc(var(--spacing-unit) * 4)}a.svelte-tpu4qv.svelte-tpu4qv{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none}a.svelte-tpu4qv.svelte-tpu4qv:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}a.svelte-tpu4qv.svelte-tpu4qv:hover:before{display:block}",
       map: null
     };
     pageTitle = "Error!";
@@ -4790,19 +4790,19 @@ var init_error_83fa3836 = __esm({
     _error = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css3);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle, metaDescription }, {}, {})}
-<main class="${"container svelte-1sfmv3m"}"><div class="${"svelte-1sfmv3m"}"><h1 class="${"svelte-1sfmv3m"}">Page not found.</h1>
-        <p class="${"svelte-1sfmv3m"}">You are in grave danger. <a href="${"/"}" class="${"svelte-1sfmv3m"}">Get back to safety</a>.</p></div>
+<main class="${"container svelte-tpu4qv"}"><div class="${"svelte-tpu4qv"}"><h1 class="${"svelte-tpu4qv"}">Page not found.</h1>
+        <p class="${"svelte-tpu4qv"}">You are in grave danger. <a href="${"/"}" class="${"svelte-tpu4qv"}">Get back to safety</a>.</p></div>
 </main>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/Date-1053bb1c.js
+// .svelte-kit/output/server/chunks/Date-62537e87.js
 var Date_1;
-var init_Date_1053bb1c = __esm({
-  ".svelte-kit/output/server/chunks/Date-1053bb1c.js"() {
+var init_Date_62537e87 = __esm({
+  ".svelte-kit/output/server/chunks/Date-62537e87.js"() {
     init_shims();
-    init_app_1e7b7e50();
+    init_app_d99cce65();
     Date_1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { date } = $$props;
       if ($$props.date === void 0 && $$bindings.date && date !== void 0)
@@ -4816,16 +4816,21 @@ var init_Date_1053bb1c = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/blog-821b982a.js
-var css4, Blog;
-var init_blog_821b982a = __esm({
-  ".svelte-kit/output/server/chunks/blog-821b982a.js"() {
+// .svelte-kit/output/server/chunks/globalstyles-73c0437e.js
+var globalstyles_73c0437e_exports = {};
+__export(globalstyles_73c0437e_exports, {
+  default: () => Globalstyles,
+  metadata: () => metadata
+});
+var css4, Blog, metadata, Globalstyles;
+var init_globalstyles_73c0437e = __esm({
+  ".svelte-kit/output/server/chunks/globalstyles-73c0437e.js"() {
     init_shims();
-    init_app_1e7b7e50();
-    init_Seo_4573ac63();
-    init_Date_1053bb1c();
+    init_app_d99cce65();
+    init_Seo_5987122c();
+    init_Date_62537e87();
     css4 = {
-      code: ".container.svelte-1hr9604{max-width:60ch;margin:auto;position:relative;padding:var(--spacing-unit)}.post-hero.svelte-1hr9604{padding:calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 4);display:grid;align-items:center;position:relative}h1.svelte-1hr9604{text-align:center;margin:var(--spacing-unit) 0 calc(var(--spacing-unit) * 4)}.date.svelte-1hr9604{text-align:center}.background.svelte-1hr9604{position:absolute;z-index:-1;max-width:30rem;left:50%;top:50%;transform:translate(-50%, -60%)}",
+      code: ".container.svelte-14mt8hi{max-width:60ch;margin:auto;position:relative;padding:var(--spacing-unit)}.post-hero.svelte-14mt8hi{padding:calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 2);display:grid;align-items:center;position:relative}h1.svelte-14mt8hi{text-align:center;margin:var(--spacing-unit) 0 calc(var(--spacing-unit) * 4)}.date.svelte-14mt8hi{text-align:center}.background.svelte-14mt8hi{position:absolute;z-index:-1;max-width:30rem;left:50%;top:50%;transform:translate(-50%, -60%)}",
       map: null
     };
     Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -4850,198 +4855,68 @@ var init_blog_821b982a = __esm({
       $$result.css.add(css4);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription7 }, {}, {})}
 
-<div class="${"container svelte-1hr9604"}"><div class="${"post-hero svelte-1hr9604"}"><img alt="${"colored shapes to illustrate the title"}" class="${"background svelte-1hr9604"}"${add_attribute("src", backgroundLink, 0)}>
-        <span class="${"date svelte-1hr9604"}">${validate_component(Date_1, "Date").$$render($$result, { date }, {}, {})}</span>
-        <h1 class="${"svelte-1hr9604"}">${escape(title)}</h1></div>
+<div class="${"container svelte-14mt8hi"}"><div class="${"post-hero svelte-14mt8hi"}"><img alt="${"colored shapes to illustrate the title"}" class="${"background svelte-14mt8hi"}"${add_attribute("src", backgroundLink, 0)}>
+        <span class="${"date svelte-14mt8hi"}">${validate_component(Date_1, "Date").$$render($$result, { date }, {}, {})}</span>
+        <h1 class="${"svelte-14mt8hi"}">${escape(title)}</h1></div>
     
     ${slots.default ? slots.default({}) : ``}
-    <p>This post was filed under ${escape(tags)}</p>
 </div>`;
     });
-  }
-});
-
-// .svelte-kit/output/server/chunks/fifthpost-83c7a719.js
-var fifthpost_83c7a719_exports = {};
-__export(fifthpost_83c7a719_exports, {
-  default: () => Fifthpost,
-  metadata: () => metadata
-});
-var metadata, Fifthpost;
-var init_fifthpost_83c7a719 = __esm({
-  ".svelte-kit/output/server/chunks/fifthpost-83c7a719.js"() {
-    init_shims();
-    init_app_1e7b7e50();
-    init_blog_821b982a();
-    init_Seo_4573ac63();
-    init_Date_1053bb1c();
     metadata = {
-      "title": "Fifth post",
-      "tags": ["fun"],
-      "date": "2021-12-01T00:00:00.000Z",
-      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
-      "layout": "blog",
-      "backgroundNumber": 1
-    };
-    Fifthpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata), {}, {
-        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
-<p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
-<p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
-<p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
-      })}`;
-    });
-  }
-});
-
-// .svelte-kit/output/server/chunks/firstpost-647dae41.js
-var firstpost_647dae41_exports = {};
-__export(firstpost_647dae41_exports, {
-  default: () => Firstpost,
-  metadata: () => metadata2
-});
-var metadata2, Firstpost;
-var init_firstpost_647dae41 = __esm({
-  ".svelte-kit/output/server/chunks/firstpost-647dae41.js"() {
-    init_shims();
-    init_app_1e7b7e50();
-    init_blog_821b982a();
-    init_Seo_4573ac63();
-    init_Date_1053bb1c();
-    metadata2 = {
-      "title": "First post",
-      "tags": ["tech", "fun"],
-      "date": "2021-11-01T00:00:00.000Z",
-      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
-      "backgroundNumber": 2
-    };
-    Firstpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata2), {}, {
-        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
-<p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
-<p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
-<p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
-      })}`;
-    });
-  }
-});
-
-// .svelte-kit/output/server/chunks/fourthpost-1525e3f8.js
-var fourthpost_1525e3f8_exports = {};
-__export(fourthpost_1525e3f8_exports, {
-  default: () => Fourthpost,
-  metadata: () => metadata3
-});
-var metadata3, Fourthpost;
-var init_fourthpost_1525e3f8 = __esm({
-  ".svelte-kit/output/server/chunks/fourthpost-1525e3f8.js"() {
-    init_shims();
-    init_app_1e7b7e50();
-    init_blog_821b982a();
-    init_Seo_4573ac63();
-    init_Date_1053bb1c();
-    metadata3 = {
-      "title": "Fourth post",
-      "tags": ["tech"],
-      "date": "2021-12-01T00:00:00.000Z",
-      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+      "title": "Global styles in SvelteKit",
+      "tags": ["SvelteKit"],
+      "date": "2021-12-11T00:00:00.000Z",
+      "snippet": "Shows you how to set up Svelte Preprocess to allow global SCSS variables in your SvelteKit project.",
       "backgroundNumber": 3
     };
-    Fourthpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata3), {}, {
-        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
-<p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
-<p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
-<p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
+    Globalstyles = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata), {}, {
+        default: () => `<p>Svelte styles are scoped to their components by default, but global styles can be very useful for things like color schemes, dark mode and CSS resets. This article shows you how to install and implement Svelte Preprocess, and then prepend your your <code>.scss</code> file full of global styles. It\u2019s not difficult to set up! </p>
+<p>To start, create a new folder at <code>src/lib/</code> and call it <code>styles.scss</code>. Put all of your global styles in there. </p>
+<p>In the terminal, go your project folder and install <code>svelte-preprocess</code> and <code>node-sass</code>.</p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> svelte-preprocess node-sass</code>`}<!-- HTML_TAG_END --></pre>
+<p>Now go to your <code>svelte.config.js</code> file, and import <code>svelte-preprocess</code>, <code>dirname</code> and <code>fileURLToPath</code> like so:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> SveltePreprocess <span class="token keyword">from</span> <span class="token string">'svelte-preprocess'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> path<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> dirname <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'path'</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> fileURLToPath <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'url'</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Next, we will add two constants which will help us retrieve the path to our <code>styles.scss</code> file. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> filePath <span class="token operator">=</span> <span class="token function">dirname</span><span class="token punctuation">(</span><span class="token function">fileURLToPath</span><span class="token punctuation">(</span><span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> sassPath <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>filePath<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">/src/styles/</span><span class="token template-punctuation string">&#96;</span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p><code>filePath</code> retrieves the path to our project folder, by converting <code>import.meta.url</code> to a usable string. <code>sassPath</code> then specifies the route to where our <code>styles.scss</code> file is. </p>
+<p>Now, we need to tell Svelte Preprocess to prepend our <code>styles.scss</code> file. To do that, add the following code to <code>const config</code>.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">    preprocess<span class="token operator">:</span> <span class="token function">SveltePreprocess</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+        scss<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            prependData<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">@import '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>sassPath<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">styles.scss';</span><span class="token template-punctuation string">&#96;</span></span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>If you have MDsveX installed, this will look a bit different:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">preprocess<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">SveltePreprocess</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+					scss<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+						prependData<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">@import '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>sassPath<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">styles.scss';</span><span class="token template-punctuation string">&#96;</span></span>
+					<span class="token punctuation">&#125;</span>
+				<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+				<span class="token function">mdsvex</span><span class="token punctuation">(</span>mdsvexConfig<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>That\u2019s it! Everything inside of your <code>styles.scss</code> file will now be available globally.</p>`
       })}`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/secondpost-cf214ac3.js
-var secondpost_cf214ac3_exports = {};
-__export(secondpost_cf214ac3_exports, {
-  default: () => Secondpost,
-  metadata: () => metadata4
-});
-var metadata4, Secondpost;
-var init_secondpost_cf214ac3 = __esm({
-  ".svelte-kit/output/server/chunks/secondpost-cf214ac3.js"() {
-    init_shims();
-    init_app_1e7b7e50();
-    init_blog_821b982a();
-    init_Seo_4573ac63();
-    init_Date_1053bb1c();
-    metadata4 = {
-      "title": "How to get that money (for charity)",
-      "tags": ["fun"],
-      "date": "2021-09-01T00:00:00.000Z",
-      "snippet": "Lorem ipsum dolor sit amet, ",
-      "backgroundNumber": 4
-    };
-    Secondpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata4), {}, {
-        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
-<p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
-<p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
-<p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
-      })}`;
-    });
-  }
-});
-
-// .svelte-kit/output/server/chunks/thirdpost-d642c156.js
-var thirdpost_d642c156_exports = {};
-__export(thirdpost_d642c156_exports, {
-  default: () => Thirdpost,
-  metadata: () => metadata5
-});
-var metadata5, Thirdpost;
-var init_thirdpost_d642c156 = __esm({
-  ".svelte-kit/output/server/chunks/thirdpost-d642c156.js"() {
-    init_shims();
-    init_app_1e7b7e50();
-    init_blog_821b982a();
-    init_Seo_4573ac63();
-    init_Date_1053bb1c();
-    metadata5 = {
-      "title": "Third post",
-      "tags": ["career"],
-      "date": "2021-12-01T00:00:00.000Z",
-      "snippet": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
-      "backgroundNumber": 1
-    };
-    Thirdpost = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `${validate_component(Blog, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata5), {}, {
-        default: () => `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet risus nullam eget felis eget nunc lobortis mattis. Ut eu sem integer vitae justo. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Duis tristique sollicitudin nibh sit amet. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Purus sit amet luctus venenatis lectus magna. Eu facilisis sed odio morbi quis commodo odio aenean sed. Sit amet consectetur adipiscing elit ut aliquam. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Tempor orci dapibus ultrices in. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Nullam non nisi est sit amet. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Elit eget gravida cum sociis natoque penatibus et magnis dis.</p>
-<p>Sed augue lacus viverra vitae. Euismod nisi porta lorem mollis aliquam ut. Ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Enim tortor at auctor urna. Nisi vitae suscipit tellus mauris a diam maecenas. Quam quisque id diam vel. Vitae et leo duis ut diam quam. Adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum. Eget est lorem ipsum dolor sit amet consectetur. Rhoncus dolor purus non enim praesent. Augue mauris augue neque gravida in.</p>
-<p>Euismod in pellentesque massa placerat duis ultricies lacus. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Velit euismod in pellentesque massa placerat duis ultricies lacus. Rutrum tellus pellentesque eu tincidunt tortor aliquam. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tincidunt augue interdum velit euismod in pellentesque massa. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ultrices in iaculis nunc sed. Commodo nulla facilisi nullam vehicula ipsum a. Pellentesque dignissim enim sit amet venenatis. Aliquet risus feugiat in ante metus dictum. Ac tincidunt vitae semper quis lectus nulla. Bibendum ut tristique et egestas quis ipsum suspendisse. Nunc id cursus metus aliquam. Vitae purus faucibus ornare suspendisse sed nisi. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Cursus sit amet dictum sit.</p>
-<p>Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Ultrices sagittis orci a scelerisque purus semper. Pulvinar sapien et ligula ullamcorper malesuada. In ante metus dictum at tempor. Feugiat sed lectus vestibulum mattis ullamcorper. Nunc sed blandit libero volutpat sed cras ornare. Nulla pharetra diam sit amet nisl. Risus commodo viverra maecenas accumsan lacus vel. Ornare suspendisse sed nisi lacus sed viverra tellus. Ut eu sem integer vitae justo eget magna. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-<p>Eu augue ut lectus arcu bibendum at. Scelerisque viverra mauris in aliquam sem fringilla. Nisi quis eleifend quam adipiscing vitae. Rutrum quisque non tellus orci ac auctor. Odio tempor orci dapibus ultrices in iaculis nunc sed augue. Venenatis urna cursus eget nunc scelerisque. Ultricies integer quis auctor elit. Augue neque gravida in fermentum et sollicitudin ac orci. Nibh sit amet commodo nulla facilisi nullam vehicula. Ornare suspendisse sed nisi lacus sed viverra tellus in. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Molestie nunc non blandit massa. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Id diam maecenas ultricies mi. Aliquet porttitor lacus luctus accumsan. Duis at consectetur lorem donec massa sapien faucibus et molestie. In egestas erat imperdiet sed euismod nisi. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam.</p>`
-      })}`;
-    });
-  }
-});
-
-// .svelte-kit/output/server/chunks/index-e0b2f05f.js
-var index_e0b2f05f_exports = {};
-__export(index_e0b2f05f_exports, {
+// .svelte-kit/output/server/chunks/index-e81a121b.js
+var index_e81a121b_exports = {};
+__export(index_e81a121b_exports, {
   default: () => Routes,
   load: () => load
 });
 var css$2, Project, css$1, Art, css5, allPosts, body, load, pageTitle2, metaDescription2, Routes;
-var init_index_e0b2f05f = __esm({
-  ".svelte-kit/output/server/chunks/index-e0b2f05f.js"() {
+var init_index_e81a121b = __esm({
+  ".svelte-kit/output/server/chunks/index-e81a121b.js"() {
     init_shims();
-    init_app_1e7b7e50();
-    init_Seo_4573ac63();
-    init_TagCloud_647267bc();
+    init_app_d99cce65();
+    init_Seo_5987122c();
+    init_TagCloud_ca4648d5();
     css$2 = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-3ck4a4.svelte-3ck4a4,.svelte-3ck4a4.svelte-3ck4a4::before,.svelte-3ck4a4.svelte-3ck4a4::after{box-sizing:border-box}.svelte-3ck4a4.svelte-3ck4a4{margin:0}img.svelte-3ck4a4.svelte-3ck4a4{display:block;max-width:100%}p.svelte-3ck4a4.svelte-3ck4a4,h3.svelte-3ck4a4.svelte-3ck4a4{overflow-wrap:break-word}p.svelte-3ck4a4 a{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none}p.svelte-3ck4a4 a:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}p.svelte-3ck4a4 a:hover:before{display:block}.divlink.svelte-3ck4a4.svelte-3ck4a4{text-decoration:none;color:inherit}.divlink.svelte-3ck4a4:hover h3.svelte-3ck4a4{color:var(--primary-300)}.divlink.svelte-3ck4a4:hover .project.svelte-3ck4a4{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.project.svelte-3ck4a4.svelte-3ck4a4{overflow:hidden;border-radius:var(--corner-unit);position:relative;background:white;box-shadow:var(--shadow-elevation-medium)}.project.svelte-3ck4a4 div.svelte-3ck4a4:first-child{display:grid;place-items:center;background:var(--gray-500);position:relative;padding:var(--spacing-unit)}.project.svelte-3ck4a4 div:first-child div.svelte-3ck4a4{width:50%;max-height:5rem}.project.svelte-3ck4a4 div:first-child div img.svelte-3ck4a4{max-height:5rem}.project.svelte-3ck4a4 div.svelte-3ck4a4:nth-child(2){padding:var(--spacing-unit)}.project.svelte-3ck4a4 div:nth-child(2) p.svelte-3ck4a4{padding:0;margin:0}.project.svelte-3ck4a4 div:nth-child(2) h3.svelte-3ck4a4{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1e98161.svelte-1e98161,.svelte-1e98161.svelte-1e98161::before,.svelte-1e98161.svelte-1e98161::after{box-sizing:border-box}.svelte-1e98161.svelte-1e98161{margin:0}img.svelte-1e98161.svelte-1e98161{display:block;max-width:100%}p.svelte-1e98161.svelte-1e98161,h3.svelte-1e98161.svelte-1e98161{overflow-wrap:break-word}p.svelte-1e98161 a{position:relative;color:var(--secondary-300);font-weight:500;text-decoration:none}p.svelte-1e98161 a:before{z-index:-100;content:'';display:none;position:absolute;bottom:-0.1em;left:0em;width:100%;height:0.1em;background:var(--secondary-300)}p.svelte-1e98161 a:hover:before{display:block}h3.svelte-1e98161 img{display:inline;max-height:0.75rem;margin:0;padding:0;transform:translateY(-0.25rem);max-width:1rem}.divlink.svelte-1e98161.svelte-1e98161{text-decoration:none;color:inherit}.divlink.svelte-1e98161:hover h3.svelte-1e98161{color:var(--primary-300)}.divlink.svelte-1e98161:hover .project.svelte-1e98161{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.project.svelte-1e98161.svelte-1e98161{overflow:hidden;border-radius:var(--corner-unit);position:relative;background:white;box-shadow:var(--shadow-elevation-medium)}.project.svelte-1e98161 div.svelte-1e98161:first-child{display:grid;place-items:center;background:var(--gray-500);position:relative;padding:var(--spacing-unit)}.project.svelte-1e98161 div:first-child div.svelte-1e98161{width:50%;max-height:5rem}.project.svelte-1e98161 div:first-child div img.svelte-1e98161{max-height:5rem}.project.svelte-1e98161 div.svelte-1e98161:nth-child(2){padding:var(--spacing-unit)}.project.svelte-1e98161 div:nth-child(2) p.svelte-1e98161{padding:0;margin:0}.project.svelte-1e98161 div:nth-child(2) h3.svelte-1e98161{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}",
       map: null
     };
     Project = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5058,25 +4933,25 @@ var init_index_e0b2f05f = __esm({
       if ($$props.img === void 0 && $$bindings.img && img !== void 0)
         $$bindings.img(img);
       $$result.css.add(css$2);
-      return `<a class="${"divlink svelte-3ck4a4"}" target="${"_blank"}" rel="${"noopener"}"${add_attribute("href", src2, 0)}><div class="${"project svelte-3ck4a4"}"><div class="${"svelte-3ck4a4"}"><div class="${"svelte-3ck4a4"}"><img alt="${"simple brushed line decoration"}"${add_attribute("src", img, 0)} class="${"svelte-3ck4a4"}"></div></div>
-        <div class="${"svelte-3ck4a4"}"><h3 class="${"svelte-3ck4a4"}">${escape(title)}</h3>
-            <p class="${"svelte-3ck4a4"}"><!-- HTML_TAG_START -->${description}<!-- HTML_TAG_END --></p></div></div>
+      return `<a class="${"divlink svelte-1e98161"}" target="${"_blank"}" rel="${"noopener"}"${add_attribute("href", src2, 0)}><div class="${"project svelte-1e98161"}"><div class="${"svelte-1e98161"}"><div class="${"svelte-1e98161"}"><img alt="${"simple brushed line decoration"}"${add_attribute("src", img, 0)} class="${"svelte-1e98161"}"></div></div>
+        <div class="${"svelte-1e98161"}"><h3 class="${"svelte-1e98161"}"><!-- HTML_TAG_START -->${title}<!-- HTML_TAG_END --></h3>
+            <p class="${"svelte-1e98161"}"><!-- HTML_TAG_START -->${description}<!-- HTML_TAG_END --></p></div></div>
     </a>`;
     });
     css$1 = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-cepsnj,.svelte-cepsnj::before,.svelte-cepsnj::after{box-sizing:border-box}.svelte-cepsnj{margin:0}img.svelte-cepsnj{display:block;max-width:100%}img.svelte-cepsnj{width:20em;height:auto;margin-top:-2rem;filter:drop-shadow(var(--shadow-elevation-medium))}@media screen and (max-width: 600px){img.svelte-cepsnj{width:15em}}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-16mom80,.svelte-16mom80::before,.svelte-16mom80::after{box-sizing:border-box}.svelte-16mom80{margin:0}img.svelte-16mom80{display:block;max-width:100%}img.svelte-16mom80{width:20em;height:auto;margin-top:-2rem;filter:drop-shadow(var(--shadow-elevation-medium))}@media screen and (max-width: 600px){img.svelte-16mom80{width:15em}}",
       map: null
     };
     Art = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$1);
-      return `<img alt="${"man with map on top of 404-error statue trying to figure out what to do"}" src="${"artError-3.svg"}" class="${"svelte-cepsnj"}">
+      return `<img alt="${"man with map on top of 404-error statue trying to figure out what to do"}" src="${"artError-3.svg"}" class="${"svelte-16mom80"}">
 
 
 
 `;
     });
     css5 = {
-      code: `:root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),
+      code: `:root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),
         0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),
         1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),
     0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),
@@ -5091,14 +4966,14 @@ var init_index_e0b2f05f = __esm({
         7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),
         12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),
         19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),
-        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q,.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q::before,.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q::after{box-sizing:border-box}.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{margin:0}p.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q,h1.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q,h2.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q,h3.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q,h4.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{overflow-wrap:break-word}.grid1.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q,.grid2.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q,.grid3.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{display:grid;grid-template-columns:1fr;grid-gap:1.5rem;align-content:stretch;justify-content:stretch;margin:var(--spacing-unit)}.grid1.svelte-1fzns2q .grid1-hero.svelte-1fzns2q.svelte-1fzns2q{display:grid;align-items:center;text-align:center;margin:calc(var(--spacing-unit) * -3.5) var(--spacing-unit) var(--spacing-unit);grid-column:1/2;grid-row:2/3}.grid1.svelte-1fzns2q .grid1-hero h1.svelte-1fzns2q.svelte-1fzns2q,.grid2.svelte-1fzns2q .grid1-hero.svelte-1fzns2q h1.svelte-1fzns2q{font-weight:600}.grid1.svelte-1fzns2q .grid1-hero h2.svelte-1fzns2q.svelte-1fzns2q,.grid2.svelte-1fzns2q .grid1-hero.svelte-1fzns2q h2.svelte-1fzns2q{font-weight:600;color:var(--gray-100)}.grid1.svelte-1fzns2q .grid1-hero h3.svelte-1fzns2q.svelte-1fzns2q,.grid2.svelte-1fzns2q .grid1-hero.svelte-1fzns2q h3.svelte-1fzns2q,.grid2.svelte-1fzns2q .grid1-hero h4.svelte-1fzns2q.svelte-1fzns2q{margin:0;color:var(--gray-100);font-weight:normal}.grid1.svelte-1fzns2q .grid1-hero nav.svelte-1fzns2q.svelte-1fzns2q,.grid2 .grid1-hero.svelte-1fzns2q nav.svelte-1fzns2q.svelte-1fzns2q{float:none}@media screen and (min-width: 1200px){.grid1.svelte-1fzns2q .grid1-hero nav.svelte-1fzns2q.svelte-1fzns2q,.grid2 .grid1-hero.svelte-1fzns2q nav.svelte-1fzns2q.svelte-1fzns2q{float:right}}.grid1.svelte-1fzns2q .grid1-art.svelte-1fzns2q.svelte-1fzns2q{display:grid;place-items:center}@media screen and (min-width: 1200px){.grid1.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q,.grid2.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{grid-template-columns:2fr 1fr}.grid1.svelte-1fzns2q .grid1-hero.svelte-1fzns2q.svelte-1fzns2q{margin:var(--spacing-unit);grid-column:1/2;grid-row:1/2;text-align:left}}@media screen and (min-width: 800px){.grid3.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{grid-template-columns:1fr 1fr}}@media screen and (min-width: 1100px){.grid3.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{grid-template-columns:1fr 1fr 1fr}}.blogPost.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{overflow:hidden;border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-1fzns2q p.svelte-1fzns2q.svelte-1fzns2q{padding:0;margin:0}.blogPost.svelte-1fzns2q h3.svelte-1fzns2q.svelte-1fzns2q{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.divlink.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{height:100%;text-decoration:none;color:inherit}.divlink.svelte-1fzns2q:hover:hover h3.svelte-1fzns2q.svelte-1fzns2q{color:var(--primary-300)}.divlink.svelte-1fzns2q:hover:hover .blogPost.svelte-1fzns2q.svelte-1fzns2q{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.divlink.svelte-1fzns2q:hover:hover .allPostButton.svelte-1fzns2q.svelte-1fzns2q{background:var(--primary-300)}.allPostButton.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{background:var(--primary-200);justify-self:start;align-self:start}.allPostButton.svelte-1fzns2q h4.svelte-1fzns2q.svelte-1fzns2q{margin:0;padding:0;color:white;text-decoration:none}.grid2-tags.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{position:relative;margin-bottom:var(--spacing-unit)}.blog-parent.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{display:grid;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{grid-template-columns:1fr 1fr}.blog-parent.svelte-1fzns2q a.svelte-1fzns2q.svelte-1fzns2q:first-child{grid-row:1 / 2;grid-column:1 / 3}}.blog-parent.svelte-1fzns2q p a.svelte-1fzns2q.svelte-1fzns2q,.blog-parent.svelte-1fzns2q span a.svelte-1fzns2q.svelte-1fzns2q{color:#06D6A0;text-decoration:none}.blog-parent.svelte-1fzns2q p a.svelte-1fzns2q.svelte-1fzns2q:hover,.blog-parent.svelte-1fzns2q span a.svelte-1fzns2q.svelte-1fzns2q:hover{text-decoration:underline}.date.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{opacity:0.5;font-size:1rem}.hero-background.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{background:var(--primary-400);position:relative;margin-bottom:12rem;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}.hero-background.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q:before{content:'';background:var(--primary-400);position:absolute;z-index:-1;top:-50vh;left:0;height:50vh;width:100vw}.hero-background.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q:after{content:'';background:url("/layered-waves.svg");background-size:cover;position:absolute;z-index:-1;bottom:-20rem;width:100vw;height:20rem}@media screen and (min-width: 900px){}.container.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{max-width:1300px;margin:auto}.header.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{margin-left:var(--spacing-unit)}@media screen and (min-width: 900px){#blogposts.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{margin-left:-0.5rem}}#tags.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{margin-left:0}.button.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{color:inherit;display:inline-block;font-size:1.2em;padding:0.5rem 0.85rem 0.5rem;margin:var(--spacing-unit) var(--spacing-unit) 0rem;border-radius:calc(var(--corner-unit) * 2);background:var(--primary-400);box-shadow:var(--shadow-elevation-medium);text-decoration:none;font-weight:600}.button.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q:hover{background:var(--primary-300);box-shadow:var(--shadow-elevation-mediumhigh);color:white}.projectsbutton.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{background:var(--primary-300);color:white}.projectsbutton.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q:hover{background:var(--primary-350);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}.blogbutton.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q{background:var(--secondary-350);color:white}.blogbutton.svelte-1fzns2q.svelte-1fzns2q.svelte-1fzns2q:hover{background:var(--secondary-300);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}`,
+        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn,.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn::before,.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn::after{box-sizing:border-box}.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{margin:0}p.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn,h1.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn,h2.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn,h3.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn,h4.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{overflow-wrap:break-word}.grid1.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn,.grid2.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn,.grid3.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{display:grid;grid-template-columns:1fr;grid-gap:1.5rem;align-content:stretch;justify-content:stretch;margin:var(--spacing-unit)}.grid1.svelte-19flcwn .grid1-hero.svelte-19flcwn.svelte-19flcwn{display:grid;align-items:center;text-align:center;margin:calc(var(--spacing-unit) * -3.5) var(--spacing-unit) var(--spacing-unit);grid-column:1/2;grid-row:2/3}.grid1.svelte-19flcwn .grid1-hero h1.svelte-19flcwn.svelte-19flcwn,.grid2.svelte-19flcwn .grid1-hero.svelte-19flcwn h1.svelte-19flcwn{font-weight:600}.grid1.svelte-19flcwn .grid1-hero h2.svelte-19flcwn.svelte-19flcwn,.grid2.svelte-19flcwn .grid1-hero.svelte-19flcwn h2.svelte-19flcwn{font-weight:600;color:var(--gray-100)}.grid1.svelte-19flcwn .grid1-hero h3.svelte-19flcwn.svelte-19flcwn,.grid2.svelte-19flcwn .grid1-hero.svelte-19flcwn h3.svelte-19flcwn,.grid2.svelte-19flcwn .grid1-hero h4.svelte-19flcwn.svelte-19flcwn{margin:0;color:var(--gray-100);font-weight:normal}.grid1.svelte-19flcwn .grid1-hero nav.svelte-19flcwn.svelte-19flcwn,.grid2 .grid1-hero.svelte-19flcwn nav.svelte-19flcwn.svelte-19flcwn{float:none}@media screen and (min-width: 1200px){.grid1.svelte-19flcwn .grid1-hero nav.svelte-19flcwn.svelte-19flcwn,.grid2 .grid1-hero.svelte-19flcwn nav.svelte-19flcwn.svelte-19flcwn{float:right}}.grid1.svelte-19flcwn .grid1-art.svelte-19flcwn.svelte-19flcwn{display:grid;place-items:center}@media screen and (min-width: 1200px){.grid1.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn,.grid2.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{grid-template-columns:2fr 1fr}.grid1.svelte-19flcwn .grid1-hero.svelte-19flcwn.svelte-19flcwn{margin:var(--spacing-unit);grid-column:1/2;grid-row:1/2;text-align:left}}@media screen and (min-width: 800px){.grid3.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{grid-template-columns:1fr 1fr}}@media screen and (min-width: 1100px){.grid3.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{grid-template-columns:1fr 1fr 1fr}}.blogPost.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{overflow:hidden;border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-19flcwn p.svelte-19flcwn.svelte-19flcwn{padding:0;margin:0}.blogPost.svelte-19flcwn h3.svelte-19flcwn.svelte-19flcwn{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.divlink.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{height:100%;text-decoration:none;color:inherit}.divlink.svelte-19flcwn:hover:hover h3.svelte-19flcwn.svelte-19flcwn{color:var(--primary-300)}.divlink.svelte-19flcwn:hover:hover .blogPost.svelte-19flcwn.svelte-19flcwn{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.divlink.svelte-19flcwn:hover:hover .allPostButton.svelte-19flcwn.svelte-19flcwn{background:var(--primary-300)}.allPostButton.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{background:var(--primary-200);justify-self:start;align-self:start}.allPostButton.svelte-19flcwn h4.svelte-19flcwn.svelte-19flcwn{margin:0;padding:0;color:white;text-decoration:none}.grid2-tags.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{position:relative;margin-bottom:var(--spacing-unit)}.blog-parent.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{display:grid;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{grid-template-columns:1fr 1fr}.blog-parent.svelte-19flcwn a.svelte-19flcwn.svelte-19flcwn:first-child{grid-row:1 / 2;grid-column:1 / 3}}.blog-parent.svelte-19flcwn p a.svelte-19flcwn.svelte-19flcwn,.blog-parent.svelte-19flcwn span a.svelte-19flcwn.svelte-19flcwn{color:#06D6A0;text-decoration:none}.blog-parent.svelte-19flcwn p a.svelte-19flcwn.svelte-19flcwn:hover,.blog-parent.svelte-19flcwn span a.svelte-19flcwn.svelte-19flcwn:hover{text-decoration:underline}.date.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{opacity:0.5;font-size:1rem}.hero-background.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{background:var(--primary-400);position:relative;margin-bottom:12rem;width:100vw;position:relative;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw}.hero-background.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn:before{content:'';background:var(--primary-400);position:absolute;z-index:-1;top:-50vh;left:0;height:50vh;width:100vw}.hero-background.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn:after{content:'';background:url("/layered-waves.svg");background-size:cover;position:absolute;z-index:-1;bottom:-20rem;width:100vw;height:20rem}@media screen and (min-width: 900px){}.container.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{max-width:1300px;margin:auto}.header.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{margin-left:var(--spacing-unit)}@media screen and (min-width: 900px){#blogposts.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{margin-left:-0.5rem}}#tags.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{margin-left:0}.button.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{color:inherit;display:inline-block;font-size:1.2em;padding:0.5rem 0.85rem 0.5rem;margin:var(--spacing-unit) var(--spacing-unit) 0rem;border-radius:calc(var(--corner-unit) * 2);background:var(--primary-400);box-shadow:var(--shadow-elevation-medium);text-decoration:none;font-weight:600}.button.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn:hover{background:var(--primary-300);box-shadow:var(--shadow-elevation-mediumhigh);color:white}.projectsbutton.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{background:var(--primary-300);color:white}.projectsbutton.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn:hover{background:var(--primary-350);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}.blogbutton.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn{background:var(--secondary-350);color:white}.blogbutton.svelte-19flcwn.svelte-19flcwn.svelte-19flcwn:hover{background:var(--secondary-300);transform:translate(-0.05rem, -0.05rem);transition:0.2s ease-in-out}`,
       map: null
     };
-    allPosts = { "./blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_83c7a719(), fifthpost_83c7a719_exports)), "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_647dae41(), firstpost_647dae41_exports)), "./blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_1525e3f8(), fourthpost_1525e3f8_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_cf214ac3(), secondpost_cf214ac3_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d642c156(), thirdpost_d642c156_exports)) };
+    allPosts = { "./blog/globalstyles.md": () => Promise.resolve().then(() => (init_globalstyles_73c0437e(), globalstyles_73c0437e_exports)) };
     body = [];
     for (let path in allPosts) {
-      body.push(allPosts[path]().then(({ metadata: metadata6 }) => {
-        return { path, metadata: metadata6 };
+      body.push(allPosts[path]().then(({ metadata: metadata2 }) => {
+        return { path, metadata: metadata2 };
       }));
     }
     load = async () => {
@@ -5114,9 +4989,9 @@ var init_index_e0b2f05f = __esm({
       });
       let projects = [
         {
-          title: "My charity website",
+          title: 'My charity website <span><img class="svg-icon" src="link.svg"></span>',
           src: "https://www.vriendenvoorkika.nl/",
-          description: 'Climbing a mountain for charity. Made a website for it using Jekyll and Netlify. Consider <a href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!',
+          description: 'Climbing a mountain for charity. Made a website for it using Jekyll and Netlify. Consider <a target="_blank" rel="noopener" href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!',
           img: "illustration-crosses.svg"
         },
         {
@@ -5130,12 +5005,6 @@ var init_index_e0b2f05f = __esm({
           src: "/calculator",
           description: "Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.",
           img: "illustration-shapes.svg"
-        },
-        {
-          title: "Interactive diagnostic flowchart",
-          src: "/flowcharts/schildklier",
-          description: "Quick and dirty way to diagnose thyroid problems. Adapted from a flowchart by the NHG (Dutch GP association).",
-          img: "illustration-0arrow.svg"
         }
       ];
       if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0)
@@ -5143,29 +5012,29 @@ var init_index_e0b2f05f = __esm({
       $$result.css.add(css5);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle2, metaDescription: metaDescription2 }, {}, {})}
 
-<div class="${"hero-background svelte-1fzns2q"}"><div class="${"container svelte-1fzns2q"}"><div class="${"grid1 svelte-1fzns2q"}"><div class="${"grid1-art svelte-1fzns2q"}">${validate_component(Art, "Art").$$render($$result, {}, {}, {})}</div>
-            <div class="${"grid1-hero svelte-1fzns2q"}"><div class="${"svelte-1fzns2q"}"><h2 class="${"svelte-1fzns2q"}">Hi, I&#39;m Koen!</h2>
-                    <h1 class="${"svelte-1fzns2q"}">I do some programming in my off-time.</h1>
-                    <h3 class="${"svelte-1fzns2q"}">I write about web development as if you knew nothing, because neither do I!</h3>
-                    <nav class="${"svelte-1fzns2q"}"><a class="${"button blogbutton svelte-1fzns2q"}" href="${"#blogposts"}">Blog</a>
-                        <a class="${"button projectsbutton svelte-1fzns2q"}" href="${"#projects"}">Projects</a></nav></div></div></div></div></div>
+<div class="${"hero-background svelte-19flcwn"}"><div class="${"container svelte-19flcwn"}"><div class="${"grid1 svelte-19flcwn"}"><div class="${"grid1-art svelte-19flcwn"}">${validate_component(Art, "Art").$$render($$result, {}, {}, {})}</div>
+            <div class="${"grid1-hero svelte-19flcwn"}"><div class="${"svelte-19flcwn"}"><h2 class="${"svelte-19flcwn"}">Hi, I&#39;m Koen!</h2>
+                    <h1 class="${"svelte-19flcwn"}">I do some programming in my off-time.</h1>
+                    <h3 class="${"svelte-19flcwn"}">I write about web development as if you knew nothing, because neither do I!</h3>
+                    <nav class="${"svelte-19flcwn"}"><a class="${"button blogbutton svelte-19flcwn"}" href="${"#blogposts"}">Blog</a>
+                        <a class="${"button projectsbutton svelte-19flcwn"}" href="${"#projects"}">Projects</a></nav></div></div></div></div></div>
 
-<div class="${"container svelte-1fzns2q"}"><div class="${"grid2 svelte-1fzns2q"}"><div class="${"grid2-blog svelte-1fzns2q"}"><h1 id="${"blogposts"}" class="${"header svelte-1fzns2q"}">Recently published</h1>
-            <div class="${"blog-parent svelte-1fzns2q"}">${each(posts.slice(0, 4), ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-1fzns2q"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-1fzns2q"}"><h3 class="${"svelte-1fzns2q"}">${escape(title)}</h3>
-                        <span class="${"date svelte-1fzns2q"}">${escape(new Date(date).toLocaleDateString("en-US", {
+<div class="${"container svelte-19flcwn"}"><div class="${"grid2 svelte-19flcwn"}"><div class="${"grid2-blog svelte-19flcwn"}"><h1 id="${"blogposts"}" class="${"header svelte-19flcwn"}">Recently published</h1>
+            <div class="${"blog-parent svelte-19flcwn"}">${each(posts.slice(0, 4), ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-19flcwn"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-19flcwn"}"><h3 class="${"svelte-19flcwn"}">${escape(title)}</h3>
+                        <span class="${"date svelte-19flcwn"}">${escape(new Date(date).toLocaleDateString("en-US", {
         year: "numeric",
         month: "long",
         day: "numeric"
       }))}</span>
-                        <p class="${"svelte-1fzns2q"}">${escape(snippet)}</p></div>
+                        <p class="${"svelte-19flcwn"}">${escape(snippet)}</p></div>
                     </a>`)}
-                <a href="${"/blog"}" class="${"divlink svelte-1fzns2q"}"><div class="${"blogPost allPostButton svelte-1fzns2q"}"><h4 class="${"svelte-1fzns2q"}">All posts \u2794</h4></div></a></div></div> 
+                <a href="${"/blog"}" class="${"divlink svelte-19flcwn"}"><div class="${"blogPost allPostButton svelte-19flcwn"}"><h4 class="${"svelte-19flcwn"}">All posts \u2794</h4></div></a></div></div> 
 
-    <div class="${"grid2-tags svelte-1fzns2q"}"><h2 id="${"tags"}" class="${"header svelte-1fzns2q"}">Explore topics</h2>
+    <div class="${"grid2-tags svelte-19flcwn"}"><h2 id="${"tags"}" class="${"header svelte-19flcwn"}">Explore topics</h2>
         ${validate_component(TagCloud, "TagCloud").$$render($$result, {}, {}, {})}</div></div>
     
-<h1 id="${"projects"}" class="${"header svelte-1fzns2q"}">Projects</h1>
-<div class="${"grid3 svelte-1fzns2q"}">${each(projects, ({ title, src: src2, description, img }) => `${validate_component(Project, "Project").$$render($$result, { title, src: src2, description, img }, {}, {})}`)}</div>
+<h1 id="${"projects"}" class="${"header svelte-19flcwn"}">Projects</h1>
+<div class="${"grid3 svelte-19flcwn"}">${each(projects, ({ title, src: src2, description, img }) => `${validate_component(Project, "Project").$$render($$result, { title, src: src2, description, img }, {}, {})}`)}</div>
 
 
 </div>`;
@@ -5173,19 +5042,19 @@ var init_index_e0b2f05f = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/calculator-68f24b74.js
-var calculator_68f24b74_exports = {};
-__export(calculator_68f24b74_exports, {
+// .svelte-kit/output/server/chunks/calculator-0ea26754.js
+var calculator_0ea26754_exports = {};
+__export(calculator_0ea26754_exports, {
   default: () => Calculator
 });
 var css6, pageTitle3, metaDescription3, Calculator;
-var init_calculator_68f24b74 = __esm({
-  ".svelte-kit/output/server/chunks/calculator-68f24b74.js"() {
+var init_calculator_0ea26754 = __esm({
+  ".svelte-kit/output/server/chunks/calculator-0ea26754.js"() {
     init_shims();
-    init_app_1e7b7e50();
-    init_Seo_4573ac63();
+    init_app_d99cce65();
+    init_Seo_5987122c();
     css6 = {
-      code: ':root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1je4mdg.svelte-1je4mdg,.svelte-1je4mdg.svelte-1je4mdg::before,.svelte-1je4mdg.svelte-1je4mdg::after{box-sizing:border-box}.svelte-1je4mdg.svelte-1je4mdg{margin:0}svg.svelte-1je4mdg.svelte-1je4mdg{display:block;max-width:100%}input.svelte-1je4mdg.svelte-1je4mdg{font:inherit}p.svelte-1je4mdg.svelte-1je4mdg,h1.svelte-1je4mdg.svelte-1je4mdg,h3.svelte-1je4mdg.svelte-1je4mdg{overflow-wrap:break-word}.explanation.svelte-1je4mdg.svelte-1je4mdg{display:grid;padding:1rem 0 1rem;grid-template-columns:1fr}@media screen and (min-width: 600px){.explanation.svelte-1je4mdg.svelte-1je4mdg{grid-template-columns:1fr 1fr}}.explanation-pie.svelte-1je4mdg.svelte-1je4mdg{padding:1rem 0 0;justify-self:center}@media screen and (min-width: 600px){.explanation-pie.svelte-1je4mdg.svelte-1je4mdg{padding:0}}h3.svelte-1je4mdg.svelte-1je4mdg{font-weight:normal;margin:0}svg.svelte-1je4mdg.svelte-1je4mdg{width:10rem;height:10rem}svg.svelte-1je4mdg text.svelte-1je4mdg{font-weight:bold;fill:white}.dark .circle.svelte-1je4mdg.svelte-1je4mdg{fill:#6E71DB}a.svelte-1je4mdg.svelte-1je4mdg{color:#06D6A0;text-decoration:none}a.svelte-1je4mdg.svelte-1je4mdg:hover{text-decoration:underline}ol.svelte-1je4mdg.svelte-1je4mdg{list-style:none;margin:0;padding:0}ol.svelte-1je4mdg li.svelte-1je4mdg{display:grid;grid-template-columns:1fr;grid-gap:0.25rem;padding-bottom:1rem}span.svelte-1je4mdg.svelte-1je4mdg{color:#06D6A0;font-weight:bold}form.svelte-1je4mdg.svelte-1je4mdg{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}input[type="number"].svelte-1je4mdg.svelte-1je4mdg{font-size:inherit;box-shadow:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;outline:1px black solid;padding:0.25rem;margin:0 0.25rem 0;width:auto}label.svelte-1je4mdg.svelte-1je4mdg{padding-left:0.25rem}.svelte-1je4mdg.svelte-1je4mdg::-moz-focus-inner{border:0;padding:0}input[type="range"].svelte-1je4mdg.svelte-1je4mdg{-webkit-appearance:none;width:auto;margin:0.25rem 0 0.25rem;padding:0 0.25rem 0}input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-webkit-slider-runnable-track{background:#111344;height:5px}input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-moz-range-track{background:#111344;height:5px}input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-webkit-slider-thumb{-webkit-appearance:none;height:20px;width:20px;background:#06D6A0;margin-top:-7.5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-webkit-slider-thumb{height:15px;width:15px;margin-top:-5px}}input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-moz-range-thumb{height:20px;width:20px;background:#06D6A0;margin-top:-5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-moz-range-thumb{height:15px;width:15px;margin-top:-5px}}.dark input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-webkit-slider-runnable-track{background:white;height:5px}.dark input[type="range"].svelte-1je4mdg.svelte-1je4mdg::-moz-range-track{background:white;height:5px}.dark form.svelte-1je4mdg.svelte-1je4mdg{box-shadow:0 0 5px white;border:white 2px solid}',
+      code: ':root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-gtjaw1.svelte-gtjaw1,.svelte-gtjaw1.svelte-gtjaw1::before,.svelte-gtjaw1.svelte-gtjaw1::after{box-sizing:border-box}.svelte-gtjaw1.svelte-gtjaw1{margin:0}svg.svelte-gtjaw1.svelte-gtjaw1{display:block;max-width:100%}input.svelte-gtjaw1.svelte-gtjaw1{font:inherit}p.svelte-gtjaw1.svelte-gtjaw1,h1.svelte-gtjaw1.svelte-gtjaw1,h3.svelte-gtjaw1.svelte-gtjaw1{overflow-wrap:break-word}.explanation.svelte-gtjaw1.svelte-gtjaw1{display:grid;padding:1rem 0 1rem;grid-template-columns:1fr}@media screen and (min-width: 600px){.explanation.svelte-gtjaw1.svelte-gtjaw1{grid-template-columns:1fr 1fr}}.explanation-pie.svelte-gtjaw1.svelte-gtjaw1{padding:1rem 0 0;justify-self:center}@media screen and (min-width: 600px){.explanation-pie.svelte-gtjaw1.svelte-gtjaw1{padding:0}}h3.svelte-gtjaw1.svelte-gtjaw1{font-weight:normal;margin:0}svg.svelte-gtjaw1.svelte-gtjaw1{width:10rem;height:10rem}svg.svelte-gtjaw1 text.svelte-gtjaw1{font-weight:bold;fill:white}.dark .circle.svelte-gtjaw1.svelte-gtjaw1{fill:#6E71DB}a.svelte-gtjaw1.svelte-gtjaw1{color:#06D6A0;text-decoration:none}a.svelte-gtjaw1.svelte-gtjaw1:hover{text-decoration:underline}ol.svelte-gtjaw1.svelte-gtjaw1{list-style:none;margin:0;padding:0}ol.svelte-gtjaw1 li.svelte-gtjaw1{display:grid;grid-template-columns:1fr;grid-gap:0.25rem;padding-bottom:1rem}span.svelte-gtjaw1.svelte-gtjaw1{color:#06D6A0;font-weight:bold}form.svelte-gtjaw1.svelte-gtjaw1{border:#111344 2px solid;box-shadow:0 0 5px #111344;padding:0.5rem}input[type="number"].svelte-gtjaw1.svelte-gtjaw1{font-size:inherit;box-shadow:none;appearance:none;-moz-appearance:none;-webkit-appearance:none;outline:1px black solid;padding:0.25rem;margin:0 0.25rem 0;width:auto}label.svelte-gtjaw1.svelte-gtjaw1{padding-left:0.25rem}.svelte-gtjaw1.svelte-gtjaw1::-moz-focus-inner{border:0;padding:0}input[type="range"].svelte-gtjaw1.svelte-gtjaw1{-webkit-appearance:none;width:auto;margin:0.25rem 0 0.25rem;padding:0 0.25rem 0}input[type="range"].svelte-gtjaw1.svelte-gtjaw1::-webkit-slider-runnable-track{background:#111344;height:5px}input[type="range"].svelte-gtjaw1.svelte-gtjaw1::-moz-range-track{background:#111344;height:5px}input[type="range"].svelte-gtjaw1.svelte-gtjaw1::-webkit-slider-thumb{-webkit-appearance:none;height:20px;width:20px;background:#06D6A0;margin-top:-7.5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-gtjaw1.svelte-gtjaw1::-webkit-slider-thumb{height:15px;width:15px;margin-top:-5px}}input[type="range"].svelte-gtjaw1.svelte-gtjaw1::-moz-range-thumb{height:20px;width:20px;background:#06D6A0;margin-top:-5px;border-radius:50%}@media screen and (min-width: 600px){input[type="range"].svelte-gtjaw1.svelte-gtjaw1::-moz-range-thumb{height:15px;width:15px;margin-top:-5px}}.dark input[type="range"].svelte-gtjaw1.svelte-gtjaw1::-webkit-slider-runnable-track{background:white;height:5px}.dark input[type="range"].svelte-gtjaw1.svelte-gtjaw1::-moz-range-track{background:white;height:5px}.dark form.svelte-gtjaw1.svelte-gtjaw1{box-shadow:0 0 5px white;border:white 2px solid}',
       map: null
     };
     pageTitle3 = "portfolio rebalancing calculator";
@@ -5204,29 +5073,29 @@ var init_calculator_68f24b74 = __esm({
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle3, metaDescription: metaDescription3 }, {}, {})} 
 
 
-<main class="${"svelte-1je4mdg"}"><h1 class="${"svelte-1je4mdg"}">Portfolio rebalancing calculator</h1>
+<main class="${"svelte-gtjaw1"}"><h1 class="${"svelte-gtjaw1"}">Portfolio rebalancing calculator</h1>
     
-    <form name="${"calculator"}" class="${"svelte-1je4mdg"}"><input type="${"hidden"}" name="${"form-name"}" value="${"contact"}" class="${"svelte-1je4mdg"}">
-        <ol class="${"svelte-1je4mdg"}"><li class="${"svelte-1je4mdg"}"><label for="${"field-volatile"}" class="${"svelte-1je4mdg"}">Current money in volatile assets?</label>
-                <input type="${"number"}" min="${"0"}" name="${"volatile"}" id="${"field-volatile"}" required="${""}" aria-required="${"true"}" placeholder="${"Enter value of volatile assets"}" autocomplete="${"volatile"}" autocorrect="${"off"}" autocapitalize="${"off"}" oninput="${"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');"}" class="${"svelte-1je4mdg"}"${add_attribute("value", volatileAssets, 0)}></li>
-            <li class="${"svelte-1je4mdg"}"><label for="${"field-stable"}" class="${"svelte-1je4mdg"}">Current money in stable assets?</label>
-                <input type="${"number"}" min="${"0"}" name="${"stable"}" id="${"field-stable"}" required="${""}" aria-required="${"true"}" placeholder="${"Enter value of stable assets"}" autocomplete="${"stable"}" oninput="${"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');"}" class="${"svelte-1je4mdg"}"${add_attribute("value", stableAssets, 0)}></li>
-            <li class="${"svelte-1je4mdg"}"><label for="${"field-percentage"}" class="${"svelte-1je4mdg"}">Preferred percentage of volatile assets?</label>
-                <input type="${"range"}" min="${"0"}" max="${"100"}" name="${"percentage"}" id="${"field-percentage"}" required="${""}" aria-required="${"true"}" autocapitalize="${"off"}" class="${" svelte-1je4mdg"}"${add_attribute("value", desiredPercVolatile, 0)}>
-                <label class="${"svelte-1je4mdg"}">${escape(desiredPercVolatile)}%</label></li></ol></form>
+    <form name="${"calculator"}" class="${"svelte-gtjaw1"}"><input type="${"hidden"}" name="${"form-name"}" value="${"contact"}" class="${"svelte-gtjaw1"}">
+        <ol class="${"svelte-gtjaw1"}"><li class="${"svelte-gtjaw1"}"><label for="${"field-volatile"}" class="${"svelte-gtjaw1"}">Current money in volatile assets?</label>
+                <input type="${"number"}" min="${"0"}" name="${"volatile"}" id="${"field-volatile"}" required="${""}" aria-required="${"true"}" placeholder="${"Enter value of volatile assets"}" autocomplete="${"volatile"}" autocorrect="${"off"}" autocapitalize="${"off"}" oninput="${"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');"}" class="${"svelte-gtjaw1"}"${add_attribute("value", volatileAssets, 0)}></li>
+            <li class="${"svelte-gtjaw1"}"><label for="${"field-stable"}" class="${"svelte-gtjaw1"}">Current money in stable assets?</label>
+                <input type="${"number"}" min="${"0"}" name="${"stable"}" id="${"field-stable"}" required="${""}" aria-required="${"true"}" placeholder="${"Enter value of stable assets"}" autocomplete="${"stable"}" oninput="${"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*)\\./g, '$1');"}" class="${"svelte-gtjaw1"}"${add_attribute("value", stableAssets, 0)}></li>
+            <li class="${"svelte-gtjaw1"}"><label for="${"field-percentage"}" class="${"svelte-gtjaw1"}">Preferred percentage of volatile assets?</label>
+                <input type="${"range"}" min="${"0"}" max="${"100"}" name="${"percentage"}" id="${"field-percentage"}" required="${""}" aria-required="${"true"}" autocapitalize="${"off"}" class="${" svelte-gtjaw1"}"${add_attribute("value", desiredPercVolatile, 0)}>
+                <label class="${"svelte-gtjaw1"}">${escape(desiredPercVolatile)}%</label></li></ol></form>
 
-    <div class="${"explanation svelte-1je4mdg"}">
-        <div class="${"explanation-text svelte-1je4mdg"}"><h3 class="${"svelte-1je4mdg"}">You currently have <span class="${"svelte-1je4mdg"}">${`${`${`0%`}`}
-            `}</span> of your total portfolio value of <span class="${"svelte-1je4mdg"}">\u20AC${escape(totalPortfValue)}</span> in volatile assets.<br class="${"svelte-1je4mdg"}"> To rebalance, 
+    <div class="${"explanation svelte-gtjaw1"}">
+        <div class="${"explanation-text svelte-gtjaw1"}"><h3 class="${"svelte-gtjaw1"}">You currently have <span class="${"svelte-gtjaw1"}">${`${`${`0%`}`}
+            `}</span> of your total portfolio value of <span class="${"svelte-gtjaw1"}">\u20AC${escape(totalPortfValue)}</span> in volatile assets.<br class="${"svelte-gtjaw1"}"> To rebalance, 
             ${diffActAndDesVolatile > 0 ? `sell` : `buy`}
-            <span class="${"svelte-1je4mdg"}">\u20AC${escape(Math.abs(Math.round(diffActAndDesVolatile)))}</span> of volatile assets. </h3></div>
+            <span class="${"svelte-gtjaw1"}">\u20AC${escape(Math.abs(Math.round(diffActAndDesVolatile)))}</span> of volatile assets. </h3></div>
         
-        <div class="${"explanation-pie svelte-1je4mdg"}"><svg height="${"20"}" width="${"20"}" viewBox="${"0 0 20 20"}" class="${"svelte-1je4mdg"}"><circle class="${"circle svelte-1je4mdg"}" r="${"10"}" cx="${"10"}" cy="${"10"}" fill="${"#111344"}"></circle><circle r="${"5"}" cx="${"10"}" cy="${"10"}" fill="${"transparent"}" stroke="${"#06D6A0"}" stroke-width="${"10"}" stroke-dasharray="${"calc(" + escape(Math.round(actPercVolatile)) + " * 30.65 / 100) 31.4159"}" transform="${"rotate(-90) translate(-20)"}" class="${"svelte-1je4mdg"}"></circle><text x="${"50%"}" y="${"50%"}" dominant-baseline="${"middle"}" text-anchor="${"middle"}" font-size="${"3"}" class="${"svelte-1je4mdg"}">${!actPercVolatile ? `` : `${escape(Math.round(actPercVolatile))}`}</text></svg></div></div>
+        <div class="${"explanation-pie svelte-gtjaw1"}"><svg height="${"20"}" width="${"20"}" viewBox="${"0 0 20 20"}" class="${"svelte-gtjaw1"}"><circle class="${"circle svelte-gtjaw1"}" r="${"10"}" cx="${"10"}" cy="${"10"}" fill="${"#111344"}"></circle><circle r="${"5"}" cx="${"10"}" cy="${"10"}" fill="${"transparent"}" stroke="${"#06D6A0"}" stroke-width="${"10"}" stroke-dasharray="${"calc(" + escape(Math.round(actPercVolatile)) + " * 30.65 / 100) 31.4159"}" transform="${"rotate(-90) translate(-20)"}" class="${"svelte-gtjaw1"}"></circle><text x="${"50%"}" y="${"50%"}" dominant-baseline="${"middle"}" text-anchor="${"middle"}" font-size="${"3"}" class="${"svelte-gtjaw1"}">${!actPercVolatile ? `` : `${escape(Math.round(actPercVolatile))}`}</text></svg></div></div>
 
-    <hr class="${"svelte-1je4mdg"}">
-    <p class="${"svelte-1je4mdg"}">This calculator is intended for people who follow a long-term investment strategy such as the <a target="${"_blank"}" rel="${"noopener"}" href="${"https://www.bogleheads.org/wiki/Bogleheads\xAE_investment_philosophy"}" class="${"svelte-1je4mdg"}">Boglehead method</a>, where there&#39;s a volatile part and a stable part: stocks and bonds.</p>
-    <p class="${"svelte-1je4mdg"}">In recent years, low interest rates have made bonds unattractive. People now opt for deposit savings or cash buffers. Stocks are still in high demand, but crypto currencies are gaining ground.</p> 
-    <p class="${"svelte-1je4mdg"}">None of this is relevant for this calculator, as long as there is a volatile and a stable asset that you&#39;re trying to balance!</p></main>
+    <hr class="${"svelte-gtjaw1"}">
+    <p class="${"svelte-gtjaw1"}">This calculator is intended for people who follow a long-term investment strategy such as the <a target="${"_blank"}" rel="${"noopener"}" href="${"https://www.bogleheads.org/wiki/Bogleheads\xAE_investment_philosophy"}" class="${"svelte-gtjaw1"}">Boglehead method</a>, where there&#39;s a volatile part and a stable part: stocks and bonds.</p>
+    <p class="${"svelte-gtjaw1"}">In recent years, low interest rates have made bonds unattractive. People now opt for deposit savings or cash buffers. Stocks are still in high demand, but crypto currencies are gaining ground.</p> 
+    <p class="${"svelte-gtjaw1"}">None of this is relevant for this calculator, as long as there is a volatile and a stable asset that you&#39;re trying to balance!</p></main>
 
 
 
@@ -5235,9 +5104,9 @@ var init_calculator_68f24b74 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/index-b3a04bc4.js
-var index_b3a04bc4_exports = {};
-__export(index_b3a04bc4_exports, {
+// .svelte-kit/output/server/chunks/index-87f6c83c.js
+var index_87f6c83c_exports = {};
+__export(index_87f6c83c_exports, {
   default: () => Schildklier
 });
 function pageScroll() {
@@ -5245,13 +5114,13 @@ function pageScroll() {
   setTimeout("pageScroll()", 100);
 }
 var css7, pageTitle4, metaDescription4, Schildklier;
-var init_index_b3a04bc4 = __esm({
-  ".svelte-kit/output/server/chunks/index-b3a04bc4.js"() {
+var init_index_87f6c83c = __esm({
+  ".svelte-kit/output/server/chunks/index-87f6c83c.js"() {
     init_shims();
-    init_app_1e7b7e50();
-    init_Seo_4573ac63();
+    init_app_d99cce65();
+    init_Seo_5987122c();
     css7 = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1xco7v3,.svelte-1xco7v3::before,.svelte-1xco7v3::after{box-sizing:border-box}.svelte-1xco7v3{margin:0}button.svelte-1xco7v3{font:inherit}p.svelte-1xco7v3,h1.svelte-1xco7v3{overflow-wrap:break-word}button.svelte-1xco7v3{font-family:inherit;font-size:inherit;padding:0.25rem;background:transparent;box-shadow:none;outline:none;border:2px solid #111344}button.svelte-1xco7v3:hover{outline:2px solid #06D6A0;cursor:pointer}.dark button.svelte-1xco7v3{color:white;border:2px solid white}a.svelte-1xco7v3{color:#06D6A0;text-decoration:none}a.svelte-1xco7v3:hover{text-decoration:underline}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-15bu1hc,.svelte-15bu1hc::before,.svelte-15bu1hc::after{box-sizing:border-box}.svelte-15bu1hc{margin:0}button.svelte-15bu1hc{font:inherit}p.svelte-15bu1hc,h1.svelte-15bu1hc{overflow-wrap:break-word}button.svelte-15bu1hc{font-family:inherit;font-size:inherit;padding:0.25rem;background:transparent;box-shadow:none;outline:none;border:2px solid #111344}button.svelte-15bu1hc:hover{outline:2px solid #06D6A0;cursor:pointer}.dark button.svelte-15bu1hc{color:white;border:2px solid white}a.svelte-15bu1hc{color:#06D6A0;text-decoration:none}a.svelte-15bu1hc:hover{text-decoration:underline}",
       map: null
     };
     pageTitle4 = "interactive flowchart for diagnosing thyroid disease";
@@ -5288,80 +5157,80 @@ var init_index_b3a04bc4 = __esm({
       nodus = null;
       solnodus = null;
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle4, metaDescription: metaDescription4 }, {}, {})}
-<h1 class="${"svelte-1xco7v3"}">Diagnostiek bij vermoeden van een schildklierfunctiestoornis</h1>
-<p class="${"svelte-1xco7v3"}"><i class="${"svelte-1xco7v3"}">This interactive flowchart is adapted from the <a target="${"_blank"}" rel="${"noopener"}" href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-1xco7v3"}">NHG-Standaard Schildklieraandoeningen</a>, and specifically from <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-1xco7v3"}">this flowchart</a>. I might have made mistakes so plz don&#39;t use it.</i></p>
-<p style="${"padding-bottom: 0.5rem;"}" class="${"svelte-1xco7v3"}">Dit interactieve stroomdiagram is een aanpassing van de <a target="${"_blank"}" rel="${"noopener"}" href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-1xco7v3"}">NHG-Standaard Schildklieraandoeningen</a>, en specifiek van <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-1xco7v3"}">dit stroomdiagram</a>. Er kunnen zeker nog fouten in zitten!</p>
+<h1 class="${"svelte-15bu1hc"}">Diagnostiek bij vermoeden van een schildklierfunctiestoornis</h1>
+<p class="${"svelte-15bu1hc"}"><i class="${"svelte-15bu1hc"}">This interactive flowchart is adapted from the <a target="${"_blank"}" rel="${"noopener"}" href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-15bu1hc"}">NHG-Standaard Schildklieraandoeningen</a>, and specifically from <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-15bu1hc"}">this flowchart</a>. I might have made mistakes so plz don&#39;t use it.</i></p>
+<p style="${"padding-bottom: 0.5rem;"}" class="${"svelte-15bu1hc"}">Dit interactieve stroomdiagram is een aanpassing van de <a target="${"_blank"}" rel="${"noopener"}" href="${"https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie"}" class="${"svelte-15bu1hc"}">NHG-Standaard Schildklieraandoeningen</a>, en specifiek van <a href="${"https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png"}" class="${"svelte-15bu1hc"}">dit stroomdiagram</a>. Er kunnen zeker nog fouten in zitten!</p>
 
-<button class="${"svelte-1xco7v3"}">Start beslisboom</button>
-${start ? `<p class="${"svelte-1xco7v3"}">Is het TSH verhoogd, verlaagd of normaal?</p>
-    <button class="${"svelte-1xco7v3"}">Verhoogd</button>
-    <button class="${"svelte-1xco7v3"}">Verlaagd</button>
-    <button class="${"svelte-1xco7v3"}">Normaal</button>
+<button class="${"svelte-15bu1hc"}">Start beslisboom</button>
+${start ? `<p class="${"svelte-15bu1hc"}">Is het TSH verhoogd, verlaagd of normaal?</p>
+    <button class="${"svelte-15bu1hc"}">Verhoogd</button>
+    <button class="${"svelte-15bu1hc"}">Verlaagd</button>
+    <button class="${"svelte-15bu1hc"}">Normaal</button>
     ` : ``}
-${tsh ? `${tsh === 3 ? `<p class="${"svelte-1xco7v3"}">Euthyreo\xEFdie</p>` : `${tsh === 1 ? `<p class="${"svelte-1xco7v3"}">Is het Vrije T4 verhoogd, verlaagd of normaal?</p>
-        <button class="${"svelte-1xco7v3"}">Verhoogd</button>
-        <button class="${"svelte-1xco7v3"}">Verlaagd</button>
-        <button class="${"svelte-1xco7v3"}">Normaal</button>
-        ${tsh1t4 === 3 ? `<p class="${"svelte-1xco7v3"}">Subklinische hypothyreo\xEFdie</p>` : `${tsh1t4 === 1 ? `<ul class="${"svelte-1xco7v3"}"><li class="${"svelte-1xco7v3"}">TSH-producerend adenoom van de hypofyse</li>
-                <li class="${"svelte-1xco7v3"}">Perifere resistentie schildklierhormoon (<i class="${"svelte-1xco7v3"}">zeldzaam</i>)</li></ul>` : `${tsh1t4 === 2 ? `<p class="${"svelte-1xco7v3"}">Minder dan 1 jaar geleden bevallen?</p>
-            <button class="${"svelte-1xco7v3"}">Nee</button>
-            <button class="${"svelte-1xco7v3"}">Ja</button>
+${tsh ? `${tsh === 3 ? `<p class="${"svelte-15bu1hc"}">Euthyreo\xEFdie</p>` : `${tsh === 1 ? `<p class="${"svelte-15bu1hc"}">Is het Vrije T4 verhoogd, verlaagd of normaal?</p>
+        <button class="${"svelte-15bu1hc"}">Verhoogd</button>
+        <button class="${"svelte-15bu1hc"}">Verlaagd</button>
+        <button class="${"svelte-15bu1hc"}">Normaal</button>
+        ${tsh1t4 === 3 ? `<p class="${"svelte-15bu1hc"}">Subklinische hypothyreo\xEFdie</p>` : `${tsh1t4 === 1 ? `<ul class="${"svelte-15bu1hc"}"><li class="${"svelte-15bu1hc"}">TSH-producerend adenoom van de hypofyse</li>
+                <li class="${"svelte-15bu1hc"}">Perifere resistentie schildklierhormoon (<i class="${"svelte-15bu1hc"}">zeldzaam</i>)</li></ul>` : `${tsh1t4 === 2 ? `<p class="${"svelte-15bu1hc"}">Minder dan 1 jaar geleden bevallen?</p>
+            <button class="${"svelte-15bu1hc"}">Nee</button>
+            <button class="${"svelte-15bu1hc"}">Ja</button>
 
-            ${bevallen === 1 ? `<p class="${"svelte-1xco7v3"}">Post-partum thyreo\xEFditis</p>` : `${bevallen === 2 ? `<p class="${"svelte-1xco7v3"}">Schildklieroperatie, bestraling van de hals, of medicatiegebruik?</p>
-                <button class="${"svelte-1xco7v3"}">Nee</button>
-                <button class="${"svelte-1xco7v3"}">Ja</button>
-                ${iatrogeen === 1 ? `<p class="${"svelte-1xco7v3"}">Iatrogene hypothyreo\xEFdie</p>` : `${iatrogeen === 2 ? `<ul class="${"svelte-1xco7v3"}"><li class="${"svelte-1xco7v3"}">Thyreo\xEFditis van Hashimoto</li>
-                        <li class="${"svelte-1xco7v3"}">Stille lymfocytaire thyreo\xEFditis</li></ul>` : ``}`}` : ``}`}` : ``}`}`}` : `${tsh === 2 ? `<p class="${"svelte-1xco7v3"}">Is het Vrije T4 verhoogd, verlaagd of normaal?</p>
-        <button class="${"svelte-1xco7v3"}">Verhoogd</button>
-        <button class="${"svelte-1xco7v3"}">Verlaagd</button>
-        <button class="${"svelte-1xco7v3"}">Normaal</button>
-        ${tsh0t4 === 3 ? `<p class="${"svelte-1xco7v3"}">Subklinische hyperthyreo\xEFdie</p>` : `${tsh0t4 === 1 ? `<p class="${"svelte-1xco7v3"}">Hyperthyreo\xEFdie</p>
-            <p class="${"svelte-1xco7v3"}">Pijnlijke schildklier, koorts, koude rillingen en malaise?</p>
-            <button class="${"svelte-1xco7v3"}">Nee</button>
-            <button class="${"svelte-1xco7v3"}">Ja</button>
-            ${ziek === 2 ? `x (TSH-R)` : `${ziek === 1 ? `<p class="${"svelte-1xco7v3"}">Verhoogde BSE, leucocytose?</p>
-                <button class="${"svelte-1xco7v3"}">Nee</button>
-                <button class="${"svelte-1xco7v3"}">Ja</button>
-                ${bse === 1 ? `<p class="${"svelte-1xco7v3"}">Sucacute thyreo\xEFditis</p>` : `${bse === 2 ? `<p class="${"svelte-1xco7v3"}">Anti-TSH-R antistoffen?</p>
-                    <button class="${"svelte-1xco7v3"}">Nee</button>
-                    <button class="${"svelte-1xco7v3"}">Ja</button>
-                    ${tshr === 1 ? `<p class="${"svelte-1xco7v3"}">Ziekte van Graves</p>` : `${tshr === 2 ? `<p class="${"svelte-1xco7v3"}">Amiodaron of lithiumgebruik?</p>
-                        <button class="${"svelte-1xco7v3"}">Nee</button>
-                        <button class="${"svelte-1xco7v3"}">Ja</button>
-                        ${amiolith === 1 ? `<p class="${"svelte-1xco7v3"}">Iatrogene hyperthyreo\xEFdie</p>` : `${amiolith === 2 ? `<p class="${"svelte-1xco7v3"}">Minder dan 1 jaar geleden bevallen?</p>
-                            <button class="${"svelte-1xco7v3"}">Nee</button>
-                            <button class="${"svelte-1xco7v3"}">Ja</button>
-                            ${bevallen2 === 1 ? `<p class="${"svelte-1xco7v3"}">Post-partum thyreo\xEFditis</p>` : `${bevallen2 === 2 ? `<p class="${"svelte-1xco7v3"}">Is er sprake van struma?</p>
-                                <button class="${"svelte-1xco7v3"}">Nee</button>
-                                <button class="${"svelte-1xco7v3"}">Ja</button>
-                                ${struma === 1 ? `<p class="${"svelte-1xco7v3"}">Is er een dominante nodus?</p>
-                                    <button class="${"svelte-1xco7v3"}">Nee</button>
-                                    <button class="${"svelte-1xco7v3"}">Ja</button>
-                                    ${nodus === 1 ? `<p class="${"svelte-1xco7v3"}">Multinodulair struma</p>` : `${nodus === 2 ? `<p class="${"svelte-1xco7v3"}">Multinodulair struma met dominante nodus</p>` : ``}`}` : `${struma === 2 ? `<p class="${"svelte-1xco7v3"}">Is er een solitaire nodus?</p>
-                                    <button class="${"svelte-1xco7v3"}">Nee</button>
-                                    <button class="${"svelte-1xco7v3"}">Ja</button>
-                                    ${solnodus === 2 ? `<p class="${"svelte-1xco7v3"}">Stille lymfocytaire thyreo\xEFditis</p>` : `${solnodus === 1 ? `<p class="${"svelte-1xco7v3"}">Toxisch adenoom</p>` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : `${tsh0t4 === 2 ? `<p class="${"svelte-1xco7v3"}">Secundaire of tertiaire hypothyreo\xEFdie (<i class="${"svelte-1xco7v3"}">zeldzaam</i>)</p>` : ``}`}`}` : ``}`}`}` : ``}
+            ${bevallen === 1 ? `<p class="${"svelte-15bu1hc"}">Post-partum thyreo\xEFditis</p>` : `${bevallen === 2 ? `<p class="${"svelte-15bu1hc"}">Schildklieroperatie, bestraling van de hals, of medicatiegebruik?</p>
+                <button class="${"svelte-15bu1hc"}">Nee</button>
+                <button class="${"svelte-15bu1hc"}">Ja</button>
+                ${iatrogeen === 1 ? `<p class="${"svelte-15bu1hc"}">Iatrogene hypothyreo\xEFdie</p>` : `${iatrogeen === 2 ? `<ul class="${"svelte-15bu1hc"}"><li class="${"svelte-15bu1hc"}">Thyreo\xEFditis van Hashimoto</li>
+                        <li class="${"svelte-15bu1hc"}">Stille lymfocytaire thyreo\xEFditis</li></ul>` : ``}`}` : ``}`}` : ``}`}`}` : `${tsh === 2 ? `<p class="${"svelte-15bu1hc"}">Is het Vrije T4 verhoogd, verlaagd of normaal?</p>
+        <button class="${"svelte-15bu1hc"}">Verhoogd</button>
+        <button class="${"svelte-15bu1hc"}">Verlaagd</button>
+        <button class="${"svelte-15bu1hc"}">Normaal</button>
+        ${tsh0t4 === 3 ? `<p class="${"svelte-15bu1hc"}">Subklinische hyperthyreo\xEFdie</p>` : `${tsh0t4 === 1 ? `<p class="${"svelte-15bu1hc"}">Hyperthyreo\xEFdie</p>
+            <p class="${"svelte-15bu1hc"}">Pijnlijke schildklier, koorts, koude rillingen en malaise?</p>
+            <button class="${"svelte-15bu1hc"}">Nee</button>
+            <button class="${"svelte-15bu1hc"}">Ja</button>
+            ${ziek === 2 ? `x (TSH-R)` : `${ziek === 1 ? `<p class="${"svelte-15bu1hc"}">Verhoogde BSE, leucocytose?</p>
+                <button class="${"svelte-15bu1hc"}">Nee</button>
+                <button class="${"svelte-15bu1hc"}">Ja</button>
+                ${bse === 1 ? `<p class="${"svelte-15bu1hc"}">Sucacute thyreo\xEFditis</p>` : `${bse === 2 ? `<p class="${"svelte-15bu1hc"}">Anti-TSH-R antistoffen?</p>
+                    <button class="${"svelte-15bu1hc"}">Nee</button>
+                    <button class="${"svelte-15bu1hc"}">Ja</button>
+                    ${tshr === 1 ? `<p class="${"svelte-15bu1hc"}">Ziekte van Graves</p>` : `${tshr === 2 ? `<p class="${"svelte-15bu1hc"}">Amiodaron of lithiumgebruik?</p>
+                        <button class="${"svelte-15bu1hc"}">Nee</button>
+                        <button class="${"svelte-15bu1hc"}">Ja</button>
+                        ${amiolith === 1 ? `<p class="${"svelte-15bu1hc"}">Iatrogene hyperthyreo\xEFdie</p>` : `${amiolith === 2 ? `<p class="${"svelte-15bu1hc"}">Minder dan 1 jaar geleden bevallen?</p>
+                            <button class="${"svelte-15bu1hc"}">Nee</button>
+                            <button class="${"svelte-15bu1hc"}">Ja</button>
+                            ${bevallen2 === 1 ? `<p class="${"svelte-15bu1hc"}">Post-partum thyreo\xEFditis</p>` : `${bevallen2 === 2 ? `<p class="${"svelte-15bu1hc"}">Is er sprake van struma?</p>
+                                <button class="${"svelte-15bu1hc"}">Nee</button>
+                                <button class="${"svelte-15bu1hc"}">Ja</button>
+                                ${struma === 1 ? `<p class="${"svelte-15bu1hc"}">Is er een dominante nodus?</p>
+                                    <button class="${"svelte-15bu1hc"}">Nee</button>
+                                    <button class="${"svelte-15bu1hc"}">Ja</button>
+                                    ${nodus === 1 ? `<p class="${"svelte-15bu1hc"}">Multinodulair struma</p>` : `${nodus === 2 ? `<p class="${"svelte-15bu1hc"}">Multinodulair struma met dominante nodus</p>` : ``}`}` : `${struma === 2 ? `<p class="${"svelte-15bu1hc"}">Is er een solitaire nodus?</p>
+                                    <button class="${"svelte-15bu1hc"}">Nee</button>
+                                    <button class="${"svelte-15bu1hc"}">Ja</button>
+                                    ${solnodus === 2 ? `<p class="${"svelte-15bu1hc"}">Stille lymfocytaire thyreo\xEFditis</p>` : `${solnodus === 1 ? `<p class="${"svelte-15bu1hc"}">Toxisch adenoom</p>` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : ``}`}` : `${tsh0t4 === 2 ? `<p class="${"svelte-15bu1hc"}">Secundaire of tertiaire hypothyreo\xEFdie (<i class="${"svelte-15bu1hc"}">zeldzaam</i>)</p>` : ``}`}`}` : ``}`}`}` : ``}
 
 `;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/blog-105a801e.js
-var blog_105a801e_exports = {};
-__export(blog_105a801e_exports, {
+// .svelte-kit/output/server/chunks/blog-8b9d2f00.js
+var blog_8b9d2f00_exports = {};
+__export(blog_8b9d2f00_exports, {
   default: () => Blog2,
   load: () => load2
 });
 var css$12, Posts, css8, allPosts2, body2, load2, pageTitle5, metaDescription5, Blog2;
-var init_blog_105a801e = __esm({
-  ".svelte-kit/output/server/chunks/blog-105a801e.js"() {
+var init_blog_8b9d2f00 = __esm({
+  ".svelte-kit/output/server/chunks/blog-8b9d2f00.js"() {
     init_shims();
-    init_app_1e7b7e50();
-    init_Seo_4573ac63();
-    init_Date_1053bb1c();
+    init_app_d99cce65();
+    init_Seo_5987122c();
+    init_Date_62537e87();
     css$12 = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-s1q2mh.svelte-s1q2mh,.svelte-s1q2mh.svelte-s1q2mh::before,.svelte-s1q2mh.svelte-s1q2mh::after{box-sizing:border-box}.svelte-s1q2mh.svelte-s1q2mh{margin:0}p.svelte-s1q2mh.svelte-s1q2mh,h3.svelte-s1q2mh.svelte-s1q2mh{overflow-wrap:break-word}.blog-parent.svelte-s1q2mh.svelte-s1q2mh{display:grid;grid-auto-flow:dense;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-s1q2mh.svelte-s1q2mh{grid-template-columns:1fr 1fr}}.divlink.svelte-s1q2mh.svelte-s1q2mh{height:100%;text-decoration:none;color:inherit}.divlink.svelte-s1q2mh .date.svelte-s1q2mh{opacity:0.5;font-size:1rem}.divlink.svelte-s1q2mh:hover:hover h3.svelte-s1q2mh{color:var(--primary-300)}.divlink.svelte-s1q2mh:hover:hover .blogPost.svelte-s1q2mh{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-s1q2mh.svelte-s1q2mh{overflow:hidden;background:rgba(255, 255, 255, 0.5);border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-s1q2mh p.svelte-s1q2mh{padding:0;margin:0}.blogPost.svelte-s1q2mh h3.svelte-s1q2mh{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-dndt70.svelte-dndt70,.svelte-dndt70.svelte-dndt70::before,.svelte-dndt70.svelte-dndt70::after{box-sizing:border-box}.svelte-dndt70.svelte-dndt70{margin:0}p.svelte-dndt70.svelte-dndt70,h3.svelte-dndt70.svelte-dndt70{overflow-wrap:break-word}.blog-parent.svelte-dndt70.svelte-dndt70{display:grid;grid-auto-flow:dense;grid-gap:var(--spacing-unit);justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-dndt70.svelte-dndt70{grid-template-columns:1fr 1fr;grid-gap:calc(var(--spacing-unit) * 1.5)}}.divlink.svelte-dndt70.svelte-dndt70{height:100%;text-decoration:none;color:inherit}.divlink.svelte-dndt70:hover:hover h3.svelte-dndt70{color:var(--primary-300)}.divlink.svelte-dndt70:hover:hover .blogPost.svelte-dndt70{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-dndt70.svelte-dndt70{overflow:hidden;background:rgba(255, 255, 255, 0.5);border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-dndt70 p.svelte-dndt70{padding:0;margin:0 0 var(--spacing-unit)}.blogPost.svelte-dndt70 h3.svelte-dndt70{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.blogPost.svelte-dndt70 .date.svelte-dndt70{opacity:0.5;font-size:0.8em}",
       map: null
     };
     Posts = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5369,21 +5238,21 @@ var init_blog_105a801e = __esm({
       if ($$props.dateSortedPosts === void 0 && $$bindings.dateSortedPosts && dateSortedPosts !== void 0)
         $$bindings.dateSortedPosts(dateSortedPosts);
       $$result.css.add(css$12);
-      return `<div class="${"blog-parent svelte-s1q2mh"}">${each(dateSortedPosts, ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-s1q2mh"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-s1q2mh"}"><h3 class="${"svelte-s1q2mh"}">${escape(title)}</h3>
-            <span class="${"date svelte-s1q2mh"}">${validate_component(Date_1, "Date").$$render($$result, { date }, {}, {})}</span>
-            <p class="${"svelte-s1q2mh"}">${escape(snippet)}</p></div>
+      return `<div class="${"blog-parent svelte-dndt70"}">${each(dateSortedPosts, ({ path, metadata: { title, snippet, date } }) => `<a class="${"divlink svelte-dndt70"}"${add_attribute("href", `${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-dndt70"}"><h3 class="${"svelte-dndt70"}">${escape(title)}</h3>
+            <p class="${"svelte-dndt70"}">${escape(snippet)}</p>
+            <span class="${"date svelte-dndt70"}">${validate_component(Date_1, "Date").$$render($$result, { date }, {}, {})}</span></div>
         </a>`)}
 </div>`;
     });
     css8 = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-7iocq3.svelte-7iocq3,.svelte-7iocq3.svelte-7iocq3::before,.svelte-7iocq3.svelte-7iocq3::after{box-sizing:border-box}.svelte-7iocq3.svelte-7iocq3{margin:0}h1.svelte-7iocq3.svelte-7iocq3{overflow-wrap:break-word}.container.svelte-7iocq3.svelte-7iocq3{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}.container.svelte-7iocq3 div.svelte-7iocq3{display:grid;align-items:center}.container.svelte-7iocq3 div h1.svelte-7iocq3{text-align:center}.wrapper.svelte-7iocq3.svelte-7iocq3{margin-top:calc(var(--spacing-unit) * 3)}.background.svelte-7iocq3.svelte-7iocq3{width:100vw;height:calc(100% + 25rem);top:-15rem;z-index:-1;position:fixed;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:var(--primary-500);background-size:cover;background-position:center}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1n3ajv8.svelte-1n3ajv8,.svelte-1n3ajv8.svelte-1n3ajv8::before,.svelte-1n3ajv8.svelte-1n3ajv8::after{box-sizing:border-box}.svelte-1n3ajv8.svelte-1n3ajv8{margin:0}h1.svelte-1n3ajv8.svelte-1n3ajv8{overflow-wrap:break-word}.container.svelte-1n3ajv8.svelte-1n3ajv8{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}.container.svelte-1n3ajv8 div.svelte-1n3ajv8{display:grid;align-items:center}.container.svelte-1n3ajv8 div h1.svelte-1n3ajv8{text-align:center}.wrapper.svelte-1n3ajv8.svelte-1n3ajv8{margin-top:calc(var(--spacing-unit) * 3)}.background.svelte-1n3ajv8.svelte-1n3ajv8{width:100vw;height:calc(100% + 25rem);top:-15rem;z-index:-1;position:fixed;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:var(--primary-500);background-size:cover;background-position:center}",
       map: null
     };
-    allPosts2 = { "./blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_83c7a719(), fifthpost_83c7a719_exports)), "./blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_647dae41(), firstpost_647dae41_exports)), "./blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_1525e3f8(), fourthpost_1525e3f8_exports)), "./blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_cf214ac3(), secondpost_cf214ac3_exports)), "./blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d642c156(), thirdpost_d642c156_exports)) };
+    allPosts2 = { "./blog/globalstyles.md": () => Promise.resolve().then(() => (init_globalstyles_73c0437e(), globalstyles_73c0437e_exports)) };
     body2 = [];
     for (let path in allPosts2) {
-      body2.push(allPosts2[path]().then(({ metadata: metadata6 }) => {
-        return { path, metadata: metadata6 };
+      body2.push(allPosts2[path]().then(({ metadata: metadata2 }) => {
+        return { path, metadata: metadata2 };
       }));
     }
     load2 = async ({ page }) => {
@@ -5405,35 +5274,35 @@ var init_blog_105a801e = __esm({
       $$result.css.add(css8);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle5, metaDescription: metaDescription5 }, {}, {})}
 
-    <main class="${"container svelte-7iocq3"}"><div class="${"svelte-7iocq3"}"><h1 class="${"svelte-7iocq3"}">All posts</h1></div>
-        <div class="${"wrapper svelte-7iocq3"}">${validate_component(Posts, "Posts").$$render($$result, { dateSortedPosts }, {}, {})} 
-            <div class="${"background svelte-7iocq3"}"></div></div>
+    <main class="${"container svelte-1n3ajv8"}"><div class="${"svelte-1n3ajv8"}"><h1 class="${"svelte-1n3ajv8"}">All posts</h1></div>
+        <div class="${"wrapper svelte-1n3ajv8"}">${validate_component(Posts, "Posts").$$render($$result, { dateSortedPosts }, {}, {})} 
+            <div class="${"background svelte-1n3ajv8"}"></div></div>
     </main>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/_tag_-26a98d04.js
-var tag_26a98d04_exports = {};
-__export(tag_26a98d04_exports, {
+// .svelte-kit/output/server/chunks/_tag_-6f15ea64.js
+var tag_6f15ea64_exports = {};
+__export(tag_6f15ea64_exports, {
   default: () => U5Btagu5D,
   load: () => load3
 });
 var css9, allPosts3, body3, load3, metaDescription6, U5Btagu5D;
-var init_tag_26a98d04 = __esm({
-  ".svelte-kit/output/server/chunks/_tag_-26a98d04.js"() {
+var init_tag_6f15ea64 = __esm({
+  ".svelte-kit/output/server/chunks/_tag_-6f15ea64.js"() {
     init_shims();
-    init_app_1e7b7e50();
-    init_Seo_4573ac63();
+    init_app_d99cce65();
+    init_Seo_5987122c();
     css9 = {
-      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:#faffff;--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-1x8gbfb.svelte-1x8gbfb,.svelte-1x8gbfb.svelte-1x8gbfb::before,.svelte-1x8gbfb.svelte-1x8gbfb::after{box-sizing:border-box}.svelte-1x8gbfb.svelte-1x8gbfb{margin:0}p.svelte-1x8gbfb.svelte-1x8gbfb,h1.svelte-1x8gbfb.svelte-1x8gbfb,h3.svelte-1x8gbfb.svelte-1x8gbfb{overflow-wrap:break-word}.blog-parent.svelte-1x8gbfb.svelte-1x8gbfb{display:grid;grid-auto-flow:dense;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-1x8gbfb.svelte-1x8gbfb{grid-template-columns:1fr 1fr}}.divlink.svelte-1x8gbfb.svelte-1x8gbfb{height:100%;text-decoration:none;color:inherit}.divlink.svelte-1x8gbfb .date.svelte-1x8gbfb{opacity:0.5;font-size:1rem}.divlink.svelte-1x8gbfb:hover:hover h3.svelte-1x8gbfb{color:var(--primary-300)}.divlink.svelte-1x8gbfb:hover:hover .blogPost.svelte-1x8gbfb{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-1x8gbfb.svelte-1x8gbfb{overflow:hidden;background:rgba(255, 255, 255, 0.5);border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-1x8gbfb p.svelte-1x8gbfb{padding:0;margin:0}.blogPost.svelte-1x8gbfb h3.svelte-1x8gbfb{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.container.svelte-1x8gbfb.svelte-1x8gbfb{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}.container.svelte-1x8gbfb .title.svelte-1x8gbfb{display:grid;align-items:center}.container.svelte-1x8gbfb .title h1.svelte-1x8gbfb{text-align:center}.wrapper.svelte-1x8gbfb.svelte-1x8gbfb{margin-top:calc(var(--spacing-unit) * 3)}.background.svelte-1x8gbfb.svelte-1x8gbfb{width:100vw;height:calc(100% + 25rem);top:-15rem;z-index:-1;position:fixed;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:var(--primary-500);background-size:cover;background-position:center}",
+      code: ":root{--gray-100:hsl(176, 5%, 10%);--gray-200:hsl(176, 5%, 25%);--gray-300:hsl(176, 5%, 46%);--gray-350:#949e9d;--gray-400:#bfd9d7;--gray-500:hsl(180, 10%, 98%);--white:hsl(0, 0%, 100%);--primary-100:#003330;--primary-200:#008077;--primary-300:#00bdb0;--primary-325:#53c6be;--primary-350:hsl(176, 100%, 50%);--primary-400:#d9f7f5;--primary-500:#ebfffe;--secondary-100:hsl(19, 100%, 15%);--secondary-200:hsl(19, 100%, 30%);--secondary-300:#ff5100;--secondary-350:hsl(19, 100%, 60%);--secondary-400:#FFA076;--secondary-500:#FFF1EB;--secondary-300-transparent50:hsla(326, 100%, 50%, 0.5);--shadow-color:0deg 0% 70%;--shadow-elevation-low:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        0.6px 0.6px 1.3px hsl(var(--shadow-color) / 0.18),\n        1.2px 1.1px 2.4px hsl(var(--shadow-color) / 0.35);--shadow-elevation-medium:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.47),\n    0.9px 1px 1.4px -1.1px hsl(var(--shadow-color) / 0.42),\n    2.6px 2.7px 3.8px -2.2px hsl(var(--shadow-color) / 0.36),\n    6.7px 7.1px 9.9px -3.2px hsl(var(--shadow-color) / 0.31);--shadow-elevation-mediumhigh:0.3px 0.3px 0.6px hsl(var(--shadow-color) / 0),\n        1.5px 1.4px 3.1px hsl(var(--shadow-color) / 0.14),\n        2.9px 2.8px 6px hsl(var(--shadow-color) / 0.28),\n        5.9px 5.7px 12.3px hsl(var(--shadow-color) / 0.42);--shadow-elevation-high:0.3px 0.4px 0.5px hsl(var(--shadow-color) / 0.39),\n        1.2px 1.2px 1.7px -0.5px hsl(var(--shadow-color) / 0.36),\n        2.3px 2.4px 3.2px -1px hsl(var(--shadow-color) / 0.33),\n        4.2px 4.2px 5.8px -1.5px hsl(var(--shadow-color) / 0.3),\n        7.2px 7.4px 10.1px -2px hsl(var(--shadow-color) / 0.28),\n        12px 12.3px 16.8px -2.5px hsl(var(--shadow-color) / 0.25),\n        19.1px 19.5px 26.6px -3px hsl(var(--shadow-color) / 0.22),\n        28.8px 29.4px 40.1px -3.5px hsl(var(--shadow-color) / 0.19);--spacing-unit:1rem;--corner-unit:10px}.svelte-zb1sg8.svelte-zb1sg8,.svelte-zb1sg8.svelte-zb1sg8::before,.svelte-zb1sg8.svelte-zb1sg8::after{box-sizing:border-box}.svelte-zb1sg8.svelte-zb1sg8{margin:0}p.svelte-zb1sg8.svelte-zb1sg8,h1.svelte-zb1sg8.svelte-zb1sg8,h3.svelte-zb1sg8.svelte-zb1sg8{overflow-wrap:break-word}.blog-parent.svelte-zb1sg8.svelte-zb1sg8{display:grid;grid-auto-flow:dense;grid-gap:1.5rem;justify-content:stretch;align-content:stretch;grid-template-columns:1fr;margin-bottom:calc(var(--spacing-unit) * 2)}@media screen and (min-width: 900px){.blog-parent.svelte-zb1sg8.svelte-zb1sg8{grid-template-columns:1fr 1fr}}.divlink.svelte-zb1sg8.svelte-zb1sg8{height:100%;text-decoration:none;color:inherit}.divlink.svelte-zb1sg8 .date.svelte-zb1sg8{opacity:0.5;font-size:1rem}.divlink.svelte-zb1sg8:hover:hover h3.svelte-zb1sg8{color:var(--primary-300)}.divlink.svelte-zb1sg8:hover:hover .blogPost.svelte-zb1sg8{transform:translate(-0.05rem, -0.05rem);transition:0.1s ease;box-shadow:var(--shadow-elevation-mediumhigh)}.blogPost.svelte-zb1sg8.svelte-zb1sg8{overflow:hidden;background:rgba(255, 255, 255, 0.5);border-radius:var(--corner-unit);position:relative;box-shadow:var(--shadow-elevation-medium);padding:var(--spacing-unit)}.blogPost.svelte-zb1sg8 p.svelte-zb1sg8{padding:0;margin:0}.blogPost.svelte-zb1sg8 h3.svelte-zb1sg8{padding:0;margin:var(--spacing-unit) 0 var(--spacing-unit)}.container.svelte-zb1sg8.svelte-zb1sg8{max-width:1300px;margin:auto;position:relative;padding:0 var(--spacing-unit) 0}.container.svelte-zb1sg8 .title.svelte-zb1sg8{display:grid;align-items:center}.container.svelte-zb1sg8 .title h1.svelte-zb1sg8{text-align:center}.wrapper.svelte-zb1sg8.svelte-zb1sg8{margin-top:calc(var(--spacing-unit) * 3)}.background.svelte-zb1sg8.svelte-zb1sg8{width:100vw;height:calc(100% + 25rem);top:-15rem;z-index:-1;position:fixed;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;background:var(--primary-500);background-size:cover;background-position:center}",
       map: null
     };
-    allPosts3 = { "../blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_83c7a719(), fifthpost_83c7a719_exports)), "../blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_647dae41(), firstpost_647dae41_exports)), "../blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_1525e3f8(), fourthpost_1525e3f8_exports)), "../blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_cf214ac3(), secondpost_cf214ac3_exports)), "../blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d642c156(), thirdpost_d642c156_exports)) };
+    allPosts3 = { "../blog/globalstyles.md": () => Promise.resolve().then(() => (init_globalstyles_73c0437e(), globalstyles_73c0437e_exports)) };
     body3 = [];
     for (let path in allPosts3) {
-      body3.push(allPosts3[path]().then(({ metadata: metadata6 }) => {
-        return { path, metadata: metadata6 };
+      body3.push(allPosts3[path]().then(({ metadata: metadata2 }) => {
+        return { path, metadata: metadata2 };
       }));
     }
     load3 = async ({ page }) => {
@@ -5456,22 +5325,22 @@ var init_tag_26a98d04 = __esm({
       $$result.css.add(css9);
       return `${validate_component(Seo, "Seo").$$render($$result, { pageTitle: pageTitle6, metaDescription: metaDescription6 }, {}, {})}
 
-<main class="${"container svelte-1x8gbfb"}"><div class="${"title svelte-1x8gbfb"}"><h1 class="${"svelte-1x8gbfb"}">${escape(tag.replace(/^\w/, (c) => c.toUpperCase()))}</h1></div>
-    <div class="${"wrapper svelte-1x8gbfb"}"><div class="${"blog-parent svelte-1x8gbfb"}">${each(filteredPosts, ({ path, metadata: { title, date, snippet } }) => `<a class="${"divlink svelte-1x8gbfb"}"${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-1x8gbfb"}"><h3 class="${"svelte-1x8gbfb"}">${escape(title)}</h3>
-                        <span class="${"date svelte-1x8gbfb"}">${escape(new Date(date).toLocaleDateString("en-us", {
+<main class="${"container svelte-zb1sg8"}"><div class="${"title svelte-zb1sg8"}"><h1 class="${"svelte-zb1sg8"}">${escape(tag.replace(/^\w/, (c) => c.toUpperCase()))}</h1></div>
+    <div class="${"wrapper svelte-zb1sg8"}"><div class="${"blog-parent svelte-zb1sg8"}">${each(filteredPosts, ({ path, metadata: { title, date, snippet } }) => `<a class="${"divlink svelte-zb1sg8"}"${add_attribute("href", `/blog/${path.replace(".md", "")}`, 0)}><div class="${"blogPost svelte-zb1sg8"}"><h3 class="${"svelte-zb1sg8"}">${escape(title)}</h3>
+                        <span class="${"date svelte-zb1sg8"}">${escape(new Date(date).toLocaleDateString("en-us", {
         year: "numeric",
         month: "long",
         day: "numeric"
       }))}</span>
-                        <p class="${"svelte-1x8gbfb"}">${escape(snippet)}</p></div>
+                        <p class="${"svelte-zb1sg8"}">${escape(snippet)}</p></div>
                 </a>`)}</div>
-        <div class="${"background svelte-1x8gbfb"}"></div></div>
+        <div class="${"background svelte-zb1sg8"}"></div></div>
 </main>`;
     });
   }
 });
 
-// .svelte-kit/output/server/chunks/app-1e7b7e50.js
+// .svelte-kit/output/server/chunks/app-d99cce65.js
 function get_single_valued_header(headers, key) {
   const value = headers[key];
   if (Array.isArray(value)) {
@@ -6759,9 +6628,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-2cbc4167.js",
+      file: assets + "/_app/start-364cdad2.js",
       css: [assets + "/_app/assets/start-61d1577b.css"],
-      js: [assets + "/_app/start-2cbc4167.js", assets + "/_app/chunks/vendor-4f02d0e1.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
+      js: [assets + "/_app/start-364cdad2.js", assets + "/_app/chunks/vendor-4f02d0e1.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
     },
     fetched: void 0,
     floc: false,
@@ -6805,8 +6674,8 @@ function render(request, {
   return respond({ ...request, host }, options, { prerender });
 }
 var __accessCheck, __privateGet, __privateAdd, __privateSet, _map, absolute, scheme, chars, unsafeChars, reserved, escaped$1, objectProtoOwnPropertyNames, subscriber_queue, escape_json_string_in_html_dict, escape_html_attr_dict, s$1, s, ReadOnlyFormData, current_component, escaped, missing_component, on_destroy, css10, Root, base, assets, user_hooks, template, options, default_settings, d, empty, manifest, get_hooks, module_lookup, metadata_lookup;
-var init_app_1e7b7e50 = __esm({
-  ".svelte-kit/output/server/chunks/app-1e7b7e50.js"() {
+var init_app_d99cce65 = __esm({
+  ".svelte-kit/output/server/chunks/app-d99cce65.js"() {
     init_shims();
     __accessCheck = (obj, member, msg) => {
       if (!member.has(obj))
@@ -6973,6 +6842,7 @@ ${``}`;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<link href="prism.css" rel="stylesheet" />
 		<link rel='stylesheet' href='styles/styles.scss'>
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -6985,7 +6855,7 @@ ${``}`;
     d = (s2) => s2.replace(/%23/g, "#").replace(/%3[Bb]/g, ";").replace(/%2[Cc]/g, ",").replace(/%2[Ff]/g, "/").replace(/%3[Ff]/g, "?").replace(/%3[Aa]/g, ":").replace(/%40/g, "@").replace(/%26/g, "&").replace(/%3[Dd]/g, "=").replace(/%2[Bb]/g, "+").replace(/%24/g, "$");
     empty = () => ({});
     manifest = {
-      assets: [{ "file": ".DS_Store", "size": 6148, "type": null }, { "file": "artComputerman.svg", "size": 35544, "type": "image/svg+xml" }, { "file": "artError-2.svg", "size": 18616, "type": "image/svg+xml" }, { "file": "artError-3.svg", "size": 18615, "type": "image/svg+xml" }, { "file": "artError.svg", "size": 67186, "type": "image/svg+xml" }, { "file": "artMountain.svg", "size": 30329, "type": "image/svg+xml" }, { "file": "background-stackedwaves.svg", "size": 4914, "type": "image/svg+xml" }, { "file": "blob-scene.svg", "size": 4970, "type": "image/svg+xml" }, { "file": "favicon/android-chrome-192x192.png", "size": 7714, "type": "image/png" }, { "file": "favicon/android-chrome-512x512.png", "size": 25407, "type": "image/png" }, { "file": "favicon/apple-touch-icon.png", "size": 7004, "type": "image/png" }, { "file": "favicon/favicon-16x16.png", "size": 525, "type": "image/png" }, { "file": "favicon/favicon-32x32.png", "size": 1005, "type": "image/png" }, { "file": "favicon/favicon.ico", "size": 15406, "type": "image/vnd.microsoft.icon" }, { "file": "favicon/site.webmanifest", "size": 263, "type": "application/manifest+json" }, { "file": "footer-waveline.svg", "size": 584, "type": "image/svg+xml" }, { "file": "illustration-0arrow.svg", "size": 2484, "type": "image/svg+xml" }, { "file": "illustration-3scribbles.svg", "size": 11862, "type": "image/svg+xml" }, { "file": "illustration-crosses.svg", "size": 16139, "type": "image/svg+xml" }, { "file": "illustration-shapes.svg", "size": 13936, "type": "image/svg+xml" }, { "file": "layered-waves.svg", "size": 4056, "type": "image/svg+xml" }, { "file": "man.svg", "size": 18398, "type": "image/svg+xml" }, { "file": "postBackground-1.svg", "size": 687, "type": "image/svg+xml" }, { "file": "postBackground-2.svg", "size": 678, "type": "image/svg+xml" }, { "file": "postBackground-3.svg", "size": 689, "type": "image/svg+xml" }, { "file": "postBackground-4.svg", "size": 570, "type": "image/svg+xml" }],
+      assets: [{ "file": ".DS_Store", "size": 6148, "type": null }, { "file": "artComputerman.svg", "size": 35544, "type": "image/svg+xml" }, { "file": "artError-2.svg", "size": 18616, "type": "image/svg+xml" }, { "file": "artError-3.svg", "size": 18615, "type": "image/svg+xml" }, { "file": "artError.svg", "size": 67186, "type": "image/svg+xml" }, { "file": "artMountain.svg", "size": 30329, "type": "image/svg+xml" }, { "file": "background-stackedwaves.svg", "size": 4914, "type": "image/svg+xml" }, { "file": "blob-scene.svg", "size": 4970, "type": "image/svg+xml" }, { "file": "favicon/android-chrome-192x192.png", "size": 7714, "type": "image/png" }, { "file": "favicon/android-chrome-512x512.png", "size": 25407, "type": "image/png" }, { "file": "favicon/apple-touch-icon.png", "size": 7004, "type": "image/png" }, { "file": "favicon/favicon-16x16.png", "size": 525, "type": "image/png" }, { "file": "favicon/favicon-32x32.png", "size": 1005, "type": "image/png" }, { "file": "favicon/favicon.ico", "size": 15406, "type": "image/vnd.microsoft.icon" }, { "file": "favicon/site.webmanifest", "size": 263, "type": "application/manifest+json" }, { "file": "footer-waveline.svg", "size": 584, "type": "image/svg+xml" }, { "file": "illustration-0arrow.svg", "size": 2484, "type": "image/svg+xml" }, { "file": "illustration-3scribbles.svg", "size": 11862, "type": "image/svg+xml" }, { "file": "illustration-crosses.svg", "size": 16139, "type": "image/svg+xml" }, { "file": "illustration-shapes.svg", "size": 13936, "type": "image/svg+xml" }, { "file": "layered-waves.svg", "size": 4056, "type": "image/svg+xml" }, { "file": "link.svg", "size": 1165, "type": "image/svg+xml" }, { "file": "man.svg", "size": 18398, "type": "image/svg+xml" }, { "file": "postBackground-1.svg", "size": 687, "type": "image/svg+xml" }, { "file": "postBackground-2.svg", "size": 678, "type": "image/svg+xml" }, { "file": "postBackground-3.svg", "size": 689, "type": "image/svg+xml" }, { "file": "postBackground-4.svg", "size": 570, "type": "image/svg+xml" }],
       layout: "src/routes/__layout.svelte",
       error: "src/routes/__error.svelte",
       routes: [
@@ -7012,37 +6882,9 @@ ${``}`;
         },
         {
           type: "page",
-          pattern: /^\/blog\/fourthpost\/?$/,
+          pattern: /^\/blog\/globalstyles\/?$/,
           params: empty,
-          a: ["src/routes/__layout.svelte", "src/routes/blog/fourthpost.md"],
-          b: ["src/routes/__error.svelte"]
-        },
-        {
-          type: "page",
-          pattern: /^\/blog\/secondpost\/?$/,
-          params: empty,
-          a: ["src/routes/__layout.svelte", "src/routes/blog/secondpost.md"],
-          b: ["src/routes/__error.svelte"]
-        },
-        {
-          type: "page",
-          pattern: /^\/blog\/fifthpost\/?$/,
-          params: empty,
-          a: ["src/routes/__layout.svelte", "src/routes/blog/fifthpost.md"],
-          b: ["src/routes/__error.svelte"]
-        },
-        {
-          type: "page",
-          pattern: /^\/blog\/firstpost\/?$/,
-          params: empty,
-          a: ["src/routes/__layout.svelte", "src/routes/blog/firstpost.md"],
-          b: ["src/routes/__error.svelte"]
-        },
-        {
-          type: "page",
-          pattern: /^\/blog\/thirdpost\/?$/,
-          params: empty,
-          a: ["src/routes/__layout.svelte", "src/routes/blog/thirdpost.md"],
+          a: ["src/routes/__layout.svelte", "src/routes/blog/globalstyles.md"],
           b: ["src/routes/__error.svelte"]
         },
         {
@@ -7068,20 +6910,16 @@ ${``}`;
       externalFetch: hooks.externalFetch || fetch
     });
     module_lookup = {
-      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_2fe3a48e(), layout_2fe3a48e_exports)),
-      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_83fa3836(), error_83fa3836_exports)),
-      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_e0b2f05f(), index_e0b2f05f_exports)),
-      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_68f24b74(), calculator_68f24b74_exports)),
-      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_b3a04bc4(), index_b3a04bc4_exports)),
-      "src/routes/blog/fourthpost.md": () => Promise.resolve().then(() => (init_fourthpost_1525e3f8(), fourthpost_1525e3f8_exports)),
-      "src/routes/blog/secondpost.md": () => Promise.resolve().then(() => (init_secondpost_cf214ac3(), secondpost_cf214ac3_exports)),
-      "src/routes/blog/fifthpost.md": () => Promise.resolve().then(() => (init_fifthpost_83c7a719(), fifthpost_83c7a719_exports)),
-      "src/routes/blog/firstpost.md": () => Promise.resolve().then(() => (init_firstpost_647dae41(), firstpost_647dae41_exports)),
-      "src/routes/blog/thirdpost.md": () => Promise.resolve().then(() => (init_thirdpost_d642c156(), thirdpost_d642c156_exports)),
-      "src/routes/blog.svelte": () => Promise.resolve().then(() => (init_blog_105a801e(), blog_105a801e_exports)),
-      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_26a98d04(), tag_26a98d04_exports))
+      "src/routes/__layout.svelte": () => Promise.resolve().then(() => (init_layout_aed8435b(), layout_aed8435b_exports)),
+      "src/routes/__error.svelte": () => Promise.resolve().then(() => (init_error_d033120f(), error_d033120f_exports)),
+      "src/routes/index.svelte": () => Promise.resolve().then(() => (init_index_e81a121b(), index_e81a121b_exports)),
+      "src/routes/calculator.svelte": () => Promise.resolve().then(() => (init_calculator_0ea26754(), calculator_0ea26754_exports)),
+      "src/routes/flowcharts/schildklier/index.svelte": () => Promise.resolve().then(() => (init_index_87f6c83c(), index_87f6c83c_exports)),
+      "src/routes/blog/globalstyles.md": () => Promise.resolve().then(() => (init_globalstyles_73c0437e(), globalstyles_73c0437e_exports)),
+      "src/routes/blog.svelte": () => Promise.resolve().then(() => (init_blog_8b9d2f00(), blog_8b9d2f00_exports)),
+      "src/routes/tags/[tag].svelte": () => Promise.resolve().then(() => (init_tag_6f15ea64(), tag_6f15ea64_exports))
     };
-    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-655e9f57.js", "css": ["assets/pages/__layout.svelte-24545bc1.css", "assets/TagCloud-b37cfbaa.css"], "js": ["pages/__layout.svelte-655e9f57.js", "chunks/vendor-4f02d0e1.js", "chunks/TagCloud-58fc4c94.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-142de704.js", "css": ["assets/pages/__error.svelte-83e29f2f.css"], "js": ["pages/__error.svelte-142de704.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a6e95c08.js", "css": ["assets/pages/index.svelte-669c27d0.css", "assets/TagCloud-b37cfbaa.css"], "js": ["pages/index.svelte-a6e95c08.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js", "chunks/TagCloud-58fc4c94.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-66d347d4.js", "css": ["assets/pages/calculator.svelte-7db07683.css"], "js": ["pages/calculator.svelte-66d347d4.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-a0e371dd.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-cf2e6bb3.css"], "js": ["pages/flowcharts/schildklier/index.svelte-a0e371dd.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] }, "src/routes/blog/fourthpost.md": { "entry": "pages/blog/fourthpost.md-2104ae4b.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/fourthpost.md-2104ae4b.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/secondpost.md": { "entry": "pages/blog/secondpost.md-ad3a1065.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/secondpost.md-ad3a1065.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/fifthpost.md": { "entry": "pages/blog/fifthpost.md-acfe72a6.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/fifthpost.md-acfe72a6.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/firstpost.md": { "entry": "pages/blog/firstpost.md-a854f92b.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/firstpost.md-a854f92b.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog/thirdpost.md": { "entry": "pages/blog/thirdpost.md-96264c27.js", "css": ["assets/blog-03e48a3f.css"], "js": ["pages/blog/thirdpost.md-96264c27.js", "chunks/vendor-4f02d0e1.js", "chunks/blog-afd3a347.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog.svelte": { "entry": "pages/blog.svelte-dd40e0ca.js", "css": ["assets/pages/blog.svelte-4008adec.css"], "js": ["pages/blog.svelte-dd40e0ca.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-39e13c62.js", "css": ["assets/pages/tags/_tag_.svelte-d83a3544.css"], "js": ["pages/tags/_tag_.svelte-39e13c62.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] } };
+    metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-f83dce7f.js", "css": ["assets/pages/__layout.svelte-6496eb1a.css", "assets/TagCloud-771a47ce.css"], "js": ["pages/__layout.svelte-f83dce7f.js", "chunks/vendor-4f02d0e1.js", "chunks/TagCloud-26f7f495.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-d7150dcf.js", "css": ["assets/pages/__error.svelte-b2fd98c0.css"], "js": ["pages/__error.svelte-d7150dcf.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-9e8e8180.js", "css": ["assets/pages/index.svelte-6d76eec9.css", "assets/TagCloud-771a47ce.css"], "js": ["pages/index.svelte-9e8e8180.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js", "chunks/TagCloud-26f7f495.js"], "styles": [] }, "src/routes/calculator.svelte": { "entry": "pages/calculator.svelte-9e540bcb.js", "css": ["assets/pages/calculator.svelte-4ef0b981.css"], "js": ["pages/calculator.svelte-9e540bcb.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] }, "src/routes/flowcharts/schildklier/index.svelte": { "entry": "pages/flowcharts/schildklier/index.svelte-ee6ef4bc.js", "css": ["assets/pages/flowcharts/schildklier/index.svelte-43213e81.css"], "js": ["pages/flowcharts/schildklier/index.svelte-ee6ef4bc.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] }, "src/routes/blog/globalstyles.md": { "entry": "pages/blog/globalstyles.md-793953de.js", "css": ["assets/pages/blog/globalstyles.md-f14b30b6.css"], "js": ["pages/blog/globalstyles.md-793953de.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/blog.svelte": { "entry": "pages/blog.svelte-e3bf487a.js", "css": ["assets/pages/blog.svelte-7c292d8f.css"], "js": ["pages/blog.svelte-e3bf487a.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js", "chunks/Date-5bcd979e.js"], "styles": [] }, "src/routes/tags/[tag].svelte": { "entry": "pages/tags/_tag_.svelte-76427e78.js", "css": ["assets/pages/tags/_tag_.svelte-42e850b2.css"], "js": ["pages/tags/_tag_.svelte-76427e78.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-4f02d0e1.js", "chunks/Seo-1255c03d.js"], "styles": [] } };
   }
 });
 
@@ -7134,7 +6972,7 @@ function getRawBody(req) {
 
 // .svelte-kit/output/server/app.js
 init_shims();
-init_app_1e7b7e50();
+init_app_d99cce65();
 
 // .svelte-kit/vercel/entry.js
 init();

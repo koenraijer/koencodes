@@ -1,5 +1,5 @@
 <script>
-    let tagArray = ["fun", "career", "tech"]; 
+    let tagArray = ["SvelteKit"]; 
 </script>
 
 <div>

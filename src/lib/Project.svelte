@@ -13,7 +13,7 @@
             </div>
         </div>
         <div>
-            <h3>{title}</h3>
+            <h3>{@html title}</h3>
             <p>{@html description}</p>
         </div>
     </div>
@@ -41,7 +41,14 @@
                         display: block;
                     }
             }
-
+    h3 :global(img) {
+        display: inline;
+        max-height: 0.75rem;
+        margin: 0;
+        padding: 0;
+        transform: translateY(-0.25rem);
+        max-width: 1rem;
+    }
 .divlink {
     text-decoration: none;
     color: inherit;

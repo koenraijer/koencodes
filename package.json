@@ -37,7 +37,9 @@
 		"d3": "^7.1.1",
 		"d3-shape": "^3.0.1",
 		"disable-scroll": "^0.6.0",
+		"highlight.js": "^11.3.1",
 		"node-sass": "^6.0.1",
+		"prismjs": "^1.25.0",
 		"svelte-burger-menu": "^1.0.5"
 	}
 }
