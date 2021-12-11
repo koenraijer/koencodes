@@ -168,7 +168,7 @@
             place-items: center;
         }
         @media screen and (min-width: 1200px) {
-            grid-template-columns: 3fr 1fr;
+            grid-template-columns: 2fr 1fr;
             .grid1-hero {
                 margin: var(--spacing-unit);
                 grid-column: 1/2;

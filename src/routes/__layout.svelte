@@ -5,7 +5,7 @@
 
 </script>
 
-<div class="wrapperForFooter">
+  <div class="wrapperForFooter">
     <div class="container">
       <header>
         <h1 class="sitetitle"><a on:click={open = false} href="/">koen.codes</a></h1>  
@@ -17,7 +17,7 @@
         <slot />
     
     </main>
-</div>
+    
 <div class="footerWrapper">
   <img alt="wavy line to separate content from footer" class="footer-wave" src="../footer-waveline.svg">
   <footer>
@@ -37,6 +37,8 @@
 
   </footer>
 </div>
+</div>
+
 
 
 <style lang="scss">
