@@ -357,7 +357,7 @@ h3 {
     }
     &:after {
         content: '';
-        background: url('../layered-waves.svg');
+        background: url('/layered-waves.svg');
         background-size: cover;
         position: absolute;
         z-index: -1;
