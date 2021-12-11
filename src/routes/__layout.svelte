@@ -6,7 +6,7 @@
     import  "../styles/code.css"
 </script>
 
-  <div class="wrapperForFooter">
+<div class="wrapperForFooter">
     <div class="container">
       <header>
         <h1 class="sitetitle"><a href="/">koen.codes</a></h1>  
@@ -19,25 +19,26 @@
     
     </main>
 
-<div class="footerWrapper">
-  <img alt="wavy line to separate content from footer" class="footer-wave" src="../footer-waveline.svg">
-  <footer>
-    <div>
-      <h3><a href="/">koen.codes</a></h3>
-      <h4>Thanks for reading!</h4>
-    </div>
-    <div>
-      <h3>Links</h3>
-      <h4><a href="/blog">Blog</a></h4>
-      <h4><a href="#projects">Projects</a></h4>
-    </div>
-    <div>
-      <h3>Topics</h3>
-      <TagCloud/>
-    </div>
+  <div class="footerWrapper">
+    <img alt="wavy line to separate content from footer" class="footer-wave" src="../footer-waveline.svg">
+    <footer>
+      <div>
+        <h3><a href="/">koen.codes</a></h3>
+        <h4>Thanks for reading!</h4>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <h4><a href="/blog">Blog</a></h4>
+        <h4><a href="#projects">Projects</a></h4>
+      </div>
+      <div>
+        <h3>Topics</h3>
+        <TagCloud/>
+      </div>
 
-  </footer>
-</div>
+    </footer>
+  </div>
+  
 </div>
 
 
@@ -96,18 +97,18 @@
 
     .wrapperForFooter {
       min-height: calc(100vh - 10rem);
-      margin-bottom: calc(var(--spacing-unit));
+      margin-bottom: 0;
     }
 
     .footerWrapper {
-      height: 12rem;
+      height: 5rem;
       background: transparent;
       width: 100vw;
       left: 50%;
       right: 50%;
       margin-left: -50vw;
       margin-right: -50vw;
-      margin-bottom: -1rem;
+      margin-bottom: 0;
       position: relative;
     }
     footer {
@@ -115,7 +116,7 @@
       div:nth-child(3) {
         display: none;
       }
-      align-items: center;
+      align-items: start;
       justify-items: center;
       grid-gap: var(--spacing-unit);
       grid-template-columns: 1fr 1fr;
@@ -163,7 +164,7 @@
     .footer-wave {
       margin: auto;
       width: 100%;
-      transform: translateY(2rem);
+      transform: translateY(5rem);
     }
 
     a {

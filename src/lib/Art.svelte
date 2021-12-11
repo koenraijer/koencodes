@@ -6,10 +6,10 @@
          transform: rotate(0turn);
       }
       33% {
-         transform: rotate(0.025turn);
+         transform: rotate(0.012turn);
       }
       66% {
-         transform: rotate(-0.025turn);
+         transform: rotate(-0.012turn);
       }
 
    }
@@ -22,9 +22,9 @@
       @media screen and (max-width: 600px) {
          width: 15em;
       }
-      &:hover {
-         animation: wiggle 2000ms ease-in-out infinite alternate;
-      }
+      animation: wiggle 500ms;
+      animation-delay: 2250ms;
+      animation-fill-mode: both;
    }
 </style>
 

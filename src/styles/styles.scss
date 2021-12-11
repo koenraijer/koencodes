@@ -14,6 +14,7 @@
     --primary-300: #00bdb0;
     --primary-325: #53c6be;
     --primary-350: hsl(176, 100%, 50%);
+    --primary-375: hsla(176, 65%, 80%, 1);
     --primary-400: #d9f7f5;
     --primary-500: #ebfffe;
 
@@ -24,7 +25,14 @@
     --secondary-400: #FFA076;
     --secondary-500: #FFF1EB;
 
-    --secondary-300-transparent50: hsla(326, 100%, 50%, 0.5);
+    --primary-100-transp: #003330;
+    --primary-200-transp: #008077;
+    --primary-300-transp: hsla(176, 100%, 37%, 0.5);
+    --primary-325-transp: #53c6be;
+    --primary-350-transp: hsla(176, 100%, 50%, 0.7);
+    --primary-375-transp: hsla(176, 65%, 80%, 0.7);
+    --primary-400-transp: hsla(176, 65%, 91%, 0.7);
+    --primary-500-transp: hsla(177, 100%, 96%, 0.7);
 
     // SHADOWS
     --shadow-color: 0deg 0% 70%;

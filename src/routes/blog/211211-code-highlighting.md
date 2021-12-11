@@ -10,7 +10,7 @@ layout: blog
 
 ## Layouts
 
-If you've ever worked with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>, you'll probably be familiar already with the way MDsveX layouts work. 
+If you've ever worked with <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>, you're probably already familiar with the way MDsveX layouts work. 
 1. Create a layout file with a `<slot>` element where the Markdown comes. 
 2. Reference the layout file in the frontmatter of your `.md` file. 
 

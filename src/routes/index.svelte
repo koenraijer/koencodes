@@ -63,27 +63,52 @@
 </script>
 
 <Seo {pageTitle} {metaDescription}/>
-
-<div class="hero-background">
-    <div class="container">
-        <div class="grid1">
-            <div class="grid1-art">
-                <Art />
-            </div>
-            <div class="grid1-hero">
-                <div>
-                    <h2>Hi, I'm Koen!</h2>
-                    <h1>I do some programming in my off-time.</h1>
-                    <h3>I write about web development as if you knew nothing, because neither do I!</h3>
-                    <nav>
-                        <a class="button blogbutton" href="#blogposts">Blog</a>
-                        <a class="button projectsbutton" href="#projects">Projects</a>
-                    </nav>
+<div class="wrapperForHero">
+    <div class="hero-background">
+        <div class="container">
+            <div class="grid1">
+                <div class="grid1-art">
+                    <Art />
                 </div>
-            </div>
-        </div>    
+                <div class="grid1-hero">
+                    <div>
+                        <h2>Hi, I'm Koen!</h2>
+                        <h1>I do some programming in my <br>off-time.</h1>
+                        <h3>I write about web development as if you know nothing, because neither do I!</h3>
+                        <nav>
+                            <a class="button blogbutton" href="#blogposts">Blog</a>
+                            <a class="button projectsbutton" href="#projects">Projects</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>    
+        </div>
     </div>
+    <svg id="visual" viewBox="0 24 150 28" width="1440" height="250" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <defs>
+            <linearGradient id="gradient400" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="100%" style="stop-color:var(--primary-400);stop-opacity: 1;"/>
+                <stop offset="0%" style="stop-color:var(--primary-400);stop-opacity: 0;"/>
+              </linearGradient>
+              <linearGradient id="gradient300" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="100%" style="stop-color:var(--primary-375);stop-opacity: 1;"/>
+                <stop offset="0%" style="stop-color:var(--primary-375);stop-opacity: 0;"/>
+              </linearGradient>
+              <linearGradient id="gradient3" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="var(--primary-400)"/>
+                <stop offset="100%" stop-color="var(--primary-400-transp"/>
+              </linearGradient>
+        </defs>
+            <path fill="url(#gradient400)" id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            <path fill="url(#gradient300)"  id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            <path fill="var(--primary-375-transp)" id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            <path fill="url(#gradient400)" id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            <path fill="var(--primary-375-transp)" id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            <path fill="url(#gradient300)"  id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            <path fill="url(#gradient400)" id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </svg>
 </div>
+
 
 <div class="container">
 <div class="grid2">
@@ -124,6 +149,121 @@
 
 </div>
 <style lang="scss">
+    // HERO ANIMATIONS
+    @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .grid1-hero {
+        h2 {
+            animation: appear 500ms;
+            animation-delay: 100ms;
+            animation-fill-mode: both;
+        }
+        h1 {
+            animation: appear 500ms;
+            animation-delay: 500ms;
+            animation-fill-mode: both;
+        }
+       
+        h3 {
+            animation: appear 500ms;
+            animation-delay: 1000ms;
+            animation-fill-mode: both;
+        }
+
+        nav {
+            a:first-child{
+                animation: appear 500ms;
+                animation-delay: 1500ms;
+                animation-fill-mode: both;
+            }
+            a:nth-child(2){
+                animation: appear 500ms;
+                animation-delay: 1750ms;
+                animation-fill-mode: both;
+            }
+        }
+    }
+    // ------------------
+
+    // WAVES ANIMATIONS
+   
+    @keyframes horizontal-move-fade {
+        0% {
+            transform: translateX(var(--offset));
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+    @keyframes horizontal-move-no-fade {
+        0% {
+            transform: translateX(var(--offset));
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    .wrapperForHero{
+        svg {
+            path:nth-child(1) {
+                --offset: -100%;
+                --duration: 30s;
+            }
+            path:nth-child(2) {
+                --offset: -75%;
+                --duration: 29s;
+            }
+            path:nth-child(3) {
+                --offset: 0%;
+                --duration: 43s;
+            }
+            path:nth-child(4) {
+                --offset: 25%;
+                --duration: 40s;
+            }
+            path:nth-child(5) {
+                --offset: 50%;
+                --duration: 46s;
+            }
+            path:nth-child(6) {
+                --offset: 75%;
+                --duration: 45s;
+                animation: horizontal-move-no-fade var(--duration) infinite linear;
+            }
+            path:nth-child(7) {
+                --offset: 90%;
+                --duration: 50s;
+            }
+            path:nth-child(7) {
+                --offset: 60%;
+                --duration: 80s;
+                animation: horizontal-move-no-fade var(--duration) infinite linear;
+            }
+            path:nth-child(8) {
+                --offset: 50%;
+                --duration: 75s;
+                animation: horizontal-move-no-fade var(--duration) infinite linear;
+            }
+            path {
+                animation: horizontal-move-fade var(--duration) infinite linear;
+                animation-fill-mode: both;
+            }
+        }
+    }
 
     .grid1, .grid2, .grid3 {
         display: grid;
@@ -168,7 +308,10 @@
         @media screen and (min-width: 1200px) {
             grid-template-columns: 2fr 1fr;
             .grid1-hero {
-                margin: var(--spacing-unit);
+                .viewport-toggle {
+                    display: block;
+                }
+                margin: calc(var(--spacing-unit) * 5) var(--spacing-unit) var(--spacing-unit);
                 grid-column: 1/2;
                 grid-row: 1/2;
                 text-align: left;
@@ -273,10 +416,34 @@
   margin-right: -50vw;
 }
 
+.wrapperForHero {
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 0rem;
+    position: relative;
+    svg {
+        transform: rotate(180deg) translateY(4rem);
+        path:nth-child(8) {
+            transform: translateY(8rem);
+        }
+        width: 100vw;
+        height: auto;
+        position: relative;
+        z-index: -1;
+        @media screen and (max-width: 600px) {
+            transform: rotate(180deg) translateY(0rem);
+        }
+        @media screen and (max-width: 900px) {
+            transform: rotate(180deg) translateY(2rem);
+        }
+    }
+}
 .hero-background {
     background: var(--primary-400);
     position: relative;
-    margin-bottom: 12rem;
     width: 100vw;
     position: relative;
     left: 50%;
@@ -292,16 +459,6 @@
         left: 0;
         height: 50vh;
         width: 100vw;
-    }
-    &:after {
-        content: '';
-        background: url('/layered-waves.svg');
-        background-size: cover;
-        position: absolute;
-        z-index: -1;
-        bottom: -20rem;
-        width: 100vw;
-        height: 20rem;
     }
 }
 
