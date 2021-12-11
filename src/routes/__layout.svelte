@@ -21,7 +21,7 @@
     </main>
 </div>
 <div class="footerWrapper">
-  <img class="footer-wave" src="../static/footer-waveline.svg">
+  <img class="footer-wave" src="../footer-waveline.svg">
   <footer>
     <div>
       <h3><a href="/">koen.codes</a></h3>
