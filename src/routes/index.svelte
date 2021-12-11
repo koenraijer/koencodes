@@ -433,9 +433,13 @@
         height: auto;
         position: relative;
         z-index: -1;
+        @media screen and (max-width: 300px) {
+            transform: rotate(180deg) translateY(-4rem);
+        }
         @media screen and (max-width: 600px) {
             transform: rotate(180deg) translateY(0rem);
         }
+        
         @media screen and (max-width: 900px) {
             transform: rotate(180deg) translateY(2rem);
         }
