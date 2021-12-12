@@ -20,7 +20,8 @@
       margin-top: -2rem;
       filter: drop-shadow(var(--shadow-elevation-medium));
       @media screen and (max-width: 600px) {
-         width: 15em;
+         width: 12em;
+         margin: var(--spacing-unit);
       }
       animation: wiggle 500ms;
       animation-delay: 2500ms;

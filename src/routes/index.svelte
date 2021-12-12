@@ -76,7 +76,7 @@
                         <h1>I do some programming in my <span><br></span>off-time.</h1>
                         <h3>I write about web development as if you know nothing, because neither do I!</h3>
                         <nav>
-                            <a class="button blogbutton" href="#blogposts">Blog</a>
+                            <a class="button blogbutton" href="#blog">Blog</a>
                             <a class="button projectsbutton" href="#projects">Projects</a>
                         </nav>
                     </div>
@@ -113,7 +113,7 @@
 <div class="container">
 <div class="grid2">
     <div class="grid2-blog">
-        <h1 id="blogposts" class="header">Recently published</h1>
+        <h1 id="blog" class="header">Recently published</h1>
             <div class="blog-parent">
                 {#each posts.slice(0, 4) as { path, metadata: { title, snippet, date } }}
                     <a class="divlink" href={`${path.replace(".md", "")}`}>
@@ -289,18 +289,19 @@
             text-align: center;
             h1 {
                 font-weight: 600;
+                margin: 0;
                 @media screen and (max-width: 600px) {
                     font-size: 1.8rem;
                 }
                 span {
-                    display: block;
+                    display: inline-block;
                     @media screen and (max-width: 600px) {
                         display: none;
                     }
                 }
             }
             h2 {
-                font-weight: 600;
+                font-weight: 500;
                 color: var(--gray-100);
             }
             h3, h4 {
@@ -325,9 +326,6 @@
         @media screen and (min-width: 1200px) {
             grid-template-columns: 2fr 1fr;
             .grid1-hero {
-                .viewport-toggle {
-                    display: block;
-                }
                 margin: calc(var(--spacing-unit) * 5) var(--spacing-unit) var(--spacing-unit);
                 grid-column: 1/2;
                 grid-row: 1/2;
@@ -536,8 +534,7 @@
         color: white;
     }
     @media screen and (max-width: 500px) {
-        font-size: 1em;
-        margin: var(--spacing-unit) calc(var(--spacing-unit) * 0.5) 0rem
+        margin: var(--spacing-unit) calc(var(--spacing-unit) * 0.75) 0rem
     }
 
 }
@@ -554,10 +551,10 @@
 }
 
 .blogbutton {
-    background: var(--secondary-350);
+    background: var(--secondary-300);
     color: white;
     &:hover {
-        background: var(--secondary-300);
+        background: var(--secondary-350);
         transform: translate(-0.05rem, -0.05rem);
         transition: 0.2s ease-in-out;
     }

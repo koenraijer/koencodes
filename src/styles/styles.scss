@@ -12,7 +12,7 @@
     --primary-100: #003330;
     --primary-200: #008077;
     --primary-300: #00bdb0;
-    --primary-325: #53c6be;
+    --primary-325: hsl(176, 50%, 55%);
     --primary-350: hsl(176, 100%, 50%);
     --primary-375: hsla(176, 65%, 80%, 1);
     --primary-400: #d9f7f5;
@@ -20,8 +20,9 @@
 
     --secondary-100: hsl(19, 100%, 15%);
     --secondary-200: hsl(19, 100%, 30%);
-    --secondary-300: #ff5100;
-    --secondary-350: hsl(19, 100%, 60%);
+    --secondary-300: hsl(19, 100%, 50%);
+    --secondary-325: hsl(19, 70%, 55%);
+    --secondary-350: hsl(19, 100%, 65%);
     --secondary-400: #FFA076;
     --secondary-500: #FFF1EB;
 
