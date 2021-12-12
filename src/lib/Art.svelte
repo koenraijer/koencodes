@@ -23,7 +23,7 @@
          width: 15em;
       }
       animation: wiggle 500ms;
-      animation-delay: 2250ms;
+      animation-delay: 2500ms;
       animation-fill-mode: both;
    }
 </style>

@@ -164,7 +164,7 @@
     .footer-wave {
       margin: auto;
       width: 100%;
-      transform: translateY(5rem);
+      transform: translateY(2rem);
     }
 
     a {

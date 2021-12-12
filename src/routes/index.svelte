@@ -73,7 +73,7 @@
                 <div class="grid1-hero">
                     <div>
                         <h2>Hi, I'm Koen!</h2>
-                        <h1>I do some programming in my <br>off-time.</h1>
+                        <h1>I do some programming in my <span><br></span>off-time.</h1>
                         <h3>I write about web development as if you know nothing, because neither do I!</h3>
                         <nav>
                             <a class="button blogbutton" href="#blogposts">Blog</a>
@@ -159,6 +159,11 @@
         }
     }
 
+    .grid1-art {
+        animation: appear 500ms;
+        animation-delay: 2400ms;
+        animation-fill-mode: both;
+    }
     .grid1-hero {
         h2 {
             animation: appear 500ms;
@@ -271,7 +276,10 @@
         grid-gap: 1.5rem;
         align-content: stretch;
         justify-content: stretch;
-        margin: var(--spacing-unit);
+        margin: 0;
+        @media screen and (min-width: 600px) {
+            margin: var(--spacing-unit);
+        }
     }
 
     .grid1, .grid2 {
@@ -281,6 +289,15 @@
             text-align: center;
             h1 {
                 font-weight: 600;
+                @media screen and (max-width: 600px) {
+                    font-size: 1.8rem;
+                }
+                span {
+                    display: block;
+                    @media screen and (max-width: 600px) {
+                        display: none;
+                    }
+                }
             }
             h2 {
                 font-weight: 600;
@@ -417,31 +434,30 @@
 }
 
 .wrapperForHero {
-    width: 100vw;
+    width: 200vw;
     left: 50%;
     right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-bottom: 0rem;
+    margin: 0 -100vw 0 -100vw;
     position: relative;
-    svg {
-        transform: rotate(180deg) translateY(4rem);
-        path:nth-child(8) {
-            transform: translateY(8rem);
-        }
+    @media screen and (min-width: 1200px) {
         width: 100vw;
+        margin: 0 -50vw 0 -50vw;
+    }
+    @media screen and (min-width: 900px) {
+        width: 150vw;
+        margin: 0 -75vw 0 -75vw;
+    }
+    svg {
+        width: 200vw;
+        transform: rotate(180deg) translateY(2rem);
         height: auto;
         position: relative;
         z-index: -1;
-        @media screen and (max-width: 300px) {
-            transform: rotate(180deg) translateY(-4rem);
+        @media screen and (min-width: 1200px) {
+            width: 100vw;
         }
-        @media screen and (max-width: 600px) {
-            transform: rotate(180deg) translateY(0rem);
-        }
-        
-        @media screen and (max-width: 900px) {
-            transform: rotate(180deg) translateY(2rem);
+        @media screen and (min-width: 900px) {
+            width: 150vw;
         }
     }
 }
@@ -483,6 +499,9 @@
 
 .container {
       max-width: 1300px;
+      @media screen and (max-width: 600px) {
+          max-width: 100vw;
+      }
       margin: auto;
     }
 
