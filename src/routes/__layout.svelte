@@ -61,7 +61,7 @@
         color: var(--primary-100);
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Apple Color Emoji';
         @media screen and (min-width: 400px) {
-          font-sizee: 1.2rem;
+          font-size: 1.2rem;
         }
         @media screen and (min-width: 600px) {
           font-size: 1.5rem;
@@ -69,7 +69,7 @@
     }
 
     .sitetitle {
-      color: var(--primary-200);
+      color: var(--primary-100);
       font-size: 2.7em;
       font-family: 'Poppins', sans-serif;
       a {
@@ -87,7 +87,7 @@
                         left: 0em;
                         width: 100%;
                         height: 0.1em;
-                        background: var(--primary-200);
+                        background: var(--primary-100);
                     }
                     &:hover:before{
                         display: block;

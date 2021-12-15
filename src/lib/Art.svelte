@@ -15,19 +15,19 @@
    }
 
    img {
-      width: 14em;
+      width: 10em;
       height: auto;
       margin-top: 0;
       filter: drop-shadow(var(--shadow-elevation-medium));
       @media screen and (max-width: 600px) {
-         width: 8em;
+         width: 6em;
          margin: var(--spacing-unit);
       }
       @media screen and (max-width: 900px) {
-         width: 11em;
+         width: 8em;
       }
       animation: wiggle 500ms;
-      animation-delay: 2500ms;
+      animation-delay: 500ms;
       animation-fill-mode: both;
    }
 </style>
