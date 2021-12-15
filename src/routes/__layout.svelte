@@ -1,9 +1,9 @@
 <script lang="ts">
-    import TagCloud from '$lib/TagCloud.svelte';
     
     export let open = false;
 
     import  "../styles/code.css"
+
 </script>
 
 <div class="wrapperForFooter">
@@ -11,9 +11,6 @@
       <header>
         <div>
           <h1 class="sitetitle"><a href="/">koen codes</a></h1>  
-        </div>
-        <div>
-          <a href="mailto:koen@&#9728;&#65039;.gg">koen@&#9728;&#65039;.gg</a>
         </div>
       </header>
     </div>
@@ -30,6 +27,7 @@
       <div>
         <h3><a href="/">koen.codes</a></h3>
         <h4>Thanks for reading!</h4>
+        <span><b>Contact: </b><a href="mailto:koen@&#9728;&#65039;.gg">koen@&#9728;&#65039;.gg</a></span>
       </div>
       <div>
         <h3>Links</h3>
@@ -166,6 +164,11 @@
       div:nth-child(3) {
         display: none;
       }
+      div:first-child {
+        span {
+          display: inline;
+        }
+      }
       align-items: start;
       justify-items: center;
       grid-gap: var(--spacing-unit);
@@ -175,6 +178,11 @@
         div:nth-child(3) {
           display: block;
         }
+        div:first-child {
+        span {
+          display: none;
+        }
+      }
       }
 
       height: 10rem;
