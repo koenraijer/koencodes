@@ -36,13 +36,6 @@
 
     let pageTitle = "interactive flowchart for diagnosing thyroid disease"
     let metaDescription = "An interactive flowchart for diagnosing thyroid disease, adapted from a guideline by the Dutch Association of General Practitioners."
-
-    function pageScroll() {
-    	window.scrollBy(0,50); // horizontal and vertical scroll increments
-    	setTimeout('pageScroll()',100); // scrolls every 100 milliseconds
-    }
-
-    let scroller = pageScroll();
 </script>
 
 <Seo {pageTitle}{metaDescription}/>
@@ -50,7 +43,7 @@
 <p><i>This interactive flowchart is adapted from the <a target="_blank" rel="noopener" href="https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie">NHG-Standaard Schildklieraandoeningen</a>, and specifically from <a href="https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png">this flowchart</a>. I might have made mistakes so plz don't use it.</i></p>
 <p style="padding-bottom: 0.5rem;">Dit interactieve stroomdiagram is een aanpassing van de <a target="_blank" rel="noopener" href="https://richtlijnen.nhg.org/standaarden/schildklieraandoeningen#samenvatting-richtlijnen-beleid-bij-hyperthyreodie">NHG-Standaard Schildklieraandoeningen</a>, en specifiek van <a href="https://richtlijnen.nhg.org/files/2021-06/M31_juli_2013_2.png">dit stroomdiagram</a>. Er kunnen zeker nog fouten in zitten!</p>
 
-<button on:click={() => (start = true)} on:click={scroller}>Start beslisboom</button>
+<button on:click={() => (start = true)}>Start beslisboom</button>
 {#if start }
     <p>Is het TSH verhoogd, verlaagd of normaal?</p>
     <button on:click={() => (tsh = 1)}>Verhoogd</button>

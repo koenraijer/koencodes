@@ -73,7 +73,7 @@
                 <div class="grid1-hero">
                     <div>
                         <h2>Hi, I'm Koen!</h2>
-                        <h1>I do some programming in my <span><br></span>off-time.</h1>
+                        <h1>I do some programming in my <br>off-time.</h1>
                         <h3>I write about web development as if you know nothing, because neither do I!</h3>
                         <nav>
                             <a class="button blogbutton" href="#blog">Blog</a>
@@ -110,7 +110,7 @@
     </div> 
 
     <div class="grid2-tags">
-        <h2 id="tags" class="header">Explore topics</h2>
+        <h1 id="tags" class="header">Explore topics</h1>
         <TagCloud/>
         
     </div>  
@@ -248,12 +248,6 @@
                     font-size: 1.8rem;
                 }
                 margin: 0;
-                span {
-                    display: inline;
-                    @media screen and (max-width: 700px) {
-                        display: none;
-                    }
-                }
             }
             h2 {
                 font-weight: 500;
@@ -448,15 +442,7 @@
 
 .header {
     margin-left: var(--spacing-unit);
-}
-
-#blogposts {
-    @media screen and (min-width: 900px) {
-        margin-left: -0.5rem;
-    }
-}
-#tags {
-    margin-left: 0;
+    margin-bottom: var(--spacing-unit);
 }
 
 // BUTTONS 

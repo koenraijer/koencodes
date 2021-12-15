@@ -18,10 +18,8 @@
       width: 10em;
       height: auto;
       margin-top: 0;
-      filter: drop-shadow(var(--shadow-elevation-medium));
       @media screen and (max-width: 600px) {
          width: 6em;
-         margin: var(--spacing-unit);
       }
       @media screen and (max-width: 900px) {
          width: 8em;
