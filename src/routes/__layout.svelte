@@ -37,8 +37,8 @@
         <h4><a href="#projects">Projects</a></h4>
       </div>
       <div>
-        <h3>Topics</h3>
-        <TagCloud/>
+        <h3>Contact</h3>
+        <a href="mailto:koen@&#9728;&#65039;.gg">koen@&#9728;&#65039;.gg</a>
       </div>
 
     </footer>
