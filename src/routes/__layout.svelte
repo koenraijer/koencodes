@@ -12,12 +12,9 @@
         <div>
           <h1 class="sitetitle"><a href="/">koen codes</a></h1>  
         </div>
-        <!--
         <div>
           <a href="mailto:koen@&#9728;&#65039;.gg">koen@&#9728;&#65039;.gg</a>
-          <a target="_blank" rel="noopener" href="https://www.koen1.eth">koen1.eth</a>
         </div>
-        -->
       </header>
     </div>
     
@@ -106,6 +103,40 @@
     header {
       margin-top: var(--spacing-unit);
       position: relative;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      align-items: center;
+      div:first-child{
+        justify-self: start;
+        align-items: center;
+      }
+      div:nth-child(2){
+        justify-self: end;
+        display: grid;
+        align-items: center;
+        a {
+        position: relative;
+        color: var(--primary-100);
+        font-weight: 500;
+        text-decoration: none;
+        width: 100%;
+        &:before {
+            z-index: -100;
+            content: '';
+            display: none;
+            position: absolute;
+            bottom: -0.1em;
+            left: 0em;
+            width: 100%;
+            height: 0.1em;
+            background: var(--primary-100);
+        }
+        &:hover:before{
+            display: block;
+        }
+        }
+      }
+
     }
 
     .container {
