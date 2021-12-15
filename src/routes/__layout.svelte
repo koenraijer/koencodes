@@ -9,7 +9,15 @@
 <div class="wrapperForFooter">
     <div class="container">
       <header>
-        <h1 class="sitetitle"><a href="/">koen.codes</a></h1>  
+        <div>
+          <h1 class="sitetitle"><a href="/">koen codes</a></h1>  
+        </div>
+        <!--
+        <div>
+          <a href="mailto:koen@&#9728;&#65039;.gg">koen@&#9728;&#65039;.gg</a>
+          <a target="_blank" rel="noopener" href="https://www.koen1.eth">koen1.eth</a>
+        </div>
+        -->
       </header>
     </div>
     
@@ -51,7 +59,7 @@
         font-size: 1rem;
         overflow-x: hidden;
         color: var(--primary-100);
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Apple Color Emoji';
         @media screen and (min-width: 400px) {
           font-sizee: 1.2rem;
         }
@@ -61,13 +69,15 @@
     }
 
     .sitetitle {
-      color: var(--primary-100);
-      font-size: 2.3em;
+      color: var(--primary-200);
+      font-size: 2.7em;
+      font-family: 'Poppins', sans-serif;
       a {
                     position: relative;
                     font-weight: 700;
                     color: inherit;
                     text-decoration: none;
+                    width: 100%;
                     &:before {
                         z-index: 1;
                         content: '';
@@ -77,16 +87,25 @@
                         left: 0em;
                         width: 100%;
                         height: 0.1em;
-                        background: var(--primary-100);
+                        background: var(--primary-200);
                     }
                     &:hover:before{
                         display: block;
                     }
-            }
+                    img {
+                      max-width: 20rem;
+                      max-height: 5rem;
+                      margin: 0;
+                      padding: 0;
+                      display: inline-block;
+                    }
+     
+      }
     }
 
     header {
       margin-top: var(--spacing-unit);
+      position: relative;
     }
 
     .container {
@@ -188,5 +207,6 @@
             display: block;
         }
       }
+
 </style>
 

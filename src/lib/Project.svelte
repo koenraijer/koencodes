@@ -76,7 +76,7 @@
         }
         .project {
             transform: translate(-0.05rem, -0.05rem);
-            transition: 0.1s ease;
+            transition: var(--transition-time) ease;
             box-shadow: var(--shadow-elevation-mediumhigh);
         }
     }

@@ -1,4 +1,4 @@
-<img alt="man with map on top of 404-error statue trying to figure out what to do" src="artError-3.svg">
+<img alt="man with map on top of 404-error statue trying to figure out what to do" src="Basicvignet.svg">
 
 <style lang="scss">
    @keyframes wiggle {
@@ -15,13 +15,16 @@
    }
 
    img {
-      width: 20em;
+      width: 14em;
       height: auto;
-      margin-top: -2rem;
+      margin-top: 0;
       filter: drop-shadow(var(--shadow-elevation-medium));
       @media screen and (max-width: 600px) {
-         width: 12em;
+         width: 8em;
          margin: var(--spacing-unit);
+      }
+      @media screen and (max-width: 900px) {
+         width: 11em;
       }
       animation: wiggle 500ms;
       animation-delay: 2500ms;
