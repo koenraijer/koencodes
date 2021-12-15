@@ -1,60 +1,18 @@
 <script>
-    import Line from "svelte-chartjs/src/Line.svelte"
-   
-    // Our labels along the x-axis
-    var years = [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050];
-    // For drawing the lines
-    var africa = [86,114,106,106,107,111,133,221,783,2478];
-    var asia = [282,350,411,502,635,809,947,1402,3700,5267];
-    var europe = [168,170,178,190,203,276,408,547,675,734];
-    var latinAmerica = [40,20,10,16,24,38,74,167,508,784];
-    var northAmerica = [6,3,2,2,7,26,82,172,312,433];
+    import Chart from '$lib/Chart.svelte'
 
-    let data = {
-        labels: years,
-        datasets: [
-            {
-                data: africa,
-                label: "Africa",
-                fill: false,
-                borderColor: "blue",
-            },
-            {
-                data: asia,
-                label: "Asia",
-                fill: false,
-                borderColor: "green",
-            },
-            {
-                data: europe,
-                label: "Europe",
-                fill: false,
-                borderColor: "green",
-            },
-            {
-                data: latinAmerica,
-                label: "Latin America",
-                fill: false,
-                borderColor: "red",
-            },
-            {
-                data: northAmerica,
-                label: "North America",
-                fill: false,
-                borderColor: "purple",
-            }
-        ],
-    };
+    let labels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
+    let data = [0, 1, 2, 3, 4, 5];
+
 </script>
 
-<div>
-<Line {data} />
+<div class="container">
+    <input type="number" bind:value={data[0]}>
+    <input type="number" bind:value={data[1]}>
+    <input type="number" bind:value={data[2]}>
+    <input type="number" bind:value={data[3]}>
+    <input type="number" bind:value={data[4]}>
+    <input type="number" bind:value={data[5]}>
+    
+    <Chart {data}{labels}/>
 </div>
-
-<style>
-	div {
-        margin: auto;
-		width: 50%;
-		height: auto;
-	}
-</style>

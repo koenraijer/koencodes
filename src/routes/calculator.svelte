@@ -9,19 +9,19 @@
     $: actPercStable = Math.round(actPercVolatile);
     $: diffActAndDesVolatile = volatileAssets - ((desiredPercVolatile / 100) * totalPortfValue)
 
-    //--------------- DATA -------------------//
-    const calculatorData = [
-        { name: "Volatile", value: volatileAssets },
-        { name: "Stable", value: stableAssets },
-    ];
+    //----------------CHARTJS------------------//
+    $: data[0] = volatileAssets;
+    $: data[1] = stableAssets;
 
-    $: calculatorData[0].value = volatileAssets;
-    $: calculatorData[1].value = stableAssets; 
-
+    import Chart from "$lib/Chart.svelte"
+    let labels = ["Volatile", "Stable"]
+    let data = [5, 4];
+    let colors = ["#53c6be", "#ff5100"]
+    //---------------SEO ----------------------//
     import Seo from '$lib/Seo.svelte'
 
-let pageTitle = "portfolio rebalancing calculator"
-let metaDescription = "An interactive calculator meant to rebalance an investing portfolio consisting of volatile assets such as stocks, and stable assets such as bonds."
+    let pageTitle = "portfolio rebalancing calculator"
+    let metaDescription = "An interactive calculator meant to rebalance an investing portfolio consisting of volatile assets such as stocks, and stable assets such as bonds."
 
 </script>
 <Seo {pageTitle}{metaDescription}/> 
@@ -69,19 +69,7 @@ let metaDescription = "An interactive calculator meant to rebalance an investing
             </div>
 
             <div class="explanation-pie">
-                <svg height="20" width="20" viewBox="0 0 20 20">
-                    <circle class="circle" r="10" cx="10" cy="10" fill="var(--primary-300)"/>
-                    <circle r="5" 
-                            cx="10" 
-                            cy="10" 
-                            fill="transparent" 
-                            stroke="var(--secondary-300)"
-                            stroke-width = "10"
-                            stroke-dasharray="calc({Math.round(actPercVolatile)} * 30.65 / 100) 31.4159"
-                            transform="rotate(-90) translate(-20)"
-                    />
-                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="3">{#if !actPercVolatile}{:else}{Math.round(actPercVolatile)}{/if}</text>
-                </svg>
+                <Chart {data} {labels}{colors}/>
             </div>
         </div>
 

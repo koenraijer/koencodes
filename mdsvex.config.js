@@ -9,7 +9,7 @@ const config = {
 	rehypePlugins: [],
 
 	layout: {
-		blog: 'src/lib/layouts/blog.svelte',
+		blog: '/src/lib/layouts/blog.svelte',
 	},
 };
 
