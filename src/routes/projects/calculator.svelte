@@ -1,14 +1,22 @@
 <script>
-    //------------- CALCULATOR ------------- //
+    // Common part and "move" method
     let volatileAssets = null;
     let stableAssets = null;
     let desiredPercVolatile = 0;
+    let method = 1; // 1 equals buy, 2 equals move. 
 
     $: totalPortfValue = volatileAssets + stableAssets;
     $: actPercVolatile = (volatileAssets / totalPortfValue) * 100;
     $: actPercStable = Math.round(actPercVolatile);
     $: diffActAndDesVolatile = volatileAssets - ((desiredPercVolatile / 100) * totalPortfValue)
 
+    // "buy" method
+    let dX;
+    let a;
+    $: a = desiredPercVolatile / 100;
+    $: dX = ((a * volatileAssets - volatileAssets) + (a * stableAssets)) / (1 - a);
+
+    
     //----------------CHARTJS------------------//
     $: data[0] = volatileAssets;
     $: data[1] = stableAssets;
@@ -17,6 +25,7 @@
     let labels = ["Volatile", "Stable"]
     let data = [5, 4];
     let colors = ["#53c6be", "#ff5100"]
+
     //---------------SEO ----------------------//
     import Seo from '$lib/Seo.svelte'
 
@@ -49,9 +58,9 @@
                     </li>
                     <li>
                         <label>Buy new assets or relocate already owned assets to achieve desired percentage?</label><br>
-                        <input type="radio" id="buy" name="method" checked>
+                        <input type="radio" id="buy" name="method" bind:group={method} value={1}>
                         <label for="buy">Buy</label>
-                        <input type="radio" id="move" name="method">
+                        <input type="radio" id="move" name="method" bind:group={method} value={2}>
                         <label for="move">Move</label>
                     </li>
                 </ol>
@@ -60,20 +69,36 @@
 
         <div class="wrapper">
             <div class="explanation-text">
-                <h3>You currently have <span>
-                {#if !volatileAssets}
-                    {#if stableAssets}
-                        0%
+                {#if method === 2} <!-- if method is move-->
+                    <h3>You currently have <span>
+                    {#if !volatileAssets}
+                        {#if stableAssets}
+                            0%
+                        {:else if !stableAssets}
+                            0%
+                        {/if}
                     {:else if !stableAssets}
-                        0%
-                    {/if}
-                {:else if !stableAssets}
-                    {#if volatileAssets}
-                        100%
-                    {/if}
-                {:else}{Math.round(actPercVolatile)}%{/if}</span> of your total portfolio value of <span>€{totalPortfValue}</span> in volatile assets.<br> To rebalance, 
-                {#if diffActAndDesVolatile > 0}sell{:else}buy{/if}
-                <span>€{Math.abs(Math.round(diffActAndDesVolatile))}</span> of volatile assets. </h3>
+                        {#if volatileAssets}
+                            100%
+                        {/if}
+                    {:else}{Math.round(actPercVolatile)}%{/if}</span> of your total portfolio value of <span>€{totalPortfValue}</span> in volatile assets.<br> To rebalance, 
+                    move <span>€{Math.abs(Math.round(diffActAndDesVolatile))}</span> {#if diffActAndDesVolatile > 0}from{:else}to{/if} volatile assets. </h3>
+                {:else} <!-- if method is buy-->
+                    <h3>You currently have <span>
+                        {#if !volatileAssets}
+                            {#if stableAssets}
+                                0%
+                            {:else if !stableAssets}
+                                0%
+                            {/if}
+                        {:else if !stableAssets}
+                            {#if volatileAssets}
+                                100%
+                            {/if}
+                        {:else}{Math.round(actPercVolatile)}%{/if}</span> of your total portfolio value of <span>€{totalPortfValue}</span> in volatile assets. To rebalance,
+                        {#if dX > 0}buy{:else}sell{/if} <span>€{Math.abs(Math.round(dX))}</span> of volatile assets.
+                        </h3>
+                {/if}
             </div>
 
             <div class="explanation-pie">
@@ -250,3 +275,37 @@
         justify-items: center;
     }
 </style>
+
+<!--FORMULA CALCULATION FOR 2 FUNDS
+    X1 = 50 (oud)
+    Y = 50 (ander fonds)
+    a = 0,7 (gewenste fractie X)
+    X2 = (nieuw)
+
+    X2 = 0.7 * (X2 + Y)
+    X2 = dX + X1
+    dX + X1 = 0.7 * ((dX + X1) + Y)
+    dX + X1 = 0.7dX + 0.7X1 + 0.7Y
+    dX = 0.7dX - 0.3X1 + 0.7Y
+    0.3dX = 0.7Y - 0.3X1
+    dX = (1/0.3) * (0.7Y - 0.3X1)
+    dX = 2,33Y - X1
+    dX = 66,5
+
+    dX + X1 = a * ((dX + X1) + Y)
+    dX + X1 = a*dX + a*X1 + a*Y
+    dX = a*dX + (a*X1 - X1) + a*Y
+    dx - a*dX = (a*X1 - X1) + a*Y 
+    (1 - a) * dX = (a*X1 - X1) + a*Y 
+    dX = ((a*X1 - X1) + a*Y) / (1 - a) 
+
+    TEST:
+    dX = ((0,7 * 50 - 50) + 0,7*50) / (1 - 0,7)
+    dX = 66,5
+
+    SO:
+    dX = ((a*X1 - X1) + a*Y) / (1 - a) 
+    
+    TRANSLATION TO CODE
+    
+-->
