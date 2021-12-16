@@ -16,6 +16,11 @@
     $: a = desiredPercVolatile / 100;
     $: dX = ((a * volatileAssets - volatileAssets) + (a * stableAssets)) / (1 - a);
 
+    $: if (method === 1) {
+        console.log("BUY");
+    } else {
+        console.log("MOVE");
+    };
     
     //----------------CHARTJS------------------//
     $: data[0] = volatileAssets;
