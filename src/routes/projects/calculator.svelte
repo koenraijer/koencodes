@@ -43,9 +43,17 @@
                         <input type="number" min=0 bind:value={stableAssets} name="stable" id="field-stable" required="" aria-required="true" placeholder="Enter value of stable assets" autocomplete="stable" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                     </li>
                     <li>
-                        <label for="field-percentage">Preferred percentage of volatile assets?</label>
+                        <label for="field-percentage">Desired percentage of volatile assets?</label>
                         <input type="range" bind:value={desiredPercVolatile} min=0 max=100 name="percentage" id="field-percentage" required="" aria-required="true" autocapitalize="off" class="">
                         <label>{desiredPercVolatile}%</label>
+                    </li>
+                    <li>
+                        <label>Buy new assets or relocate already owned assets to achieve desired percentage?</label><br>
+                        <input type="radio" id="buy" name="method" checked>
+                        <label for="buy">Buy</label>
+                        <input type="radio" id="move" name="method">
+                        <label for="move">Move</label>
+                    </li>
                 </ol>
             </form>
         </div>
@@ -138,6 +146,9 @@
             grid-template-columns: 1fr;
             grid-gap: 0.25rem;
             padding-bottom: 1rem;
+            &:last-child {
+                display: block;
+            }
         }
     }
 
@@ -196,11 +207,7 @@
     background: var(--primary-300);
     margin-top: -7.5px;
     border-radius: 50%;
-    @media screen and (min-width: 600px) {
-        height: 15px;
-        width: 15px;
-        margin-top: -5px;
-    }
+
     }
 
     input[type="range"]::-moz-range-thumb {
@@ -209,11 +216,24 @@
     background: var(--primary-300);
     margin-top: -5px;
     border-radius: 50%;
-    @media screen and (min-width: 600px) {
-        height: 15px;
-        width: 15px;
-        margin-top: -5px;
+
     }
+
+    input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        border: 0.1rem var(--primary-100) solid;
+        transition: 0.2s all linear;
+        margin: 0 calc(var(--spacing-unit) * -0.2) 0 calc(var(--spacing-unit) * 0.5);
+        position: relative;
+        top: 0.1rem;
+        &:checked {
+            border: 0.42rem solid var(--primary-300);
+        }
     }
 
     .container {

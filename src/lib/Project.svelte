@@ -40,7 +40,7 @@
 
     p :global(a) {
                     position: relative;
-                    color: var(--secondary-300);
+                    color: var(--secondary-200);
                     font-weight: 500;
                     text-decoration: none;
                     &:before {
@@ -52,7 +52,7 @@
                         left: 0em;
                         width: 100%;
                         height: 0.1em;
-                        background: var(--secondary-300);
+                        background: var(--secondary-200);
                     }
                     &:hover:before{
                         display: block;

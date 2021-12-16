@@ -51,7 +51,7 @@
             outside: false
         },
         {   title: 'An investing calculator', 
-            src: '/calculator', 
+            src: '/projects/calculator', 
             description: 'Making this in SvelteKit was a breeze. My Python version stranded due the price of Flask hosting.', 
             img:"illustration-shapes.svg",
             outside: false
@@ -149,81 +149,7 @@
             }
         }
     }
-    // ------------------
 
-    // WAVES ANIMATIONS
-   /*
-    @keyframes horizontal-move-fade {
-        0% {
-            transform: translateX(var(--offset));
-            opacity: 1;
-        }
-        50% {
-            opacity: 0.5;
-        }
-        100% {
-            transform: translateX(100%);
-            opacity: 0;
-        }
-    }
-    @keyframes horizontal-move-no-fade {
-        0% {
-            transform: translateX(var(--offset));
-            opacity: 1;
-        }
-        100% {
-            transform: translateX(100%);
-        }
-    }
-
-    .wrapperForHero{
-        svg {
-            path:nth-child(1) {
-                --offset: -100%;
-                --duration: 30s;
-            }
-            path:nth-child(2) {
-                --offset: -75%;
-                --duration: 29s;
-            }
-            path:nth-child(3) {
-                --offset: 0%;
-                --duration: 43s;
-            }
-            path:nth-child(4) {
-                --offset: 25%;
-                --duration: 40s;
-            }
-            path:nth-child(5) {
-                --offset: 50%;
-                --duration: 46s;
-            }
-            path:nth-child(6) {
-                --offset: 75%;
-                --duration: 45s;
-                animation: horizontal-move-no-fade var(--duration) infinite linear;
-            }
-            path:nth-child(7) {
-                --offset: 90%;
-                --duration: 50s;
-            }
-            path:nth-child(7) {
-                --offset: 60%;
-                --duration: 80s;
-                animation: horizontal-move-no-fade var(--duration) infinite linear;
-            }
-            path:nth-child(8) {
-                --offset: 50%;
-                --duration: 75s;
-                animation: horizontal-move-no-fade var(--duration) infinite linear;
-            }
-            path {
-                animation: horizontal-move-fade var(--duration) infinite linear;
-                animation-fill-mode: both;
-            }
-        }
-    }
-    */
     .grid1, .grid2, .grid3 {
         display: grid;
         grid-template-columns: 1fr;
@@ -471,9 +397,9 @@
 
 .projectsbutton {
     color: white;
-    background: var(--secondary-300);
+    background: var(--secondary-200);
     &:hover {
-        background: var(--secondary-350);
+        background: var(--secondary-300);
         color: inherit;
         transform: translate(-0.1rem, -0.1rem);
         transition: 0.2s ease-in-out;

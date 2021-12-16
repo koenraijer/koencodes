@@ -7,7 +7,7 @@
 </script>
 
 <div class="wrapperForFooter">
-    <div class="container">
+    <div class="header-container">
       <header>
         <div>
           <h1 class="sitetitle"><a href="/">koen codes</a></h1>  
@@ -143,6 +143,13 @@
       padding: 0 var(--spacing-unit) var(--spacing-unit);
     }
 
+    .header-container {
+      max-width: 1300px;
+      margin: auto;
+      padding: 0 var(--spacing-unit) 0;
+    }
+
+
     .wrapperForFooter {
       min-height: calc(100vh - 10rem);
       margin-bottom: 0;
@@ -227,7 +234,7 @@
 
     a {
         position: relative;
-        color: var(--secondary-300);
+        color: var(--secondary-200);
         font-weight: 500;
         text-decoration: none;
         width: 100%;
@@ -240,7 +247,7 @@
             left: 0em;
             width: 100%;
             height: 0.1em;
-            background: var(--secondary-300);
+            background: var(--secondary-200);
         }
         &:hover:before{
             display: block;
