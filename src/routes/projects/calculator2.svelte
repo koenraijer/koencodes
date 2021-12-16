@@ -73,39 +73,7 @@
 </script>
 
 <div class="container">
-    <pre>
-X1 = 50 (oud)
-Y = 50 (ander fonds)
-a = 0,7 (gewenste fractie X)
-X2 = (nieuw)
 
-X2 = 0.7 * (X2 + Y)
-X2 = dX + X1
-dX + X1 = 0.7 * ((dX + X1) + Y)
-dX + X1 = 0.7dX + 0.7X1 + 0.7Y
-dX = 0.7dX - 0.3X1 + 0.7Y
-0.3dX = 0.7Y - 0.3X1
-dX = (1/0.3) * (0.7Y - 0.3X1)
-dX = 2,33Y - X1
-dX = 66,5
-
-dX + X1 = a * ((dX + X1) + Y)
-dX + X1 = a*dX + a*X1 + a*Y
-dX = a*dX + (a*X1 - X1) + a*Y
-dx - a*dX = (a*X1 - X1) + a*Y 
-(1 - a) * dX = (a*X1 - X1) + a*Y 
-dX = ((a*X1 - X1) + a*Y) / (1 - a) 
-
-TEST:
-dX = ((0,7 * 50 - 50) + 0,7*50) / (1 - 0,7)
-dX = 66,5
-
-SO:
-dX = ((a*X1 - X1) + a*Y) / (1 - a) 
-
-FOR MORE THAN 2 ASSETS
-
-    </pre>
     <div>
         <div>
             <ol>
