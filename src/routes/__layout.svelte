@@ -10,7 +10,9 @@
     <div class="header-container">
       <header>
         <div>
-          <h1 class="sitetitle"><a href="/">koen codes</a></h1>  
+          <h1 class="sitetitle"><a href="/">
+              koen codes
+          </a></h1>  
         </div>
       </header>
     </div>
@@ -22,12 +24,10 @@
     </main>
 
   <div class="footerWrapper">
-    <img alt="wavy line to separate content from footer" class="footer-wave" src="../footer-waveline.svg">
     <footer>
       <div>
         <h3><a href="/">koen.codes</a></h3>
         <h4>Thanks for reading!</h4>
-        <span><b>Contact: </b><a href="mailto:koen@&#9728;&#65039;.gg">koen@&#9728;&#65039;.gg</a></span>
       </div>
       <div>
         <h3>Links</h3>
@@ -36,7 +36,7 @@
       </div>
       <div>
         <h3>Contact</h3>
-        <a href="mailto:koen@&#9728;&#65039;.gg">koen@&#9728;&#65039;.gg</a>
+        <a href="mailto:koen@🔥.kz">koen@🔥.kz</a>
       </div>
 
     </footer>
@@ -48,24 +48,12 @@
 
 <style lang="scss">
   
-    :root {
-        scroll-behavior: smooth;
-        line-height: 1.3;
-        font-size: 1rem;
-        overflow-x: hidden;
-        color: var(--primary-100);
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Apple Color Emoji';
-        @media screen and (min-width: 400px) {
-          font-size: 1.2rem;
-        }
-        @media screen and (min-width: 600px) {
-          font-size: 1.5rem;
-        }
-    }
-
     .sitetitle {
       color: var(--primary-100);
       font-size: 2.7em;
+      @media screen and (max-width: 400px) {
+        font-size: 2.1em;
+      }
       font-family: 'Poppins', sans-serif;
       a {
                     position: relative;
@@ -156,40 +144,60 @@
     }
 
     .footerWrapper {
-      height: 5rem;
-      background: transparent;
+      background: #FFA176;
+      background: -webkit-linear-gradient(bottom, #FFA176, #FFB899);
+      background: -moz-linear-gradient(bottom, #FFA176, #FFB899);
+      background: linear-gradient(to top, #FFA176, #FFB899);
       width: 100vw;
       left: 50%;
       right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      margin-bottom: 0;
+      margin: calc(var(--spacing-unit) * 5) -50vw -2rem -50vw;
       position: relative;
     }
     footer {
-      display: grid;
-      div:nth-child(3) {
-        display: none;
-      }
-      div:first-child {
-        span {
-          display: inline;
-        }
-      }
-      align-items: start;
-      justify-items: center;
-      grid-gap: var(--spacing-unit);
-      grid-template-columns: 1fr 1fr;
-      @media screen and (min-width: 900px) {
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
         div:nth-child(3) {
-          display: block;
-        }
-        div:first-child {
-        span {
           display: none;
         }
-      }
+        div:first-child {
+          span {
+            display: inline;
+          }
+        }
+        align-items: start;
+        justify-items: center;
+        grid-gap: var(--spacing-unit);
+        grid-template-columns: 1fr 1fr;
+        @media screen and (min-width: 900px) {
+          grid-template-columns: 1fr 1fr 1fr;
+          div:nth-child(3) {
+            display: block;
+          }
+          div:first-child {
+          span {
+            display: none;
+          }
+        }
+        a {
+        position: relative;
+        color: var(--secondary-200);
+        font-weight: 500;
+        text-decoration: none;
+        &:before {
+            z-index: -100;
+            content: '';
+            display: none;
+            position: absolute;
+            bottom: -0.1em;
+            left: 0em;
+            width: 100%;
+            height: 0.1em;
+            background: var(--secondary-200);
+        }
+        &:hover:before{
+            display: block;
+        }
+        }
       }
 
       height: 10rem;
@@ -256,3 +264,4 @@
 
 </style>
 
+<!--koen@&#9728;&#65039;.gg-->

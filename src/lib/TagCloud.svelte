@@ -12,19 +12,19 @@
                 a {
                     color: inherit;
                     padding: 0.5rem 0.85rem 0.5rem;
-                    margin: 0.5rem 0.5rem 0rem 0.5rem;
+                    margin: 0 calc(var(--spacing-unit) * 0.5) 0 0;
                     border-radius: 10px;
                     background: var(--primary-400);
+                    box-shadow: var(--shadow-elevation-low);
                     text-decoration: none;
                     &:hover {
-                    background: var(--primary-300);
-                    color: white;
+                    background: var(--primary-500);
+                    box-shadow: var(--shadow-elevation-medium);
                     }
                 }
 
                 div {
-                    margin: var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0;
-                    padding: var(--spacing-unit) var(--spacing-unit) var(--spacing-unit) 0;
+                    margin: calc(var(--spacing-unit) + var(--spacing-unit) var(--spacing-unit) 0;
                 }
 </style>
 

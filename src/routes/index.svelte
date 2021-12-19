@@ -65,6 +65,28 @@
 <Seo {pageTitle} {metaDescription}/>
 <div class="wrapperForHero">
     <div class="hero-background">
+        <svg height="100%" width="100%">
+            <defs>
+              <linearGradient id="0" x1="0.05" y1="0.27" x2="0.95" y2="0.73">
+                <stop offset="2%" stop-color="#d9f7f5"/>
+                <stop offset="55%" stop-color="#fff1eb"/>
+                <stop offset="100%" stop-color="#d9f7f5"/>
+              </linearGradient>
+              <radialGradient id="1" gradientTransform="translate(-1 0) scale(2, 2)">
+                <stop offset="0%" stop-color="#fff1eb"/>
+                <stop offset="25%" stop-color="rgba(254, 233, 238, 0.75)"/>
+                <stop offset="50%" stop-color="rgba(253, 224, 250, 0.5)"/>
+                <stop offset="100%" stop-color="rgba(190, 227, 248, 0)"/>
+              </radialGradient>
+            </defs>
+            <rect fill="url(#0)" height="100%" width="100%"/>
+            <rect fill="url(#1)" height="100%" width="100%"/>
+          </svg>
+          
+          
+          
+          
+                    
         <div class="container">
             <div class="grid1">
                 <div class="grid1-art">
@@ -73,9 +95,10 @@
                 <div class="grid1-hero">
                     <div>
                         <h2>Hi, I'm Koen!</h2>
-                        <h1>I do some programming in my <br>off-time.</h1>
+                        <h1>I do some programming <br>in my off-time.</h1>
                         <h3>I write about web development as if you know nothing, because neither do I!</h3>
                         <nav>
+                            <a class="button mailbutton" href="mailto:koen@🔥.kz">koen@🔥.kz</a>
                             <a class="button blogbutton" href="#blog">Blog</a>
                             <a class="button projectsbutton" href="#projects">Projects</a>
                         </nav>
@@ -126,6 +149,7 @@
 
 </div>
 <style lang="scss">
+
     // HERO ANIMATIONS
     @keyframes appear {
         0% {
@@ -139,10 +163,15 @@
         nav {
             a:first-child{
                 animation: appear 500ms;
-                animation-delay: 500ms;
+                animation-delay: 250ms;
                 animation-fill-mode: both;
             }
             a:nth-child(2){
+                animation: appear 500ms;
+                animation-delay: 500ms;
+                animation-fill-mode: both;
+            }
+            a:nth-child(3){
                 animation: appear 500ms;
                 animation-delay: 750ms;
                 animation-fill-mode: both;
@@ -153,7 +182,7 @@
     .grid1, .grid2, .grid3 {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 1.5rem;
+        grid-gap: calc(var(--spacing-unit) * 1.5);
         align-content: stretch;
         justify-content: stretch;
         margin: 0;
@@ -202,7 +231,7 @@
         @media screen and (min-width: 1200px) {
             grid-template-columns: 2fr 1fr;
             .grid1-hero {
-                margin: calc(var(--spacing-unit) * 2) 0 0 calc(var(--spacing-unit) * 2);
+                margin: calc(var(--spacing-unit) * 5) 0 0 calc(var(--spacing-unit) * 4);
                 grid-column: 1/2;
                 grid-row: 1/2;
                 text-align: left;
@@ -219,6 +248,7 @@
 
     .grid2 {
         margin-top: calc(var(--spacing-unit) * 2);
+        grid-gap: calc(var(--spacing-unit) * 3);
     }
     .grid3 {
         @media screen and (min-width: 800px) {
@@ -233,6 +263,8 @@
     // BLOG POSTS
     .blogPost {
         overflow: hidden;
+        background: rgb(239,245,245);
+        background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 20%);
         border-radius: var(--corner-unit);
         position: relative;
         box-shadow: var(--shadow-elevation-medium);
@@ -264,23 +296,13 @@
                     transform: translate(-0.05rem, -0.05rem);
                     transition: var(--transition-time) ease;
                     box-shadow: var(--shadow-elevation-mediumhigh);
+                    background: rgb(239,245,245);
+                    background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 10%);
                 }
                 .allPostButton {
-                    background: var(--primary-300);
+                    background: linear-gradient(0deg, hsl(176, 51%, 80%) 0%, #ABEDE9 40%);
                 }
             }
-        }
-    }
-
-    .allPostButton {
-        background: var(--primary-200);
-        justify-self: start;
-        align-self: start;
-        h4 {
-            margin: 0;
-            padding: 0;
-            color: white;
-            text-decoration: none;
         }
     }
 
@@ -307,6 +329,17 @@
         }
     }
 
+    .allPostButton {
+        background: linear-gradient(0deg, #54C7BF 0%, #ABEDE9 100%);
+        justify-self: start;
+        align-self: start;
+        h4 {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+    }
+
 // BACKGROUNDS
 .full-bleed {
     width: 100vw;
@@ -318,27 +351,30 @@
 }
 
 .wrapperForHero {
-    width: 100vw;
+    width: 100%;
     left: 50%;
     right: 50%;
     margin: 0 -50vw 0 -50vw;
     position: relative;
     svg {
-        width: 100vw;
-        height: auto;
-        position: relative;
+        width: 100%;
+        height: 100%;
+        position: absolute;
         z-index: -1;
     }
 }
 .hero-background {
-    background: var(--primary-400);
+    background: transparent;
+    background-size: cover;
     position: relative;
-    width: 100vw;
+    width: 105vw;
     position: relative;
     left: 50%;
     right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    margin-left: -52.5vw;
+    margin-right: -52.5vw;
+    margin-top: calc(var(--spacing-unit) * 2);
+    margin-bottom: calc(var(--spacing-unit) * 2);
     padding-bottom: var(--spacing-unit);
 
 }
@@ -364,11 +400,16 @@
           max-width: 100vw;
       }
       margin: auto;
+      position: relative;
     }
 
 .header {
     margin-left: var(--spacing-unit);
     margin-bottom: var(--spacing-unit);
+}
+
+#tags, #blog {
+    margin-left: 0;
 }
 
 // BUTTONS 
@@ -379,14 +420,17 @@
     padding: 0.5rem 0.85rem 0.5rem;
     margin: var(--spacing-unit) var(--spacing-unit) 0rem;
     border-radius: calc(var(--corner-unit));
-    background: var(--primary-400);
+    background: rgb(239,245,245);
+    background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 100%);
     box-shadow: var(--shadow-elevation-mediumhigh);
     text-decoration: none;
     font-weight: 600;
     &:hover {
-        background: var(--primary-300);
         box-shadow: var(--shadow-elevation-high);
-        color: white;
+        background: rgb(239,245,245);
+        background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 20%);
+        color: inherit;
+        transition: 0.2s ease-in-out;
     }
     @media screen and (max-width: 500px) {
         margin: var(--spacing-unit) calc(var(--spacing-unit) * 0.75) 0rem
@@ -394,26 +438,23 @@
 
 }
 
-
-.projectsbutton {
-    color: white;
-    background: var(--secondary-200);
+.blogbutton, .projectsbutton {
     &:hover {
-        background: var(--secondary-300);
-        color: inherit;
         transform: translate(-0.1rem, -0.1rem);
-        transition: 0.2s ease-in-out;
     }
 }
-
-.blogbutton {
-    background: var(--primary-300);
-    color: white;
+.mailbutton {
+    position: absolute;
+    top: 0;
+    transform: translate(0,-2.5rem);
+    right: 0;
+    box-shadow: var(--shadow-elevation-medium);
     &:hover {
-        background: var(--primary-350);
-        transform: translate(-0.1rem, -0.1rem);
+        box-shadow: var(--shadow-elevation-mediumhigh);
+        background: rgb(239,245,245);
+        background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 20%);
+        color: inherit;
         transition: 0.2s ease-in-out;
-        color: var(--primary-100);
     }
 }
 

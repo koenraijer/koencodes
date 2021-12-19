@@ -25,6 +25,17 @@
     let data = [5, 4];
     let colors = ["#53c6be", "#ff5100"]
 
+    // Autofocus
+    import {browser} from '$app/env';
+
+    let fieldVolatile;
+    if (browser) {
+        window.onload = function() {
+        document.getElementById("field-volatile").focus();
+        };
+    }
+
+
     //---------------SEO ----------------------//
     import Seo from '$lib/Seo.svelte'
 
@@ -43,17 +54,17 @@
                 <input type="hidden" name="form-name" value="contact">
                 <ol>
                     <li>
-                        <label for="field-volatile">Current money in volatile assets?</label>
-                        <input type="number" min=0 bind:value={volatileAssets} name="volatile" id="field-volatile" required="" aria-required="true" placeholder="Enter value of volatile assets" autocomplete="volatile" autocorrect="off" autocapitalize="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        <label for="field-volatile">Volatile assets (e.g. stocks)</label>
+                        <input type="text" inputmode="numeric" class="numeric" min=0 bind:value={volatileAssets} name="volatile" id="field-volatile" required="" aria-required="true" autocomplete="volatile" autocorrect="off" autocapitalize="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                     </li>
                     <li>
-                        <label for="field-stable">Current money in stable assets?</label>
-                        <input type="number" min=0 bind:value={stableAssets} name="stable" id="field-stable" required="" aria-required="true" placeholder="Enter value of stable assets" autocomplete="stable" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        <label for="field-stable">Stable assets? (e.g. bonds)</label>
+                        <input type="text" inputmode="numeric" class="numeric" min=0 bind:value={stableAssets} name="stable" id="field-stable" required="" aria-required="true" autocomplete="stable" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                     </li>
                     <li>
                         <label for="field-percentage">Desired percentage of volatile assets?</label>
+                        <label id="desiredPerc">{desiredPercVolatile}%</label>
                         <input type="range" bind:value={desiredPercVolatile} min=0 max=100 name="percentage" id="field-percentage" required="" aria-required="true" autocapitalize="off" class="">
-                        <label>{desiredPercVolatile}%</label>
                     </li>
                     <li>
                         <label>Buy new assets or relocate already owned assets to achieve desired percentage?</label><br>
@@ -124,7 +135,6 @@
     .wrapper {
         display: grid;
         align-items: center;
-        text-align: center;
         justify-items: center;
         grid-gap: var(--spacing-unit);
         margin: var(--spacing-unit);
@@ -169,7 +179,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 0.25rem;
-            padding-bottom: 1rem;
+            padding-bottom: 1.5rem;
             &:last-child {
                 display: block;
             }
@@ -187,19 +197,36 @@
         max-width: 25rem;
     }
 
-    input[type="number"] {
+    .numeric {
         font-size: inherit;
         box-shadow: none;
+        border-style: none;
+        border-radius: calc(var(--corner-unit) * 0.5);
         appearance: none;
         -moz-appearance: none;
         -webkit-appearance: none;
+        box-shadow: var(--shadow-elevation-mediumhigh);
         padding: 0.25rem;
-        margin: 0 0.25rem 0;
-        width: auto;
+        margin: 0;
+        max-width: 50%;
+        &:-webkit-outer-spin-button,
+        &:-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        }
+        -moz-appearance: textfield;
+        &:focus {
+            box-shadow: var(--shadow-elevation-high);
+            outline: none;
+        }
     }
 
     label {
-        padding-left: 0.25rem;
+        text-align: left;
+    }
+
+    #desiredPerc {
+        color: var(--gray-300);
+        font-size: 0.9em;
     }
 
     ::-moz-focus-inner {
@@ -211,24 +238,29 @@
     -webkit-appearance: none;
     width: auto;
     margin: 0.25rem 0 0.25rem;
-    padding: 0 0.25rem 0;
+    padding: 0;
     }
 
     input[type="range"]::-webkit-slider-runnable-track {
-    background: var(--primary-100);
-    height: 5px;
+    background: var(--gray-400);
+    border-radius: 10px;
+    height: 6px;
+    max-width: 75%;
     }
 
     input[type="range"]::-moz-range-track {
-    background: var(--primary-100);
-    height: 5px;
+    background: var(--gray-400);
+    border-radius: 10px;
+    max-width: 75%;
+    height: 6px;
     }
 
     input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
-    background: var(--primary-300);
+    box-shadow: var(--shadow-elevation-medium);
+    background: var(--primary-200);
     margin-top: -7.5px;
     border-radius: 50%;
 
@@ -250,13 +282,13 @@
         border-radius: 50%;
         width: 20px;
         height: 20px;
-        border: 0.1rem var(--primary-100) solid;
+
         transition: 0.2s all linear;
-        margin: 0 calc(var(--spacing-unit) * -0.2) 0 calc(var(--spacing-unit) * 0.5);
         position: relative;
         top: 0.1rem;
+        box-shadow: var(--shadow-elevation-medium);
         &:checked {
-            border: 0.42rem solid var(--primary-300);
+            background: var(--primary-200);
         }
     }
 
@@ -269,9 +301,9 @@
 
     .form-wrapper {
         display: grid;
-        align-items: center;
-        text-align: center;
-        justify-items: center;
+        align-items: start;
+        text-align: left;
+        justify-items: start;
     }
 </style>
 
