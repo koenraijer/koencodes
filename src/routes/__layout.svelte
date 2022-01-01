@@ -11,7 +11,7 @@
       <header>
         <div>
           <h1 class="sitetitle"><a href="/">
-              koen codes
+              Koen Codes
           </a></h1>  
         </div>
       </header>
@@ -22,7 +22,7 @@
         <slot />
     
     </main>
-
+</div>
   <div class="footerWrapper">
     <footer>
       <div>
@@ -31,8 +31,8 @@
       </div>
       <div>
         <h3>Links</h3>
-        <h4><a href="/blog">Blog</a></h4>
-        <h4><a href="#projects">Projects</a></h4>
+        <h4><a href="/#blog">Blog</a></h4>
+        <h4><a href="/#projects">Projects</a></h4>
       </div>
       <div>
         <h3>Contact</h3>
@@ -41,16 +41,12 @@
 
     </footer>
   </div>
-  
-</div>
-
-
 
 <style lang="scss">
   
     .sitetitle {
       color: var(--primary-100);
-      font-size: 2.7em;
+      font-size: 2.2em;
       @media screen and (max-width: 400px) {
         font-size: 2.1em;
       }
@@ -184,7 +180,7 @@
         font-weight: 500;
         text-decoration: none;
         &:before {
-            z-index: -100;
+            z-index: 1;
             content: '';
             display: none;
             position: absolute;

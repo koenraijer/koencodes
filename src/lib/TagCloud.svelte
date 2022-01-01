@@ -24,7 +24,7 @@
                 }
 
                 div {
-                    margin: calc(var(--spacing-unit) + var(--spacing-unit) var(--spacing-unit) 0;
+                    margin: var(--spacing-unit) 0 calc(var(--spacing-unit) * 3);
                 }
 </style>
 

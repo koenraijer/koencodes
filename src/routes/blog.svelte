@@ -42,8 +42,8 @@
 <Seo {pageTitle}{metaDescription}/>
 
     <main class="container">
-        <div>
-            <h1>All posts</h1>
+        <div class="post-hero">
+            <h1>All Posts</h1>
         </div>
         <div class="wrapper">
             <Posts {dateSortedPosts}/> 
@@ -80,9 +80,16 @@
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
-        background: var(--primary-500);
+        background: white;
         background-size: cover;
         background-position: center;
+    }
+
+    .post-hero {
+        padding: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 2);
+        display: grid;
+        align-items: center;
+        position: relative;
     }
 </style>
 

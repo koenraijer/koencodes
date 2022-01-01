@@ -38,7 +38,7 @@
     import Project from '$lib/Project.svelte'
 
     let projects = [
-		{   title: 'My charity website <span><img class="svg-icon" src="link.svg"></span>', 
+		{   title: 'My charity web <span><img class="svg-icon" src="link.svg"></span>', 
             src: 'https://www.vriendenvoorkika.nl/', 
             description: 'Climbing a mountain for charity. Made a website for it using Jekyll and Netlify. Consider <a target="_blank" rel="noopener" href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!', 
             img:"illustration-crosses.svg",
@@ -64,29 +64,7 @@
 
 <Seo {pageTitle} {metaDescription}/>
 <div class="wrapperForHero">
-    <div class="hero-background">
-        <svg height="100%" width="100%">
-            <defs>
-              <linearGradient id="0" x1="0.05" y1="0.27" x2="0.95" y2="0.73">
-                <stop offset="2%" stop-color="#d9f7f5"/>
-                <stop offset="55%" stop-color="#fff1eb"/>
-                <stop offset="100%" stop-color="#d9f7f5"/>
-              </linearGradient>
-              <radialGradient id="1" gradientTransform="translate(-1 0) scale(2, 2)">
-                <stop offset="0%" stop-color="#fff1eb"/>
-                <stop offset="25%" stop-color="rgba(254, 233, 238, 0.75)"/>
-                <stop offset="50%" stop-color="rgba(253, 224, 250, 0.5)"/>
-                <stop offset="100%" stop-color="rgba(190, 227, 248, 0)"/>
-              </radialGradient>
-            </defs>
-            <rect fill="url(#0)" height="100%" width="100%"/>
-            <rect fill="url(#1)" height="100%" width="100%"/>
-          </svg>
-          
-          
-          
-          
-                    
+    <div class="hero-background">                    
         <div class="container">
             <div class="grid1">
                 <div class="grid1-art">
@@ -263,8 +241,7 @@
     // BLOG POSTS
     .blogPost {
         overflow: hidden;
-        background: rgb(239,245,245);
-        background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 20%);
+        background: var(--gray-500);
         border-radius: var(--corner-unit);
         position: relative;
         box-shadow: var(--shadow-elevation-medium);
@@ -293,14 +270,12 @@
                     color: var(--primary-300);
                 }
                 .blogPost {
-                    transform: translate(-0.05rem, -0.05rem);
+                    transform: scale(1.005);
                     transition: var(--transition-time) ease;
                     box-shadow: var(--shadow-elevation-mediumhigh);
-                    background: rgb(239,245,245);
-                    background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 10%);
                 }
                 .allPostButton {
-                    background: linear-gradient(0deg, hsl(176, 51%, 80%) 0%, #ABEDE9 40%);
+                    background: var(--primary-300);
                 }
             }
         }
@@ -330,7 +305,8 @@
     }
 
     .allPostButton {
-        background: linear-gradient(0deg, #54C7BF 0%, #ABEDE9 100%);
+        background: var(--primary-200);
+        color: white;
         justify-self: start;
         align-self: start;
         h4 {
@@ -351,17 +327,15 @@
 }
 
 .wrapperForHero {
-    width: 100%;
+    width: 100vw;
     left: 50%;
     right: 50%;
     margin: 0 -50vw 0 -50vw;
     position: relative;
-    svg {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
-    }
+    background: #ABEDE9;
+    background: -webkit-radial-gradient(right, #ABEDE9, #EBFFFE);
+    background: -moz-radial-gradient(right, #ABEDE9, #EBFFFE);
+    background: radial-gradient(to left, #ABEDE9, #EBFFFE);
 }
 .hero-background {
     background: transparent;
@@ -379,21 +353,6 @@
 
 }
 
-.blobs {
-    position: absolute;
-    z-index: -1;
-}
-
-.blob1 {
-        top: 0;
-        left: 10rem;
-        height: 10rem;
-        transform: translate(8rem, 0);
-        @media screen and (min-width: 900px ) {
-            transform: translate(-5rem, 15rem);
-        }
-    }
-
 .container {
       max-width: 1300px;
       @media screen and (max-width: 600px) {
@@ -404,12 +363,14 @@
     }
 
 .header {
-    margin-left: var(--spacing-unit);
+    margin-left: 0;
     margin-bottom: var(--spacing-unit);
 }
 
-#tags, #blog {
-    margin-left: 0;
+#projects {
+    @media screen and (min-width: 600px) {
+        margin-left: var(--spacing-unit);
+    }
 }
 
 // BUTTONS 
@@ -421,14 +382,14 @@
     margin: var(--spacing-unit) var(--spacing-unit) 0rem;
     border-radius: calc(var(--corner-unit));
     background: rgb(239,245,245);
-    background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 100%);
-    box-shadow: var(--shadow-elevation-mediumhigh);
+    background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 5%);
+    box-shadow: var(--shadow-elevation-medium);
     text-decoration: none;
     font-weight: 600;
     &:hover {
-        box-shadow: var(--shadow-elevation-high);
+        box-shadow: var(--shadow-elevation-mediumhigh);
         background: rgb(239,245,245);
-        background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 20%);
+        background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 1%);
         color: inherit;
         transition: 0.2s ease-in-out;
     }
@@ -438,11 +399,6 @@
 
 }
 
-.blogbutton, .projectsbutton {
-    &:hover {
-        transform: translate(-0.1rem, -0.1rem);
-    }
-}
 .mailbutton {
     position: absolute;
     top: 0;
@@ -452,7 +408,7 @@
     &:hover {
         box-shadow: var(--shadow-elevation-mediumhigh);
         background: rgb(239,245,245);
-        background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 20%);
+        background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 1%);
         color: inherit;
         transition: 0.2s ease-in-out;
     }

@@ -43,9 +43,12 @@
 <Seo {pageTitle}{metaDescription}/>
 
 <main class="container">
-    <div class="title">
-        <h1>{tag.replace(/^\w/, (c) => c.toUpperCase())}</h1>
+    <div class="post-hero">
+        <div class="title">
+            <h1>{tag.replace(/^\w/, (c) => c.toUpperCase())}</h1>
+        </div>
     </div>
+
     <div class="wrapper">
         <div class="blog-parent">
             {#each filteredPosts as { path, metadata: { title, date, snippet } }}
@@ -147,8 +150,15 @@
         right: 50%;
         margin-left: -50vw;
         margin-right: -50vw;
-        background: var(--primary-500);
+        background: white;
         background-size: cover;
         background-position: center;
+    }
+
+    .post-hero {
+        padding: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 2);
+        display: grid;
+        align-items: center;
+        position: relative;
     }
 </style>

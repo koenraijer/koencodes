@@ -75,7 +75,7 @@
             
         }
         .project {
-            transform: translate(-0.05rem, -0.05rem);
+            transform: scale(1.005);
             transition: var(--transition-time) ease;
             box-shadow: var(--shadow-elevation-mediumhigh);
         }
@@ -86,12 +86,12 @@
         overflow: hidden;
         border-radius: var(--corner-unit);
         position: relative;
-        background: white;
+        background: var(--gray-500);
         box-shadow: var(--shadow-elevation-medium);
         div:first-child {
             display: grid;
             place-items: center;
-            background: var(--gray-500);
+            background: var(--gray-400);
             position: relative;
             padding: var(--spacing-unit);
             div {

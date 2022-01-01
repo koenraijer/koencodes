@@ -1,9 +1,12 @@
+<script>
+   import {fade, draw, fly} from 'svelte/transition';
+</script>
 <svg height="100%" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 264 280">
 <defs>
 <path d="M126.201+14.4548C57.6058+14.4548+1.90024+70.0696+0.355558+139.249C1.90024+208.428+57.6058+264.043+126.201+264.043C194.796+264.043+250.468+208.428+252.012+139.249C250.468+70.0696+194.796+14.4549+126.201+14.4548Z" id="Mask"/>
 <linearGradient y1="33.4688" id="LinearGradient" x1="66.4579" y2="196.006" x2="149.033" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.08517 0 0 1.08517 -13.5481 -21.8643)">
-<stop stop-opacity="0.811082" stop-color="#008077" offset="0.0234558"/>
-<stop stop-color="#63ede4" offset="0.898839"/>
+<stop stop-opacity="0.811082" stop-color="#FFA076" offset="0.0234558"/>
+<stop stop-color="#FF854D" offset="0.898839"/>
 </linearGradient>
 <linearGradient y1="42.9098" id="LinearGradient_2" x1="115.944" y2="42.9098" x2="141.577" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 -2.57664 4.31023)">
 <stop stop-opacity="0.811082" stop-color="#008077" offset="0.0234558"/>
@@ -109,7 +112,6 @@
       animation-delay: 1000ms;
       animation-fill-mode: both;
       &:hover {
-         transform: scale(1.1);
          #brow2{
             transform: translateY(-0.15rem);
             transition: 0.3s ease-in-out;
