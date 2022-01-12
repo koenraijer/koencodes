@@ -20,7 +20,7 @@
     $: data[0] = volatileAssets;
     $: data[1] = stableAssets;
 
-    import Chart from "$lib/Chart.svelte"
+    import Chart from "$lib/ChartJS/Pie.svelte"
     let labels = ["Volatile", "Stable"]
     let data = [5, 4];
     let colors = ["#53c6be", "#ff5100"]

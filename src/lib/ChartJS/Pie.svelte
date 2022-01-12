@@ -1,16 +1,15 @@
-<canvas id="myChart" width="500px" height="500px" bind:this={ctx}></canvas>
+<canvas id="myChart" bind:this={ctx}></canvas>
 
 
 <script>
     import Chart from 'chart.js/auto/auto.js';
     import {afterUpdate} from 'svelte';
 
-    // Copy this to use: 
     // <Chart {data}{backgroundColor}{labels} />
 
-    export let data;
-    export let colors;
-    export let labels;
+    export let data = [0, 1, 2, 3, 4, 5];
+    export const colors = ["#ff5100","#00bdb0","#993000", "#00ffee", "#949e9d", "#bfd9d7", "#abede9", "#FFA076", "#6f7b7a", "gray"];
+    export let labels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
 
     let myChart;
     let ctx;
@@ -32,6 +31,7 @@
                 },
                 // For styling anything outside of the dataset (so grids etc.)
                 options: {
+                    responsive: true,
                     scales: {
                         x: {display: false},
                         y: {display: false}
@@ -40,6 +40,5 @@
             });
         } 
     );
-    
     
 </script>

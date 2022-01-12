@@ -1,5 +1,5 @@
 <script>
-    import Chart from '$lib/Chart.svelte'
+    import Pie from '$lib/ChartJS/Pie.svelte'
     import {browser} from '$app/env'
     import {slide} from 'svelte/transition'
     import Checkbox from '$lib/Checkbox.svelte'
@@ -261,7 +261,7 @@
         </section>
 </div>
     <div>
-        <Chart {data}{labels}{colors}/>
+        <Pie {data}{labels}{colors}/>
     </div>    
 </div>
 

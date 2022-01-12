@@ -8,7 +8,7 @@ backgroundNumber: 3
 layout: blog
 ---
 
-Svelte styles are scoped to their components by default, but global styles can be very useful for things like color schemes, dark mode and CSS resets. This article shows you how to install and implement Svelte Preprocess, and then prepend your your `.scss` file full of global styles. It's not difficult to set up! 
+Svelte styles are scoped to their components by default, but global styles can be very useful for things like color schemes, dark mode and CSS resets. This article shows you how to install and implement Svelte Preprocess, and then prepend your `.scss` file full of global styles. It's not difficult to set up! 
 
 To start, create a new folder at `src/lib/` and call it `styles.scss`. Put all of your global styles in there. 
 

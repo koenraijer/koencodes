@@ -43,22 +43,22 @@
                 .blogPost {
                     transform: translate(-0.05rem, -0.05rem);
                     transition: var(--transition-time) ease;
-                    box-shadow: var(--shadow-elevation-mediumhigh);
+                    box-shadow: var(--shadow-elevation-medium);
                 }
                 .allPostButton {
                     background: var(--primary-300);
                 }
             }
-        }
+        } 
     }
 
     .blogPost {
         overflow: hidden;
-        background: hsla(0, 0%, 100%, 0.5);
+        background: var(--gray-450);
         border-radius: var(--corner-unit);
         position: relative;
-        box-shadow: var(--shadow-elevation-medium);
-        padding: var(--spacing-unit);
+        box-shadow: var(--shadow-elevation-low);
+        padding: calc(1.25* var(--spacing-unit));
         p {
             padding: 0;
             margin: 0 0 var(--spacing-unit);
@@ -74,4 +74,5 @@
         }
     }
     
+
 </style>

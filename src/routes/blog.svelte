@@ -47,7 +47,6 @@
         </div>
         <div class="wrapper">
             <Posts {dateSortedPosts}/> 
-            <div class="background"></div>
         </div>
     </main>    
 
@@ -55,8 +54,7 @@
     .container {
       max-width: 1300px;
       margin: auto;
-      position: relative;
-      padding: 0 var(--spacing-unit) 0;    
+      position: relative;  
       div {
           display: grid;
           align-items: center;
@@ -68,21 +66,10 @@
 
     .wrapper {
           margin-top: calc(var(--spacing-unit) * 3);
-    }
-
-    .background {
-        width: 100vw;
-        height: calc(100% + 25rem);
-        top: -15rem;
-        z-index: -1;
-        position: fixed;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        background: white;
-        background-size: cover;
-        background-position: center;
+          margin: calc(var(--spacing-unit) * 3) calc(var(--spacing-unit) * 0.5) 0;
+            @media screen and (min-width: 600px) {
+                margin: calc(var(--spacing-unit) * 3) var(--spacing-unit) 0;
+        }  
     }
 
     .post-hero {

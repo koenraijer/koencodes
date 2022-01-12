@@ -40,7 +40,7 @@
 
     p :global(a) {
                     position: relative;
-                    color: var(--secondary-200);
+                    color: var(--secondary-300);
                     font-weight: 500;
                     text-decoration: none;
                     &:before {
@@ -52,7 +52,7 @@
                         left: 0em;
                         width: 100%;
                         height: 0.1em;
-                        background: var(--secondary-200);
+                        background: var(--secondary-300);
                     }
                     &:hover:before{
                         display: block;
@@ -77,7 +77,7 @@
         .project {
             transform: scale(1.005);
             transition: var(--transition-time) ease;
-            box-shadow: var(--shadow-elevation-mediumhigh);
+            box-shadow: var(--shadow-elevation-medium);
         }
     }
 }
@@ -86,15 +86,16 @@
         overflow: hidden;
         border-radius: var(--corner-unit);
         position: relative;
-        background: var(--gray-500);
-        box-shadow: var(--shadow-elevation-medium);
+        background: var(--gray-450);
+        box-shadow: var(--shadow-elevation-low);
         div:first-child {
             display: grid;
             place-items: center;
             background: var(--gray-400);
             position: relative;
-            padding: var(--spacing-unit);
+            padding: calc(1.25* var(--spacing-unit));
             div {
+                padding: 1rem 0 1rem;
                 width: 50%;
                 max-height: 5rem;
                 img {
@@ -104,7 +105,7 @@
         }
 
         div:nth-child(2) {
-            padding: var(--spacing-unit);
+            padding: calc(1.25* var(--spacing-unit));
             p {
             padding: 0;
             margin: 0;

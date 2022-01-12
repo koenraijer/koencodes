@@ -3,7 +3,6 @@
     export let snippet;
     export let date;
     export let tags;
-    export let backgroundNumber = 4;
 
     import Seo from '$lib/Seo.svelte';
     import Date from '$lib/Date.svelte';
@@ -11,32 +10,39 @@
     let pageTitle = title;
     let metaDescription = snippet;
 
-    let backgroundLink = '/postBackground-' + backgroundNumber + '.svg' ;
 </script>
 
 <Seo {pageTitle}{metaDescription}/>
 
 <div class="container">
     <div class="post-hero">
-        <img alt="colored shapes to illustrate the title" class="background" src="{backgroundLink}">
         <span class="date"><Date {date}/></span>
         <h1>{ title }</h1>
+        <h3>{ snippet }</h3>
     </div>
     <div class="post-content">
         <slot></slot>
     </div>
 </div>
 
-
-<style lang="scss">
+<style>
+    
     .container {
       max-width: 60ch;
+      background: var(--primary-500);
       margin: auto;
       position: relative;
       padding: var(--spacing-unit);    
     }
+
+    .post-hero h3 {
+        font-weight:  normal;
+        text-align: center;
+        margin-bottom: calc(var(--spacing-unit) * 4);
+    }
   
     .post-hero {
+        margin: calc(var(--spacing-unit) * 4) 0 0;
         padding: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 2);
         display: grid;
         align-items: center;
@@ -45,20 +51,15 @@
 
     h1 {
         text-align: center;
-        margin: var(--spacing-unit) 0 calc(var(--spacing-unit) * 4);
+        margin: var(--spacing-unit) 0 var(--spacing-unit);
+    }
+
+    .post-content :global(h2) {
+        margin: calc( 2* var(--spacing-unit)) 0 var(--spacing-unit);
     }
     
     .date {
         text-align: center;
-    }
-
-    .background {
-        position: absolute;
-        z-index: -1;
-        max-width: 30rem;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -60%);
     }
 
     .post-content :global(a) {
@@ -69,7 +70,7 @@
     }
 
     .post-content :global(a::before){
-        z-index: -100;
+        z-index: 10;
         content: '';
         display: none;
         position: absolute;
@@ -83,5 +84,21 @@
     .post-content :global(a:hover::before) {
         display: block;
     }
- 
+
+    :global(figure) {
+        margin: calc(2* var(--spacing-unit));
+    }
+    
+    :global(figure) :global(img) {
+        max-height: 50vh;
+        max-width: 50rem;
+        margin: auto;
+    }
+
+    :global(figcaption) {
+        font-size: 0.9em;
+        text-align: center;
+        font-style: italic;
+    }
+    
   </style>

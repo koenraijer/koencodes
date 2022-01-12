@@ -25,6 +25,7 @@
 <script>
     import Seo from '$lib/Seo.svelte'
     import TagCloud from '$lib/TagCloud.svelte'
+    import Contact from '$lib/Contact.svelte'
 
     let pageTitle = "home"
     let metaDescription = "The homepage: a collection of projects and blog posts."
@@ -38,7 +39,7 @@
     import Project from '$lib/Project.svelte'
 
     let projects = [
-		{   title: 'My charity web <span><img class="svg-icon" src="link.svg"></span>', 
+		{   title: 'My charity website <span><img class="svg-icon" src="link.svg"></span>', 
             src: 'https://www.vriendenvoorkika.nl/', 
             description: 'Climbing a mountain for charity. Made a website for it using Jekyll and Netlify. Consider <a target="_blank" rel="noopener" href="https://www.actievoorkika.nl/sanne-koen-thomas-en-romy">donating</a>!', 
             img:"illustration-crosses.svg",
@@ -63,57 +64,42 @@
 </script>
 
 <Seo {pageTitle} {metaDescription}/>
-<div class="wrapperForHero">
-    <div class="hero-background">                    
-        <div class="container">
-            <div class="grid1">
-                <div class="grid1-art">
-                    <Art />
-                </div>
-                <div class="grid1-hero">
-                    <div>
-                        <h2>Hi, I'm Koen!</h2>
-                        <h1>I do some programming <br>in my off-time.</h1>
-                        <h3>I write about web development as if you know nothing, because neither do I!</h3>
-                        <nav>
-                            <a class="button mailbutton" href="mailto:koen@🔥.kz">koen@🔥.kz</a>
-                            <a class="button blogbutton" href="#blog">Blog</a>
-                            <a class="button projectsbutton" href="#projects">Projects</a>
-                        </nav>
-                    </div>
-                </div>
-            </div>    
-        </div>
-    </div>
-</div>
-
 
 <div class="container">
 <div class="grid2">
     <div class="grid2-blog">
         <h1 id="blog" class="header">Recently published</h1>
             <div class="blog-parent">
-                {#each posts.slice(0, 4) as { path, metadata: { title, snippet, date } }}
+                {#each dateSortedPosts.slice(0, 4) as { path, metadata: { title, snippet, date } }}
                     <a class="divlink" href={`${path.replace(".md", "")}`}>
                     <div class="blogPost">
-                        <h3>{title}</h3>
+                        <h3 id="blogPostHeader">{title}</h3>
                         <p>{snippet}</p>
                         <span class="date">{new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                     </div>
                     </a>
                 {/each}
                 <a href="/blog" class="divlink">
-                    <div class="blogPost allPostButton">
-                        <h4>All posts &#10132;</h4>
+                    <div class="allPostButton blogPost ">
+                        <h3 id="allpostHeader">All posts</h3>
                     </div>
                 </a>
             </div>               
     </div> 
 
     <div class="grid2-tags">
-        <h1 id="tags" class="header">Explore topics</h1>
-        <TagCloud/>
-        
+        <div>
+            <h1 id="tags" class="header">Explore topics</h1>
+            <TagCloud/>
+        </div>  
+        <div>
+            <h1 class="header" id="about" >About</h1>
+            <div class="about">
+                <p>Hey, I'm Koen👋</p>
+                <p>I'm a medicine student who likes to mess around with web design and a little data science.</p>
+                <p>I'm thrilled you're visiting!
+            </div>
+        </div>      
     </div>  
 </div>
     
@@ -123,7 +109,6 @@
         <Project {title} {src} {description} {img} {outside}/>
     {/each}
 </div>
-
 
 </div>
 <style lang="scss">
@@ -163,7 +148,7 @@
         grid-gap: calc(var(--spacing-unit) * 1.5);
         align-content: stretch;
         justify-content: stretch;
-        margin: 0;
+        margin: calc(var(--spacing-unit) * 0.5);
         @media screen and (min-width: 600px) {
             margin: var(--spacing-unit);
         }
@@ -220,12 +205,12 @@
     .grid1 {
         padding: calc(var(--spacing-unit) * 2) 0 0;
         @media screen and (min-width: 1200px) {
-            margin: calc(var(--spacing-unit) * 1) 0 calc(var(--spacing-unit)*3);
+            margin: 0 0 calc(var(--spacing-unit)*3);
         }
     }
 
     .grid2 {
-        margin-top: calc(var(--spacing-unit) * 2);
+        margin-top: calc(var(--spacing-unit) * 6);
         grid-gap: calc(var(--spacing-unit) * 3);
     }
     .grid3 {
@@ -241,11 +226,11 @@
     // BLOG POSTS
     .blogPost {
         overflow: hidden;
-        background: var(--gray-500);
+        background: var(--gray-450);
         border-radius: var(--corner-unit);
         position: relative;
-        box-shadow: var(--shadow-elevation-medium);
-        padding: var(--spacing-unit);
+        box-shadow: var(--shadow-elevation-low);
+        padding: calc(1.25* var(--spacing-unit));
         p {
             padding: 0;
             margin: 0 0 var(--spacing-unit);
@@ -266,17 +251,18 @@
     color: inherit;
         &:hover {
             &:hover {
-                h3 {
-                    color: var(--primary-300);
+                .allPostButton {
+                    background: linear-gradient(101deg, #00ffee 10%, #8ee6c8 20%, #bacda2 30%, #d6b37e 40%, #e9975a 56%, #f67835 73%, #ff5100 90%);
                 }
-                .blogPost {
+                .blogPost {                        
+                    #blogPostHeader {
+                        color: var(--primary-300);
+                    }
                     transform: scale(1.005);
                     transition: var(--transition-time) ease;
-                    box-shadow: var(--shadow-elevation-mediumhigh);
+                    box-shadow: var(--shadow-elevation-medium);
                 }
-                .allPostButton {
-                    background: var(--primary-300);
-                }
+
             }
         }
     }
@@ -305,15 +291,21 @@
     }
 
     .allPostButton {
-        background: var(--primary-200);
-        color: white;
+        text-align: center;
+        background: linear-gradient(101deg, #00ffee 0%, #8ee6c8 16%, #bacda2 33%, #d6b37e 50%, #e9975a 66%, #f67835 83%, #ff5100 100%);
+        transition: all 0.2s ease;
+        color: var(--primary-100);
         justify-self: start;
         align-self: start;
-        h4 {
+        h3 {
+            &:hover {
+                color: var(--primary-100);
+            }
             margin: 0;
             padding: 0;
             text-decoration: none;
         }
+        
     }
 
 // BACKGROUNDS
@@ -363,6 +355,7 @@
     }
 
 .header {
+    font-size: 1.8em;
     margin-left: 0;
     margin-bottom: var(--spacing-unit);
 }
@@ -381,23 +374,37 @@
     padding: 0.5rem 0.85rem 0.5rem;
     margin: var(--spacing-unit) var(--spacing-unit) 0rem;
     border-radius: calc(var(--corner-unit));
-    background: rgb(239,245,245);
-    background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 5%);
-    box-shadow: var(--shadow-elevation-medium);
+    background: transparent;
     text-decoration: none;
     font-weight: 600;
-    &:hover {
-        box-shadow: var(--shadow-elevation-mediumhigh);
-        background: rgb(239,245,245);
-        background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 1%);
-        color: inherit;
-        transition: 0.2s ease-in-out;
-    }
     @media screen and (max-width: 500px) {
         margin: var(--spacing-unit) calc(var(--spacing-unit) * 0.75) 0rem
     }
 
 }
+
+.scale-background-on-hover {
+                position: relative;
+                }
+
+                .scale-background-on-hover::after {
+                background-color: var(--primary-500);
+                box-shadow: var(--shadow-elevation-low);
+                
+                border-radius: var(--corner-unit);
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                transition: transform 250ms;
+                }
+                .scale-background-on-hover:hover::after {
+                transform: scale(1.05);
+                box-shadow: var(--shadow-elevation-medium);
+                }
 
 .mailbutton {
     position: absolute;
@@ -411,6 +418,30 @@
         background: linear-gradient(0deg, rgba(239,245,245,1) 0%, rgba(255,255,255,1) 1%);
         color: inherit;
         transition: 0.2s ease-in-out;
+    }
+}
+
+.about {
+    max-width: 15rem;
+    a {
+        position: relative;
+        color: var(--secondary-300);
+        font-weight: 500;
+        text-decoration: none;
+        &:before {
+            content: '';
+            z-index: 10;
+            display: block;
+            position: absolute;
+            bottom: -0.1em;
+            left: 0em;
+            width: 100%;
+            height: 0.1em;
+            background: var(--secondary-300);
+        }
+        &:hover:before{
+            display: block;
+        }
     }
 }
 

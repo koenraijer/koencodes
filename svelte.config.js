@@ -19,7 +19,7 @@ const config = {
 						prependData: `@import '${sassPath}styles.scss';`
 					}
 				}), 
-				mdsvex(mdsvexConfig)],
+				mdsvex(mdsvexConfig),],
 
 	kit: {
 		adapter: vercel(),
